@@ -40,11 +40,18 @@ function App() {
     }
   };
 
+  const getCurrentQuestions = () => {
+    if (selectedOccupations.length === 0) return [];
+    const occupation = selectedOccupations[0]; // Use the first selected occupation's questions
+    return questions[occupation] || [];
+  };
+
   const handleAnswer = (type: string) => {
     const newAnswers = [...answers, type];
     setAnswers(newAnswers);
 
-    if (currentQuestion < questions.length - 1) {
+    const currentQuestions = getCurrentQuestions();
+    if (currentQuestion < currentQuestions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
       // Calculate personality stats
@@ -113,6 +120,8 @@ function App() {
     );
   };
 
+  const currentQuestions = getCurrentQuestions();
+
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md mx-auto">
@@ -152,22 +161,22 @@ function App() {
           </div>
         )}
 
-        {step === 'questions' && (
+        {step === 'questions' && currentQuestions.length > 0 && (
           <div>
             <div className="mb-4">
               <div className="h-2 bg-gray-200 rounded-full">
                 <div
                   className="h-2 bg-indigo-600 rounded-full transition-all duration-300"
-                  style={{ width: `${((currentQuestion + 1) / questions.length) * 100}%` }}
+                  style={{ width: `${((currentQuestion + 1) / currentQuestions.length) * 100}%` }}
                 />
               </div>
             </div>
             <div className="bg-white p-6 rounded-lg shadow">
               <h3 className="text-lg font-medium text-gray-900 mb-4">
-                {questions[currentQuestion].text}
+                {currentQuestions[currentQuestion].text}
               </h3>
               <div className="space-y-3">
-                {questions[currentQuestion].choices.map((choice) => (
+                {currentQuestions[currentQuestion].choices.map((choice) => (
                   <button
                     key={choice.id}
                     onClick={() => handleAnswer(choice.type)}
