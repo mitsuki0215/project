@@ -1052,170 +1052,170 @@ export const results: Result[] = [
 
   // Consultants
   {
-    name: "Peter Drucker",
-    occupation: "consultant",
+    name: "ピーター・ドラッカー",
+    occupation: "コンサルタント",
     mbti: "INTJ",
-    description: "The father of modern management. Your strategic thinking and systematic approach reflect Drucker's influential consulting methodology.",
+    description: "近代経営学の父であるドラッカーに匹敵する戦略的洞察力の持ち主！あなたの分析的思考と長期的なビジョンは、複雑な課題を明快なアクションへと導くでしょう。",
     imageUrl: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Peter_Drucker"
   },
   {
-    name: "Clayton Christensen",
-    occupation: "consultant",
+    name: "クレイトン・クリステンセン",
+    occupation: "コンサルタント",
     mbti: "ENFJ",
-    description: "An innovation expert. Your ability to understand organizational dynamics mirrors Christensen's insights into disruptive innovation.",
+    description: "あなたは組織の動きをスッと見抜いて、新しい波を起こせるコンサルタント！まさに、クリステンセンの”破壊的イノベーション”理論を体現してるかのよう。",
     imageUrl: "https://images.pexels.com/photos/3183151/pexels-photo-3183151.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Clayton_Christensen"
   },
   {
-    name: "Michael Porter",
-    occupation: "consultant",
+    name: "マイケル・ポーター",
+    occupation: "コンサルタント",
     mbti: "ISTJ",
-    description: "A strategy expert. Your analytical approach to competitive advantage aligns with Porter's fundamental frameworks.",
+    description: "あなたは市場を冷静に読み解いて、有利なポジションをしっかりと築くコンサルタント！ポーターの競争戦略理論を実践するかのような、堅実なアプローチが光ります。",
     imageUrl: "https://images.pexels.com/photos/3183152/pexels-photo-3183152.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Michael_Porter"
   },
   {
-    name: "Indra Nooyi",
-    occupation: "consultant",
+    name: "インドラ・ヌーイ",
+    occupation: "コンサルタント",
     mbti: "ENTJ",
-    description: "A strategic business leader. Your visionary leadership and practical implementation skills match Nooyi's transformative consulting approach.",
+    description: "あなたはヌーイのように先を見据えて、きちんとビジョンを形にできるコンサルタント！アイデアを現実に変える力は、まさにビジネス界の変革者そのもの。",
     imageUrl: "https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Indra_Nooyi"
   },
 
   // Researchers
   {
-    name: "Stephen Hawking",
-    occupation: "researcher",
+    name: "スティーブン・ホーキング",
+    occupation: "研究者",
     mbti: "INTJ",
-    description: "A theoretical physicist and cosmologist. Your analytical mind and determination reflect Hawking's groundbreaking research approach.",
+    description: "あなたは卓越した分析力と独創的な思考を持つ研究者！ホーキングのように、宇宙の謎を解き明かすための理論を構築する力があります。",
     imageUrl: "https://images.pexels.com/photos/2156/sky-space-dark-galaxy.jpg",
     wikiUrl: "https://en.wikipedia.org/wiki/Stephen_Hawking"
   },
   {
-    name: "Jane Goodall",
-    occupation: "researcher",
+    name: "ジェーン・グドール",
+    occupation: "研究者",
     mbti: "INFJ",
-    description: "A pioneering primatologist. Your patient observation and empathetic approach mirror Goodall's revolutionary research methods.",
+    description: "あなたは霊長類研究のパイオニア、グドールに匹敵する洞察力の持ち主！精神を宿す優しい眼差しと揺るぎない探究心で、自然界の秘密を解き明かすことができます。",
     imageUrl: "https://images.pexels.com/photos/4666751/pexels-photo-4666751.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Jane_Goodall"
   },
   {
-    name: "Neil deGrasse Tyson",
-    occupation: "researcher",
+    name: "ニール・ドグラース・タイソン",
+    occupation: "研究者",
     mbti: "ENTJ",
-    description: "An astrophysicist and science communicator. Your ability to explain complex concepts matches Tyson's engaging research presentation.",
+    description: "あなたは複雑な概念を魅力的に語る手腕のあるかつリーダーシップも持ち合わせる研究者！その情熱は人々に、宇宙への憧憬を新たに呼び覚まします。",
     imageUrl: "https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg",
     wikiUrl: "https://en.wikipedia.org/wiki/Neil_deGrasse_Tyson"
   },
   {
-    name: "Barbara McClintock",
-    occupation: "researcher",
+    name: "バーバラ・マクリントック",
+    occupation: "研究者",
     mbti: "INTP",
-    description: "A Nobel Prize-winning geneticist. Your detailed observation and innovative thinking align with McClintock's pioneering research.",
+    description: "あなたはマクリントックのような鋭い洞察力を生かし、斬新なアイデアを語る研究者！洞察力を磨き続ければ、ノーベル賞受賞も夢では終わらないかも！？",
     imageUrl: "https://images.pexels.com/photos/4666754/pexels-photo-4666754.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Barbara_McClintock"
   },
 
   // Architects
   {
-    name: "Frank Lloyd Wright",
-    occupation: "architect",
+    name: "フランク・ロイド・ライト",
+    occupation: "建築家",
     mbti: "INTJ",
-    description: "A master of organic architecture. Your innovative design philosophy and attention to detail mirror Wright's revolutionary approach.",
+    description: "あなたは有機的建築家の巨匠ライトのような、革新的設計思想を持つ建築家！自然と一体化した空間作りを細部までこだわった設計を実現します。",
     imageUrl: "https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Frank_Lloyd_Wright"
   },
   {
-    name: "Zaha Hadid",
-    occupation: "architect",
+    name: "ザハ・ハディド",
+    occupation: "建築家",
     mbti: "ENTJ",
-    description: "A pioneering deconstructivist architect. Your bold vision and determination reflect Hadid's groundbreaking architectural style.",
+    description: "あなたはハディドの魂を宿す奔放な曲線美と不屈の創造力で、空間そのものをアートへと昇華させ、新たな時代の鼓動を響かせるでしょう！",
     imageUrl: "https://images.pexels.com/photos/1732415/pexels-photo-1732415.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Zaha_Hadid"
   },
   {
-    name: "Le Corbusier",
-    occupation: "architect",
+    name: "ル・コルビュジエ",
+    occupation: "建築家",
     mbti: "ISTJ",
-    description: "A modernist architecture pioneer. Your systematic approach and attention to functionality align with Le Corbusier's influential principles.",
+    description: "あなたはコルビュジエの精神を継ぐ理知的な美意識と周到な空間計画を持つ建築家！ムダのないスマートなデザインで暮らしやすさを考えるのが好きなタイプです。",
     imageUrl: "https://images.pexels.com/photos/1732416/pexels-photo-1732416.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Le_Corbusier"
   },
   {
-    name: "Antoni Gaudí",
-    occupation: "architect",
+    name: "アントニ・ガウディ",
+    occupation: "建築家",
     mbti: "INFP",
-    description: "A visionary of organic architecture. Your creative expression and natural inspiration match Gaudí's unique architectural vision.",
+    description: "あなたは自然を取り込む独創的表現とディテールへの情熱を持つ建築家！サグラダ・ファミリアのような人々を魅了する建築を創り出せること間違いなし。",
     imageUrl: "https://images.pexels.com/photos/1732417/pexels-photo-1732417.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Antoni_Gaud%C3%AD"
   },
 
   // Copywriters
   {
-    name: "David Ogilvy",
-    occupation: "copywriter",
+    name: "デイビッド・オグルヴィ",
+    occupation: "コピーライター",
     mbti: "ENTJ",
-    description: "The father of advertising. Your strategic thinking and persuasive communication reflect Ogilvy's legendary copywriting principles.",
+    description: "あなたはオグルヴィの精神を宿す卓越した洞察と物語力で、広告の力を最大限に引き出すコピーライター！消費者の心をつかむ言葉を巧みに操ることができます。",
     imageUrl: "https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/David_Ogilvy_(businessman)"
   },
   {
-    name: "Mary Wells Lawrence",
-    occupation: "copywriter",
+    name: "メアリー・ウェルズ・ローレンス",
+    occupation: "コピーライター",
     mbti: "ENFP",
-    description: "A pioneering advertising executive. Your creative flair and innovative campaigns mirror Lawrence's groundbreaking advertising approach.",
+    description: "あなたは広告界のパイオニアであるウェルズ・ローレンスのような、独自の視点と情熱で消費者の心をつかむコピーライター！斬新なアイデアでブランドを輝かせることができます。",
     imageUrl: "https://images.pexels.com/photos/3182774/pexels-photo-3182774.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Mary_Wells_Lawrence"
   },
   {
-    name: "Claude Hopkins",
-    occupation: "copywriter",
+    name: "クロード・C・ホプキンス",
+    occupation: "コピーライター",
     mbti: "ISTJ",
-    description: "A scientific advertising pioneer. Your analytical approach to copywriting aligns with Hopkins' systematic marketing principles.",
+    description: "あなたはホプキンスのような徹底したテストと数値思考で成果を導く手法を持つコピーライター！広告を科学し、人々の心を確かな実証に基づいて動かすことができるでしょう。",
     imageUrl: "https://images.pexels.com/photos/3182775/pexels-photo-3182775.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Claude_C._Hopkins"
   },
   {
-    name: "Leo Burnett",
-    occupation: "copywriter",
+    name: "レオ・バーネット",
+    occupation: "コピーライター",
     mbti: "INFJ",
-    description: "A creative advertising legend. Your ability to connect emotionally through words matches Burnett's iconic brand storytelling.",
+    description: "あなたは“広告に心を宿す”伝説的クリエイター、バーネットに匹敵する情緒的訴求力を持つコピーライター！人々の記憶に残る物語と温かなキャラクターでブランド価値を永続的に高めます",
     imageUrl: "https://images.pexels.com/photos/3182776/pexels-photo-3182776.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Leo_Burnett"
   },
 
   // Film Directors
   {
-    name: "Alfred Hitchcock",
-    occupation: "director",
+    name: "アルフレッド・ヒッチコック",
+    occupation: "映画監督",
     mbti: "INTJ",
-    description: "The master of suspense. Your meticulous planning and psychological insight reflect Hitchcock's legendary directing style.",
+    description: "あなたはヒッチコックのように巧みな伏線と心理操作ができる映画監督！緻密なストーリーテリングとサスペンスの演出で、観客を引き込む力があります。",
     imageUrl: "https://images.pexels.com/photos/274937/pexels-photo-274937.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Alfred_Hitchcock"
   },
   {
-    name: "Steven Spielberg",
-    occupation: "director",
+    name: "スティーブン・スピルバーグ",
+    occupation: "映画監督",
     mbti: "ENFJ",
-    description: "A blockbuster visionary. Your storytelling ability and emotional depth mirror Spielberg's crowd-pleasing directorial approach.",
+    description: "あなたは豊かな情感と抜群のエンタメ性を持つ映画監督！スピルバーグのように、観客の心を掴む感動的な物語を紡ぎ出すことができます。",
     imageUrl: "https://images.pexels.com/photos/274938/pexels-photo-274938.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Steven_Spielberg"
   },
   {
-    name: "Stanley Kubrick",
-    occupation: "director",
+    name: "スタンリー・キューブリック",
+    occupation: "映画監督",
     mbti: "INTP",
-    description: "A perfectionist filmmaker. Your attention to detail and innovative vision align with Kubrick's groundbreaking cinematic style.",
+    description: "あなたは徹底したディテール追求と前衛的演出ができる映画監督！キューブリックのようにこだわり抜いた映像で観客を唸らせます。",
     imageUrl: "https://images.pexels.com/photos/274939/pexels-photo-274939.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Stanley_Kubrick"
   },
   {
-    name: "Agnès Varda",
-    occupation: "director",
+    name: "アニエス・ヴァルダ",
+    occupation: "映画監督",
     mbti: "ENFP",
-    description: "A pioneer of French New Wave cinema. Your experimental approach and personal expression match Varda's innovative filmmaking.",
+    description: "あなたは自由な構成とパーソナルな視点を持っている映画監督！ヴァルダのようにドキュメンタリーとフィクションを融合させた独自のスタイルで、観客に深い感動を与えることができます。",
     imageUrl: "https://images.pexels.com/photos/274940/pexels-photo-274940.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Agn%C3%A8s_Varda"
   }
