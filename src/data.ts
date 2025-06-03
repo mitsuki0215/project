@@ -505,45 +505,45 @@ export const questions: { [key: string]: Question[] } = {
       ]
     }
   ],
-  researcher: [
+  研究者: [
     {
       id: 1,
-      text: "What research approach do you prefer?",
+      text: "どの研究アプローチがお好みですか？",
       choices: [
-        { id: "r1a", text: "Quantitative analysis", type: "T" },
-        { id: "r1b", text: "Qualitative studies", type: "F" },
-        { id: "r1c", text: "Mixed methods", type: "N" },
-        { id: "r1d", text: "Systematic reviews", type: "S" }
+        { id: "r1a", text: "定量的データ分析", type: "T" },
+        { id: "r1b", text: "質的データの研究", type: "F" },
+        { id: "r1c", text: "質的・量的データを組み合わせた混合法", type: "N" },
+        { id: "r1d", text: "様々な文献を参考にする系統的レビュー", type: "S" }
       ]
     },
     {
       id: 2,
-      text: "How do you handle research projects?",
+      text: "研究プロジェクトにはどのように取り組みますか？",
       choices: [
-        { id: "r2a", text: "Structured timeline", type: "J" },
-        { id: "r2b", text: "Flexible exploration", type: "P" },
-        { id: "r2c", text: "Team collaboration", type: "E" },
-        { id: "r2d", text: "Independent study", type: "I" }
+        { id: "r2a", text: "綿密なタイムラインを立てて進める", type: "J" },
+        { id: "r2b", text: "状況に応じて柔軟に探究を進める", type: "P" },
+        { id: "r2c", text: "テームで協力しながら進める", type: "E" },
+        { id: "r2d", text: "独立して集中して進める", type: "I" }
       ]
     },
     {
       id: 3,
-      text: "What motivates your research?",
+      text: "あなたの研究を突き動かす原動力はなんですか？",
       choices: [
-        { id: "r3a", text: "Scientific discovery", type: "T" },
-        { id: "r3b", text: "Societal impact", type: "F" },
-        { id: "r3c", text: "Methodological rigor", type: "S" },
-        { id: "r3d", text: "Theoretical advancement", type: "N" }
+        { id: "r3a", text: "新しい科学的発見への好奇心", type: "T" },
+        { id: "r3b", text: "社会へ影響・インパクトを生み出すこと", type: "F" },
+        { id: "r3c", text: "方法論的な厳密さの追求", type: "S" },
+        { id: "r3d", text: "理論の高度化・発展", type: "N" }
       ]
     },
     {
       id: 4,
-      text: "How do you disseminate findings?",
+      text: "研究成果をどのように発信しますか？",
       choices: [
-        { id: "r4a", text: "Academic publications", type: "T" },
-        { id: "r4b", text: "Public engagement", type: "F" },
-        { id: "r4c", text: "Conference presentations", type: "E" },
-        { id: "r4d", text: "Technical reports", type: "I" }
+        { id: "r4a", text: "学術論文として発表する", type: "T" },
+        { id: "r4b", text: "社会向けアウトリーチ（世の中へ広くシェア）", type: "F" },
+        { id: "r4c", text: "学会でプレゼンテーションをする", type: "E" },
+        { id: "r4d", text: "技術レポートを作成", type: "I" }
       ]
     }
   ],
