@@ -592,42 +592,42 @@ export const questions: { [key: string]: Question[] } = {
   copywriter: [
     {
       id: 1,
-      text: "What's your writing approach?",
+      text: "あなたのライティングスタイルに近いのはどれですか？",
       choices: [
-        { id: "cw1a", text: "Data-driven messaging", type: "T" },
-        { id: "cw1b", text: "Emotional storytelling", type: "F" },
-        { id: "cw1c", text: "Clear communication", type: "S" },
-        { id: "cw1d", text: "Creative concepts", type: "N" }
+        { id: "cw1a", text: "データを元に追求する", type: "T" },
+        { id: "cw1b", text: "感情に響くストーリーで伝える", type: "F" },
+        { id: "cw1c", text: "わかりやすさを最優先にする", type: "S" },
+        { id: "cw1d", text: "ユニークな切り口で魅せる", type: "N" }
       ]
     },
     {
       id: 2,
-      text: "How do you handle writing projects?",
+      text: "執筆プロジェクトはどのように進めますか？",
       choices: [
-        { id: "cw2a", text: "Structured outlines", type: "J" },
-        { id: "cw2b", text: "Flexible drafting", type: "P" },
-        { id: "cw2c", text: "Client collaboration", type: "E" },
-        { id: "cw2d", text: "Solo brainstorming", type: "I" }
+        { id: "cw2a", text: "最初に詳細なアウトラインを作る", type: "J" },
+        { id: "cw2b", text: "書きながら柔軟に調整する", type: "P" },
+        { id: "cw2c", text: "クライアントと密にやりとりする", type: "E" },
+        { id: "cw2d", text: "一人で集中して進める", type: "I" }
       ]
     },
     {
       id: 3,
-      text: "What drives your content decisions?",
+      text: "コンテンツの方向性を決める際に最も重要視するのは？",
       choices: [
-        { id: "cw3a", text: "Conversion metrics", type: "T" },
-        { id: "cw3b", text: "Audience engagement", type: "F" },
-        { id: "cw3c", text: "Brand guidelines", type: "S" },
-        { id: "cw3d", text: "Innovative angles", type: "N" }
+        { id: "cw3a", text: "コンバージョン（売上など）具体的な成果の数字", type: "T" },
+        { id: "cw3b", text: "読者の共感やコメント・シェア数", type: "F" },
+        { id: "cw3c", text: "ブランドのガイドライン", type: "S" },
+        { id: "cw3d", text: "斬新な切り口やアイデア", type: "N" }
       ]
     },
     {
       id: 4,
-      text: "How do you develop copy ideas?",
+      text: "コピー（広告文）のアイデアを生み出す時の方法は？",
       choices: [
-        { id: "cw4a", text: "Market research", type: "T" },
-        { id: "cw4b", text: "Creative inspiration", type: "N" },
-        { id: "cw4c", text: "Team brainstorming", type: "E" },
-        { id: "cw4d", text: "Personal reflection", type: "I" }
+        { id: "cw4a", text: "市場調査・リサーチを行う", type: "T" },
+        { id: "cw4b", text: "ひらめきや直感を大切にする", type: "N" },
+        { id: "cw4c", text: "チームでブレインストーミングをする", type: "E" },
+        { id: "cw4d", text: "静かに思考を深めてひらめきを得る", type: "I" }
       ]
     }
   ],
