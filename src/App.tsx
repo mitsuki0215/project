@@ -4,9 +4,9 @@ import { Brain, CheckCircle2, BarChart } from 'lucide-react';
 import { questions, results } from './data';
 import { Occupation, Result, PersonalityStats } from './types';
 
-/* ────────────────────────────────────────────────────────────
-   1. 16 職業リスト（表示ラベルは任意に調整できます）
-   ──────────────────────────────────────────────────────────── */
+/*───────────────────────────────────────────
+  1. 職業リスト
+───────────────────────────────────────────*/
 const occupations: Occupation[] = [
   { id: 'scientist',    name: 'scientist' },
   { id: 'entrepreneur', name: 'entrepreneur' },
@@ -26,71 +26,71 @@ const occupations: Occupation[] = [
   { id: 'director',     name: 'film director' }
 ];
 
+/* Q 番号 ↔ MBTI ペア対応表  */
+const pairOrder = [
+  { pair: ['E', 'I'] }, // Q1
+  { pair: ['S', 'N'] }, // Q2
+  { pair: ['T', 'F'] }, // Q3
+  { pair: ['J', 'P'] }  // Q4
+];
+
 function App() {
-  /* ──────────────── state ──────────────── */
+  /*───────── state ─────────*/
   const [step, setStep] =
     useState<'occupation' | 'questions' | 'result'>('occupation');
 
-  // ★ 単一選択へ変更
-  const [selectedOccupation, setSelectedOccupation] = useState<string | null>(
-    null
-  );
+  const [selectedOccupation, setSelectedOccupation] =
+    useState<string | null>(null);
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [answers, setAnswers] = useState<string[]>([]);
-  const [result, setResult] = useState<Result | null>(null);
+
+  // stats は 0 or 1 で表現
   const [stats, setStats] = useState<PersonalityStats>({
     E: 0, I: 0, N: 0, S: 0, T: 0, F: 0, J: 0, P: 0
   });
 
-  /* ──────────────── handlers ──────────────── */
+  const [result,   setResult]   = useState<Result | null>(null);
+
+  /*───────── handlers ─────────*/
   const handleOccupationSelect = (id: string) => {
-    // すでに選択しているなら解除、それ以外はその職業に切り替え
     setSelectedOccupation(id === selectedOccupation ? null : id);
   };
 
-  const getCurrentQuestions = () => {
-    if (!selectedOccupation) return [];
-    return questions[selectedOccupation] || [];
-  };
+  const currentQuestions =
+    selectedOccupation ? questions[selectedOccupation] ?? [] : [];
 
-  const handleAnswer = (type: string) => {
-    const newAnswers = [...answers, type];
-    setAnswers(newAnswers);
+  const handleAnswer = (letter: string) => {
+    /* 1. stats を即時更新（片側=1 & 反対側=0） */
+    const opposing =
+      pairOrder[currentQuestion].pair.find((l) => l !== letter) as keyof PersonalityStats;
 
-    const currentQuestions = getCurrentQuestions();
+    setStats((prev) => ({
+      ...prev,
+      [letter]: 1,
+      [opposing]: 0
+    }));
+
+    /* 2. 次の Q へ or 結果計算 */
     if (currentQuestion < currentQuestions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
-      /* ─── MBTI 集計 ─── */
-      const newStats = newAnswers.reduce(
-        (acc, t) => {
-          acc[t as keyof PersonalityStats]++;
-          return acc;
-        },
-        { E: 0, I: 0, N: 0, S: 0, T: 0, F: 0, J: 0, P: 0 }
-      );
-      setStats(newStats);
-
-      /* ─── マッチング：①職業で絞り込み → ②集計から MBTI 文字列生成 → ③最も合致する偉人を選出 ─── */
+      /* ── MBTI 文字列生成 ── */
       const mbtiString = [
-        newStats.E >= newStats.I ? 'E' : 'I',
-        newStats.S >= newStats.N ? 'S' : 'N',
-        newStats.T >= newStats.F ? 'T' : 'F',
-        newStats.J >= newStats.P ? 'J' : 'P'
-      ].join(''); // 例: ENFP
+        stats.E >= stats.I ? 'E' : 'I',
+        stats.S >= stats.N ? 'S' : 'N',
+        stats.T >= stats.F ? 'T' : 'F',
+        stats.J >= stats.P ? 'J' : 'P'
+      ].join('');
 
-      const sameOccupation = results.filter(
+      /* ── マッチング ── */
+      const sameOcc = results.filter(
         (r) => r.occupation === selectedOccupation
       );
+      const perfect = sameOcc.find((r) => r.mbti === mbtiString);
+      const pick =
+        perfect ?? sameOcc[Math.floor(Math.random() * sameOcc.length)];
 
-      // 完全一致があればそれを、なければ職業一致の中からランダム
-      const perfect = sameOccupation.find((r) => r.mbti === mbtiString);
-      const finalPick =
-        perfect ??
-        sameOccupation[Math.floor(Math.random() * sameOccupation.length)];
-
-      setResult(finalPick);
+      setResult(pick);
       setStep('result');
     }
   };
@@ -99,14 +99,14 @@ function App() {
     setStep('occupation');
     setSelectedOccupation(null);
     setCurrentQuestion(0);
-    setAnswers([]);
+    setStats({
+      E: 0, I: 0, N: 0, S: 0, T: 0, F: 0, J: 0, P: 0
+    });
     setResult(null);
-    setStats({ E: 0, I: 0, N: 0, S: 0, T: 0, F: 0, J: 0, P: 0 });
   };
 
-  /* ──────────────── helpers ──────────────── */
+  /*───────── UI helpers ─────────*/
   const renderPersonalityStats = () => {
-    const maxValue = Math.max(...Object.values(stats));
     const pairs = [
       { left: 'E', right: 'I' },
       { left: 'S', right: 'N' },
@@ -120,41 +120,35 @@ function App() {
           <BarChart className="w-5 h-5" />
           Personality Type Breakdown
         </h3>
-        <div className="space-y-3">
-          {pairs.map(({ left, right }) => (
-            <div key={`${left}-${right}`} className="flex items-center gap-2">
+        {pairs.map(({ left, right }) => {
+          const total = stats[left as keyof PersonalityStats] +
+                        stats[right as keyof PersonalityStats] || 1; // まだ未回答でも0除算回避
+          const leftPct  = (stats[left  as keyof PersonalityStats] / total) * 100;
+          const rightPct = (stats[right as keyof PersonalityStats] / total) * 100;
+          return (
+            <div key={left} className="flex items-center gap-2">
               <span className="w-8 text-right font-medium">{left}</span>
               <div className="flex-1 h-4 bg-gray-200 rounded-full overflow-hidden">
                 <div
                   className="h-full bg-indigo-600 rounded-full"
-                  style={{
-                    width: `${(stats[left as keyof PersonalityStats] /
-                      maxValue) *
-                      100}%`
-                  }}
+                  style={{ width: `${leftPct}%` }}
                 />
               </div>
               <div className="flex-1 h-4 bg-gray-200 rounded-full overflow-hidden">
                 <div
                   className="h-full bg-indigo-600 rounded-full"
-                  style={{
-                    width: `${(stats[right as keyof PersonalityStats] /
-                      maxValue) *
-                      100}%`
-                  }}
+                  style={{ width: `${rightPct}%` }}
                 />
               </div>
               <span className="w-8 font-medium">{right}</span>
             </div>
-          ))}
-        </div>
+          );
+        })}
       </div>
     );
   };
 
-  /* ──────────────── render ──────────────── */
-  const currentQuestions = getCurrentQuestions();
-
+  /*───────── render ─────────*/
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md mx-auto">
@@ -165,29 +159,27 @@ function App() {
           </h2>
         </div>
 
-        {/* ──── Step 1: Occupation select ──── */}
+        {/* Step 1 ─ Occupation */}
         {step === 'occupation' && (
           <div>
             <h3 className="text-lg font-medium text-gray-900 mb-4">
-              Select <span className="font-bold">one</span> occupation that
-              interests you:
+              Select <b>one</b> occupation:
             </h3>
             <div className="grid grid-cols-2 gap-4">
-              {occupations.map((occupation) => (
+              {occupations.map((o) => (
                 <button
-                  key={occupation.id}
-                  onClick={() => handleOccupationSelect(occupation.id)}
+                  key={o.id}
+                  onClick={() => handleOccupationSelect(o.id)}
                   className={`p-3 rounded-lg text-sm font-medium ${
-                    selectedOccupation === occupation.id
+                    selectedOccupation === o.id
                       ? 'bg-indigo-600 text-white'
                       : 'bg-white text-gray-700 border border-gray-300'
                   }`}
                 >
-                  {occupation.name}
+                  {o.name}
                 </button>
               ))}
             </div>
-
             {selectedOccupation && (
               <button
                 onClick={() => setStep('questions')}
@@ -199,7 +191,7 @@ function App() {
           </div>
         )}
 
-        {/* ──── Step 2: Questions ──── */}
+        {/* Step 2 ─ Questions */}
         {step === 'questions' && currentQuestions.length > 0 && (
           <div>
             <div className="mb-4">
@@ -219,13 +211,13 @@ function App() {
                 {currentQuestions[currentQuestion].text}
               </h3>
               <div className="space-y-3">
-                {currentQuestions[currentQuestion].choices.map((choice) => (
+                {currentQuestions[currentQuestion].choices.map((c) => (
                   <button
-                    key={choice.id}
-                    onClick={() => handleAnswer(choice.type)}
+                    key={c.id}
+                    onClick={() => handleAnswer(c.type)}
                     className="w-full text-left p-3 rounded-lg border border-gray-300 hover:border-indigo-500 hover:bg-indigo-50"
                   >
-                    {choice.text}
+                    {c.text}
                   </button>
                 ))}
               </div>
@@ -233,7 +225,7 @@ function App() {
           </div>
         )}
 
-        {/* ──── Step 3: Result ──── */}
+        {/* Step 3 ─ Result */}
         {step === 'result' && result && (
           <div className="bg-white p-6 rounded-lg shadow">
             <div className="text-center">
@@ -242,7 +234,7 @@ function App() {
                 href={result.wikiUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 text-xl font-bold text-gray-900 hover:text-indigo-600 transition-colors"
+                className="mt-4 text-xl font-bold text-gray-900 hover:text-indigo-600"
               >
                 {result.name}
               </a>
