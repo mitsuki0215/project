@@ -1086,34 +1086,34 @@ export const results: Result[] = [
 
   // Researchers
   {
-    name: "Stephen Hawking",
-    occupation: "researcher",
+    name: "スティーブン・ホーキング",
+    occupation: "研究者",
     mbti: "INTJ",
-    description: "A theoretical physicist and cosmologist. Your analytical mind and determination reflect Hawking's groundbreaking research approach.",
+    description: "あなたは卓越した分析力と独創的な思考を持つ研究者！ホーキングのように、宇宙の謎を解き明かすための理論を構築する力があります。",
     imageUrl: "https://images.pexels.com/photos/2156/sky-space-dark-galaxy.jpg",
     wikiUrl: "https://en.wikipedia.org/wiki/Stephen_Hawking"
   },
   {
-    name: "Jane Goodall",
-    occupation: "researcher",
+    name: "ジェーン・グドール",
+    occupation: "研究者",
     mbti: "INFJ",
-    description: "A pioneering primatologist. Your patient observation and empathetic approach mirror Goodall's revolutionary research methods.",
+    description: "あなたは霊長類研究のパイオニア、グドールに匹敵する洞察力の持ち主！精神を宿す優しい眼差しと揺るぎない探究心で、自然界の秘密を解き明かすことができます。",
     imageUrl: "https://images.pexels.com/photos/4666751/pexels-photo-4666751.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Jane_Goodall"
   },
   {
-    name: "Neil deGrasse Tyson",
-    occupation: "researcher",
+    name: "ニール・ドグラース・タイソン",
+    occupation: "研究者",
     mbti: "ENTJ",
-    description: "An astrophysicist and science communicator. Your ability to explain complex concepts matches Tyson's engaging research presentation.",
+    description: "あなたは複雑な概念を魅力的に語る手腕のあるかつリーダーシップも持ち合わせる研究者！その情熱は人々に、宇宙への憧憬を新たに呼び覚まします。",
     imageUrl: "https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg",
     wikiUrl: "https://en.wikipedia.org/wiki/Neil_deGrasse_Tyson"
   },
   {
-    name: "Barbara McClintock",
-    occupation: "researcher",
+    name: "バーバラ・マクリントック",
+    occupation: "研究者",
     mbti: "INTP",
-    description: "A Nobel Prize-winning geneticist. Your detailed observation and innovative thinking align with McClintock's pioneering research.",
+    description: "あなたはマクリントックのような鋭い洞察力を生かし、斬新なアイデアを語る研究者！洞察力を磨き続ければ、ノーベル賞受賞も夢では終わらないかも！？",
     imageUrl: "https://images.pexels.com/photos/4666754/pexels-photo-4666754.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Barbara_McClintock"
   },
