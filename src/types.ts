@@ -23,6 +23,11 @@ export interface Result {
   description: string;
   imageUrl: string;
   wikiUrl: string;
+  strengths?: string[];
+  weaknesses?: string[];
+  bestEnvironments?: string[];
+  idealRoles?: string[];
+  actionSteps?: string[];
 }
 
 export interface PersonalityStats {
