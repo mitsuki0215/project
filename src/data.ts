@@ -550,42 +550,42 @@ export const questions: { [key: string]: Question[] } = {
   architect: [
     {
       id: 1,
-      text: "What influences your architectural designs?",
+      text: "あなたの建築デザインに影響を与えるもの何になると思いますか？",
       choices: [
-        { id: "ar1a", text: "Technical constraints", type: "T" },
-        { id: "ar1b", text: "Aesthetic vision", type: "F" },
-        { id: "ar1c", text: "Functional requirements", type: "S" },
-        { id: "ar1d", text: "Innovative concepts", type: "N" }
+        { id: "ar1a", text: "技術的な要件", type: "T" },
+        { id: "ar1b", text: "美しさへのこだわり", type: "F" },
+        { id: "ar1c", text: "使いやすさへの要件", type: "S" },
+        { id: "ar1d", text: "革命的なアイデア", type: "N" }
       ]
     },
     {
       id: 2,
-      text: "How do you approach project planning?",
+      text: "プロジェクトを進める時、どのように進めますか？",
       choices: [
-        { id: "ar2a", text: "Detailed blueprints", type: "J" },
-        { id: "ar2b", text: "Iterative design", type: "P" },
-        { id: "ar2c", text: "Client collaboration", type: "E" },
-        { id: "ar2d", text: "Independent conception", type: "I" }
+        { id: "ar2a", text: "まず詳細に図面を描き上げる", type: "J" },
+        { id: "ar2b", text: "試行錯誤しながら進める", type: "P" },
+        { id: "ar2c", text: "クライアントと一緒に考える", type: "E" },
+        { id: "ar2d", text: "まず一人で構想を練る", type: "I" }
       ]
     },
     {
       id: 3,
-      text: "What's your design philosophy?",
+      text: "あなたの設計ポリシーはどれに近いですか？",
       choices: [
-        { id: "ar3a", text: "Form follows function", type: "T" },
-        { id: "ar3b", text: "Emotional impact", type: "F" },
-        { id: "ar3c", text: "Sustainable practices", type: "S" },
-        { id: "ar3d", text: "Innovative expression", type: "N" }
+        { id: "ar3a", text: "『形は機能に従う』", type: "T" },
+        { id: "ar3b", text: "心に響くデザイン", type: "F" },
+        { id: "ar3c", text: "環境にやさしい手法", type: "S" },
+        { id: "ar3d", text: "独創的な表現", type: "N" }
       ]
     },
     {
       id: 4,
-      text: "How do you handle project challenges?",
+      text: "プロジェクトで困難に直面した時、どのように対処しますか？",
       choices: [
-        { id: "ar4a", text: "Technical solutions", type: "T" },
-        { id: "ar4b", text: "Creative adaptations", type: "N" },
-        { id: "ar4c", text: "Team consultation", type: "E" },
-        { id: "ar4d", text: "Personal reflection", type: "I" }
+        { id: "ar4a", text: "培ってきた技術で解決を図る", type: "T" },
+        { id: "ar4b", text: "自由な発想で乗り切る", type: "N" },
+        { id: "ar4c", text: "チームで相談する", type: "E" },
+        { id: "ar4d", text: "一度立ち止まって考える", type: "I" }
       ]
     }
   ],
