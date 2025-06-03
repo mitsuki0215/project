@@ -1,30 +1,41 @@
+// src/App.tsx
 import React, { useState } from 'react';
 import { Brain, CheckCircle2, BarChart } from 'lucide-react';
 import { questions, results } from './data';
 import { Occupation, Result, PersonalityStats } from './types';
 
+/* ────────────────────────────────────────────────────────────
+   1. 16 職業リスト（表示ラベルは任意に調整できます）
+   ──────────────────────────────────────────────────────────── */
 const occupations: Occupation[] = [
-  { id: 'scientist', name: 'scientist' },
+  { id: 'scientist',    name: 'scientist' },
   { id: 'entrepreneur', name: 'entrepreneur' },
-  { id: 'designer', name: 'designer' },
-  { id: 'teacher', name: 'teacher' },
-  { id: 'doctor', name: 'doctor' },
-  { id: 'engineer', name: 'engineer' },
-  { id: 'artist', name: 'artist' },
-  { id: 'journalist', name: 'journalist' },
-  { id: 'lawyer', name: 'lawyer' },
-  { id: 'investor', name: 'investor' },
-  { id: 'professor', name: 'professor' },
-  { id: 'consultant', name: 'consultant' },
-  { id: 'researcher', name: 'researcher' },
-  { id: 'architect', name: 'architect' },
-  { id: 'copywriter', name: 'copywriter' },
-  { id: 'director', name: 'film director' }
+  { id: 'designer',     name: 'designer' },
+  { id: 'teacher',      name: 'teacher' },
+  { id: 'doctor',       name: 'doctor' },
+  { id: 'engineer',     name: 'engineer' },
+  { id: 'artist',       name: 'artist' },
+  { id: 'journalist',   name: 'journalist' },
+  { id: 'lawyer',       name: 'lawyer' },
+  { id: 'investor',     name: 'investor' },
+  { id: 'professor',    name: 'professor' },
+  { id: 'consultant',   name: 'consultant' },
+  { id: 'researcher',   name: 'researcher' },
+  { id: 'architect',    name: 'architect' },
+  { id: 'copywriter',   name: 'copywriter' },
+  { id: 'director',     name: 'film director' }
 ];
 
 function App() {
-  const [step, setStep] = useState<'occupation' | 'questions' | 'result'>('occupation');
-  const [selectedOccupations, setSelectedOccupations] = useState<string[]>([]);
+  /* ──────────────── state ──────────────── */
+  const [step, setStep] =
+    useState<'occupation' | 'questions' | 'result'>('occupation');
+
+  // ★ 単一選択へ変更
+  const [selectedOccupation, setSelectedOccupation] = useState<string | null>(
+    null
+  );
+
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<string[]>([]);
   const [result, setResult] = useState<Result | null>(null);
@@ -32,18 +43,15 @@ function App() {
     E: 0, I: 0, N: 0, S: 0, T: 0, F: 0, J: 0, P: 0
   });
 
+  /* ──────────────── handlers ──────────────── */
   const handleOccupationSelect = (id: string) => {
-    if (selectedOccupations.includes(id)) {
-      setSelectedOccupations(selectedOccupations.filter(o => o !== id));
-    } else if (selectedOccupations.length < 4) {
-      setSelectedOccupations([...selectedOccupations, id]);
-    }
+    // すでに選択しているなら解除、それ以外はその職業に切り替え
+    setSelectedOccupation(id === selectedOccupation ? null : id);
   };
 
   const getCurrentQuestions = () => {
-    if (selectedOccupations.length === 0) return [];
-    const occupation = selectedOccupations[0]; // Use the first selected occupation's questions
-    return questions[occupation] || [];
+    if (!selectedOccupation) return [];
+    return questions[selectedOccupation] || [];
   };
 
   const handleAnswer = (type: string) => {
@@ -54,29 +62,49 @@ function App() {
     if (currentQuestion < currentQuestions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
-      // Calculate personality stats
-      const newStats = newAnswers.reduce((acc, type) => {
-        acc[type as keyof PersonalityStats]++;
-        return acc;
-      }, { E: 0, I: 0, N: 0, S: 0, T: 0, F: 0, J: 0, P: 0 });
+      /* ─── MBTI 集計 ─── */
+      const newStats = newAnswers.reduce(
+        (acc, t) => {
+          acc[t as keyof PersonalityStats]++;
+          return acc;
+        },
+        { E: 0, I: 0, N: 0, S: 0, T: 0, F: 0, J: 0, P: 0 }
+      );
       setStats(newStats);
 
-      // Simple matching logic - can be made more sophisticated
-      const randomResult = results[Math.floor(Math.random() * results.length)];
-      setResult(randomResult);
+      /* ─── マッチング：①職業で絞り込み → ②集計から MBTI 文字列生成 → ③最も合致する偉人を選出 ─── */
+      const mbtiString = [
+        newStats.E >= newStats.I ? 'E' : 'I',
+        newStats.S >= newStats.N ? 'S' : 'N',
+        newStats.T >= newStats.F ? 'T' : 'F',
+        newStats.J >= newStats.P ? 'J' : 'P'
+      ].join(''); // 例: ENFP
+
+      const sameOccupation = results.filter(
+        (r) => r.occupation === selectedOccupation
+      );
+
+      // 完全一致があればそれを、なければ職業一致の中からランダム
+      const perfect = sameOccupation.find((r) => r.mbti === mbtiString);
+      const finalPick =
+        perfect ??
+        sameOccupation[Math.floor(Math.random() * sameOccupation.length)];
+
+      setResult(finalPick);
       setStep('result');
     }
   };
 
   const resetQuiz = () => {
     setStep('occupation');
-    setSelectedOccupations([]);
+    setSelectedOccupation(null);
     setCurrentQuestion(0);
     setAnswers([]);
     setResult(null);
     setStats({ E: 0, I: 0, N: 0, S: 0, T: 0, F: 0, J: 0, P: 0 });
   };
 
+  /* ──────────────── helpers ──────────────── */
   const renderPersonalityStats = () => {
     const maxValue = Math.max(...Object.values(stats));
     const pairs = [
@@ -100,7 +128,9 @@ function App() {
                 <div
                   className="h-full bg-indigo-600 rounded-full"
                   style={{
-                    width: `${(stats[left as keyof PersonalityStats] / maxValue) * 100}%`
+                    width: `${(stats[left as keyof PersonalityStats] /
+                      maxValue) *
+                      100}%`
                   }}
                 />
               </div>
@@ -108,7 +138,9 @@ function App() {
                 <div
                   className="h-full bg-indigo-600 rounded-full"
                   style={{
-                    width: `${(stats[right as keyof PersonalityStats] / maxValue) * 100}%`
+                    width: `${(stats[right as keyof PersonalityStats] /
+                      maxValue) *
+                      100}%`
                   }}
                 />
               </div>
@@ -120,6 +152,7 @@ function App() {
     );
   };
 
+  /* ──────────────── render ──────────────── */
   const currentQuestions = getCurrentQuestions();
 
   return (
@@ -127,13 +160,17 @@ function App() {
       <div className="max-w-md mx-auto">
         <div className="text-center mb-8">
           <Brain className="mx-auto h-12 w-12 text-indigo-600" />
-          <h2 className="mt-6 text-3xl font-bold text-gray-900">Personality Type Analyzer</h2>
+          <h2 className="mt-6 text-3xl font-bold text-gray-900">
+            Personality Type Analyzer
+          </h2>
         </div>
 
+        {/* ──── Step 1: Occupation select ──── */}
         {step === 'occupation' && (
           <div>
             <h3 className="text-lg font-medium text-gray-900 mb-4">
-              Select up to 4 occupations that interest you:
+              Select <span className="font-bold">one</span> occupation that
+              interests you:
             </h3>
             <div className="grid grid-cols-2 gap-4">
               {occupations.map((occupation) => (
@@ -141,7 +178,7 @@ function App() {
                   key={occupation.id}
                   onClick={() => handleOccupationSelect(occupation.id)}
                   className={`p-3 rounded-lg text-sm font-medium ${
-                    selectedOccupations.includes(occupation.id)
+                    selectedOccupation === occupation.id
                       ? 'bg-indigo-600 text-white'
                       : 'bg-white text-gray-700 border border-gray-300'
                   }`}
@@ -150,7 +187,8 @@ function App() {
                 </button>
               ))}
             </div>
-            {selectedOccupations.length > 0 && (
+
+            {selectedOccupation && (
               <button
                 onClick={() => setStep('questions')}
                 className="mt-6 w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700"
@@ -161,13 +199,18 @@ function App() {
           </div>
         )}
 
+        {/* ──── Step 2: Questions ──── */}
         {step === 'questions' && currentQuestions.length > 0 && (
           <div>
             <div className="mb-4">
               <div className="h-2 bg-gray-200 rounded-full">
                 <div
                   className="h-2 bg-indigo-600 rounded-full transition-all duration-300"
-                  style={{ width: `${((currentQuestion + 1) / currentQuestions.length) * 100}%` }}
+                  style={{
+                    width: `${((currentQuestion + 1) /
+                      currentQuestions.length) *
+                      100}%`
+                  }}
                 />
               </div>
             </div>
@@ -190,6 +233,7 @@ function App() {
           </div>
         )}
 
+        {/* ──── Step 3: Result ──── */}
         {step === 'result' && result && (
           <div className="bg-white p-6 rounded-lg shadow">
             <div className="text-center">
@@ -209,7 +253,7 @@ function App() {
                 className="mt-6 w-full h-48 object-cover rounded-lg"
               />
               <p className="mt-4 text-gray-600">{result.description}</p>
-              
+
               {renderPersonalityStats()}
 
               <button
