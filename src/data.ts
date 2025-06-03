@@ -687,7 +687,12 @@ export const results: Result[] = [
     mbti: "INTP",
     description: "A brilliant theoretical physicist known for the theory of relativity. Your analytical mind and innovative thinking mirror Einstein's approach to understanding the universe.",
     imageUrl: "https://images.pexels.com/photos/2873486/pexels-photo-2873486.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Albert_Einstein"
+    wikiUrl: "https://en.wikipedia.org/wiki/Albert_Einstein",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Marie Curie",
@@ -695,7 +700,12 @@ export const results: Result[] = [
     mbti: "ISTJ",
     description: "A pioneering researcher in radioactivity. Like Curie, you value methodical work and precise observation in pursuit of scientific truth.",
     imageUrl: "https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Marie_Curie"
+    wikiUrl: "https://en.wikipedia.org/wiki/Marie_Curie",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Richard Feynman",
@@ -703,7 +713,12 @@ export const results: Result[] = [
     mbti: "ENTP",
     description: "A charismatic physicist known for his work in quantum mechanics. Your curiosity and ability to explain complex ideas reflect Feynman's engaging approach to science.",
     imageUrl: "https://images.pexels.com/photos/3825527/pexels-photo-3825527.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Richard_Feynman"
+    wikiUrl: "https://en.wikipedia.org/wiki/Richard_Feynman",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Jane Goodall",
@@ -711,7 +726,12 @@ export const results: Result[] = [
     mbti: "INFJ",
     description: "A groundbreaking primatologist. Your patience and empathetic observation skills align with Goodall's revolutionary approach to animal behavior research.",
     imageUrl: "https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Jane_Goodall"
+    wikiUrl: "https://en.wikipedia.org/wiki/Jane_Goodall",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
 
   // Entrepreneurs

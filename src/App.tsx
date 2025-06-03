@@ -1,4 +1,3 @@
-// src/App.tsx
 import React, { useState } from 'react';
 import { Brain, CheckCircle2, BarChart } from 'lucide-react';
 import { questions, results } from './data';
@@ -44,12 +43,11 @@ function App() {
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
-  // stats は 0 or 1 で表現
   const [stats, setStats] = useState<PersonalityStats>({
     E: 0, I: 0, N: 0, S: 0, T: 0, F: 0, J: 0, P: 0
   });
 
-  const [result,   setResult]   = useState<Result | null>(null);
+  const [result, setResult] = useState<Result | null>(null);
 
   /*───────── handlers ─────────*/
   const handleOccupationSelect = (id: string) => {
@@ -60,7 +58,6 @@ function App() {
     selectedOccupation ? questions[selectedOccupation] ?? [] : [];
 
   const handleAnswer = (letter: string) => {
-    /* 1. stats を即時更新（片側=1 & 反対側=0） */
     const opposing =
       pairOrder[currentQuestion].pair.find((l) => l !== letter) as keyof PersonalityStats;
 
@@ -70,7 +67,6 @@ function App() {
       [opposing]: 0
     }));
 
-    /* 2. 次の Q へ or 結果計算 */
     if (currentQuestion < currentQuestions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
@@ -83,12 +79,9 @@ function App() {
       ].join('');
 
       /* ── マッチング ── */
-      const sameOcc = results.filter(
-        (r) => r.occupation === selectedOccupation
-      );
+      const sameOcc = results.filter((r) => r.occupation === selectedOccupation);
       const perfect = sameOcc.find((r) => r.mbti === mbtiString);
-      const pick =
-        perfect ?? sameOcc[Math.floor(Math.random() * sameOcc.length)];
+      const pick = perfect ?? sameOcc[Math.floor(Math.random() * sameOcc.length)];
 
       setResult(pick);
       setStep('result');
@@ -99,9 +92,7 @@ function App() {
     setStep('occupation');
     setSelectedOccupation(null);
     setCurrentQuestion(0);
-    setStats({
-      E: 0, I: 0, N: 0, S: 0, T: 0, F: 0, J: 0, P: 0
-    });
+    setStats({ E: 0, I: 0, N: 0, S: 0, T: 0, F: 0, J: 0, P: 0 });
     setResult(null);
   };
 
@@ -121,10 +112,14 @@ function App() {
           Personality Type Breakdown
         </h3>
         {pairs.map(({ left, right }) => {
-          const total = stats[left as keyof PersonalityStats] +
-                        stats[right as keyof PersonalityStats] || 1; // まだ未回答でも0除算回避
-          const leftPct  = (stats[left  as keyof PersonalityStats] / total) * 100;
-          const rightPct = (stats[right as keyof PersonalityStats] / total) * 100;
+          const total =
+            stats[left as keyof PersonalityStats] +
+            stats[right as keyof PersonalityStats] || 1;
+          const leftPct =
+            (stats[left as keyof PersonalityStats] / total) * 100;
+          const rightPct =
+            (stats[right as keyof PersonalityStats] / total) * 100;
+
           return (
             <div key={left} className="flex items-center gap-2">
               <span className="w-8 text-right font-medium">{left}</span>
@@ -199,9 +194,7 @@ function App() {
                 <div
                   className="h-2 bg-indigo-600 rounded-full transition-all duration-300"
                   style={{
-                    width: `${((currentQuestion + 1) /
-                      currentQuestions.length) *
-                      100}%`
+                    width: `${((currentQuestion + 1) / currentQuestions.length) * 100}%`
                   }}
                 />
               </div>
@@ -246,6 +239,30 @@ function App() {
               />
               <p className="mt-4 text-gray-600">{result.description}</p>
 
+              {/* ───────── Added Analysis Sections ───────── */}
+              {result.strengths && result.strengths.length > 0 && (
+                <Section title="Strengths" items={result.strengths} />
+              )}
+              {result.weaknesses && result.weaknesses.length > 0 && (
+                <Section title="Weaknesses" items={result.weaknesses} />
+              )}
+              {result.bestEnvironments && result.bestEnvironments.length > 0 && (
+                <Section
+                  title="Best Work Environments"
+                  items={result.bestEnvironments}
+                />
+              )}
+              {result.idealRoles && result.idealRoles.length > 0 && (
+                <Section
+                  title="Ideal Roles / Careers"
+                  items={result.idealRoles}
+                />
+              )}
+              {result.actionSteps && result.actionSteps.length > 0 && (
+                <Section title="Action Steps" items={result.actionSteps} />
+              )}
+              {/* ─────────────────────────────────────────── */}
+
               {renderPersonalityStats()}
 
               <button
@@ -258,6 +275,28 @@ function App() {
           </div>
         )}
       </div>
+    </div>
+  );
+}
+
+/*───────────────────────────────────────────
+  汎用リスト表示コンポーネント
+───────────────────────────────────────────*/
+function Section({
+  title,
+  items
+}: {
+  title: string;
+  items: string[];
+}) {
+  return (
+    <div className="text-left mt-6">
+      <h4 className="font-semibold text-gray-800 mb-1">{title}</h4>
+      <ul className="list-disc list-inside text-gray-700 space-y-1">
+        {items.map((t, i) => (
+          <li key={`${title}-${i}`}>{t}</li>
+        ))}
+      </ul>
     </div>
   );
 }
