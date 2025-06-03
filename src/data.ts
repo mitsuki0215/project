@@ -1120,34 +1120,34 @@ export const results: Result[] = [
 
   // Architects
   {
-    name: "Frank Lloyd Wright",
-    occupation: "architect",
+    name: "フランク・ロイド・ライト",
+    occupation: "建築家",
     mbti: "INTJ",
-    description: "A master of organic architecture. Your innovative design philosophy and attention to detail mirror Wright's revolutionary approach.",
+    description: "あなたは有機的建築家の巨匠ライトのような、革新的設計思想を持つ建築家！自然と一体化した空間作りを細部までこだわった設計を実現します。",
     imageUrl: "https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Frank_Lloyd_Wright"
   },
   {
-    name: "Zaha Hadid",
-    occupation: "architect",
+    name: "ザハ・ハディド",
+    occupation: "建築家",
     mbti: "ENTJ",
-    description: "A pioneering deconstructivist architect. Your bold vision and determination reflect Hadid's groundbreaking architectural style.",
+    description: "あなたはハディドの魂を宿す奔放な曲線美と不屈の創造力で、空間そのものをアートへと昇華させ、新たな時代の鼓動を響かせるでしょう！",
     imageUrl: "https://images.pexels.com/photos/1732415/pexels-photo-1732415.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Zaha_Hadid"
   },
   {
-    name: "Le Corbusier",
-    occupation: "architect",
+    name: "ル・コルビュジエ",
+    occupation: "建築家",
     mbti: "ISTJ",
-    description: "A modernist architecture pioneer. Your systematic approach and attention to functionality align with Le Corbusier's influential principles.",
+    description: "あなたはコルビュジエの精神を継ぐ理知的な美意識と周到な空間計画を持つ建築家！ムダのないスマートなデザインで暮らしやすさを考えるのが好きなタイプです。",
     imageUrl: "https://images.pexels.com/photos/1732416/pexels-photo-1732416.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Le_Corbusier"
   },
   {
-    name: "Antoni Gaudí",
-    occupation: "architect",
+    name: "アントニ・ガウディ",
+    occupation: "建築家",
     mbti: "INFP",
-    description: "A visionary of organic architecture. Your creative expression and natural inspiration match Gaudí's unique architectural vision.",
+    description: "あなたは自然を取り込む独創的表現とディテールへの情熱を持つ建築家！サグラダ・ファミリアのような人々を魅了する建築を創り出せること間違いなし。",
     imageUrl: "https://images.pexels.com/photos/1732417/pexels-photo-1732417.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Antoni_Gaud%C3%AD"
   },
