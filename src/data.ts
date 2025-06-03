@@ -466,210 +466,210 @@ export const questions: { [key: string]: Question[] } = {
   consultant: [
     {
       id: 1,
-      text: "How do you approach client problems?",
+      text: "コンサルタントになったらあなたは顧客の抱える問題にどのようにアプローチしますか？",
       choices: [
-        { id: "c1a", text: "Data-driven analysis", type: "T" },
-        { id: "c1b", text: "Strategic innovation", type: "N" },
-        { id: "c1c", text: "Best practices", type: "S" },
-        { id: "c1d", text: "Stakeholder alignment", type: "F" }
+        { id: "c1a", text: "データを軸にした意思決定サイクル", type: "T" },
+        { id: "c1b", text: "戦略的イノベーションを取る", type: "N" },
+        { id: "c1c", text: "過去の実例・経験からアプローチ", type: "S" },
+        { id: "c1d", text: "ステークホルダー調整をとり顧客との話し合いを重ねる", type: "F" }
       ]
     },
     {
       id: 2,
-      text: "What's your consulting style?",
+      text: "あなたのコンサルティングスタイルはどのようなものになると思いますか？",
       choices: [
-        { id: "c2a", text: "Structured methodology", type: "J" },
-        { id: "c2b", text: "Adaptive approach", type: "P" },
-        { id: "c2c", text: "Team facilitation", type: "E" },
-        { id: "c2d", text: "Expert advisory", type: "I" }
+        { id: "c2a", text: "王道かつ基本のフレームワーク", type: "J" },
+        { id: "c2b", text: "状況対応型のアプローチ", type: "P" },
+        { id: "c2c", text: "チームで課題解決するファシリテーション", type: "E" },
+        { id: "c2d", text: "専門分野に特化したスタイル", type: "I" }
       ]
     },
     {
       id: 3,
-      text: "How do you handle client relationships?",
+      text: "顧客との関係をどのように築いていきますか？",
       choices: [
-        { id: "c3a", text: "Professional objectivity", type: "T" },
-        { id: "c3b", text: "Partnership building", type: "F" },
-        { id: "c3c", text: "Regular communication", type: "J" },
-        { id: "c3d", text: "Flexible engagement", type: "P" }
+        { id: "c3a", text: "専門家としてかつ客観的に", type: "T" },
+        { id: "c3b", text: "パートナーシップのように", type: "F" },
+        { id: "c3c", text: "定期的にコミュニケーションをとるように", type: "J" },
+        { id: "c3d", text: "柔軟な対応をみせるように", type: "P" }
       ]
     },
     {
       id: 4,
-      text: "What drives your recommendations?",
+      text: "あなたのコンサルタントとしての強みは何になると思いますか？",
       choices: [
-        { id: "c4a", text: "ROI metrics", type: "T" },
-        { id: "c4b", text: "Organizational impact", type: "F" },
-        { id: "c4c", text: "Industry standards", type: "S" },
-        { id: "c4d", text: "Innovation potential", type: "N" }
+        { id: "c4a", text: "ROI（投資収益率）を高める力", type: "T" },
+        { id: "c4b", text: "チーム・組織への貢献力", type: "F" },
+        { id: "c4c", text: "深い専門知識", type: "S" },
+        { id: "c4d", text: "新しい価値を生む発想力", type: "N" }
       ]
     }
   ],
   researcher: [
     {
       id: 1,
-      text: "What research approach do you prefer?",
+      text: "どの研究アプローチがお好みですか？",
       choices: [
-        { id: "r1a", text: "Quantitative analysis", type: "T" },
-        { id: "r1b", text: "Qualitative studies", type: "F" },
-        { id: "r1c", text: "Mixed methods", type: "N" },
-        { id: "r1d", text: "Systematic reviews", type: "S" }
+        { id: "r1a", text: "定量的データ分析", type: "T" },
+        { id: "r1b", text: "質的データの研究", type: "F" },
+        { id: "r1c", text: "質的・量的データを組み合わせた混合法", type: "N" },
+        { id: "r1d", text: "様々な文献を参考にする系統的レビュー", type: "S" }
       ]
     },
     {
       id: 2,
-      text: "How do you handle research projects?",
+      text: "研究プロジェクトにはどのように取り組みますか？",
       choices: [
-        { id: "r2a", text: "Structured timeline", type: "J" },
-        { id: "r2b", text: "Flexible exploration", type: "P" },
-        { id: "r2c", text: "Team collaboration", type: "E" },
-        { id: "r2d", text: "Independent study", type: "I" }
+        { id: "r2a", text: "綿密なタイムラインを立てて進める", type: "J" },
+        { id: "r2b", text: "状況に応じて柔軟に探究を進める", type: "P" },
+        { id: "r2c", text: "テームで協力しながら進める", type: "E" },
+        { id: "r2d", text: "独立して集中して進める", type: "I" }
       ]
     },
     {
       id: 3,
-      text: "What motivates your research?",
+      text: "あなたの研究を突き動かす原動力はなんですか？",
       choices: [
-        { id: "r3a", text: "Scientific discovery", type: "T" },
-        { id: "r3b", text: "Societal impact", type: "F" },
-        { id: "r3c", text: "Methodological rigor", type: "S" },
-        { id: "r3d", text: "Theoretical advancement", type: "N" }
+        { id: "r3a", text: "新しい科学的発見への好奇心", type: "T" },
+        { id: "r3b", text: "社会へ影響・インパクトを生み出すこと", type: "F" },
+        { id: "r3c", text: "方法論的な厳密さの追求", type: "S" },
+        { id: "r3d", text: "理論の高度化・発展", type: "N" }
       ]
     },
     {
       id: 4,
-      text: "How do you disseminate findings?",
+      text: "研究成果をどのように発信しますか？",
       choices: [
-        { id: "r4a", text: "Academic publications", type: "T" },
-        { id: "r4b", text: "Public engagement", type: "F" },
-        { id: "r4c", text: "Conference presentations", type: "E" },
-        { id: "r4d", text: "Technical reports", type: "I" }
+        { id: "r4a", text: "学術論文として発表する", type: "T" },
+        { id: "r4b", text: "社会向けアウトリーチ（世の中へ広くシェア）", type: "F" },
+        { id: "r4c", text: "学会でプレゼンテーションをする", type: "E" },
+        { id: "r4d", text: "技術レポートを作成", type: "I" }
       ]
     }
   ],
   architect: [
     {
       id: 1,
-      text: "What influences your architectural designs?",
+      text: "あなたの建築デザインに影響を与えるもの何になると思いますか？",
       choices: [
-        { id: "ar1a", text: "Technical constraints", type: "T" },
-        { id: "ar1b", text: "Aesthetic vision", type: "F" },
-        { id: "ar1c", text: "Functional requirements", type: "S" },
-        { id: "ar1d", text: "Innovative concepts", type: "N" }
+        { id: "ar1a", text: "技術的な要件", type: "T" },
+        { id: "ar1b", text: "美しさへのこだわり", type: "F" },
+        { id: "ar1c", text: "使いやすさへの要件", type: "S" },
+        { id: "ar1d", text: "革命的なアイデア", type: "N" }
       ]
     },
     {
       id: 2,
-      text: "How do you approach project planning?",
+      text: "プロジェクトを進める時、どのように進めますか？",
       choices: [
-        { id: "ar2a", text: "Detailed blueprints", type: "J" },
-        { id: "ar2b", text: "Iterative design", type: "P" },
-        { id: "ar2c", text: "Client collaboration", type: "E" },
-        { id: "ar2d", text: "Independent conception", type: "I" }
+        { id: "ar2a", text: "まず詳細に図面を描き上げる", type: "J" },
+        { id: "ar2b", text: "試行錯誤しながら進める", type: "P" },
+        { id: "ar2c", text: "クライアントと一緒に考える", type: "E" },
+        { id: "ar2d", text: "まず一人で構想を練る", type: "I" }
       ]
     },
     {
       id: 3,
-      text: "What's your design philosophy?",
+      text: "あなたの設計ポリシーはどれに近いですか？",
       choices: [
-        { id: "ar3a", text: "Form follows function", type: "T" },
-        { id: "ar3b", text: "Emotional impact", type: "F" },
-        { id: "ar3c", text: "Sustainable practices", type: "S" },
-        { id: "ar3d", text: "Innovative expression", type: "N" }
+        { id: "ar3a", text: "『形は機能に従う』", type: "T" },
+        { id: "ar3b", text: "心に響くデザイン", type: "F" },
+        { id: "ar3c", text: "環境にやさしい手法", type: "S" },
+        { id: "ar3d", text: "独創的な表現", type: "N" }
       ]
     },
     {
       id: 4,
-      text: "How do you handle project challenges?",
+      text: "プロジェクトで困難に直面した時、どのように対処しますか？",
       choices: [
-        { id: "ar4a", text: "Technical solutions", type: "T" },
-        { id: "ar4b", text: "Creative adaptations", type: "N" },
-        { id: "ar4c", text: "Team consultation", type: "E" },
-        { id: "ar4d", text: "Personal reflection", type: "I" }
+        { id: "ar4a", text: "培ってきた技術で解決を図る", type: "T" },
+        { id: "ar4b", text: "自由な発想で乗り切る", type: "N" },
+        { id: "ar4c", text: "チームで相談する", type: "E" },
+        { id: "ar4d", text: "一度立ち止まって考える", type: "I" }
       ]
     }
   ],
   copywriter: [
     {
       id: 1,
-      text: "What's your writing approach?",
+      text: "あなたのライティングスタイルに近いのはどれですか？",
       choices: [
-        { id: "cw1a", text: "Data-driven messaging", type: "T" },
-        { id: "cw1b", text: "Emotional storytelling", type: "F" },
-        { id: "cw1c", text: "Clear communication", type: "S" },
-        { id: "cw1d", text: "Creative concepts", type: "N" }
+        { id: "cw1a", text: "データを元に追求する", type: "T" },
+        { id: "cw1b", text: "感情に響くストーリーで伝える", type: "F" },
+        { id: "cw1c", text: "わかりやすさを最優先にする", type: "S" },
+        { id: "cw1d", text: "ユニークな切り口で魅せる", type: "N" }
       ]
     },
     {
       id: 2,
-      text: "How do you handle writing projects?",
+      text: "執筆プロジェクトはどのように進めますか？",
       choices: [
-        { id: "cw2a", text: "Structured outlines", type: "J" },
-        { id: "cw2b", text: "Flexible drafting", type: "P" },
-        { id: "cw2c", text: "Client collaboration", type: "E" },
-        { id: "cw2d", text: "Solo brainstorming", type: "I" }
+        { id: "cw2a", text: "最初に詳細なアウトラインを作る", type: "J" },
+        { id: "cw2b", text: "書きながら柔軟に調整する", type: "P" },
+        { id: "cw2c", text: "クライアントと密にやりとりする", type: "E" },
+        { id: "cw2d", text: "一人で集中して進める", type: "I" }
       ]
     },
     {
       id: 3,
-      text: "What drives your content decisions?",
+      text: "コンテンツの方向性を決める際に最も重要視するのは？",
       choices: [
-        { id: "cw3a", text: "Conversion metrics", type: "T" },
-        { id: "cw3b", text: "Audience engagement", type: "F" },
-        { id: "cw3c", text: "Brand guidelines", type: "S" },
-        { id: "cw3d", text: "Innovative angles", type: "N" }
+        { id: "cw3a", text: "コンバージョン（売上など）具体的な成果の数字", type: "T" },
+        { id: "cw3b", text: "読者の共感やコメント・シェア数", type: "F" },
+        { id: "cw3c", text: "ブランドのガイドライン", type: "S" },
+        { id: "cw3d", text: "斬新な切り口やアイデア", type: "N" }
       ]
     },
     {
       id: 4,
-      text: "How do you develop copy ideas?",
+      text: "コピー（広告文）のアイデアを生み出す時の方法は？",
       choices: [
-        { id: "cw4a", text: "Market research", type: "T" },
-        { id: "cw4b", text: "Creative inspiration", type: "N" },
-        { id: "cw4c", text: "Team brainstorming", type: "E" },
-        { id: "cw4d", text: "Personal reflection", type: "I" }
+        { id: "cw4a", text: "市場調査・リサーチを行う", type: "T" },
+        { id: "cw4b", text: "ひらめきや直感を大切にする", type: "N" },
+        { id: "cw4c", text: "チームでブレインストーミングをする", type: "E" },
+        { id: "cw4d", text: "静かに思考を深めてひらめきを得る", type: "I" }
       ]
     }
   ],
   director: [
     {
       id: 1,
-      text: "What guides your directorial vision?",
+      text: "あなたが映画を撮るうえで１番の指針となるのは？",
       choices: [
-        { id: "d1a", text: "Technical excellence", type: "T" },
-        { id: "d1b", text: "Emotional impact", type: "F" },
-        { id: "d1c", text: "Visual storytelling", type: "S" },
-        { id: "d1d", text: "Conceptual themes", type: "N" }
+        { id: "d1a", text: "撮影・編集など技術面の完成度", type: "T" },
+        { id: "d1b", text: "観客の心を揺さぶる感情表現", type: "F" },
+        { id: "d1c", text: "映像で語るストーリーテリング", type: "S" },
+        { id: "d1d", text: "深いテーマやコンセプト性", type: "N" }
       ]
     },
     {
       id: 2,
-      text: "How do you approach film projects?",
+      text: "映画作りを始める時の取り組み方は？",
       choices: [
-        { id: "d2a", text: "Detailed storyboarding", type: "J" },
-        { id: "d2b", text: "Organic development", type: "P" },
-        { id: "d2c", text: "Collaborative creation", type: "E" },
-        { id: "d2d", text: "Personal vision", type: "I" }
+        { id: "d2a", text: "緻密な絵コンテで計画を固める", type: "J" },
+        { id: "d2b", text: "現場で状況に応じて形にする", type: "P" },
+        { id: "d2c", text: "スタッフ全員で意見を出し合う", type: "E" },
+        { id: "d2d", text: "自分のビジョンを軸に進める", type: "I" }
       ]
     },
     {
       id: 3,
-      text: "What's your directing style?",
+      text: "あなたの演出スタイルを一言で表すと？",
       choices: [
-        { id: "d3a", text: "Precise control", type: "J" },
-        { id: "d3b", text: "Adaptive flow", type: "P" },
-        { id: "d3c", text: "Actor-focused", type: "F" },
-        { id: "d3d", text: "Technical mastery", type: "T" }
+        { id: "d3a", text: "緻密なコントロール", type: "J" },
+        { id: "d3b", text: "臨機応変な演出", type: "P" },
+        { id: "d3c", text: "俳優の演技を最大限に引きだす", type: "F" },
+        { id: "d3d", text: "機材・技術を駆使して魅せる", type: "T" }
       ]
     },
     {
       id: 4,
-      text: "How do you handle production challenges?",
+      text: "もし制作中にトラブルが起きたとしたら、どう対処しますか？",
       choices: [
-        { id: "d4a", text: "Systematic solutions", type: "T" },
-        { id: "d4b", text: "Creative alternatives", type: "N" },
-        { id: "d4c", text: "Team consultation", type: "E" },
-        { id: "d4d", text: "Independent decisions", type: "I" }
+        { id: "d4a", text: "手順を整理し着実に解決策を練る", type: "T" },
+        { id: "d4b", text: "発想を転換し新たな方法を探す", type: "N" },
+        { id: "d4c", text: "チームで相談してベストな案を決める", type: "E" },
+        { id: "d4d", text: "自分の判断で即決し進める", type: "I" }
       ]
     }
   ]
