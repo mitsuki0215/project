@@ -466,9 +466,9 @@ export const questions: { [key: string]: Question[] } = {
   コンサルタント: [
     {
       id: 1,
-      text: "コンサルタントになったらあなたは顧客の抱える問題にどのようにアプローチしますか?",
+      text: "コンサルタントになったらあなたは顧客の抱える問題にどのようにアプローチしますか？",
       choices: [
-        { id: "c1a", text: "データ駆動分析・データに基づいた分析", type: "T" },
+        { id: "c1a", text: "データを軸にした意思決定サイクル", type: "T" },
         { id: "c1b", text: "戦略的イノベーションを取る", type: "N" },
         { id: "c1c", text: "過去の実例・経験からアプローチ", type: "S" },
         { id: "c1d", text: "ステークホルダー調整をとり顧客との話し合いを重ねる", type: "F" }
@@ -476,17 +476,17 @@ export const questions: { [key: string]: Question[] } = {
     },
     {
       id: 2,
-      text: "あなたのコンサルティングスタイルはどのようなものになると思いますか?",
+      text: "あなたのコンサルティングスタイルはどのようなものになると思いますか？",
       choices: [
-        { id: "c2a", text: "体系的な方法論", type: "J" },
-        { id: "c2b", text: "適応型アプローチ", type: "P" },
+        { id: "c2a", text: "王道かつ基本のフレームワーク", type: "J" },
+        { id: "c2b", text: "状況対応型のアプローチ", type: "P" },
         { id: "c2c", text: "チームで課題解決するファシリテーション", type: "E" },
         { id: "c2d", text: "専門分野に特化したスタイル", type: "I" }
       ]
     },
     {
       id: 3,
-      text: "顧客との関係をどのように築いていきますか?",
+      text: "顧客との関係をどのように築いていきますか？",
       choices: [
         { id: "c3a", text: "専門家としてかつ客観的に", type: "T" },
         { id: "c3b", text: "パートナーシップのように", type: "F" },
@@ -496,12 +496,12 @@ export const questions: { [key: string]: Question[] } = {
     },
     {
       id: 4,
-      text: "あなたのコンサルタントとしての強みは何になると思いますか?",
+      text: "あなたのコンサルタントとしての強みは何になると思いますか？",
       choices: [
-        { id: "c4a", text: "ROI（投資収益率）指標", type: "T" },
-        { id: "c4b", text: "組織的影響・貢献", type: "F" },
-        { id: "c4c", text: "専門性の高さ", type: "S" },
-        { id: "c4d", text: "革新的な価値想像力", type: "N" }
+        { id: "c4a", text: "ROI（投資収益率）を高める力", type: "T" },
+        { id: "c4b", text: "チーム・組織への貢献力", type: "F" },
+        { id: "c4c", text: "深い専門知識", type: "S" },
+        { id: "c4d", text: "新しい価値を生む発想力", type: "N" }
       ]
     }
   ],
