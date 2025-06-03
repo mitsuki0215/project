@@ -463,45 +463,45 @@ export const questions: { [key: string]: Question[] } = {
       ]
     }
   ],
-  consultant: [
+  コンサルタント: [
     {
       id: 1,
-      text: "How do you approach client problems?",
+      text: "コンサルタントになったらあなたは顧客の抱える問題にどのようにアプローチしますか?",
       choices: [
-        { id: "c1a", text: "Data-driven analysis", type: "T" },
-        { id: "c1b", text: "Strategic innovation", type: "N" },
-        { id: "c1c", text: "Best practices", type: "S" },
-        { id: "c1d", text: "Stakeholder alignment", type: "F" }
+        { id: "c1a", text: "データ駆動分析・データに基づいた分析", type: "T" },
+        { id: "c1b", text: "戦略的イノベーションを取る", type: "N" },
+        { id: "c1c", text: "過去の実例・経験からアプローチ", type: "S" },
+        { id: "c1d", text: "ステークホルダー調整をとり顧客との話し合いを重ねる", type: "F" }
       ]
     },
     {
       id: 2,
-      text: "What's your consulting style?",
+      text: "あなたのコンサルティングスタイルはどのようなものになると思いますか?",
       choices: [
-        { id: "c2a", text: "Structured methodology", type: "J" },
-        { id: "c2b", text: "Adaptive approach", type: "P" },
-        { id: "c2c", text: "Team facilitation", type: "E" },
-        { id: "c2d", text: "Expert advisory", type: "I" }
+        { id: "c2a", text: "体系的な方法論", type: "J" },
+        { id: "c2b", text: "適応型アプローチ", type: "P" },
+        { id: "c2c", text: "チームで課題解決するファシリテーション", type: "E" },
+        { id: "c2d", text: "専門分野に特化したスタイル", type: "I" }
       ]
     },
     {
       id: 3,
-      text: "How do you handle client relationships?",
+      text: "顧客との関係をどのように築いていきますか?",
       choices: [
-        { id: "c3a", text: "Professional objectivity", type: "T" },
-        { id: "c3b", text: "Partnership building", type: "F" },
-        { id: "c3c", text: "Regular communication", type: "J" },
-        { id: "c3d", text: "Flexible engagement", type: "P" }
+        { id: "c3a", text: "専門家としてかつ客観的に", type: "T" },
+        { id: "c3b", text: "パートナーシップのように", type: "F" },
+        { id: "c3c", text: "定期的にコミュニケーションをとるように", type: "J" },
+        { id: "c3d", text: "柔軟な対応をみせるように", type: "P" }
       ]
     },
     {
       id: 4,
-      text: "What drives your recommendations?",
+      text: "あなたのコンサルタントとしての強みは何になると思いますか?",
       choices: [
-        { id: "c4a", text: "ROI metrics", type: "T" },
-        { id: "c4b", text: "Organizational impact", type: "F" },
-        { id: "c4c", text: "Industry standards", type: "S" },
-        { id: "c4d", text: "Innovation potential", type: "N" }
+        { id: "c4a", text: "ROI（投資収益率）指標", type: "T" },
+        { id: "c4b", text: "組織的影響・貢献", type: "F" },
+        { id: "c4c", text: "専門性の高さ", type: "S" },
+        { id: "c4d", text: "革新的な価値想像力", type: "N" }
       ]
     }
   ],
