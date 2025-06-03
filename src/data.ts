@@ -1052,34 +1052,34 @@ export const results: Result[] = [
 
   // Consultants
   {
-    name: "Peter Drucker",
-    occupation: "consultant",
+    name: "ピーター・ドラッカー",
+    occupation: "コンサルタント",
     mbti: "INTJ",
-    description: "The father of modern management. Your strategic thinking and systematic approach reflect Drucker's influential consulting methodology.",
+    description: "近代経営学の父であるドラッカーに匹敵する戦略的洞察力の持ち主！あなたの分析的思考と長期的なビジョンは、複雑な課題を明快なアクションへと導くでしょう。",
     imageUrl: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Peter_Drucker"
   },
   {
-    name: "Clayton Christensen",
-    occupation: "consultant",
+    name: "クレイトン・クリステンセン",
+    occupation: "コンサルタント",
     mbti: "ENFJ",
-    description: "An innovation expert. Your ability to understand organizational dynamics mirrors Christensen's insights into disruptive innovation.",
+    description: "あなたは組織の動きをスッと見抜いて、新しい波を起こせるコンサルタント！まさに、クリステンセンの”破壊的イノベーション”理論を体現してるかのよう。",
     imageUrl: "https://images.pexels.com/photos/3183151/pexels-photo-3183151.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Clayton_Christensen"
   },
   {
-    name: "Michael Porter",
-    occupation: "consultant",
+    name: "マイケル・ポーター",
+    occupation: "コンサルタント",
     mbti: "ISTJ",
-    description: "A strategy expert. Your analytical approach to competitive advantage aligns with Porter's fundamental frameworks.",
+    description: "あなたは市場を冷静に読み解いて、有利なポジションをしっかりと築くコンサルタント！ポーターの競争戦略理論を実践するかのような、堅実なアプローチが光ります。",
     imageUrl: "https://images.pexels.com/photos/3183152/pexels-photo-3183152.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Michael_Porter"
   },
   {
-    name: "Indra Nooyi",
-    occupation: "consultant",
+    name: "インドラ・ヌーイ",
+    occupation: "コンサルタント",
     mbti: "ENTJ",
-    description: "A strategic business leader. Your visionary leadership and practical implementation skills match Nooyi's transformative consulting approach.",
+    description: "あなたはヌーイのように先を見据えて、きちんとビジョンを形にできるコンサルタント！アイデアを現実に変える力は、まさにビジネス界の変革者そのもの。",
     imageUrl: "https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Indra_Nooyi"
   },
