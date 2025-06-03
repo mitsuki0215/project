@@ -1154,68 +1154,68 @@ export const results: Result[] = [
 
   // Copywriters
   {
-    name: "David Ogilvy",
-    occupation: "copywriter",
+    name: "デイビッド・オグルヴィ",
+    occupation: "コピーライター",
     mbti: "ENTJ",
-    description: "The father of advertising. Your strategic thinking and persuasive communication reflect Ogilvy's legendary copywriting principles.",
+    description: "あなたはオグルヴィの精神を宿す卓越した洞察と物語力で、広告の力を最大限に引き出すコピーライター！消費者の心をつかむ言葉を巧みに操ることができます。",
     imageUrl: "https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/David_Ogilvy_(businessman)"
   },
   {
-    name: "Mary Wells Lawrence",
-    occupation: "copywriter",
+    name: "メアリー・ウェルズ・ローレンス",
+    occupation: "コピーライター",
     mbti: "ENFP",
-    description: "A pioneering advertising executive. Your creative flair and innovative campaigns mirror Lawrence's groundbreaking advertising approach.",
+    description: "あなたは広告界のパイオニアであるウェルズ・ローレンスのような、独自の視点と情熱で消費者の心をつかむコピーライター！斬新なアイデアでブランドを輝かせることができます。",
     imageUrl: "https://images.pexels.com/photos/3182774/pexels-photo-3182774.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Mary_Wells_Lawrence"
   },
   {
-    name: "Claude Hopkins",
-    occupation: "copywriter",
+    name: "クロード・C・ホプキンス",
+    occupation: "コピーライター",
     mbti: "ISTJ",
-    description: "A scientific advertising pioneer. Your analytical approach to copywriting aligns with Hopkins' systematic marketing principles.",
+    description: "あなたはホプキンスのような徹底したテストと数値思考で成果を導く手法を持つコピーライター！広告を科学し、人々の心を確かな実証に基づいて動かすことができるでしょう。",
     imageUrl: "https://images.pexels.com/photos/3182775/pexels-photo-3182775.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Claude_C._Hopkins"
   },
   {
-    name: "Leo Burnett",
-    occupation: "copywriter",
+    name: "レオ・バーネット",
+    occupation: "コピーライター",
     mbti: "INFJ",
-    description: "A creative advertising legend. Your ability to connect emotionally through words matches Burnett's iconic brand storytelling.",
+    description: "あなたは“広告に心を宿す”伝説的クリエイター、バーネットに匹敵する情緒的訴求力を持つコピーライター！人々の記憶に残る物語と温かなキャラクターでブランド価値を永続的に高めます",
     imageUrl: "https://images.pexels.com/photos/3182776/pexels-photo-3182776.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Leo_Burnett"
   },
 
   // Film Directors
   {
-    name: "Alfred Hitchcock",
-    occupation: "director",
+    name: "アルフレッド・ヒッチコック",
+    occupation: "映画監督",
     mbti: "INTJ",
-    description: "The master of suspense. Your meticulous planning and psychological insight reflect Hitchcock's legendary directing style.",
+    description: "あなたはヒッチコックのように巧みな伏線と心理操作ができる映画監督！緻密なストーリーテリングとサスペンスの演出で、観客を引き込む力があります。",
     imageUrl: "https://images.pexels.com/photos/274937/pexels-photo-274937.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Alfred_Hitchcock"
   },
   {
-    name: "Steven Spielberg",
-    occupation: "director",
+    name: "スティーブン・スピルバーグ",
+    occupation: "映画監督",
     mbti: "ENFJ",
-    description: "A blockbuster visionary. Your storytelling ability and emotional depth mirror Spielberg's crowd-pleasing directorial approach.",
+    description: "あなたは豊かな情感と抜群のエンタメ性を持つ映画監督！スピルバーグのように、観客の心を掴む感動的な物語を紡ぎ出すことができます。",
     imageUrl: "https://images.pexels.com/photos/274938/pexels-photo-274938.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Steven_Spielberg"
   },
   {
-    name: "Stanley Kubrick",
-    occupation: "director",
+    name: "スタンリー・キューブリック",
+    occupation: "映画監督",
     mbti: "INTP",
-    description: "A perfectionist filmmaker. Your attention to detail and innovative vision align with Kubrick's groundbreaking cinematic style.",
+    description: "あなたは徹底したディテール追求と前衛的演出ができる映画監督！キューブリックのようにこだわり抜いた映像で観客を唸らせます。",
     imageUrl: "https://images.pexels.com/photos/274939/pexels-photo-274939.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Stanley_Kubrick"
   },
   {
-    name: "Agnès Varda",
-    occupation: "director",
+    name: "アニエス・ヴァルダ",
+    occupation: "映画監督",
     mbti: "ENFP",
-    description: "A pioneer of French New Wave cinema. Your experimental approach and personal expression match Varda's innovative filmmaking.",
+    description: "あなたは自由な構成とパーソナルな視点を持っている映画監督！ヴァルダのようにドキュメンタリーとフィクションを融合させた独自のスタイルで、観客に深い感動を与えることができます。",
     imageUrl: "https://images.pexels.com/photos/274940/pexels-photo-274940.jpeg",
     wikiUrl: "https://en.wikipedia.org/wiki/Agn%C3%A8s_Varda"
   }
