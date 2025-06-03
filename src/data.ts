@@ -634,42 +634,42 @@ export const questions: { [key: string]: Question[] } = {
   director: [
     {
       id: 1,
-      text: "What guides your directorial vision?",
+      text: "あなたが映画を撮るうえで１番の指針となるのは？",
       choices: [
-        { id: "d1a", text: "Technical excellence", type: "T" },
-        { id: "d1b", text: "Emotional impact", type: "F" },
-        { id: "d1c", text: "Visual storytelling", type: "S" },
-        { id: "d1d", text: "Conceptual themes", type: "N" }
+        { id: "d1a", text: "撮影・編集など技術面の完成度", type: "T" },
+        { id: "d1b", text: "観客の心を揺さぶる感情表現", type: "F" },
+        { id: "d1c", text: "映像で語るストーリーテリング", type: "S" },
+        { id: "d1d", text: "深いテーマやコンセプト性", type: "N" }
       ]
     },
     {
       id: 2,
-      text: "How do you approach film projects?",
+      text: "映画作りを始める時の取り組み方は？",
       choices: [
-        { id: "d2a", text: "Detailed storyboarding", type: "J" },
-        { id: "d2b", text: "Organic development", type: "P" },
-        { id: "d2c", text: "Collaborative creation", type: "E" },
-        { id: "d2d", text: "Personal vision", type: "I" }
+        { id: "d2a", text: "緻密な絵コンテで計画を固める", type: "J" },
+        { id: "d2b", text: "現場で状況に応じて形にする", type: "P" },
+        { id: "d2c", text: "スタッフ全員で意見を出し合う", type: "E" },
+        { id: "d2d", text: "自分のビジョンを軸に進める", type: "I" }
       ]
     },
     {
       id: 3,
-      text: "What's your directing style?",
+      text: "あなたの演出スタイルを一言で表すと？",
       choices: [
-        { id: "d3a", text: "Precise control", type: "J" },
-        { id: "d3b", text: "Adaptive flow", type: "P" },
-        { id: "d3c", text: "Actor-focused", type: "F" },
-        { id: "d3d", text: "Technical mastery", type: "T" }
+        { id: "d3a", text: "緻密なコントロール", type: "J" },
+        { id: "d3b", text: "臨機応変な演出", type: "P" },
+        { id: "d3c", text: "俳優の演技を最大限に引きだす", type: "F" },
+        { id: "d3d", text: "機材・技術を駆使して魅せる", type: "T" }
       ]
     },
     {
       id: 4,
-      text: "How do you handle production challenges?",
+      text: "もし制作中にトラブルが起きたとしたら、どう対処しますか？",
       choices: [
-        { id: "d4a", text: "Systematic solutions", type: "T" },
-        { id: "d4b", text: "Creative alternatives", type: "N" },
-        { id: "d4c", text: "Team consultation", type: "E" },
-        { id: "d4d", text: "Independent decisions", type: "I" }
+        { id: "d4a", text: "手順を整理し着実に解決策を練る", type: "T" },
+        { id: "d4b", text: "発想を転換し新たな方法を探す", type: "N" },
+        { id: "d4c", text: "チームで相談してベストな案を決める", type: "E" },
+        { id: "d4d", text: "自分の判断で即決し進める", type: "I" }
       ]
     }
   ]
