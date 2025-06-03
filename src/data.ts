@@ -463,7 +463,7 @@ export const questions: { [key: string]: Question[] } = {
       ]
     }
   ],
-  コンサルタント: [
+  consultant: [
     {
       id: 1,
       text: "コンサルタントになったらあなたは顧客の抱える問題にどのようにアプローチしますか？",
@@ -505,7 +505,7 @@ export const questions: { [key: string]: Question[] } = {
       ]
     }
   ],
-  研究者: [
+  researcher: [
     {
       id: 1,
       text: "どの研究アプローチがお好みですか？",
