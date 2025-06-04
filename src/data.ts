@@ -1497,59 +1497,98 @@ export const results: Result[] = [
   },
 
   // Copywriters
-  {
-    name: "デイビッド・オグルヴィ",
-    occupation: "copywriter",
-    mbti: "ENTJ",
-    description: "あなたはオグルヴィの精神を宿す卓越した洞察と物語力で、広告の力を最大限に引き出すコピーライター！消費者の心をつかむ言葉を巧みに操ることができます。",
-    imageUrl: "https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/David_Ogilvy_(businessman)",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "メアリー・ウェルズ・ローレンス",
-    occupation: "copywriter",
-    mbti: "ENFP",
-    description: "あなたは広告界のパイオニアであるウェルズ・ローレンスのような、独自の視点と情熱で消費者の心をつかむコピーライター！斬新なアイデアでブランドを輝かせることができます。",
-    imageUrl: "https://images.pexels.com/photos/3182774/pexels-photo-3182774.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Mary_Wells_Lawrence",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "クロード・C・ホプキンス",
-    occupation: "copywriter",
-    mbti: "ISTJ",
-    description: "あなたはホプキンスのような徹底したテストと数値思考で成果を導く手法を持つコピーライター！広告を科学し、人々の心を確かな実証に基づいて動かすことができるでしょう。",
-    imageUrl: "https://images.pexels.com/photos/3182775/pexels-photo-3182775.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Claude_C._Hopkins",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "レオ・バーネット",
-    occupation: "copywriter",
-    mbti: "INFJ",
-    description: "あなたは“広告に心を宿す”伝説的クリエイター、バーネットに匹敵する情緒的訴求力を持つコピーライター！人々の記憶に残る物語と温かなキャラクターでブランド価値を永続的に高めます",
-    imageUrl: "https://images.pexels.com/photos/3182776/pexels-photo-3182776.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Leo_Burnett",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-
+{
+  name: "デイビッド・オグルヴィ",
+  occupation: "copywriter",
+  mbti: "ENTJ",
+  description:
+    "リサーチと物語性を融合し“広告は売るための芸術”を体現した戦略家。数字で裏付けた大胆なコピーでブランド価値を跳ね上げました。",
+  imageUrl: "https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/David_Ogilvy_(businessman)",
+  strengths: [
+    "消費者インサイトを論理的に抽出する分析力",
+    "大局を描き、クリエイティブを牽引するリーダーシップ",
+    "ストーリーとベネフィットを両立させる説得力ある筆致"
+  ],
+  weaknesses: [
+    "完璧主義が強く、フィードバックを受け入れにくい傾向",
+    "トップダウン型になりがちでチームの自発性を阻害する恐れ"
+  ],
+  actionSteps: [
+    "アイデアレビューを定例化し、ボトムアップの意見を取り込む",
+    "データだけでなく感情指標もKPIに加えバランスを取る",
+    "“80%ルール”で早期リリース→検証→改善のサイクルを回す"
+  ]
+},
+{
+  name: "メアリー・ウェルズ・ローレンス",
+  occupation: "copywriter",
+  mbti: "ENFP",
+  description:
+    "大胆なビジュアルとウィットに富むコピーで空の色まで変えた革新者。情熱と直感でブランドに新しい物語を吹き込みます。",
+  imageUrl: "https://images.pexels.com/photos/3182774/pexels-photo-3182774.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Mary_Wells_Lawrence",
+  strengths: [
+    "枠にとらわれない発想で“記憶に残る”キャンペーンを創出",
+    "チームを鼓舞するポジティブなコミュニケーション力",
+    "ブランドと顧客を感情でつなぐストーリーテリング"
+  ],
+  weaknesses: [
+    "アイデアが広がり過ぎてメッセージが散漫になることがある",
+    "熱意が先行しコスト・スケジュール管理が甘くなりがち"
+  ],
+  actionSteps: [
+    "コンセプトを一文で言語化し、方向性を随時確認する",
+    "数値テストでアイデアを絞り込み、実行フェーズを明確化",
+    "プロデューサーと連携し予算とクリエイティブの両輪を整える"
+  ]
+},
+{
+  name: "クロード・C・ホプキンス",
+  occupation: "copywriter",
+  mbti: "ISTJ",
+  description:
+    "“Scientific Advertising”を提唱し、テストと統計で広告効果を可視化した実証主義者。確かな数字でクライアントを納得させます。",
+  imageUrl: "https://images.pexels.com/photos/3182775/pexels-photo-3182775.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Claude_C._Hopkins",
+  strengths: [
+    "A/Bテストとデータ解析による説得力の高い提案",
+    "商品理解を深め事実を端的に伝える文章力",
+    "手順を徹底管理し、再現性の高い制作プロセスを構築"
+  ],
+  weaknesses: [
+    "数値に依存しすぎて感情訴求が弱くなる恐れ",
+    "変化を好まず新しい表現手法に消極的になりがち"
+  ],
+  actionSteps: [
+    "感情価値を測る新指標（SNS反応など）もテストに組み込む",
+    "他業界のクリエイティブ事例を定期的にリサーチ",
+    "ビジュアル・コピーの協働ワークショップで発想を拡張"
+  ]
+},
+{
+  name: "レオ・バーネット",
+  occupation: "copywriter",
+  mbti: "INFJ",
+  description:
+    "“心に火を灯す広告”を信条に、温かな物語と象徴的キャラクターでブランドに魂を吹き込んだ共感の名匠。",
+  imageUrl: "https://images.pexels.com/photos/3182776/pexels-photo-3182776.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Leo_Burnett",
+  strengths: [
+    "社会的・文化的文脈まで読み解く洞察力",
+    "キャラクターや象徴を通じ長期ブランド資産を構築",
+    "細部まで思いやりが行き届いたクリエイティブディレクション"
+  ],
+  weaknesses: [
+    "理想を追求しすぎて制作スピードが落ちることがある",
+    "感情移入が深く、客観的な評価を後回しにしがち"
+  ],
+  actionSteps: [
+    "タイムボックス法で創作フェーズに期限を設ける",
+    "第三者レビューを活用し客観視点を定期的に取り入れる",
+    "デジタル解析ツールでブランドキャラクターの効果を可視化"
+  ]
+},
   // Film Directors
   {
   name: "アルフレッド・ヒッチコック",
