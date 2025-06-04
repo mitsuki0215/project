@@ -1282,58 +1282,97 @@ export const results: Result[] = [
 
   // Professors
   {
-    name: "Noam Chomsky",
-    occupation: "professor",
-    mbti: "INTJ",
-    description: "A revolutionary linguist and philosopher. Your analytical mind and systematic approach reflect Chomsky's groundbreaking academic work.",
-    imageUrl: "https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Noam_Chomsky",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "bell hooks",
-    occupation: "professor",
-    mbti: "ENFJ",
-    description: "An influential cultural critic. Your passion for teaching and social justice mirrors hooks' transformative educational philosophy.",
-    imageUrl: "https://images.pexels.com/photos/3184329/pexels-photo-3184329.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Bell_hooks",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Richard Feynman",
-    occupation: "professor",
-    mbti: "ENTP",
-    description: "A brilliant physics educator. Your engaging teaching style and ability to simplify complex concepts match Feynman's legendary lectures.",
-    imageUrl: "https://images.pexels.com/photos/3184330/pexels-photo-3184330.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Richard_Feynman",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Hannah Arendt",
-    occupation: "professor",
-    mbti: "INTP",
-    description: "A political theorist and philosopher. Your deep thinking and original insights align with Arendt's influential academic contributions.",
-    imageUrl: "https://images.pexels.com/photos/3184331/pexels-photo-3184331.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Hannah_Arendt",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-
+  name: "ノーム・チョムスキー",
+  occupation: "professor",
+  mbti: "INTJ",
+  description:
+    "生成文法で言語研究に革命を起こし、政治哲学でも鋭い批評を続ける“構造の開拓者”。抽象モデルで本質を掴み、学際的に理論を拡張する姿勢が際立ちます。",
+  imageUrl: "https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Noam_Chomsky",
+  strengths: [
+    "複雑現象を抽象化する構造的思考",
+    "学際領域へ理論を応用する概念転用力",
+    "一貫した批判精神で議論を牽引"
+  ],
+  weaknesses: [
+    "抽象度が高く実践との橋渡しが不足しがち",
+    "議論が演繹的になり現場の情緒を見落とすことがある"
+  ],
+  actionSteps: [
+    "実証研究者と協働しケーススタディを増やす",
+    "学生ワークショップで理論を日常経験に結び付ける",
+    "一般向け解説記事を執筆し概念を具体化する"
+  ]
+},
+{
+  name: "ベル・フックス",
+  occupation: "professor",
+  mbti: "ENFJ",
+  description:
+    "ジェンダー・人種・階級を横断する批評で教育を変革した“インクルーシブ・エデュケーター”。共感と情熱で学習コミュニティを築き、社会正義を学びに結び付けます。",
+  imageUrl: "https://images.pexels.com/photos/3184329/pexels-photo-3184329.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Bell_hooks",
+  strengths: [
+    "物語と対話で多様な声を引き出すファシリテーション",
+    "学習を社会変革へ導くビジョン提示力",
+    "学生の成長を後押しするコーチングマインド"
+  ],
+  weaknesses: [
+    "情熱が強く批判を個人的に受け止めやすい",
+    "テーマが拡散し研究フォーカスが散漫になりがち"
+  ],
+  actionSteps: [
+    "年度ごとに研究テーマを絞りアウトカムを定義",
+    "セルフケアと境界設定で情緒的負荷を調整",
+    "定量指標を導入してインパクトを可視化"
+  ]
+},
+{
+  name: "リチャード・ファインマン",
+  occupation: "professor",
+  mbti: "ENTP",
+  description:
+    "量子電磁力学を平易に語り“ファインマン流講義”を確立した好奇心の化身。ユーモアと実験精神で学問の魅力を広めます。",
+  imageUrl: "https://images.pexels.com/photos/3184330/pexels-photo-3184330.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Richard_Feynman",
+  strengths: [
+    "比喩で難解概念を噛み砕くストーリーテリング",
+    "“やってみよう”で学生を巻き込む実践志向",
+    "異分野の疑問を拾う旺盛な好奇心"
+  ],
+  weaknesses: [
+    "興味が拡散し研究計画が長期化しやすい",
+    "即興重視で理論的精度が粗くなる場合がある"
+  ],
+  actionSteps: [
+    "年間プロジェクトを三つ以内に絞り優先順位を明確化",
+    "共著者を立てデータ解析や理論検証を深掘り",
+    "講義資料を体系化しナレッジベースを構築"
+  ]
+},
+{
+  name: "ハンナ・アーレント",
+  occupation: "professor",
+  mbti: "INTP",
+  description:
+    "全体主義と公共性を再考した政治哲学者。“考えることの責任”を問い続け、独立独歩で概念を磨き上げる探究者です。",
+  imageUrl: "https://images.pexels.com/photos/3184331/pexels-photo-3184331.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Hannah_Arendt",
+  strengths: [
+    "歴史事象を俯瞰し概念を再編成する分析力",
+    "少数資料から新理論を構築する洞察力",
+    "複雑な倫理問題を鮮やかに言語化する論述力"
+  ],
+  weaknesses: [
+    "議論が高度で学生が置き去りになることがある",
+    "独立を好みチーム研究が停滞しがち"
+  ],
+  actionSteps: [
+    "基礎用語集を作成し授業で共有し理解を支援",
+    "少人数ゼミで学生のフィードバックを取り入れる",
+    "共同研究に参加し多面的視点を取り込む"
+  ]
+},
   // Consultants
   {
   name: "ノーム・チョムスキー",
