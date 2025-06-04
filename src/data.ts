@@ -324,47 +324,51 @@ export const questions: { [key: string]: Question[] } = {
   }
 ],
   journalist: [
-    {
-      id: 1,
-      text: "How do you prefer to gather information?",
-      choices: [
-        { id: "j1a", text: "Direct interviews", type: "E" },
-        { id: "j1b", text: "Research and analysis", type: "I" },
-        { id: "j1c", text: "Factual documentation", type: "S" },
-        { id: "j1d", text: "Investigative deep-dives", type: "N" }
-      ]
-    },
-    {
-      id: 2,
-      text: "What's your reporting style?",
-      choices: [
-        { id: "j2a", text: "Objective fact-based", type: "T" },
-        { id: "j2b", text: "Human interest stories", type: "F" },
-        { id: "j2c", text: "Structured narratives", type: "J" },
-        { id: "j2d", text: "Exploratory features", type: "P" }
-      ]
-    },
-    {
-      id: 3,
-      text: "How do you handle deadlines?",
-      choices: [
-        { id: "j3a", text: "Structured planning", type: "J" },
-        { id: "j3b", text: "Last-minute intensity", type: "P" },
-        { id: "j3c", text: "Collaborative teamwork", type: "E" },
-        { id: "j3d", text: "Independent focus", type: "I" }
-      ]
-    },
-    {
-      id: 4,
-      text: "What aspect of journalism interests you most?",
-      choices: [
-        { id: "j4a", text: "Uncovering facts", type: "T" },
-        { id: "j4b", text: "Telling compelling stories", type: "F" },
-        { id: "j4c", text: "Following leads", type: "N" },
-        { id: "j4d", text: "Documenting events", type: "S" }
-      ]
-    }
-  ],
+  /* Q1 : E / I */
+  {
+    id: 1,
+    text: "A potential scoop drops—first thing you do?",
+    choices: [
+      { id: "j1a", text: "Ring key sources right away for live quotes.",        type: "E" },
+      { id: "j1b", text: "Rush to the scene to interview eyewitnesses.",        type: "E" },
+      { id: "j1c", text: "Dive into archives and databases on your own first.", type: "I" },
+      { id: "j1d", text: "Sketch questions privately before contacting anyone.",type: "I" }
+    ]
+  },
+  /* Q2 : S / N */
+  {
+    id: 2,
+    text: "Your go-to evidence-gathering style is…",
+    choices: [
+      { id: "j2a", text: "Verify official documents and statistics.",       type: "S" },
+      { id: "j2b", text: "Cite on-record statements and concrete facts.",    type: "S" },
+      { id: "j2c", text: "Trace hidden patterns across disparate clues.",    type: "N" },
+      { id: "j2d", text: "Imagine scenarios to uncover bigger narratives.",  type: "N" }
+    ]
+  },
+  /* Q3 : T / F */
+  {
+    id: 3,
+    text: "When shaping your article’s angle, you rely most on…",
+    choices: [
+      { id: "j3a", text: "Logical flow supported by hard evidence.",     type: "T" },
+      { id: "j3b", text: "Data visuals that prove the claim.",           type: "T" },
+      { id: "j3c", text: "Emotional power of personal stories.",         type: "F" },
+      { id: "j3d", text: "Potential social impact of the piece.",        type: "F" }
+    ]
+  },
+  /* Q4 : J / P */
+  {
+    id: 4,
+    text: "A breaking-news deadline looms. You tend to…",
+    choices: [
+      { id: "j4a", text: "Lock sections as you finish and file early.",       type: "J" },
+      { id: "j4b", text: "Follow a strict outline and timetable.",            type: "J" },
+      { id: "j4c", text: "Keep tweaking copy as fresh info rolls in.",        type: "P" },
+      { id: "j4d", text: "Stay flexible, ready to rewrite at the last minute.",type: "P" }
+    ]
+  }
+],
   lawyer: [
     {
       id: 1,
