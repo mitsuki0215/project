@@ -416,47 +416,51 @@ export const questions: { [key: string]: Question[] } = {
   }
 ],
   investor: [
-    {
-      id: 1,
-      text: "How do you evaluate investment opportunities?",
-      choices: [
-        { id: "i1a", text: "Technical analysis", type: "T" },
-        { id: "i1b", text: "Market intuition", type: "F" },
-        { id: "i1c", text: "Historical patterns", type: "S" },
-        { id: "i1d", text: "Future potential", type: "N" }
-      ]
-    },
-    {
-      id: 2,
-      text: "What's your investment strategy?",
-      choices: [
-        { id: "i2a", text: "Systematic portfolio management", type: "J" },
-        { id: "i2b", text: "Opportunistic trading", type: "P" },
-        { id: "i2c", text: "Network-based decisions", type: "E" },
-        { id: "i2d", text: "Independent research", type: "I" }
-      ]
-    },
-    {
-      id: 3,
-      text: "How do you handle market volatility?",
-      choices: [
-        { id: "i3a", text: "Stick to the plan", type: "J" },
-        { id: "i3b", text: "Adapt to conditions", type: "P" },
-        { id: "i3c", text: "Consult experts", type: "E" },
-        { id: "i3d", text: "Trust your analysis", type: "I" }
-      ]
-    },
-    {
-      id: 4,
-      text: "What drives your investment decisions?",
-      choices: [
-        { id: "i4a", text: "Financial metrics", type: "T" },
-        { id: "i4b", text: "Social impact", type: "F" },
-        { id: "i4c", text: "Risk management", type: "S" },
-        { id: "i4d", text: "Growth potential", type: "N" }
-      ]
-    }
-  ],
+  /* Q1 : E / I */
+  {
+    id: 1,
+    text: "You spot a promising company — what’s your first move?",
+    choices: [
+      { id: "i1a", text: "Pitch the idea to your investing circle for feedback.", type: "E" },
+      { id: "i1b", text: "Jump on a call to hash it out with colleagues.",        type: "E" },
+      { id: "i1c", text: "Run a solo deep-dive before telling anyone.",           type: "I" },
+      { id: "i1d", text: "Quietly back-test the thesis on your own model.",       type: "I" }
+    ]
+  },
+  /* Q2 : S / N */
+  {
+    id: 2,
+    text: "Which evidence weighs heaviest when vetting an investment?",
+    choices: [
+      { id: "i2a", text: "Audited financials and recent KPIs.",            type: "S" },
+      { id: "i2b", text: "Historical price patterns and hard data.",       type: "S" },
+      { id: "i2c", text: "Disruptive potential five years down the road.", type: "N" },
+      { id: "i2d", text: "Macro trends that could reshape the sector.",    type: "N" }
+    ]
+  },
+  /* Q3 : T / F */
+  {
+    id: 3,
+    text: "Pressed to choose between two assets, you rely on…",
+    choices: [
+      { id: "i3a", text: "Risk-adjusted return metrics (Sharpe, etc.).", type: "T" },
+      { id: "i3b", text: "Detailed sensitivity analyses in Excel.",      type: "T" },
+      { id: "i3c", text: "The company’s mission and societal impact.",   type: "F" },
+      { id: "i3d", text: "Leadership’s values and stakeholder stories.", type: "F" }
+    ]
+  },
+  /* Q4 : J / P */
+  {
+    id: 4,
+    text: "Markets tumble unexpectedly — your instinct is to…",
+    choices: [
+      { id: "i4a", text: "Rebalance to predefined allocation rules.",     type: "J" },
+      { id: "i4b", text: "Tighten stop-losses and stick to the playbook.",type: "J" },
+      { id: "i4c", text: "Stay nimble and scoop bargains as they appear.",type: "P" },
+      { id: "i4d", text: "Pause rules; improvise trades with evolving info.", type: "P" }
+    ]
+  }
+],
   professor: [
     {
       id: 1,
