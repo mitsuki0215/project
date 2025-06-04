@@ -462,47 +462,51 @@ export const questions: { [key: string]: Question[] } = {
   }
 ],
   professor: [
-    {
-      id: 1,
-      text: "What aspect of academia interests you most?",
-      choices: [
-        { id: "p1a", text: "Research methodology", type: "T" },
-        { id: "p1b", text: "Theoretical exploration", type: "N" },
-        { id: "p1c", text: "Student mentoring", type: "F" },
-        { id: "p1d", text: "Data analysis", type: "S" }
-      ]
-    },
-    {
-      id: 2,
-      text: "How do you approach teaching?",
-      choices: [
-        { id: "p2a", text: "Structured lectures", type: "J" },
-        { id: "p2b", text: "Interactive discussions", type: "P" },
-        { id: "p2c", text: "Collaborative projects", type: "E" },
-        { id: "p2d", text: "Individual guidance", type: "I" }
-      ]
-    },
-    {
-      id: 3,
-      text: "What's your research style?",
-      choices: [
-        { id: "p3a", text: "Empirical studies", type: "S" },
-        { id: "p3b", text: "Theoretical frameworks", type: "N" },
-        { id: "p3c", text: "Collaborative studies", type: "E" },
-        { id: "p3d", text: "Independent research", type: "I" }
-      ]
-    },
-    {
-      id: 4,
-      text: "How do you contribute to your field?",
-      choices: [
-        { id: "p4a", text: "Publishing research", type: "T" },
-        { id: "p4b", text: "Mentoring scholars", type: "F" },
-        { id: "p4c", text: "Conference presentations", type: "E" },
-        { id: "p4d", text: "Writing theoretical works", type: "I" }
-      ]
-    }
-  ],
+  /* Q1 : E / I */
+  {
+    id: 1,
+    text: "A colleague proposes a joint paper — what sounds most appealing?",
+    choices: [
+      { id: "p1a", text: "Brain-storming together and co-authoring the draft.", type: "E" },
+      { id: "p1b", text: "Hosting lively seminars to refine the ideas publicly.", type: "E" },
+      { id: "p1c", text: "Developing the argument privately before sharing it.",  type: "I" },
+      { id: "p1d", text: "Working out proofs alone, then circulating a preprint.", type: "I" }
+    ]
+  },
+  /* Q2 : S / N */
+  {
+    id: 2,
+    text: "When designing a study, you’re most drawn to…",
+    choices: [
+      { id: "p2a", text: "Meticulous data collection and replication.",        type: "S" },
+      { id: "p2b", text: "Archival digging for concrete historical facts.",     type: "S" },
+      { id: "p2c", text: "Building abstract models that push the theory.",      type: "N" },
+      { id: "p2d", text: "Speculating on emerging paradigms and possibilities.", type: "N" }
+    ]
+  },
+  /* Q3 : T / F */
+  {
+    id: 3,
+    text: "Evaluating students, which factor tips the scale for you?",
+    choices: [
+      { id: "p3a", text: "Precise grading rubrics and statistical averages.", type: "T" },
+      { id: "p3b", text: "Rigorous argumentation and logical soundness.",     type: "T" },
+      { id: "p3c", text: "Growth in confidence and intellectual curiosity.",   type: "F" },
+      { id: "p3d", text: "Classroom engagement and peer collaboration.",       type: "F" }
+    ]
+  },
+  /* Q4 : J / P */
+  {
+    id: 4,
+    text: "A syllabus change is required mid-semester — you…",
+    choices: [
+      { id: "p4a", text: "Publish an updated schedule with firm deadlines.", type: "J" },
+      { id: "p4b", text: "Specify clear milestones and stick to them.",      type: "J" },
+      { id: "p4c", text: "Leave room for student-led detours and topics.",   type: "P" },
+      { id: "p4d", text: "Iterate weekly based on class momentum.",          type: "P" }
+    ]
+  }
+],
   consultant: [
     {
       id: 1,
