@@ -742,57 +742,97 @@ export const questions: { [key: string]: Question[] } = {
 export const results: Result[] = [
   // Scientists
   {
-    name: "Albert Einstein",
-    occupation: "scientist",
-    mbti: "INTP",
-    description: "A brilliant theoretical physicist known for the theory of relativity. Your analytical mind and innovative thinking mirror Einstein's approach to understanding the universe.",
-    imageUrl: "https://images.pexels.com/photos/2873486/pexels-photo-2873486.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Albert_Einstein",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Marie Curie",
-    occupation: "scientist",
-    mbti: "ISTJ",
-    description: "A pioneering researcher in radioactivity. Like Curie, you value methodical work and precise observation in pursuit of scientific truth.",
-    imageUrl: "https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Marie_Curie",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Richard Feynman",
-    occupation: "scientist",
-    mbti: "ENTP",
-    description: "A charismatic physicist known for his work in quantum mechanics. Your curiosity and ability to explain complex ideas reflect Feynman's engaging approach to science.",
-    imageUrl: "https://images.pexels.com/photos/3825527/pexels-photo-3825527.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Richard_Feynman",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Jane Goodall",
-    occupation: "scientist",
-    mbti: "INFJ",
-    description: "A groundbreaking primatologist. Your patience and empathetic observation skills align with Goodall's revolutionary approach to animal behavior research.",
-    imageUrl: "https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Jane_Goodall",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
+  name: "アルベルト・アインシュタイン",
+  occupation: "scientist",
+  mbti: "INTP",
+  description:
+    "思考実験で時空の本質を解き明かした理論物理学の革命児。固定概念に縛られず“もしこうだったら？”を問い続け、直観と数式で宇宙像を書き換えました。",
+  imageUrl: "https://images.pexels.com/photos/2873486/pexels-photo-2873486.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Albert_Einstein",
+  strengths: [
+    "抽象概念を操る卓越した論理思考",
+    "大胆な仮説を生む想像力と好奇心",
+    "複雑な理論を平易に語るコミュニケーション力"
+  ],
+  weaknesses: [
+    "日常業務や細部の管理を後回しにしがち",
+    "他者の意見より自分の直感を優先し協調性が薄れることがある"
+  ],
+  actionSteps: [
+    "実験系研究者と早期に連携し仮説検証サイクルを短縮",
+    "研究ノートとタスクを定期レビューし抜け漏れを防止",
+    "学際セミナーで視点を広げ、新たな数理モデルの着想を得る"
+  ]
+},
+{
+  name: "マリー・キュリー",
+  occupation: "scientist",
+  mbti: "ISTJ",
+  description:
+    "放射能研究を切り拓いた“実験の職人”。慎重な手技と膨大なデータ収集で未知の元素を同定し、科学と医療に計り知れない貢献を残しました。",
+  imageUrl: "https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Marie_Curie",
+  strengths: [
+    "再現性を極める几帳面さと計量精度",
+    "危険を恐れぬ献身性と持続力",
+    "成果を社会利用へ橋渡しする責任感"
+  ],
+  weaknesses: [
+    "完璧を期すあまり作業ペースが遅くなる",
+    "自己犠牲的に働き健康管理を後回しにしがち"
+  ],
+  actionSteps: [
+    "作業プロトコルを標準化しチームへ分担・委譲",
+    "定期的な休養と安全教育で長期的パフォーマンスを維持",
+    "臨床応用・産業応用の専門家と協働し成果の社会実装を加速"
+  ]
+},
+{
+  name: "リチャード・ファインマン",
+  occupation: "scientist",
+  mbti: "ENTP",
+  description:
+    "量子力学を“語り・遊ぶ”天才講義師。難解な現象をユーモアと比喩で紐解き、新しい視点を提示することで科学の魅力を広く伝えました。",
+  imageUrl: "https://images.pexels.com/photos/3825527/pexels-photo-3825527.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Richard_Feynman",
+  strengths: [
+    "複雑な概念を直観的にモデル化する発想力",
+    "問いを投げかけ議論を活性化するコミュ力",
+    "分野横断でアイデアを掛け合わせる創造性"
+  ],
+  weaknesses: [
+    "興味が移りやすく継続的な文書化を怠りがち",
+    "形式張った手続きや書類業務を後回しにする傾向"
+  ],
+  actionSteps: [
+    "研究ログとコードをリポジトリ化し共有知にする",
+    "長期目標をマイルストーン化し興味の分散を抑制",
+    "講演や執筆で外部フィードバックを得て理論を磨く"
+  ]
+},
+{
+  name: "ジェーン・グドール",
+  occupation: "scientist",
+  mbti: "INFJ",
+  description:
+    "チンパンジーの生態観察から“共感する科学”を切り開いたフィールド研究者。動物と人間社会を結び、保全活動へとつなげる使命感が光ります。",
+  imageUrl: "https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Jane_Goodall",
+  strengths: [
+    "長期観察で微細な行動変化を捉える洞察力",
+    "被写体・コミュニティと信頼関係を築く共感力",
+    "科学を物語として届け行動変革を促す発信力"
+  ],
+  weaknesses: [
+    "定量データより質的記述を重視し統計的裏付けが薄くなることがある",
+    "感情移入が強く客観性を保つ負荷が高い"
+  ],
+  actionSteps: [
+    "統計解析やAI画像解析など定量手法を取り入れ説得力を強化",
+    "共同研究で多角的視点を得てバイアスを軽減",
+    "政策提言・教育プログラムと連携し保全インパクトを拡大"
+  ]
+},
 
   // Entrepreneurs
   {
