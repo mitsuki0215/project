@@ -186,47 +186,51 @@ export const questions: { [key: string]: Question[] } = {
   }
 ],
   doctor: [
-    {
-      id: 1,
-      text: "How do you approach patient diagnosis?",
-      choices: [
-        { id: "m1a", text: "Systematic symptom analysis", type: "T" },
-        { id: "m1b", text: "Intuitive pattern recognition", type: "N" },
-        { id: "m1c", text: "Evidence-based protocols", type: "S" },
-        { id: "m1d", text: "Patient narrative understanding", type: "F" }
-      ]
-    },
-    {
-      id: 2,
-      text: "What's your preferred treatment approach?",
-      choices: [
-        { id: "m2a", text: "Standard treatment protocols", type: "J" },
-        { id: "m2b", text: "Personalized treatment plans", type: "P" },
-        { id: "m2c", text: "Team-based care coordination", type: "E" },
-        { id: "m2d", text: "Independent decision-making", type: "I" }
-      ]
-    },
-    {
-      id: 3,
-      text: "How do you handle medical uncertainties?",
-      choices: [
-        { id: "m3a", text: "Consult research literature", type: "T" },
-        { id: "m3b", text: "Consider multiple possibilities", type: "N" },
-        { id: "m3c", text: "Follow established guidelines", type: "S" },
-        { id: "m3d", text: "Focus on patient comfort", type: "F" }
-      ]
-    },
-    {
-      id: 4,
-      text: "What aspect of patient care is most important to you?",
-      choices: [
-        { id: "m4a", text: "Clinical outcomes", type: "T" },
-        { id: "m4b", text: "Patient satisfaction", type: "F" },
-        { id: "m4c", text: "Procedural accuracy", type: "J" },
-        { id: "m4d", text: "Adaptive care", type: "P" }
-      ]
-    }
-  ],
+  /* Q1 : E / I */
+  {
+    id: 1,
+    text: "During a patient consultation, your natural style is to…",
+    choices: [
+      { id: "m1a", text: "Lead an open conversation to put the patient at ease.", type: "E" },
+      { id: "m1b", text: "Invite nurses / family into the dialogue for more insight.", type: "E" },
+      { id: "m1c", text: "Listen quietly, taking detailed notes before responding.",  type: "I" },
+      { id: "m1d", text: "Focus on a calm one-to-one discussion in a private setting.", type: "I" }
+    ]
+  },
+  /* Q2 : S / N */
+  {
+    id: 2,
+    text: "When collecting diagnostic clues, you rely most on…",
+    choices: [
+      { id: "m2a", text: "Physical exam findings and lab results.",      type: "S" },
+      { id: "m2b", text: "Observable symptoms and patient history.",     type: "S" },
+      { id: "m2c", text: "Connecting subtle patterns to rare conditions.",type: "N" },
+      { id: "m2d", text: "Theoretical models of underlying diseases.",   type: "N" }
+    ]
+  },
+  /* Q3 : T / F */
+  {
+    id: 3,
+    text: "When presenting treatment options, you emphasize…",
+    choices: [
+      { id: "m3a", text: "Evidence-based statistics and risk–benefit data.", type: "T" },
+      { id: "m3b", text: "Clinical guidelines and logical rationale.",       type: "T" },
+      { id: "m3c", text: "How each option aligns with the patient’s values.", type: "F" },
+      { id: "m3d", text: "Emotional support and quality-of-life factors.",    type: "F" }
+    ]
+  },
+  /* Q4 : J / P */
+  {
+    id: 4,
+    text: "If a treatment plan must change suddenly, you tend to…",
+    choices: [
+      { id: "m4a", text: "Re-schedule immediately and issue clear new orders.", type: "J" },
+      { id: "m4b", text: "Document a step-by-step protocol to stay on track.",   type: "J" },
+      { id: "m4c", text: "Keep several options open and adjust on the fly.",     type: "P" },
+      { id: "m4d", text: "Iterate with the patient’s feedback as the situation evolves.", type: "P" }
+    ]
+  }
+],
   engineer: [
     {
       id: 1,
