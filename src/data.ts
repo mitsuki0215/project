@@ -1336,57 +1336,97 @@ export const results: Result[] = [
 
   // Consultants
   {
-    name: "ピーター・ドラッカー",
-    occupation: "consultant",
-    mbti: "INTJ",
-    description: "近代経営学の父であるドラッカーに匹敵する戦略的洞察力の持ち主！あなたの分析的思考と長期的なビジョンは、複雑な課題を明快なアクションへと導くでしょう。",
-    imageUrl: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Peter_Drucker",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "クレイトン・クリステンセン",
-    occupation: "consultant",
-    mbti: "ENFJ",
-    description: "あなたは組織の動きをスッと見抜いて、新しい波を起こせるコンサルタント！まさに、クリステンセンの”破壊的イノベーション”理論を体現してるかのよう。",
-    imageUrl: "https://images.pexels.com/photos/3183151/pexels-photo-3183151.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Clayton_Christensen",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "マイケル・ポーター",
-    occupation: "consultant",
-    mbti: "ISTJ",
-    description: "あなたは市場を冷静に読み解いて、有利なポジションをしっかりと築くコンサルタント！ポーターの競争戦略理論を実践するかのような、堅実なアプローチが光ります。",
-    imageUrl: "https://images.pexels.com/photos/3183152/pexels-photo-3183152.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Michael_Porter",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "インドラ・ヌーイ",
-    occupation: "consultant",
-    mbti: "ENTJ",
-    description: "あなたはヌーイのように先を見据えて、きちんとビジョンを形にできるコンサルタント！アイデアを現実に変える力は、まさにビジネス界の変革者そのもの。",
-    imageUrl: "https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Indra_Nooyi",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
+  name: "ピーター・ドラッカー",
+  occupation: "consultant",
+  mbti: "INTJ",
+  description:
+    "経営を“社会生態系”として捉えた近代マネジメントの開拓者。全体構造を俯瞰し、理論を実践に変える知的アーキテクトです。",
+  imageUrl: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Peter_Drucker",
+  strengths: [
+    "因果関係をモデル化し複雑課題を整理する体系思考",
+    "定量･定性データを融合し実行指針へ落とし込む分析力",
+    "組織に学習文化を根付かせる思想的リーダーシップ"
+  ],
+  weaknesses: [
+    "現場の政治力学や感情面を軽視しがち",
+    "理念を深掘りしすぎ行動計画が遅れることがある"
+  ],
+  actionSteps: [
+    "フィールドワークを増やし現場視点を理論に反映",
+    "小規模パイロットで仮説検証サイクルを高速化",
+    "多職種ワークショップで実装責任を共有し推進力を高める"
+  ]
+},
+{
+  name: "クレイトン・クリステンセン",
+  occupation: "consultant",
+  mbti: "ENFJ",
+  description:
+    "“破壊的イノベーション”理論で業界の常識を覆したビジョナリー。共感力と説得力で組織を変革へ導くストーリーテラー型コンサルタント。",
+  imageUrl: "https://images.pexels.com/photos/3183151/pexels-photo-3183151.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Clayton_Christensen",
+  strengths: [
+    "顧客ジョブに着目しイノベーション機会を発見する洞察力",
+    "ストーリーテリングで利害関係者を巻き込む影響力",
+    "若手を育成し知を共有するコーチングスキル"
+  ],
+  weaknesses: [
+    "理想像を語りすぎ具体ロードマップが曖昧になりがち",
+    "ネットワーキング過多で深い分析時間が不足することも"
+  ],
+  actionSteps: [
+    "施策ごとにKPIを設定し進捗を定量管理",
+    "週次ブロックタイムで分析・執筆に集中する環境を確保",
+    "“デビルズアドボケイト”を置き仮説を批判的に磨く"
+  ]
+},
+{
+  name: "マイケル・ポーター",
+  occupation: "consultant",
+  mbti: "ISTJ",
+  description:
+    "5フォース分析で競争戦略を体系化した構造派。膨大な業界データを整理し、再現性あるフレームワークへ昇華させるファクトドリブン型です。",
+  imageUrl: "https://images.pexels.com/photos/3183152/pexels-photo-3183152.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Michael_Porter",
+  strengths: [
+    "業界構造を分解し優位性を数値で示すロジカルシンキング",
+    "フレームワーク化により提案を標準化・横展開する力",
+    "粘り強いファクトチェックで信頼性を担保"
+  ],
+  weaknesses: [
+    "革新的アイデアへの感度がやや低い",
+    "堅実ゆえ変化速度の速い案件で対応が後手に回ることがある"
+  ],
+  actionSteps: [
+    "デザイン思考ワークショップで発想の幅を拡張",
+    "リアルタイムデータを取り入れ分析周期を短縮",
+    "異業種プロジェクトに参画し視座をアップデートする"
+  ]
+},
+{
+  name: "インドラ・ヌーイ",
+  occupation: "consultant",
+  mbti: "ENTJ",
+  description:
+    "グローバル経営を牽引した“戦略実行の達人”。ビジョンを数値目標へ落とし込み、多文化組織を動かすダイナミックリーダーです。",
+  imageUrl: "https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Indra_Nooyi",
+  strengths: [
+    "遠大なビジョンを実行計画へ翻訳する推進力",
+    "多文化環境で合意形成を図る交渉・コミュニケーション力",
+    "サステナビリティを戦略に組み込む先見性"
+  ],
+  weaknesses: [
+    "高い目標設定でメンバーへの負荷が大きくなりがち",
+    "細部より全体像を優先しディテール抜けのリスク"
+  ],
+  actionSteps: [
+    "チームにマイクロゴールを設定し負荷を分散",
+    "専門家レビューで施策の細部を定期点検",
+    "ステークホルダーインタビューを継続し温度感を把握"
+  ]
+},
   // Resercher
 {
   name: "スティーブン・ホーキング",
