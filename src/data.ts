@@ -370,47 +370,51 @@ export const questions: { [key: string]: Question[] } = {
   }
 ],
   lawyer: [
-    {
-      id: 1,
-      text: "How do you approach legal cases?",
-      choices: [
-        { id: "l1a", text: "Systematic analysis", type: "T" },
-        { id: "l1b", text: "Creative interpretation", type: "N" },
-        { id: "l1c", text: "Precedent-based", type: "S" },
-        { id: "l1d", text: "Client-focused", type: "F" }
-      ]
-    },
-    {
-      id: 2,
-      text: "What's your preferred legal strategy?",
-      choices: [
-        { id: "l2a", text: "Detailed preparation", type: "J" },
-        { id: "l2b", text: "Adaptive argumentation", type: "P" },
-        { id: "l2c", text: "Negotiation and mediation", type: "E" },
-        { id: "l2d", text: "Research and writing", type: "I" }
-      ]
-    },
-    {
-      id: 3,
-      text: "How do you handle client relations?",
-      choices: [
-        { id: "l3a", text: "Professional objectivity", type: "T" },
-        { id: "l3b", text: "Empathetic support", type: "F" },
-        { id: "l3c", text: "Structured communication", type: "J" },
-        { id: "l3d", text: "Flexible availability", type: "P" }
-      ]
-    },
-    {
-      id: 4,
-      text: "What interests you most in law?",
-      choices: [
-        { id: "l4a", text: "Legal precedents", type: "S" },
-        { id: "l4b", text: "Novel interpretations", type: "N" },
-        { id: "l4c", text: "Courtroom advocacy", type: "E" },
-        { id: "l4d", text: "Legal scholarship", type: "I" }
-      ]
-    }
-  ],
+  /* Q1 : E / I */
+  {
+    id: 1,
+    text: "At the start of a new case, your first move is…",
+    choices: [
+      { id: "l1a", text: "Call a team huddle to brainstorm angles.", type: "E" },
+      { id: "l1b", text: "Interview key witnesses right away.",     type: "E" },
+      { id: "l1c", text: "Study the case files quietly on your own.",type: "I" },
+      { id: "l1d", text: "Draft preliminary arguments in solitude.", type: "I" }
+    ]
+  },
+  /* Q2 : S / N */
+  {
+    id: 2,
+    text: "When building your argument, you lean most on…",
+    choices: [
+      { id: "l2a", text: "Documented precedents and statutes.",                  type: "S" },
+      { id: "l2b", text: "Concrete timelines and physical evidence.",            type: "S" },
+      { id: "l2c", text: "Novel interpretations that reframe the law.",          type: "N" },
+      { id: "l2d", text: "Big-picture principles that could set new precedent.", type: "N" }
+    ]
+  },
+  /* Q3 : T / F */
+  {
+    id: 3,
+    text: "What guides your courtroom persuasion style?",
+    choices: [
+      { id: "l3a", text: "Logical, point-by-point refutation.",      type: "T" },
+      { id: "l3b", text: "Data-driven exhibits and analytics.",      type: "T" },
+      { id: "l3c", text: "Compelling stories that humanise clients.",type: "F" },
+      { id: "l3d", text: "Appeals to shared values and fairness.",   type: "F" }
+    ]
+  },
+  /* Q4 : J / P */
+  {
+    id: 4,
+    text: "Mid-trial, new evidence surfaces. You tend to…",
+    choices: [
+      { id: "l4a", text: "Revise your brief and lock the plan quickly.", type: "J" },
+      { id: "l4b", text: "Create a strict updated timeline to follow.", type: "J" },
+      { id: "l4c", text: "Stay agile—adjust arguments on the fly.",     type: "P" },
+      { id: "l4d", text: "Keep options open and improvise in questioning.", type: "P" }
+    ]
+  }
+],
   investor: [
     {
       id: 1,
