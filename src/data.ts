@@ -646,47 +646,51 @@ export const questions: { [key: string]: Question[] } = {
   }
 ],
   copywriter: [
-    {
-      id: 1,
-      text: "あなたのライティングスタイルに近いのはどれですか？",
-      choices: [
-        { id: "cw1a", text: "データを元に追求する", type: "T" },
-        { id: "cw1b", text: "感情に響くストーリーで伝える", type: "F" },
-        { id: "cw1c", text: "わかりやすさを最優先にする", type: "S" },
-        { id: "cw1d", text: "ユニークな切り口で魅せる", type: "N" }
-      ]
-    },
-    {
-      id: 2,
-      text: "執筆プロジェクトはどのように進めますか？",
-      choices: [
-        { id: "cw2a", text: "最初に詳細なアウトラインを作る", type: "J" },
-        { id: "cw2b", text: "書きながら柔軟に調整する", type: "P" },
-        { id: "cw2c", text: "クライアントと密にやりとりする", type: "E" },
-        { id: "cw2d", text: "一人で集中して進める", type: "I" }
-      ]
-    },
-    {
-      id: 3,
-      text: "コンテンツの方向性を決める際に最も重要視するのは？",
-      choices: [
-        { id: "cw3a", text: "コンバージョン（売上など）具体的な成果の数字", type: "T" },
-        { id: "cw3b", text: "読者の共感やコメント・シェア数", type: "F" },
-        { id: "cw3c", text: "ブランドのガイドライン", type: "S" },
-        { id: "cw3d", text: "斬新な切り口やアイデア", type: "N" }
-      ]
-    },
-    {
-      id: 4,
-      text: "コピー（広告文）のアイデアを生み出す時の方法は？",
-      choices: [
-        { id: "cw4a", text: "市場調査・リサーチを行う", type: "T" },
-        { id: "cw4b", text: "ひらめきや直感を大切にする", type: "N" },
-        { id: "cw4c", text: "チームでブレインストーミングをする", type: "E" },
-        { id: "cw4d", text: "静かに思考を深めてひらめきを得る", type: "I" }
-      ]
-    }
-  ],
+  /* Q1 : E / I */
+  {
+    id: 1,
+    text: "新しいキャッチコピーを考える最初のステップは？",
+    choices: [
+      { id: "cw1a", text: "チームと声に出してアイデアを連発し合う", type: "E" },
+      { id: "cw1b", text: "クライアントに即ヒアリングして方向性をつかむ", type: "E" },
+      { id: "cw1c", text: "一人でノートに書き留めながら発想を深める", type: "I" },
+      { id: "cw1d", text: "静かな場所でリサーチして構想を練る", type: "I" }
+    ]
+  },
+  /* Q2 : S / N */
+  {
+    id: 2,
+    text: "コピーの根拠として最も重視する情報源は？",
+    choices: [
+      { id: "cw2a", text: "購買データやアクセス解析など数値指標", type: "S" },
+      { id: "cw2b", text: "過去の成功事例や競合広告の具体例",   type: "S" },
+      { id: "cw2c", text: "未来のトレンドを先読みした大胆な仮説", type: "N" },
+      { id: "cw2d", text: "業界外の文化・アートから得た着想",     type: "N" }
+    ]
+  },
+  /* Q3 : T / F */
+  {
+    id: 3,
+    text: "複数のコピー案から一本に絞る決め手は？",
+    choices: [
+      { id: "cw3a", text: "A/Bテストで最もCTRが高いもの",          type: "T" },
+      { id: "cw3b", text: "論理構成が明快で誤解の余地がないもの",    type: "T" },
+      { id: "cw3c", text: "読者の共感を呼び心を動かすストーリー性",   type: "F" },
+      { id: "cw3d", text: "ブランドの世界観を温かく伝える響き",     type: "F" }
+    ]
+  },
+  /* Q4 : J / P */
+  {
+    id: 4,
+    text: "タイトな納期の中でアイデアが出尽くした！あなたの行動は？",
+    choices: [
+      { id: "cw4a", text: "すぐにタスクを再優先づけし進行表を修正",       type: "J" },
+      { id: "cw4b", text: "チェックリストを使い漏れなく仕上げる",         type: "J" },
+      { id: "cw4c", text: "視点を変えるため散歩しながらひらめきを待つ",   type: "P" },
+      { id: "cw4d", text: "まず書いてみて途中で大胆に方向転換する",       type: "P" }
+    ]
+  }
+],
   director: [
     {
       id: 1,
