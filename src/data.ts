@@ -1120,58 +1120,97 @@ export const results: Result[] = [
 
   // Journalists
   {
-    name: "Edward R. Murrow",
-    occupation: "journalist",
-    mbti: "INTJ",
-    description: "A pioneering broadcast journalist. Your integrity and analytical approach reflect Murrow's commitment to truth in reporting.",
-    imageUrl: "https://images.pexels.com/photos/2325729/pexels-photo-2325729.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Edward_R._Murrow",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Christiane Amanpour",
-    occupation: "journalist",
-    mbti: "ENFJ",
-    description: "An influential international correspondent. Your dedication to storytelling and global perspective mirror Amanpour's impactful journalism.",
-    imageUrl: "https://images.pexels.com/photos/3944454/pexels-photo-3944454.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Christiane_Amanpour",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Hunter S. Thompson",
-    occupation: "journalist",
-    mbti: "ENTP",
-    description: "The founder of Gonzo journalism. Your unique perspective and unconventional approach match Thompson's revolutionary reporting style.",
-    imageUrl: "https://images.pexels.com/photos/3944377/pexels-photo-3944377.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Hunter_S._Thompson",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Bob Woodward",
-    occupation: "journalist",
-    mbti: "ISTJ",
-    description: "An investigative journalist known for uncovering Watergate. Your methodical research and attention to detail align with Woodward's thorough reporting.",
-    imageUrl: "https://images.pexels.com/photos/3944434/pexels-photo-3944434.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Bob_Woodward",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-
+  name: "エドワード・R・マロー",
+  occupation: "journalist",
+  mbti: "INTJ",
+  description:
+    "第二次大戦下のロンドン空襲を生中継し、放送ジャーナリズムの新境地を開いた〈公共の良心〉。冷徹な分析眼と揺るがぬ倫理観で “This … is London” の一言に真実を宿しました。",
+  imageUrl: "https://images.pexels.com/photos/2325729/pexels-photo-2325729.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Edward_R._Murrow",
+  strengths: [
+    "資料と現場証言を統合する構成力",
+    "政治・軍事圧力にも屈しない職業倫理",
+    "短い原稿で核心を突く言語センス"
+  ],
+  weaknesses: [
+    "完璧主義で放送直前まで修正を続けがち",
+    "感情表現を抑えるあまり共感的なトーンが不足することも"
+  ],
+  actionSteps: [
+    "マルチメディア表現（データ可視化・SNS動画）で感情的訴求も強化",
+    "デッドライン前のレビュー工程を固定し修正ループを制限",
+    "若手と協働し新しい取材手法を実験して視座を拡張"
+  ]
+},
+{
+  name: "クリスティアナ・アマンポール",
+  occupation: "journalist",
+  mbti: "ENFJ",
+  description:
+    "紛争地に飛び込み、当事者の声を世界に届ける〈地球規模のストーリーテラー〉。強烈な共感力と説得力で“国際報道の顔”として人権課題を可視化してきました。",
+  imageUrl: "https://images.pexels.com/photos/3944454/pexels-photo-3944454.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Christiane_Amanpour",
+  strengths: [
+    "危機下でも相手の信頼を得る対人スキル",
+    "複雑な国際情勢を物語として翻訳する構築力",
+    "カメラ前でのエネルギッシュなプレゼンス"
+  ],
+  weaknesses: [
+    "使命感が強すぎて感情疲労・バーンアウトに陥りやすい",
+    "ストーリー優先で細部のファクトチェックが遅れる場合がある"
+  ],
+  actionSteps: [
+    "取材後のセルフケアとメンタリング機会をスケジュールに組み込む",
+    "デスクチェックのダブル体制を敷き事実検証を強化",
+    "学際的な研究者ネットワークを広げ分析面を補完"
+  ]
+},
+{
+  name: "ハンター・S・トンプソン",
+  occupation: "journalist",
+  mbti: "ENTP",
+  description:
+    "自らを物語の主人公に据えた“ゴンゾ・ジャーナリズム”で既存報道を揺さぶった〈反骨の観察者〉。過激な比喩と鋭いユーモアで権力構造を暴きます。",
+  imageUrl: "https://images.pexels.com/photos/3944377/pexels-photo-3944377.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Hunter_S._Thompson",
+  strengths: [
+    "型破りな視点で読者を引き込む創造性",
+    "権力への忖度ゼロの批評精神",
+    "文章にリズムを与える独特の語感"
+  ],
+  weaknesses: [
+    "主観が強く客観データが不足しがち",
+    "締め切りや規律よりインスピレーションを優先しやすい"
+  ],
+  actionSteps: [
+    "リサーチアシスタントと組み事実確認フローを確立",
+    "短期連載形式で締め切り耐性を高めるトレーニング",
+    "セルフエディット用チェックリストで論点の過剰拡散を防止"
+  ]
+},
+{
+  name: "ボブ・ウッドワード",
+  occupation: "journalist",
+  mbti: "ISTJ",
+  description:
+    "ウォーターゲート事件を粘り強く追い、米国史を動かした〈調査報道の代名詞〉。膨大な証言と公文書を突き合わせ、静かな確信で真実を積み上げます。",
+  imageUrl: "https://images.pexels.com/photos/3944434/pexels-photo-3944434.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Bob_Woodward",
+  strengths: [
+    "一次資料を重層的に照合する検証力",
+    "匿名情報源を守り抜く信頼構築力",
+    "長期取材プロジェクトを計画通り遂行する粘着力"
+  ],
+  weaknesses: [
+    "慎重すぎて速報競争に乗り遅れることがある",
+    "文章が事実報告に偏りドラマ性が薄くなる傾向"
+  ],
+  actionSteps: [
+    "速報チームと連携し段階的に情報公開するハイブリッド型取材を採用",
+    "ストーリーテリング技法（ナラティブアーク・人物描写）を学習",
+    "データジャーナリズム手法を取り入れ視覚的訴求力を底上げ"
+  ]
+},
   // Lawyers
   {
   name: "サーグッド・マーシャル",
