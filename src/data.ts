@@ -904,57 +904,97 @@ export const results: Result[] = [
 
   // Teachers
   {
-    name: "Maria Montessori",
-    occupation: "teacher",
-    mbti: "INFJ",
-    description: "The founder of the Montessori education method. Your intuitive understanding of individual needs reflects Montessori's child-centered approach.",
-    imageUrl: "https://images.pexels.com/photos/8466776/pexels-photo-8466776.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Maria_Montessori",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "John Dewey",
-    occupation: "teacher",
-    mbti: "INTP",
-    description: "A pioneering educational reformer. Your analytical approach to education mirrors Dewey's philosophy of learning through experience.",
-    imageUrl: "https://images.pexels.com/photos/5427654/pexels-photo-5427654.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/John_Dewey",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Anne Sullivan",
-    occupation: "teacher",
-    mbti: "ENFJ",
-    description: "Helen Keller's dedicated teacher. Your patience and determination to help others learn match Sullivan's transformative teaching style.",
-    imageUrl: "https://images.pexels.com/photos/8467079/pexels-photo-8467079.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Anne_Sullivan",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Ken Robinson",
-    occupation: "teacher",
-    mbti: "ENFP",
-    description: "An advocate for creativity in education. Your innovative teaching style and ability to inspire align with Robinson's educational philosophy.",
-    imageUrl: "https://images.pexels.com/photos/5427867/pexels-photo-5427867.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Ken_Robinson_(educator)",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
+  name: "マリア・モンテッソーリ",
+  occupation: "teacher",
+  mbti: "INFJ",
+  description:
+    "子どもの〈自己教育力〉を信じ、感覚教具と“整えられた環境”で主体的学びを引き出した〈人間性重視の教育改革者〉。一人ひとりの成長段階を洞察し、静かに伴走する指導スタイルが特徴です。",
+  imageUrl: "https://images.pexels.com/photos/8466776/pexels-photo-8466776.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Maria_Montessori",
+  strengths: [
+    "観察眼が鋭く個々の発達ニーズを的確に把握できる",
+    "教具や空間をデザインし学習を自然に促す構成力",
+    "穏やかなカリスマ性で保護者・同僚から信頼を得る"
+  ],
+  weaknesses: [
+    "標準化テストや画一的カリキュラムに反発しがち",
+    "理想の環境づくりにこだわり過労・完璧主義に陥る"
+  ],
+  actionSteps: [
+    "ICT教材など新リソースを柔軟に取り入れ探究的学習を拡張",
+    "評価制度との折り合いをつけるため成果指標を言語化",
+    "チームに権限委譲し自分の創造エネルギーを温存する"
+  ]
+},
+{
+  name: "ジョン・デューイ",
+  occupation: "teacher",
+  mbti: "INTP",
+  description:
+    "“経験からの学び”を軸に学校を社会の縮図と捉えた〈プラグマティスト教育哲学者〉。問題解決型プロジェクトで思考を鍛え、民主的な教室文化を提唱しました。",
+  imageUrl: "https://images.pexels.com/photos/5427654/pexels-photo-5427654.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/John_Dewey",
+  strengths: [
+    "理論と実践を往還しカリキュラムを抽象化できる分析力",
+    "探究学習を体系立てるデザイン思考",
+    "教育政策にも影響を与える論理的発信力"
+  ],
+  weaknesses: [
+    "細かな運営より概念整理を優先し授業進行が散漫になりやすい",
+    "試行錯誤を重ねるうちに締切を逃すことがある"
+  ],
+  actionSteps: [
+    "単元ごとに到達目標を数値化しプロジェクト型学習を管理",
+    "コラボ型授業で現場の実践者からフィードバックを収集",
+    "研究成果を共有し教育コミュニティ全体で検証を進める"
+  ]
+},
+{
+  name: "アン・サリヴァン",
+  occupation: "teacher",
+  mbti: "ENFJ",
+  description:
+    "ヘレン・ケラーの潜在能力を解放した〈奇跡の教師〉。深い共感と揺るがぬ信念で学習者の心を開き、個別最適なアプローチで自立を支援しました。",
+  imageUrl: "https://images.pexels.com/photos/8467079/pexels-photo-8467079.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Anne_Sullivan",
+  strengths: [
+    "粘り強い指導とモチベート力で学習者を鼓舞",
+    "コミュニケーションの障壁を打破する創意工夫",
+    "保護者・支援団体を巻き込む調整力"
+  ],
+  weaknesses: [
+    "生徒への献身が行き過ぎ自己犠牲になりやすい",
+    "感情移入が深く客観的評価を後回しにする傾向"
+  ],
+  actionSteps: [
+    "明文化した学習記録で進捗を可視化し客観性を保持",
+    "チームティーチングで負担と視点を分散",
+    "セルフケアと専門家カウンセリングでメンタルを維持"
+  ]
+},
+{
+  name: "ケン・ロビンソン",
+  occupation: "teacher",
+  mbti: "ENFP",
+  description:
+    "“学校は創造性を殺していないか？”と問い、教育界に波紋を起こした〈クリエイティブ・カタリスト〉。ユーモアと物語で学びを解放し、多様な才能が輝く場づくりを提唱しました。",
+  imageUrl: "https://images.pexels.com/photos/5427867/pexels-photo-5427867.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Ken_Robinson_(educator)",
+  strengths: [
+    "インスピレーショナルなスピーチで学習者の情熱を喚起",
+    "芸術・STEMを横断しカリキュラムを再構築する発想力",
+    "変革を後押しするネットワーキングと影響力"
+  ],
+  weaknesses: [
+    "ビジョンが大きく具体的運用設計が後手に回りがち",
+    "規則や評価制度への適応を煩わしく感じる"
+  ],
+  actionSteps: [
+    "アイデアを実現する実行計画と評価フレームを策定",
+    "小規模パイロットを行いデータで効果を示す",
+    "同じ志を持つ教師コミュニティを育成しムーブメントを拡大"
+  ]
+},
 
   // Doctors
   {
