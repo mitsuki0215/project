@@ -48,635 +48,695 @@ export const questions: { [key: string]: Question[] } = {
   }
 ],
   entrepreneur: [
-    {
-      id: 1,
-      text: "What drives your business decisions?",
-      choices: [
-        { id: "e1a", text: "Market data and analytics", type: "T" },
-        { id: "e1b", text: "Gut feeling and intuition", type: "F" },
-        { id: "e1c", text: "Industry trends and patterns", type: "S" },
-        { id: "e1d", text: "Vision of future possibilities", type: "N" }
-      ]
-    },
-    {
-      id: 2,
-      text: "How do you prefer to grow your business?",
-      choices: [
-        { id: "e2a", text: "Strategic partnerships and networking", type: "E" },
-        { id: "e2b", text: "Focused individual effort", type: "I" },
-        { id: "e2c", text: "Systematic expansion plans", type: "J" },
-        { id: "e2d", text: "Adaptable growth strategies", type: "P" }
-      ]
-    },
-    {
-      id: 3,
-      text: "What's your approach to team management?",
-      choices: [
-        { id: "e3a", text: "Clear hierarchy and structure", type: "J" },
-        { id: "e3b", text: "Flexible and collaborative environment", type: "P" },
-        { id: "e3c", text: "Data-driven performance metrics", type: "T" },
-        { id: "e3d", text: "Focus on team harmony and motivation", type: "F" }
-      ]
-    },
-    {
-      id: 4,
-      text: "How do you handle business challenges?",
-      choices: [
-        { id: "e4a", text: "Analyze problems systematically", type: "T" },
-        { id: "e4b", text: "Trust your entrepreneurial instincts", type: "F" },
-        { id: "e4c", text: "Seek advice from mentors", type: "E" },
-        { id: "e4d", text: "Reflect and strategize alone", type: "I" }
-      ]
-    }
-  ],
+  /* Q1 : E / I */
+  {
+    id: 1,
+    text: "A new business idea pops into your head. What’s your immediate move?",
+    choices: [
+      { id: "e1a", text: "Call a potential co-founder to brainstorm possibilities.",      type: "E" },
+      { id: "e1b", text: "Post it in a founders’ Slack channel for instant feedback.",    type: "E" },
+      { id: "e1c", text: "Open a private doc and flesh out the concept solo first.",      type: "I" },
+      { id: "e1d", text: "Sleep on it and refine the idea quietly before sharing.",       type: "I" }
+    ]
+  },
+  /* Q2 : S / N */
+  {
+    id: 2,
+    text: "Which research approach guides your market validation?",
+    choices: [
+      { id: "e2a", text: "Customer interviews and hard usage metrics.",         type: "S" },
+      { id: "e2b", text: "Competitive benchmarking and current best practices.",type: "S" },
+      { id: "e2c", text: "Imagining future trends that haven’t surfaced yet.",   type: "N" },
+      { id: "e2d", text: "Connecting disparate insights to spot hidden niches.", type: "N" }
+    ]
+  },
+  /* Q3 : T / F */
+  {
+    id: 3,
+    text: "When choosing between two product features, what tips the scale?",
+    choices: [
+      { id: "e3a", text: "Projected ROI and scalability.",           type: "T" },
+      { id: "e3b", text: "Data-driven A/B test results.",            type: "T" },
+      { id: "e3c", text: "Positive impact on users’ lives.",         type: "F" },
+      { id: "e3d", text: "Alignment with the company’s mission and values.", type: "F" }
+    ]
+  },
+  /* Q4 : J / P */
+  {
+    id: 4,
+    text: "Your go-to style for steering a growing startup is…",
+    choices: [
+      { id: "e4a", text: "Set quarterly OKRs and follow a strict roadmap.",     type: "J" },
+      { id: "e4b", text: "Create clear roles, processes, and review cycles.",   type: "J" },
+      { id: "e4c", text: "Keep plans light and pivot whenever new data arrives.",type: "P" },
+      { id: "e4d", text: "Experiment rapidly and iterate based on learnings.",  type: "P" }
+    ]
+  }
+],
   designer: [
-    {
-      id: 1,
-      text: "What inspires your design process?",
-      choices: [
-        { id: "d1a", text: "User research and feedback", type: "S" },
-        { id: "d1b", text: "Abstract concepts and imagination", type: "N" },
-        { id: "d1c", text: "Current design trends", type: "E" },
-        { id: "d1d", text: "Personal artistic vision", type: "I" }
-      ]
-    },
-    {
-      id: 2,
-      text: "How do you approach design projects?",
-      choices: [
-        { id: "d2a", text: "Detailed planning and wireframes", type: "J" },
-        { id: "d2b", text: "Iterative experimentation", type: "P" },
-        { id: "d2c", text: "Collaborative brainstorming", type: "E" },
-        { id: "d2d", text: "Independent conceptualization", type: "I" }
-      ]
-    },
-    {
-      id: 3,
-      text: "What's most important in your design decisions?",
-      choices: [
-        { id: "d3a", text: "User experience metrics", type: "T" },
-        { id: "d3b", text: "Emotional impact", type: "F" },
-        { id: "d3c", text: "Technical feasibility", type: "S" },
-        { id: "d3d", text: "Innovation potential", type: "N" }
-      ]
-    },
-    {
-      id: 4,
-      text: "How do you handle client feedback?",
-      choices: [
-        { id: "d4a", text: "Analyze objectively", type: "T" },
-        { id: "d4b", text: "Consider emotional context", type: "F" },
-        { id: "d4c", text: "Follow structured revision process", type: "J" },
-        { id: "d4d", text: "Adapt and explore new directions", type: "P" }
-      ]
-    }
-  ],
+  /* Q1 : E / I */
+  {
+    id: 1,
+    text: "When starting a new design project, what’s your first move?",
+    choices: [
+      { id: "d1a", text: "Fire up a live Figma session to brainstorm with the team.",           type: "E" },
+      { id: "d1b", text: "Run a quick workshop with stakeholders to spark ideas.",              type: "E" },
+      { id: "d1c", text: "Sketch rough concepts alone to clarify your own vision first.",       type: "I" },
+      { id: "d1d", text: "Research quietly and prepare mood boards before sharing anything.",   type: "I" }
+    ]
+  },
+  /* Q2 : S / N */
+  {
+    id: 2,
+    text: "Which source fuels your creative inspiration the most?",
+    choices: [
+      { id: "d2a", text: "Usability test findings and real user feedback.",        type: "S" },
+      { id: "d2b", text: "Current UI pattern libraries and design benchmarks.",    type: "S" },
+      { id: "d2c", text: "Abstract art movements and cross-disciplinary concepts.",type: "N" },
+      { id: "d2d", text: "Speculative future tech and ‘what-if’ scenarios.",       type: "N" }
+    ]
+  },
+  /* Q3 : T / F */
+  {
+    id: 3,
+    text: "Choosing between two color palettes, what tips the scale for you?",
+    choices: [
+      { id: "d3a", text: "Contrast ratios, accessibility scores, brand guidelines.", type: "T" },
+      { id: "d3b", text: "A/B test data showing higher conversion.",                 type: "T" },
+      { id: "d3c", text: "The emotional tone and story the colors evoke.",           type: "F" },
+      { id: "d3d", text: "How the palette makes users feel at first glance.",        type: "F" }
+    ]
+  },
+  /* Q4 : J / P */
+  {
+    id: 4,
+    text: "Your workflow style when deadlines get closer?",
+    choices: [
+      { id: "d4a", text: "Lock layouts early and follow a strict checklist.",      type: "J" },
+      { id: "d4b", text: "Adhere to the design system to avoid last-minute chaos.",type: "J" },
+      { id: "d4c", text: "Keep experimenting and refine until the final hand-off.",type: "P" },
+      { id: "d4d", text: "Embrace last-minute tweaks and spontaneous ideas.",      type: "P" }
+    ]
+  }
+],
   teacher: [
-    {
-      id: 1,
-      text: "What teaching approach do you prefer?",
-      choices: [
-        { id: "t1a", text: "Structured lesson plans", type: "J" },
-        { id: "t1b", text: "Flexible, adaptive teaching", type: "P" },
-        { id: "t1c", text: "Interactive group activities", type: "E" },
-        { id: "t1d", text: "Individual student guidance", type: "I" }
-      ]
-    },
-    {
-      id: 2,
-      text: "How do you assess student progress?",
-      choices: [
-        { id: "t2a", text: "Objective performance metrics", type: "T" },
-        { id: "t2b", text: "Overall growth and effort", type: "F" },
-        { id: "t2c", text: "Practical skill demonstration", type: "S" },
-        { id: "t2d", text: "Creative problem-solving", type: "N" }
-      ]
-    },
-    {
-      id: 3,
-      text: "What motivates you as a teacher?",
-      choices: [
-        { id: "t3a", text: "Student academic achievement", type: "T" },
-        { id: "t3b", text: "Personal growth of students", type: "F" },
-        { id: "t3c", text: "Maintaining classroom order", type: "J" },
-        { id: "t3d", text: "Fostering creativity", type: "P" }
-      ]
-    },
-    {
-      id: 4,
-      text: "How do you handle challenging students?",
-      choices: [
-        { id: "t4a", text: "Follow disciplinary procedures", type: "J" },
-        { id: "t4b", text: "Adapt to individual needs", type: "P" },
-        { id: "t4c", text: "Seek peer/parent collaboration", type: "E" },
-        { id: "t4d", text: "One-on-one mentoring", type: "I" }
-      ]
-    }
-  ],
+  /* Q1 : E / I */
+  {
+    id: 1,
+    text: "On the first day of a new term, what’s your default style?",
+    choices: [
+      { id: "t1a", text: "Kick off with energetic ice-breakers for the whole class.", type: "E" },
+      { id: "t1b", text: "Invite open discussion to get everyone talking right away.", type: "E" },
+      { id: "t1c", text: "Observe quietly and learn each student’s name and vibe first.", type: "I" },
+      { id: "t1d", text: "Prepare a calm introduction and one-to-one check-ins later.",  type: "I" }
+    ]
+  },
+  /* Q2 : S / N */
+  {
+    id: 2,
+    text: "When designing curriculum materials, you rely most on…",
+    choices: [
+      { id: "t2a", text: "Concrete examples and step-by-step demonstrations.", type: "S" },
+      { id: "t2b", text: "Hands-on activities grounded in real-world tasks.",  type: "S" },
+      { id: "t2c", text: "Big-picture themes that spark imagination.",        type: "N" },
+      { id: "t2d", text: "Abstract questions that challenge conventional ideas.", type: "N" }
+    ]
+  },
+  /* Q3 : T / F */
+  {
+    id: 3,
+    text: "A student submits late work citing personal issues. Your instinct is to…",
+    choices: [
+      { id: "t3a", text: "Apply the penalty stated in the syllabus for fairness.", type: "T" },
+      { id: "t3b", text: "Offer a structured make-up assignment with clear criteria.", type: "T" },
+      { id: "t3c", text: "Listen to their situation and adjust the deadline compassionately.", type: "F" },
+      { id: "t3d", text: "Provide encouragement and alternative ways to demonstrate learning.", type: "F" }
+    ]
+  },
+  /* Q4 : J / P */
+  {
+    id: 4,
+    text: "Mid-semester, the school introduces a new policy that shifts your schedule. You…",
+    choices: [
+      { id: "t4a", text: "Rewrite your lesson plans immediately to align with the new timeline.", type: "J" },
+      { id: "t4b", text: "Create a detailed calendar with checkpoints to stay on track.",        type: "J" },
+      { id: "t4c", text: "Adjust organically, updating content as you gauge student progress.",  type: "P" },
+      { id: "t4d", text: "Embrace the change and experiment with fresh activities week by week.", type: "P" }
+    ]
+  }
+],
   doctor: [
-    {
-      id: 1,
-      text: "How do you approach patient diagnosis?",
-      choices: [
-        { id: "m1a", text: "Systematic symptom analysis", type: "T" },
-        { id: "m1b", text: "Intuitive pattern recognition", type: "N" },
-        { id: "m1c", text: "Evidence-based protocols", type: "S" },
-        { id: "m1d", text: "Patient narrative understanding", type: "F" }
-      ]
-    },
-    {
-      id: 2,
-      text: "What's your preferred treatment approach?",
-      choices: [
-        { id: "m2a", text: "Standard treatment protocols", type: "J" },
-        { id: "m2b", text: "Personalized treatment plans", type: "P" },
-        { id: "m2c", text: "Team-based care coordination", type: "E" },
-        { id: "m2d", text: "Independent decision-making", type: "I" }
-      ]
-    },
-    {
-      id: 3,
-      text: "How do you handle medical uncertainties?",
-      choices: [
-        { id: "m3a", text: "Consult research literature", type: "T" },
-        { id: "m3b", text: "Consider multiple possibilities", type: "N" },
-        { id: "m3c", text: "Follow established guidelines", type: "S" },
-        { id: "m3d", text: "Focus on patient comfort", type: "F" }
-      ]
-    },
-    {
-      id: 4,
-      text: "What aspect of patient care is most important to you?",
-      choices: [
-        { id: "m4a", text: "Clinical outcomes", type: "T" },
-        { id: "m4b", text: "Patient satisfaction", type: "F" },
-        { id: "m4c", text: "Procedural accuracy", type: "J" },
-        { id: "m4d", text: "Adaptive care", type: "P" }
-      ]
-    }
-  ],
+  /* Q1 : E / I */
+  {
+    id: 1,
+    text: "During a patient consultation, your natural style is to…",
+    choices: [
+      { id: "m1a", text: "Lead an open conversation to put the patient at ease.", type: "E" },
+      { id: "m1b", text: "Invite nurses / family into the dialogue for more insight.", type: "E" },
+      { id: "m1c", text: "Listen quietly, taking detailed notes before responding.",  type: "I" },
+      { id: "m1d", text: "Focus on a calm one-to-one discussion in a private setting.", type: "I" }
+    ]
+  },
+  /* Q2 : S / N */
+  {
+    id: 2,
+    text: "When collecting diagnostic clues, you rely most on…",
+    choices: [
+      { id: "m2a", text: "Physical exam findings and lab results.",      type: "S" },
+      { id: "m2b", text: "Observable symptoms and patient history.",     type: "S" },
+      { id: "m2c", text: "Connecting subtle patterns to rare conditions.",type: "N" },
+      { id: "m2d", text: "Theoretical models of underlying diseases.",   type: "N" }
+    ]
+  },
+  /* Q3 : T / F */
+  {
+    id: 3,
+    text: "When presenting treatment options, you emphasize…",
+    choices: [
+      { id: "m3a", text: "Evidence-based statistics and risk–benefit data.", type: "T" },
+      { id: "m3b", text: "Clinical guidelines and logical rationale.",       type: "T" },
+      { id: "m3c", text: "How each option aligns with the patient’s values.", type: "F" },
+      { id: "m3d", text: "Emotional support and quality-of-life factors.",    type: "F" }
+    ]
+  },
+  /* Q4 : J / P */
+  {
+    id: 4,
+    text: "If a treatment plan must change suddenly, you tend to…",
+    choices: [
+      { id: "m4a", text: "Re-schedule immediately and issue clear new orders.", type: "J" },
+      { id: "m4b", text: "Document a step-by-step protocol to stay on track.",   type: "J" },
+      { id: "m4c", text: "Keep several options open and adjust on the fly.",     type: "P" },
+      { id: "m4d", text: "Iterate with the patient’s feedback as the situation evolves.", type: "P" }
+    ]
+  }
+],
   engineer: [
-    {
-      id: 1,
-      text: "How do you approach technical problems?",
-      choices: [
-        { id: "en1a", text: "Systematic troubleshooting", type: "T" },
-        { id: "en1b", text: "Innovative solutions", type: "N" },
-        { id: "en1c", text: "Proven methodologies", type: "S" },
-        { id: "en1d", text: "User-centered design", type: "F" }
-      ]
-    },
-    {
-      id: 2,
-      text: "What drives your engineering decisions?",
-      choices: [
-        { id: "en2a", text: "Technical specifications", type: "T" },
-        { id: "en2b", text: "Future scalability", type: "N" },
-        { id: "en2c", text: "Team consensus", type: "F" },
-        { id: "en2d", text: "Practical constraints", type: "S" }
-      ]
-    },
-    {
-      id: 3,
-      text: "How do you prefer to work on projects?",
-      choices: [
-        { id: "en3a", text: "Structured project management", type: "J" },
-        { id: "en3b", text: "Agile development", type: "P" },
-        { id: "en3c", text: "Collaborative teams", type: "E" },
-        { id: "en3d", text: "Independent work", type: "I" }
-      ]
-    },
-    {
-      id: 4,
-      text: "What interests you most in engineering?",
-      choices: [
-        { id: "en4a", text: "Optimizing performance", type: "T" },
-        { id: "en4b", text: "Solving complex problems", type: "N" },
-        { id: "en4c", text: "Building reliable systems", type: "J" },
-        { id: "en4d", text: "Exploring new technologies", type: "P" }
-      ]
-    }
-  ],
+  /* Q1 : E / I */
+  {
+    id: 1,
+    text: "At project kickoff, your instinctive working style is to…",
+    choices: [
+      { id: "en1a", text: "Host a white-board session to spark team ideas.", type: "E" },
+      { id: "en1b", text: "Pair-program or mob-code to share knowledge fast.", type: "E" },
+      { id: "en1c", text: "Sketch a prototype solo before sharing anything.",  type: "I" },
+      { id: "en1d", text: "Dive into documentation quietly to map the problem.", type: "I" }
+    ]
+  },
+  /* Q2 : S / N */
+  {
+    id: 2,
+    text: "When comparing design options, you lean on…",
+    choices: [
+      { id: "en2a", text: "Concrete benchmarks and proven patterns.", type: "S" },
+      { id: "en2b", text: "Detailed specs and edge-case checklists.",  type: "S" },
+      { id: "en2c", text: "Visionary architecture that scales to unseen needs.", type: "N" },
+      { id: "en2d", text: "Creative leaps that could disrupt current limits.",    type: "N" }
+    ]
+  },
+  /* Q3 : T / F */
+  {
+    id: 3,
+    text: "A teammate proposes a risky refactor; your main criterion is…",
+    choices: [
+      { id: "en3a", text: "Performance metrics and algorithmic efficiency.", type: "T" },
+      { id: "en3b", text: "Logical soundness and technical debt reduction.",  type: "T" },
+      { id: "en3c", text: "Impact on developer morale and user delight.",     type: "F" },
+      { id: "en3d", text: "Whether it fosters collaboration and team growth.", type: "F" }
+    ]
+  },
+  /* Q4 : J / P */
+  {
+    id: 4,
+    text: "Mid-sprint, requirements change drastically. You usually…",
+    choices: [
+      { id: "en4a", text: "Re-draft a timeline and lock in new deliverables.", type: "J" },
+      { id: "en4b", text: "Document clear acceptance criteria right away.",     type: "J" },
+      { id: "en4c", text: "Keep options open and iterate with quick spikes.",   type: "P" },
+      { id: "en4d", text: "Prototype multiple paths and decide as data arrives.",type: "P" }
+    ]
+  }
+],
   artist: [
-    {
-      id: 1,
-      text: "What inspires your creative process?",
-      choices: [
-        { id: "a1a", text: "Technical mastery", type: "S" },
-        { id: "a1b", text: "Abstract concepts", type: "N" },
-        { id: "a1c", text: "Emotional expression", type: "F" },
-        { id: "a1d", text: "Logical composition", type: "T" }
-      ]
-    },
-    {
-      id: 2,
-      text: "How do you approach your artwork?",
-      choices: [
-        { id: "a2a", text: "Planned and structured", type: "J" },
-        { id: "a2b", text: "Spontaneous and intuitive", type: "P" },
-        { id: "a2c", text: "Collaborative projects", type: "E" },
-        { id: "a2d", text: "Solo creative work", type: "I" }
-      ]
-    },
-    {
-      id: 3,
-      text: "What drives your artistic decisions?",
-      choices: [
-        { id: "a3a", text: "Visual harmony", type: "S" },
-        { id: "a3b", text: "Conceptual meaning", type: "N" },
-        { id: "a3c", text: "Audience impact", type: "E" },
-        { id: "a3d", text: "Personal vision", type: "I" }
-      ]
-    },
-    {
-      id: 4,
-      text: "How do you develop your artistic style?",
-      choices: [
-        { id: "a4a", text: "Study traditional techniques", type: "S" },
-        { id: "a4b", text: "Experimental approaches", type: "N" },
-        { id: "a4c", text: "Feedback from others", type: "E" },
-        { id: "a4d", text: "Inner exploration", type: "I" }
-      ]
-    }
-  ],
+  /* Q1 : E / I */
+  {
+    id: 1,
+    text: "When a new idea sparks, your next move is to…",
+    choices: [
+      { id: "a1a", text: "Call a friend or fellow artist to jam on it together.", type: "E" },
+      { id: "a1b", text: "Post a rough sketch online to gather quick feedback.",  type: "E" },
+      { id: "a1c", text: "Retreat to your studio and sketch privately first.",   type: "I" },
+      { id: "a1d", text: "Keep it in a personal journal until the concept is clear.", type: "I" }
+    ]
+  },
+  /* Q2 : S / N */
+  {
+    id: 2,
+    text: "Your strongest source of inspiration typically comes from…",
+    choices: [
+      { id: "a2a", text: "Real-world textures, colors, and everyday scenes.", type: "S" },
+      { id: "a2b", text: "Historical techniques and classical references.",   type: "S" },
+      { id: "a2c", text: "Symbolic imagery and abstract concepts.",           type: "N" },
+      { id: "a2d", text: "Dream-like ideas that push beyond reality.",        type: "N" }
+    ]
+  },
+  /* Q3 : T / F */
+  {
+    id: 3,
+    text: "When judging whether a piece is finished, you rely on…",
+    choices: [
+      { id: "a3a", text: "Balanced composition and technical precision.",   type: "T" },
+      { id: "a3b", text: "Adherence to design principles and proportions.", type: "T" },
+      { id: "a3c", text: "Whether it conveys the intended emotion.",        type: "F" },
+      { id: "a3d", text: "The personal or social story it tells.",          type: "F" }
+    ]
+  },
+  /* Q4 : J / P */
+  {
+    id: 4,
+    text: "Faced with a looming exhibition deadline, you tend to…",
+    choices: [
+      { id: "a4a", text: "Create a strict schedule and stick to milestones.",  type: "J" },
+      { id: "a4b", text: "Finalize each element before moving to the next.",   type: "J" },
+      { id: "a4c", text: "Experiment up to the last minute, adjusting as you go.", type: "P" },
+      { id: "a4d", text: "Leave space for spontaneous changes on installation day.", type: "P" }
+    ]
+  }
+],
   journalist: [
-    {
-      id: 1,
-      text: "How do you prefer to gather information?",
-      choices: [
-        { id: "j1a", text: "Direct interviews", type: "E" },
-        { id: "j1b", text: "Research and analysis", type: "I" },
-        { id: "j1c", text: "Factual documentation", type: "S" },
-        { id: "j1d", text: "Investigative deep-dives", type: "N" }
-      ]
-    },
-    {
-      id: 2,
-      text: "What's your reporting style?",
-      choices: [
-        { id: "j2a", text: "Objective fact-based", type: "T" },
-        { id: "j2b", text: "Human interest stories", type: "F" },
-        { id: "j2c", text: "Structured narratives", type: "J" },
-        { id: "j2d", text: "Exploratory features", type: "P" }
-      ]
-    },
-    {
-      id: 3,
-      text: "How do you handle deadlines?",
-      choices: [
-        { id: "j3a", text: "Structured planning", type: "J" },
-        { id: "j3b", text: "Last-minute intensity", type: "P" },
-        { id: "j3c", text: "Collaborative teamwork", type: "E" },
-        { id: "j3d", text: "Independent focus", type: "I" }
-      ]
-    },
-    {
-      id: 4,
-      text: "What aspect of journalism interests you most?",
-      choices: [
-        { id: "j4a", text: "Uncovering facts", type: "T" },
-        { id: "j4b", text: "Telling compelling stories", type: "F" },
-        { id: "j4c", text: "Following leads", type: "N" },
-        { id: "j4d", text: "Documenting events", type: "S" }
-      ]
-    }
-  ],
+  /* Q1 : E / I */
+  {
+    id: 1,
+    text: "A potential scoop drops—first thing you do?",
+    choices: [
+      { id: "j1a", text: "Ring key sources right away for live quotes.",        type: "E" },
+      { id: "j1b", text: "Rush to the scene to interview eyewitnesses.",        type: "E" },
+      { id: "j1c", text: "Dive into archives and databases on your own first.", type: "I" },
+      { id: "j1d", text: "Sketch questions privately before contacting anyone.",type: "I" }
+    ]
+  },
+  /* Q2 : S / N */
+  {
+    id: 2,
+    text: "Your go-to evidence-gathering style is…",
+    choices: [
+      { id: "j2a", text: "Verify official documents and statistics.",       type: "S" },
+      { id: "j2b", text: "Cite on-record statements and concrete facts.",    type: "S" },
+      { id: "j2c", text: "Trace hidden patterns across disparate clues.",    type: "N" },
+      { id: "j2d", text: "Imagine scenarios to uncover bigger narratives.",  type: "N" }
+    ]
+  },
+  /* Q3 : T / F */
+  {
+    id: 3,
+    text: "When shaping your article’s angle, you rely most on…",
+    choices: [
+      { id: "j3a", text: "Logical flow supported by hard evidence.",     type: "T" },
+      { id: "j3b", text: "Data visuals that prove the claim.",           type: "T" },
+      { id: "j3c", text: "Emotional power of personal stories.",         type: "F" },
+      { id: "j3d", text: "Potential social impact of the piece.",        type: "F" }
+    ]
+  },
+  /* Q4 : J / P */
+  {
+    id: 4,
+    text: "A breaking-news deadline looms. You tend to…",
+    choices: [
+      { id: "j4a", text: "Lock sections as you finish and file early.",       type: "J" },
+      { id: "j4b", text: "Follow a strict outline and timetable.",            type: "J" },
+      { id: "j4c", text: "Keep tweaking copy as fresh info rolls in.",        type: "P" },
+      { id: "j4d", text: "Stay flexible, ready to rewrite at the last minute.",type: "P" }
+    ]
+  }
+],
   lawyer: [
-    {
-      id: 1,
-      text: "How do you approach legal cases?",
-      choices: [
-        { id: "l1a", text: "Systematic analysis", type: "T" },
-        { id: "l1b", text: "Creative interpretation", type: "N" },
-        { id: "l1c", text: "Precedent-based", type: "S" },
-        { id: "l1d", text: "Client-focused", type: "F" }
-      ]
-    },
-    {
-      id: 2,
-      text: "What's your preferred legal strategy?",
-      choices: [
-        { id: "l2a", text: "Detailed preparation", type: "J" },
-        { id: "l2b", text: "Adaptive argumentation", type: "P" },
-        { id: "l2c", text: "Negotiation and mediation", type: "E" },
-        { id: "l2d", text: "Research and writing", type: "I" }
-      ]
-    },
-    {
-      id: 3,
-      text: "How do you handle client relations?",
-      choices: [
-        { id: "l3a", text: "Professional objectivity", type: "T" },
-        { id: "l3b", text: "Empathetic support", type: "F" },
-        { id: "l3c", text: "Structured communication", type: "J" },
-        { id: "l3d", text: "Flexible availability", type: "P" }
-      ]
-    },
-    {
-      id: 4,
-      text: "What interests you most in law?",
-      choices: [
-        { id: "l4a", text: "Legal precedents", type: "S" },
-        { id: "l4b", text: "Novel interpretations", type: "N" },
-        { id: "l4c", text: "Courtroom advocacy", type: "E" },
-        { id: "l4d", text: "Legal scholarship", type: "I" }
-      ]
-    }
-  ],
+  /* Q1 : E / I */
+  {
+    id: 1,
+    text: "At the start of a new case, your first move is…",
+    choices: [
+      { id: "l1a", text: "Call a team huddle to brainstorm angles.", type: "E" },
+      { id: "l1b", text: "Interview key witnesses right away.",     type: "E" },
+      { id: "l1c", text: "Study the case files quietly on your own.",type: "I" },
+      { id: "l1d", text: "Draft preliminary arguments in solitude.", type: "I" }
+    ]
+  },
+  /* Q2 : S / N */
+  {
+    id: 2,
+    text: "When building your argument, you lean most on…",
+    choices: [
+      { id: "l2a", text: "Documented precedents and statutes.",                  type: "S" },
+      { id: "l2b", text: "Concrete timelines and physical evidence.",            type: "S" },
+      { id: "l2c", text: "Novel interpretations that reframe the law.",          type: "N" },
+      { id: "l2d", text: "Big-picture principles that could set new precedent.", type: "N" }
+    ]
+  },
+  /* Q3 : T / F */
+  {
+    id: 3,
+    text: "What guides your courtroom persuasion style?",
+    choices: [
+      { id: "l3a", text: "Logical, point-by-point refutation.",      type: "T" },
+      { id: "l3b", text: "Data-driven exhibits and analytics.",      type: "T" },
+      { id: "l3c", text: "Compelling stories that humanise clients.",type: "F" },
+      { id: "l3d", text: "Appeals to shared values and fairness.",   type: "F" }
+    ]
+  },
+  /* Q4 : J / P */
+  {
+    id: 4,
+    text: "Mid-trial, new evidence surfaces. You tend to…",
+    choices: [
+      { id: "l4a", text: "Revise your brief and lock the plan quickly.", type: "J" },
+      { id: "l4b", text: "Create a strict updated timeline to follow.", type: "J" },
+      { id: "l4c", text: "Stay agile—adjust arguments on the fly.",     type: "P" },
+      { id: "l4d", text: "Keep options open and improvise in questioning.", type: "P" }
+    ]
+  }
+],
   investor: [
-    {
-      id: 1,
-      text: "How do you evaluate investment opportunities?",
-      choices: [
-        { id: "i1a", text: "Technical analysis", type: "T" },
-        { id: "i1b", text: "Market intuition", type: "F" },
-        { id: "i1c", text: "Historical patterns", type: "S" },
-        { id: "i1d", text: "Future potential", type: "N" }
-      ]
-    },
-    {
-      id: 2,
-      text: "What's your investment strategy?",
-      choices: [
-        { id: "i2a", text: "Systematic portfolio management", type: "J" },
-        { id: "i2b", text: "Opportunistic trading", type: "P" },
-        { id: "i2c", text: "Network-based decisions", type: "E" },
-        { id: "i2d", text: "Independent research", type: "I" }
-      ]
-    },
-    {
-      id: 3,
-      text: "How do you handle market volatility?",
-      choices: [
-        { id: "i3a", text: "Stick to the plan", type: "J" },
-        { id: "i3b", text: "Adapt to conditions", type: "P" },
-        { id: "i3c", text: "Consult experts", type: "E" },
-        { id: "i3d", text: "Trust your analysis", type: "I" }
-      ]
-    },
-    {
-      id: 4,
-      text: "What drives your investment decisions?",
-      choices: [
-        { id: "i4a", text: "Financial metrics", type: "T" },
-        { id: "i4b", text: "Social impact", type: "F" },
-        { id: "i4c", text: "Risk management", type: "S" },
-        { id: "i4d", text: "Growth potential", type: "N" }
-      ]
-    }
-  ],
+  /* Q1 : E / I */
+  {
+    id: 1,
+    text: "You spot a promising company — what’s your first move?",
+    choices: [
+      { id: "i1a", text: "Pitch the idea to your investing circle for feedback.", type: "E" },
+      { id: "i1b", text: "Jump on a call to hash it out with colleagues.",        type: "E" },
+      { id: "i1c", text: "Run a solo deep-dive before telling anyone.",           type: "I" },
+      { id: "i1d", text: "Quietly back-test the thesis on your own model.",       type: "I" }
+    ]
+  },
+  /* Q2 : S / N */
+  {
+    id: 2,
+    text: "Which evidence weighs heaviest when vetting an investment?",
+    choices: [
+      { id: "i2a", text: "Audited financials and recent KPIs.",            type: "S" },
+      { id: "i2b", text: "Historical price patterns and hard data.",       type: "S" },
+      { id: "i2c", text: "Disruptive potential five years down the road.", type: "N" },
+      { id: "i2d", text: "Macro trends that could reshape the sector.",    type: "N" }
+    ]
+  },
+  /* Q3 : T / F */
+  {
+    id: 3,
+    text: "Pressed to choose between two assets, you rely on…",
+    choices: [
+      { id: "i3a", text: "Risk-adjusted return metrics (Sharpe, etc.).", type: "T" },
+      { id: "i3b", text: "Detailed sensitivity analyses in Excel.",      type: "T" },
+      { id: "i3c", text: "The company’s mission and societal impact.",   type: "F" },
+      { id: "i3d", text: "Leadership’s values and stakeholder stories.", type: "F" }
+    ]
+  },
+  /* Q4 : J / P */
+  {
+    id: 4,
+    text: "Markets tumble unexpectedly — your instinct is to…",
+    choices: [
+      { id: "i4a", text: "Rebalance to predefined allocation rules.",     type: "J" },
+      { id: "i4b", text: "Tighten stop-losses and stick to the playbook.",type: "J" },
+      { id: "i4c", text: "Stay nimble and scoop bargains as they appear.",type: "P" },
+      { id: "i4d", text: "Pause rules; improvise trades with evolving info.", type: "P" }
+    ]
+  }
+],
   professor: [
-    {
-      id: 1,
-      text: "What aspect of academia interests you most?",
-      choices: [
-        { id: "p1a", text: "Research methodology", type: "T" },
-        { id: "p1b", text: "Theoretical exploration", type: "N" },
-        { id: "p1c", text: "Student mentoring", type: "F" },
-        { id: "p1d", text: "Data analysis", type: "S" }
-      ]
-    },
-    {
-      id: 2,
-      text: "How do you approach teaching?",
-      choices: [
-        { id: "p2a", text: "Structured lectures", type: "J" },
-        { id: "p2b", text: "Interactive discussions", type: "P" },
-        { id: "p2c", text: "Collaborative projects", type: "E" },
-        { id: "p2d", text: "Individual guidance", type: "I" }
-      ]
-    },
-    {
-      id: 3,
-      text: "What's your research style?",
-      choices: [
-        { id: "p3a", text: "Empirical studies", type: "S" },
-        { id: "p3b", text: "Theoretical frameworks", type: "N" },
-        { id: "p3c", text: "Collaborative studies", type: "E" },
-        { id: "p3d", text: "Independent research", type: "I" }
-      ]
-    },
-    {
-      id: 4,
-      text: "How do you contribute to your field?",
-      choices: [
-        { id: "p4a", text: "Publishing research", type: "T" },
-        { id: "p4b", text: "Mentoring scholars", type: "F" },
-        { id: "p4c", text: "Conference presentations", type: "E" },
-        { id: "p4d", text: "Writing theoretical works", type: "I" }
-      ]
-    }
-  ],
+  /* Q1 : E / I */
+  {
+    id: 1,
+    text: "A colleague proposes a joint paper — what sounds most appealing?",
+    choices: [
+      { id: "p1a", text: "Brain-storming together and co-authoring the draft.", type: "E" },
+      { id: "p1b", text: "Hosting lively seminars to refine the ideas publicly.", type: "E" },
+      { id: "p1c", text: "Developing the argument privately before sharing it.",  type: "I" },
+      { id: "p1d", text: "Working out proofs alone, then circulating a preprint.", type: "I" }
+    ]
+  },
+  /* Q2 : S / N */
+  {
+    id: 2,
+    text: "When designing a study, you’re most drawn to…",
+    choices: [
+      { id: "p2a", text: "Meticulous data collection and replication.",        type: "S" },
+      { id: "p2b", text: "Archival digging for concrete historical facts.",     type: "S" },
+      { id: "p2c", text: "Building abstract models that push the theory.",      type: "N" },
+      { id: "p2d", text: "Speculating on emerging paradigms and possibilities.", type: "N" }
+    ]
+  },
+  /* Q3 : T / F */
+  {
+    id: 3,
+    text: "Evaluating students, which factor tips the scale for you?",
+    choices: [
+      { id: "p3a", text: "Precise grading rubrics and statistical averages.", type: "T" },
+      { id: "p3b", text: "Rigorous argumentation and logical soundness.",     type: "T" },
+      { id: "p3c", text: "Growth in confidence and intellectual curiosity.",   type: "F" },
+      { id: "p3d", text: "Classroom engagement and peer collaboration.",       type: "F" }
+    ]
+  },
+  /* Q4 : J / P */
+  {
+    id: 4,
+    text: "A syllabus change is required mid-semester — you…",
+    choices: [
+      { id: "p4a", text: "Publish an updated schedule with firm deadlines.", type: "J" },
+      { id: "p4b", text: "Specify clear milestones and stick to them.",      type: "J" },
+      { id: "p4c", text: "Leave room for student-led detours and topics.",   type: "P" },
+      { id: "p4d", text: "Iterate weekly based on class momentum.",          type: "P" }
+    ]
+  }
+],
   consultant: [
-    {
-      id: 1,
-      text: "コンサルタントになったらあなたは顧客の抱える問題にどのようにアプローチしますか？",
-      choices: [
-        { id: "c1a", text: "データを軸にした意思決定サイクル", type: "T" },
-        { id: "c1b", text: "戦略的イノベーションを取る", type: "N" },
-        { id: "c1c", text: "過去の実例・経験からアプローチ", type: "S" },
-        { id: "c1d", text: "ステークホルダー調整をとり顧客との話し合いを重ねる", type: "F" }
-      ]
-    },
-    {
-      id: 2,
-      text: "あなたのコンサルティングスタイルはどのようなものになると思いますか？",
-      choices: [
-        { id: "c2a", text: "王道かつ基本のフレームワーク", type: "J" },
-        { id: "c2b", text: "状況対応型のアプローチ", type: "P" },
-        { id: "c2c", text: "チームで課題解決するファシリテーション", type: "E" },
-        { id: "c2d", text: "専門分野に特化したスタイル", type: "I" }
-      ]
-    },
-    {
-      id: 3,
-      text: "顧客との関係をどのように築いていきますか？",
-      choices: [
-        { id: "c3a", text: "専門家としてかつ客観的に", type: "T" },
-        { id: "c3b", text: "パートナーシップのように", type: "F" },
-        { id: "c3c", text: "定期的にコミュニケーションをとるように", type: "J" },
-        { id: "c3d", text: "柔軟な対応をみせるように", type: "P" }
-      ]
-    },
-    {
-      id: 4,
-      text: "あなたのコンサルタントとしての強みは何になると思いますか？",
-      choices: [
-        { id: "c4a", text: "ROI（投資収益率）を高める力", type: "T" },
-        { id: "c4b", text: "チーム・組織への貢献力", type: "F" },
-        { id: "c4c", text: "深い専門知識", type: "S" },
-        { id: "c4d", text: "新しい価値を生む発想力", type: "N" }
-      ]
-    }
-  ],
+  /* Q1 : E / I */
+  {
+    id: 1,
+    text: "クライアントキックオフで最初に取る行動は？",
+    choices: [
+      { id: "co1a", text: "ワークショップを開いて関係者と議論を活性化する", type: "E" },
+      { id: "co1b", text: "社内外ネットワークを駆使し情報を共有して盛り上げる", type: "E" },
+      { id: "co1c", text: "まず一人で資料を読み込み課題を静かに構造化する", type: "I" },
+      { id: "co1d", text: "観察に徹し要点を整理してから提案をまとめる",     type: "I" }
+    ]
+  },
+  /* Q2 : S / N */
+  {
+    id: 2,
+    text: "課題の原因を探る際、あなたが最も重視するのは？",
+    choices: [
+      { id: "co2a", text: "数値データや過去事例など具体的ファクト",            type: "S" },
+      { id: "co2b", text: "現場観察とヒアリングで細部を把握すること",            type: "S" },
+      { id: "co2c", text: "業界メガトレンドや将来シナリオを描くこと",            type: "N" },
+      { id: "co2d", text: "抽象モデルで本質構造を推論し切り口を見つけること",    type: "N" }
+    ]
+  },
+  /* Q3 : T / F */
+  {
+    id: 3,
+    text: "解決策を提案するとき、あなたの決め手は？",
+    choices: [
+      { id: "co3a", text: "ROI・KPIなど論理的評価指標が優れている",        type: "T" },
+      { id: "co3b", text: "仮説検証のロジックが一貫している",              type: "T" },
+      { id: "co3c", text: "ステークホルダー全員の納得感と共感が得られる",  type: "F" },
+      { id: "co3d", text: "組織文化や人へのポジティブインパクトが大きい", type: "F" }
+    ]
+  },
+  /* Q4 : J / P */
+  {
+    id: 4,
+    text: "プロジェクトの進め方として近いのはどれ？",
+    choices: [
+      { id: "co4a", text: "ガントチャートでタスクと期限を厳格管理",        type: "J" },
+      { id: "co4b", text: "成果物を先に固め計画通りに遂行する",            type: "J" },
+      { id: "co4c", text: "変化に応じてスプリントを柔軟に見直す",          type: "P" },
+      { id: "co4d", text: "余白を残しアイデアを試しながら進める",          type: "P" }
+    ]
+  }
+],
   researcher: [
-    {
-      id: 1,
-      text: "どの研究アプローチがお好みですか？",
-      choices: [
-        { id: "r1a", text: "定量的データ分析", type: "T" },
-        { id: "r1b", text: "質的データの研究", type: "F" },
-        { id: "r1c", text: "質的・量的データを組み合わせた混合法", type: "N" },
-        { id: "r1d", text: "様々な文献を参考にする系統的レビュー", type: "S" }
-      ]
-    },
-    {
-      id: 2,
-      text: "研究プロジェクトにはどのように取り組みますか？",
-      choices: [
-        { id: "r2a", text: "綿密なタイムラインを立てて進める", type: "J" },
-        { id: "r2b", text: "状況に応じて柔軟に探究を進める", type: "P" },
-        { id: "r2c", text: "テームで協力しながら進める", type: "E" },
-        { id: "r2d", text: "独立して集中して進める", type: "I" }
-      ]
-    },
-    {
-      id: 3,
-      text: "あなたの研究を突き動かす原動力はなんですか？",
-      choices: [
-        { id: "r3a", text: "新しい科学的発見への好奇心", type: "T" },
-        { id: "r3b", text: "社会へ影響・インパクトを生み出すこと", type: "F" },
-        { id: "r3c", text: "方法論的な厳密さの追求", type: "S" },
-        { id: "r3d", text: "理論の高度化・発展", type: "N" }
-      ]
-    },
-    {
-      id: 4,
-      text: "研究成果をどのように発信しますか？",
-      choices: [
-        { id: "r4a", text: "学術論文として発表する", type: "T" },
-        { id: "r4b", text: "社会向けアウトリーチ（世の中へ広くシェア）", type: "F" },
-        { id: "r4c", text: "学会でプレゼンテーションをする", type: "E" },
-        { id: "r4d", text: "技術レポートを作成", type: "I" }
-      ]
-    }
-  ],
+  /* Q1 : E / I */
+  {
+    id: 1,
+    text: "新しい研究テーマを思いついた直後、あなたが最初に取る行動は？",
+    choices: [
+      { id: "r1a", text: "研究室メンバーに話して議論を始める",       type: "E" },
+      { id: "r1b", text: "関連する専門家に連絡し意見を募る",         type: "E" },
+      { id: "r1c", text: "一人でノートに仮説を書き出し整理する",     type: "I" },
+      { id: "r1d", text: "静かな場所で文献を読み込み思考を深める",   type: "I" }
+    ]
+  },
+  /* Q2 : S / N */
+  {
+    id: 2,
+    text: "研究データを収集するときに最も重視するのは？",
+    choices: [
+      { id: "r2a", text: "実験や調査で得られる具体的な数値",         type: "S" },
+      { id: "r2b", text: "現場観察から得られる詳細な事実",           type: "S" },
+      { id: "r2c", text: "理論モデルが示す新しい可能性",             type: "N" },
+      { id: "r2d", text: "複数学問を横断した斬新な切り口",           type: "N" }
+    ]
+  },
+  /* Q3 : T / F */
+  {
+    id: 3,
+    text: "対立する結果が出たとき、どちらを優先しますか？",
+    choices: [
+      { id: "r3a", text: "統計的有意性と再現性の高さ",              type: "T" },
+      { id: "r3b", text: "論理の一貫性と因果関係の明確さ",          type: "T" },
+      { id: "r3c", text: "社会や環境へのプラスの影響",              type: "F" },
+      { id: "r3d", text: "被験者や関係者への倫理的配慮",            type: "F" }
+    ]
+  },
+  /* Q4 : J / P */
+  {
+    id: 4,
+    text: "研究スケジュールが変更になった場合の対応は？",
+    choices: [
+      { id: "r4a", text: "すぐに計画を組み直し進捗を厳格に管理する", type: "J" },
+      { id: "r4b", text: "マイルストーンを再設定し順序通り進める",  type: "J" },
+      { id: "r4c", text: "変化に合わせて柔軟に進め方を調整する",    type: "P" },
+      { id: "r4d", text: "状況を見ながらアイデアを試行錯誤する",    type: "P" }
+    ]
+  }
+],
   architect: [
-    {
-      id: 1,
-      text: "あなたの建築デザインに影響を与えるもの何になると思いますか？",
-      choices: [
-        { id: "ar1a", text: "技術的な要件", type: "T" },
-        { id: "ar1b", text: "美しさへのこだわり", type: "F" },
-        { id: "ar1c", text: "使いやすさへの要件", type: "S" },
-        { id: "ar1d", text: "革命的なアイデア", type: "N" }
-      ]
-    },
-    {
-      id: 2,
-      text: "プロジェクトを進める時、どのように進めますか？",
-      choices: [
-        { id: "ar2a", text: "まず詳細に図面を描き上げる", type: "J" },
-        { id: "ar2b", text: "試行錯誤しながら進める", type: "P" },
-        { id: "ar2c", text: "クライアントと一緒に考える", type: "E" },
-        { id: "ar2d", text: "まず一人で構想を練る", type: "I" }
-      ]
-    },
-    {
-      id: 3,
-      text: "あなたの設計ポリシーはどれに近いですか？",
-      choices: [
-        { id: "ar3a", text: "『形は機能に従う』", type: "T" },
-        { id: "ar3b", text: "心に響くデザイン", type: "F" },
-        { id: "ar3c", text: "環境にやさしい手法", type: "S" },
-        { id: "ar3d", text: "独創的な表現", type: "N" }
-      ]
-    },
-    {
-      id: 4,
-      text: "プロジェクトで困難に直面した時、どのように対処しますか？",
-      choices: [
-        { id: "ar4a", text: "培ってきた技術で解決を図る", type: "T" },
-        { id: "ar4b", text: "自由な発想で乗り切る", type: "N" },
-        { id: "ar4c", text: "チームで相談する", type: "E" },
-        { id: "ar4d", text: "一度立ち止まって考える", type: "I" }
-      ]
-    }
-  ],
+  /* Q1 : E / I */
+  {
+    id: 1,
+    text: "コンセプト立案の初期段階で、あなたがまず行うのは？",
+    choices: [
+      { id: "ar1a", text: "スタジオメンバーとアイデアを出し合いブレストする", type: "E" },
+      { id: "ar1b", text: "ワークショップを主導して刺激を受ける",           type: "E" },
+      { id: "ar1c", text: "一人でスケッチを重ねて思考を整理する",               type: "I" },
+      { id: "ar1d", text: "静かな場所で資料を読み込みながら構想を深める",       type: "I" }
+    ]
+  },
+  /* Q2 : S / N */
+  {
+    id: 2,
+    text: "新しい建築プロジェクトのインスピレーション源として最も近いのは？",
+    choices: [
+      { id: "ar2a", text: "敷地や周辺環境の綿密な現地調査",           type: "S" },
+      { id: "ar2b", text: "類似施設の施工事例や実測データ",           type: "S" },
+      { id: "ar2c", text: "未来のライフスタイルを描いたビジョン",     type: "N" },
+      { id: "ar2d", text: "異分野アートや最新テクノロジーからの発想", type: "N" }
+    ]
+  },
+  /* Q3 : T / F */
+  {
+    id: 3,
+    text: "複数案を比較検討するとき、より重視するのはどちら？",
+    choices: [
+      { id: "ar3a", text: "構造安全性やコストパフォーマンスなど客観指標", type: "T" },
+      { id: "ar3b", text: "性能シミュレーション数値や耐久性データ",       type: "T" },
+      { id: "ar3c", text: "利用者の居心地や感情へのインパクト",           type: "F" },
+      { id: "ar3d", text: "地域文化や歴史との調和・物語性",             type: "F" }
+    ]
+  },
+  /* Q4 : J / P */
+  {
+    id: 4,
+    text: "クライアント要件が途中で大幅に変更された場合の対応は？",
+    choices: [
+      { id: "ar4a", text: "即座に工程表を引き直しタスクを割り当てる",      type: "J" },
+      { id: "ar4b", text: "変更点を文書化し承認プロセスを再設定する",        type: "J" },
+      { id: "ar4c", text: "柔軟にプロセスを組み替えながら試作品で検証",      type: "P" },
+      { id: "ar4d", text: "状況を見つつアイデアを探索して最適解を探る",      type: "P" }
+    ]
+  }
+],
   copywriter: [
-    {
-      id: 1,
-      text: "あなたのライティングスタイルに近いのはどれですか？",
-      choices: [
-        { id: "cw1a", text: "データを元に追求する", type: "T" },
-        { id: "cw1b", text: "感情に響くストーリーで伝える", type: "F" },
-        { id: "cw1c", text: "わかりやすさを最優先にする", type: "S" },
-        { id: "cw1d", text: "ユニークな切り口で魅せる", type: "N" }
-      ]
-    },
-    {
-      id: 2,
-      text: "執筆プロジェクトはどのように進めますか？",
-      choices: [
-        { id: "cw2a", text: "最初に詳細なアウトラインを作る", type: "J" },
-        { id: "cw2b", text: "書きながら柔軟に調整する", type: "P" },
-        { id: "cw2c", text: "クライアントと密にやりとりする", type: "E" },
-        { id: "cw2d", text: "一人で集中して進める", type: "I" }
-      ]
-    },
-    {
-      id: 3,
-      text: "コンテンツの方向性を決める際に最も重要視するのは？",
-      choices: [
-        { id: "cw3a", text: "コンバージョン（売上など）具体的な成果の数字", type: "T" },
-        { id: "cw3b", text: "読者の共感やコメント・シェア数", type: "F" },
-        { id: "cw3c", text: "ブランドのガイドライン", type: "S" },
-        { id: "cw3d", text: "斬新な切り口やアイデア", type: "N" }
-      ]
-    },
-    {
-      id: 4,
-      text: "コピー（広告文）のアイデアを生み出す時の方法は？",
-      choices: [
-        { id: "cw4a", text: "市場調査・リサーチを行う", type: "T" },
-        { id: "cw4b", text: "ひらめきや直感を大切にする", type: "N" },
-        { id: "cw4c", text: "チームでブレインストーミングをする", type: "E" },
-        { id: "cw4d", text: "静かに思考を深めてひらめきを得る", type: "I" }
-      ]
-    }
-  ],
+  /* Q1 : E / I */
+  {
+    id: 1,
+    text: "新しいキャッチコピーを考える最初のステップは？",
+    choices: [
+      { id: "cw1a", text: "チームと声に出してアイデアを連発し合う", type: "E" },
+      { id: "cw1b", text: "クライアントに即ヒアリングして方向性をつかむ", type: "E" },
+      { id: "cw1c", text: "一人でノートに書き留めながら発想を深める", type: "I" },
+      { id: "cw1d", text: "静かな場所でリサーチして構想を練る", type: "I" }
+    ]
+  },
+  /* Q2 : S / N */
+  {
+    id: 2,
+    text: "コピーの根拠として最も重視する情報源は？",
+    choices: [
+      { id: "cw2a", text: "購買データやアクセス解析など数値指標", type: "S" },
+      { id: "cw2b", text: "過去の成功事例や競合広告の具体例",   type: "S" },
+      { id: "cw2c", text: "未来のトレンドを先読みした大胆な仮説", type: "N" },
+      { id: "cw2d", text: "業界外の文化・アートから得た着想",     type: "N" }
+    ]
+  },
+  /* Q3 : T / F */
+  {
+    id: 3,
+    text: "複数のコピー案から一本に絞る決め手は？",
+    choices: [
+      { id: "cw3a", text: "A/Bテストで最もCTRが高いもの",          type: "T" },
+      { id: "cw3b", text: "論理構成が明快で誤解の余地がないもの",    type: "T" },
+      { id: "cw3c", text: "読者の共感を呼び心を動かすストーリー性",   type: "F" },
+      { id: "cw3d", text: "ブランドの世界観を温かく伝える響き",     type: "F" }
+    ]
+  },
+  /* Q4 : J / P */
+  {
+    id: 4,
+    text: "タイトな納期の中でアイデアが出尽くした！あなたの行動は？",
+    choices: [
+      { id: "cw4a", text: "すぐにタスクを再優先づけし進行表を修正",       type: "J" },
+      { id: "cw4b", text: "チェックリストを使い漏れなく仕上げる",         type: "J" },
+      { id: "cw4c", text: "視点を変えるため散歩しながらひらめきを待つ",   type: "P" },
+      { id: "cw4d", text: "まず書いてみて途中で大胆に方向転換する",       type: "P" }
+    ]
+  }
+],
   director: [
-    {
-      id: 1,
-      text: "あなたが映画を撮るうえで１番の指針となるのは？",
-      choices: [
-        { id: "d1a", text: "撮影・編集など技術面の完成度", type: "T" },
-        { id: "d1b", text: "観客の心を揺さぶる感情表現", type: "F" },
-        { id: "d1c", text: "映像で語るストーリーテリング", type: "S" },
-        { id: "d1d", text: "深いテーマやコンセプト性", type: "N" }
-      ]
-    },
-    {
-      id: 2,
-      text: "映画作りを始める時の取り組み方は？",
-      choices: [
-        { id: "d2a", text: "緻密な絵コンテで計画を固める", type: "J" },
-        { id: "d2b", text: "現場で状況に応じて形にする", type: "P" },
-        { id: "d2c", text: "スタッフ全員で意見を出し合う", type: "E" },
-        { id: "d2d", text: "自分のビジョンを軸に進める", type: "I" }
-      ]
-    },
-    {
-      id: 3,
-      text: "あなたの演出スタイルを一言で表すと？",
-      choices: [
-        { id: "d3a", text: "緻密なコントロール", type: "J" },
-        { id: "d3b", text: "臨機応変な演出", type: "P" },
-        { id: "d3c", text: "俳優の演技を最大限に引きだす", type: "F" },
-        { id: "d3d", text: "機材・技術を駆使して魅せる", type: "T" }
-      ]
-    },
-    {
-      id: 4,
-      text: "もし制作中にトラブルが起きたとしたら、どう対処しますか？",
-      choices: [
-        { id: "d4a", text: "手順を整理し着実に解決策を練る", type: "T" },
-        { id: "d4b", text: "発想を転換し新たな方法を探す", type: "N" },
-        { id: "d4c", text: "チームで相談してベストな案を決める", type: "E" },
-        { id: "d4d", text: "自分の判断で即決し進める", type: "I" }
-      ]
-    }
-  ]
+  /* Q1 : E / I */
+  {
+    id: 1,
+    text: "撮影初日の朝、まず最初に取る行動は？",
+    choices: [
+      { id: "d1a", text: "スタッフ全員に声を掛け、現場の士気を高める", type: "E" },
+      { id: "d1b", text: "キャストと即席リハーサルを行い意見を交換する", type: "E" },
+      { id: "d1c", text: "一人で絵コンテを確認し静かに段取りを整理する", type: "I" },
+      { id: "d1d", text: "ヘッドホンを付けてイメージを深掘りし集中モードへ", type: "I" }
+    ]
+  },
+  /* Q2 : S / N */
+  {
+    id: 2,
+    text: "あなたが脚本を読み込むとき、注目するポイントは？",
+    choices: [
+      { id: "d2a", text: "シーンごとの舞台設定や小道具の具体性", type: "S" },
+      { id: "d2b", text: "登場人物の行動とセリフが現実味を持つか",   type: "S" },
+      { id: "d2c", text: "物語全体に流れる象徴的モチーフや裏テーマ",   type: "N" },
+      { id: "d2d", text: "結末が投げかける哲学的メッセージや余韻",     type: "N" }
+    ]
+  },
+  /* Q3 : T / F */
+  {
+    id: 3,
+    text: "編集段階でシーンをカットするか迷ったとき、決め手は？",
+    choices: [
+      { id: "d3a", text: "物語の整合性とテンポが最適になるかどうか", type: "T" },
+      { id: "d3b", text: "画面転換のリズムと構成上の論理が崩れないか", type: "T" },
+      { id: "d3c", text: "観客がキャラクターにより感情移入できるか",  type: "F" },
+      { id: "d3d", text: "残したほうが心揺さぶる余韻が生まれるか",    type: "F" }
+    ]
+  },
+  /* Q4 : J / P */
+  {
+    id: 4,
+    text: "撮影中にロケ地が急遽変更！どう対応する？",
+    choices: [
+      { id: "d4a", text: "即座に新しい撮影スケジュールを作り直す", type: "J" },
+      { id: "d4b", text: "各部署のタスクを再割当てし進捗を管理",     type: "J" },
+      { id: "d4c", text: "ロケ地の特色を活かし脚本を大胆に書き換える", type: "P" },
+      { id: "d4d", text: "臨場感を優先しその場のインスピレーションで撮る", type: "P" }
+    ]
+  }
+],
 };
 
 export const results: Result[] = [
