@@ -232,47 +232,51 @@ export const questions: { [key: string]: Question[] } = {
   }
 ],
   engineer: [
-    {
-      id: 1,
-      text: "How do you approach technical problems?",
-      choices: [
-        { id: "en1a", text: "Systematic troubleshooting", type: "T" },
-        { id: "en1b", text: "Innovative solutions", type: "N" },
-        { id: "en1c", text: "Proven methodologies", type: "S" },
-        { id: "en1d", text: "User-centered design", type: "F" }
-      ]
-    },
-    {
-      id: 2,
-      text: "What drives your engineering decisions?",
-      choices: [
-        { id: "en2a", text: "Technical specifications", type: "T" },
-        { id: "en2b", text: "Future scalability", type: "N" },
-        { id: "en2c", text: "Team consensus", type: "F" },
-        { id: "en2d", text: "Practical constraints", type: "S" }
-      ]
-    },
-    {
-      id: 3,
-      text: "How do you prefer to work on projects?",
-      choices: [
-        { id: "en3a", text: "Structured project management", type: "J" },
-        { id: "en3b", text: "Agile development", type: "P" },
-        { id: "en3c", text: "Collaborative teams", type: "E" },
-        { id: "en3d", text: "Independent work", type: "I" }
-      ]
-    },
-    {
-      id: 4,
-      text: "What interests you most in engineering?",
-      choices: [
-        { id: "en4a", text: "Optimizing performance", type: "T" },
-        { id: "en4b", text: "Solving complex problems", type: "N" },
-        { id: "en4c", text: "Building reliable systems", type: "J" },
-        { id: "en4d", text: "Exploring new technologies", type: "P" }
-      ]
-    }
-  ],
+  /* Q1 : E / I */
+  {
+    id: 1,
+    text: "At project kickoff, your instinctive working style is to…",
+    choices: [
+      { id: "en1a", text: "Host a white-board session to spark team ideas.", type: "E" },
+      { id: "en1b", text: "Pair-program or mob-code to share knowledge fast.", type: "E" },
+      { id: "en1c", text: "Sketch a prototype solo before sharing anything.",  type: "I" },
+      { id: "en1d", text: "Dive into documentation quietly to map the problem.", type: "I" }
+    ]
+  },
+  /* Q2 : S / N */
+  {
+    id: 2,
+    text: "When comparing design options, you lean on…",
+    choices: [
+      { id: "en2a", text: "Concrete benchmarks and proven patterns.", type: "S" },
+      { id: "en2b", text: "Detailed specs and edge-case checklists.",  type: "S" },
+      { id: "en2c", text: "Visionary architecture that scales to unseen needs.", type: "N" },
+      { id: "en2d", text: "Creative leaps that could disrupt current limits.",    type: "N" }
+    ]
+  },
+  /* Q3 : T / F */
+  {
+    id: 3,
+    text: "A teammate proposes a risky refactor; your main criterion is…",
+    choices: [
+      { id: "en3a", text: "Performance metrics and algorithmic efficiency.", type: "T" },
+      { id: "en3b", text: "Logical soundness and technical debt reduction.",  type: "T" },
+      { id: "en3c", text: "Impact on developer morale and user delight.",     type: "F" },
+      { id: "en3d", text: "Whether it fosters collaboration and team growth.", type: "F" }
+    ]
+  },
+  /* Q4 : J / P */
+  {
+    id: 4,
+    text: "Mid-sprint, requirements change drastically. You usually…",
+    choices: [
+      { id: "en4a", text: "Re-draft a timeline and lock in new deliverables.", type: "J" },
+      { id: "en4b", text: "Document clear acceptance criteria right away.",     type: "J" },
+      { id: "en4c", text: "Keep options open and iterate with quick spikes.",   type: "P" },
+      { id: "en4d", text: "Prototype multiple paths and decide as data arrives.",type: "P" }
+    ]
+  }
+],
   artist: [
     {
       id: 1,
