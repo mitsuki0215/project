@@ -1228,57 +1228,97 @@ export const results: Result[] = [
 
   // Investors
   {
-    name: "Warren Buffett",
-    occupation: "investor",
-    mbti: "ISTJ",
-    description: "The Oracle of Omaha. Your patient, analytical approach to investment mirrors Buffett's value investing strategy.",
-    imageUrl: "https://images.pexels.com/photos/534216/pexels-photo-534216.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Warren_Buffett",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "George Soros",
-    occupation: "investor",
-    mbti: "INTJ",
-    description: "A legendary hedge fund manager. Your strategic thinking and global perspective reflect Soros's innovative investment approach.",
-    imageUrl: "https://images.pexels.com/photos/534217/pexels-photo-534217.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/George_Soros",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Cathie Wood",
-    occupation: "investor",
-    mbti: "ENFJ",
-    description: "A visionary tech investor. Your forward-thinking approach and ability to spot trends align with Wood's innovative investment strategy.",
-    imageUrl: "https://images.pexels.com/photos/534218/pexels-photo-534218.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Cathie_Wood",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Ray Dalio",
-    occupation: "investor",
-    mbti: "ENTP",
-    description: "The founder of Bridgewater Associates. Your systematic approach and principle-based thinking match Dalio's investment philosophy.",
-    imageUrl: "https://images.pexels.com/photos/534219/pexels-photo-534219.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Ray_Dalio",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
+  name: "ウォーレン・バフェット",
+  occupation: "investor",
+  mbti: "ISTJ",
+  description:
+    "徹底したファンダメンタル分析で“適正価格以下の優良企業”を丹念に拾い上げる「オマハの賢人」。複利と長期保有の威力を誰よりも体現する堅実派です。",
+  imageUrl: "https://images.pexels.com/photos/534216/pexels-photo-534216.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Warren_Buffett",
+  strengths: [
+    "財務諸表を深掘りして企業の本質価値を算定する分析力",
+    "短期ノイズに左右されない鉄壁の忍耐力と規律",
+    "資本配分を最適化する経営者視点の投資判断"
+  ],
+  weaknesses: [
+    "新興テクノロジー分野への参入が慎重すぎる傾向",
+    "決断速度より熟考を重視するため機会損失が起こりやすい"
+  ],
+  actionSteps: [
+    "成長産業の専門家と協働し知見をアップデート",
+    "ポートフォリオの一部で実験的な少額投資を行い学習速度を上げる",
+    "後継者育成とナレッジ共有に時間を割き組織的判断力を高める"
+  ],
+},
+{
+  name: "ジョージ・ソロス",
+  occupation: "investor",
+  mbti: "INTJ",
+  description:
+    "“再帰性理論”で市場心理を読み切り、世界経済を股にかけたマクロトレードを敢行する戦略家。大胆なポジショニングと即断即決で巨利を狙います。",
+  imageUrl: "https://images.pexels.com/photos/534217/pexels-photo-534217.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/George_Soros",
+  strengths: [
+    "地政学・金融政策まで俯瞰するグローバル視点",
+    "相場の転換点を嗅ぎ取る鋭い直観とシナリオ思考",
+    "損切りを躊躇しないリスク管理の徹底"
+  ],
+  weaknesses: [
+    "ポジションが巨大化し市場へ自己影響を与えやすい",
+    "高いボラティリティが精神的ストレスを招く"
+  ],
+  actionSteps: [
+    "ポジションサイズを段階的に調整し影響度をコントロール",
+    "チーム分析を取り入れ主観バイアスを軽減",
+    "ストレス対策としてトレード以外の意思決定プロトコルを整備"
+  ],
+},
+{
+  name: "キャシー・ウッド",
+  occupation: "investor",
+  mbti: "ENFJ",
+  description:
+    "破壊的イノベーション企業に集中投資し“次の10年を創るテーマ”を世界に語るビジョナリー。物語とデータを両輪に未来像を描きます。",
+  imageUrl: "https://images.pexels.com/photos/534218/pexels-photo-534218.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Cathie_Wood",
+  strengths: [
+    "テクノロジーのSカーブを先読みする洞察力",
+    "難解な技術をストーリーとして投資家に伝える発信力",
+    "高リターンを狙う集中ポートフォリオ構築"
+  ],
+  weaknesses: [
+    "ボラティリティが高くドローダウンが大きい",
+    "将来予測を重視し過去データからの逸脱が生じやすい"
+  ],
+  actionSteps: [
+    "バリュエーションの定量モデルを精緻化し期待値を数値で検証",
+    "ヘッジ戦略を導入し下落局面のリスクを平準化",
+    "外部専門家レビューで根拠の透明性を高める"
+  ],
+},
+{
+  name: "レイ・ダリオ",
+  occupation: "investor",
+  mbti: "ENTP",
+  description:
+    "“プリンシプル”を掲げ、データ駆動でオールウェザー運用を実践する橋水アソシエイツ創業者。経済メカニズムを体系化し、多角的分散で安定収益を追求します。",
+  imageUrl: "https://images.pexels.com/photos/534219/pexels-photo-534219.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Ray_Dalio",
+  strengths: [
+    "経済サイクルをモデル化するシステム思考",
+    "膨大なデータを用いたアルゴリズム運用",
+    "組織に“率直な対話文化”を根付かせるリーダーシップ"
+  ],
+  weaknesses: [
+    "モデルが複雑化し外部に伝わりにくい",
+    "原則を重視しすぎて環境変化への柔軟性が低下する恐れ"
+  ],
+  actionSteps: [
+    "モデルの仮定を簡潔に可視化し関係者間で共有",
+    "フィードバックループを短縮しパラメータを迅速にアップデート",
+    "小規模チームでの実験運用を並行し機敏さを維持"
+  ],
+},
 
   // Professors
   {
