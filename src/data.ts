@@ -600,47 +600,51 @@ export const questions: { [key: string]: Question[] } = {
   }
 ],
   architect: [
-    {
-      id: 1,
-      text: "あなたの建築デザインに影響を与えるもの何になると思いますか？",
-      choices: [
-        { id: "ar1a", text: "技術的な要件", type: "T" },
-        { id: "ar1b", text: "美しさへのこだわり", type: "F" },
-        { id: "ar1c", text: "使いやすさへの要件", type: "S" },
-        { id: "ar1d", text: "革命的なアイデア", type: "N" }
-      ]
-    },
-    {
-      id: 2,
-      text: "プロジェクトを進める時、どのように進めますか？",
-      choices: [
-        { id: "ar2a", text: "まず詳細に図面を描き上げる", type: "J" },
-        { id: "ar2b", text: "試行錯誤しながら進める", type: "P" },
-        { id: "ar2c", text: "クライアントと一緒に考える", type: "E" },
-        { id: "ar2d", text: "まず一人で構想を練る", type: "I" }
-      ]
-    },
-    {
-      id: 3,
-      text: "あなたの設計ポリシーはどれに近いですか？",
-      choices: [
-        { id: "ar3a", text: "『形は機能に従う』", type: "T" },
-        { id: "ar3b", text: "心に響くデザイン", type: "F" },
-        { id: "ar3c", text: "環境にやさしい手法", type: "S" },
-        { id: "ar3d", text: "独創的な表現", type: "N" }
-      ]
-    },
-    {
-      id: 4,
-      text: "プロジェクトで困難に直面した時、どのように対処しますか？",
-      choices: [
-        { id: "ar4a", text: "培ってきた技術で解決を図る", type: "T" },
-        { id: "ar4b", text: "自由な発想で乗り切る", type: "N" },
-        { id: "ar4c", text: "チームで相談する", type: "E" },
-        { id: "ar4d", text: "一度立ち止まって考える", type: "I" }
-      ]
-    }
-  ],
+  /* Q1 : E / I */
+  {
+    id: 1,
+    text: "コンセプト立案の初期段階で、あなたがまず行うのは？",
+    choices: [
+      { id: "ar1a", text: "スタジオメンバーとアイデアを出し合いブレストする", type: "E" },
+      { id: "ar1b", text: "ワークショップを主導して刺激を受ける",           type: "E" },
+      { id: "ar1c", text: "一人でスケッチを重ねて思考を整理する",               type: "I" },
+      { id: "ar1d", text: "静かな場所で資料を読み込みながら構想を深める",       type: "I" }
+    ]
+  },
+  /* Q2 : S / N */
+  {
+    id: 2,
+    text: "新しい建築プロジェクトのインスピレーション源として最も近いのは？",
+    choices: [
+      { id: "ar2a", text: "敷地や周辺環境の綿密な現地調査",           type: "S" },
+      { id: "ar2b", text: "類似施設の施工事例や実測データ",           type: "S" },
+      { id: "ar2c", text: "未来のライフスタイルを描いたビジョン",     type: "N" },
+      { id: "ar2d", text: "異分野アートや最新テクノロジーからの発想", type: "N" }
+    ]
+  },
+  /* Q3 : T / F */
+  {
+    id: 3,
+    text: "複数案を比較検討するとき、より重視するのはどちら？",
+    choices: [
+      { id: "ar3a", text: "構造安全性やコストパフォーマンスなど客観指標", type: "T" },
+      { id: "ar3b", text: "性能シミュレーション数値や耐久性データ",       type: "T" },
+      { id: "ar3c", text: "利用者の居心地や感情へのインパクト",           type: "F" },
+      { id: "ar3d", text: "地域文化や歴史との調和・物語性",             type: "F" }
+    ]
+  },
+  /* Q4 : J / P */
+  {
+    id: 4,
+    text: "クライアント要件が途中で大幅に変更された場合の対応は？",
+    choices: [
+      { id: "ar4a", text: "即座に工程表を引き直しタスクを割り当てる",      type: "J" },
+      { id: "ar4b", text: "変更点を文書化し承認プロセスを再設定する",        type: "J" },
+      { id: "ar4c", text: "柔軟にプロセスを組み替えながら試作品で検証",      type: "P" },
+      { id: "ar4d", text: "状況を見つつアイデアを探索して最適解を探る",      type: "P" }
+    ]
+  }
+],
   copywriter: [
     {
       id: 1,
