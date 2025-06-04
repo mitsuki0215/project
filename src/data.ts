@@ -1277,7 +1277,7 @@ export const results: Result[] = [
   // Consultants
   {
     name: "ピーター・ドラッカー",
-    occupation: "コンサルタント",
+    occupation: "consultant",
     mbti: "INTJ",
     description: "近代経営学の父であるドラッカーに匹敵する戦略的洞察力の持ち主！あなたの分析的思考と長期的なビジョンは、複雑な課題を明快なアクションへと導くでしょう。",
     imageUrl: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
@@ -1290,7 +1290,7 @@ export const results: Result[] = [
   },
   {
     name: "クレイトン・クリステンセン",
-    occupation: "コンサルタント",
+    occupation: "consultant",
     mbti: "ENFJ",
     description: "あなたは組織の動きをスッと見抜いて、新しい波を起こせるコンサルタント！まさに、クリステンセンの”破壊的イノベーション”理論を体現してるかのよう。",
     imageUrl: "https://images.pexels.com/photos/3183151/pexels-photo-3183151.jpeg",
@@ -1303,7 +1303,7 @@ export const results: Result[] = [
   },
   {
     name: "マイケル・ポーター",
-    occupation: "コンサルタント",
+    occupation: "consultant",
     mbti: "ISTJ",
     description: "あなたは市場を冷静に読み解いて、有利なポジションをしっかりと築くコンサルタント！ポーターの競争戦略理論を実践するかのような、堅実なアプローチが光ります。",
     imageUrl: "https://images.pexels.com/photos/3183152/pexels-photo-3183152.jpeg",
@@ -1316,7 +1316,7 @@ export const results: Result[] = [
   },
   {
     name: "インドラ・ヌーイ",
-    occupation: "コンサルタント",
+    occupation: "consultant",
     mbti: "ENTJ",
     description: "あなたはヌーイのように先を見据えて、きちんとビジョンを形にできるコンサルタント！アイデアを現実に変える力は、まさにビジネス界の変革者そのもの。",
     imageUrl: "https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg",
@@ -1331,7 +1331,7 @@ export const results: Result[] = [
   // Researchers
   {
     name: "スティーブン・ホーキング",
-    occupation: "研究者",
+    occupation: "researcher",
     mbti: "INTJ",
     description: "あなたは卓越した分析力と独創的な思考を持つ研究者！ホーキングのように、宇宙の謎を解き明かすための理論を構築する力があります。",
     imageUrl: "https://images.pexels.com/photos/2156/sky-space-dark-galaxy.jpg",
@@ -1344,7 +1344,7 @@ export const results: Result[] = [
   },
   {
     name: "ジェーン・グドール",
-    occupation: "研究者",
+    occupation: "researcher",
     mbti: "INFJ",
     description: "あなたは霊長類研究のパイオニア、グドールに匹敵する洞察力の持ち主！精神を宿す優しい眼差しと揺るぎない探究心で、自然界の秘密を解き明かすことができます。",
     imageUrl: "https://images.pexels.com/photos/4666751/pexels-photo-4666751.jpeg",
@@ -1357,7 +1357,7 @@ export const results: Result[] = [
   },
   {
     name: "ニール・ドグラース・タイソン",
-    occupation: "研究者",
+    occupation: "researcher",
     mbti: "ENTJ",
     description: "あなたは複雑な概念を魅力的に語る手腕のあるかつリーダーシップも持ち合わせる研究者！その情熱は人々に、宇宙への憧憬を新たに呼び覚まします。",
     imageUrl: "https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg",
@@ -1370,7 +1370,7 @@ export const results: Result[] = [
   },
   {
     name: "バーバラ・マクリントック",
-    occupation: "研究者",
+    occupation: "researcher",
     mbti: "INTP",
     description: "あなたはマクリントックのような鋭い洞察力を生かし、斬新なアイデアを語る研究者！洞察力を磨き続ければ、ノーベル賞受賞も夢では終わらないかも！？",
     imageUrl: "https://images.pexels.com/photos/4666754/pexels-photo-4666754.jpeg",
@@ -1385,7 +1385,7 @@ export const results: Result[] = [
   // Architects
   {
     name: "フランク・ロイド・ライト",
-    occupation: "建築家",
+    occupation: "architect",
     mbti: "INTJ",
     description: "あなたは有機的建築家の巨匠ライトのような、革新的設計思想を持つ建築家！自然と一体化した空間作りを細部までこだわった設計を実現します。",
     imageUrl: "https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg",
@@ -1398,7 +1398,7 @@ export const results: Result[] = [
   },
   {
     name: "ザハ・ハディド",
-    occupation: "建築家",
+    occupation: "architect",
     mbti: "ENTJ",
     description: "あなたはハディドの魂を宿す奔放な曲線美と不屈の創造力で、空間そのものをアートへと昇華させ、新たな時代の鼓動を響かせるでしょう！",
     imageUrl: "https://images.pexels.com/photos/1732415/pexels-photo-1732415.jpeg",
@@ -1411,7 +1411,7 @@ export const results: Result[] = [
   },
   {
     name: "ル・コルビュジエ",
-    occupation: "建築家",
+    occupation: "architect",
     mbti: "ISTJ",
     description: "あなたはコルビュジエの精神を継ぐ理知的な美意識と周到な空間計画を持つ建築家！ムダのないスマートなデザインで暮らしやすさを考えるのが好きなタイプです。",
     imageUrl: "https://images.pexels.com/photos/1732416/pexels-photo-1732416.jpeg",
@@ -1424,7 +1424,7 @@ export const results: Result[] = [
   },
   {
     name: "アントニ・ガウディ",
-    occupation: "建築家",
+    occupation: "architect",
     mbti: "INFP",
     description: "あなたは自然を取り込む独創的表現とディテールへの情熱を持つ建築家！サグラダ・ファミリアのような人々を魅了する建築を創り出せること間違いなし。",
     imageUrl: "https://images.pexels.com/photos/1732417/pexels-photo-1732417.jpeg",
@@ -1439,7 +1439,7 @@ export const results: Result[] = [
   // Copywriters
   {
     name: "デイビッド・オグルヴィ",
-    occupation: "コピーライター",
+    occupation: "copywriter",
     mbti: "ENTJ",
     description: "あなたはオグルヴィの精神を宿す卓越した洞察と物語力で、広告の力を最大限に引き出すコピーライター！消費者の心をつかむ言葉を巧みに操ることができます。",
     imageUrl: "https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg",
@@ -1452,7 +1452,7 @@ export const results: Result[] = [
   },
   {
     name: "メアリー・ウェルズ・ローレンス",
-    occupation: "コピーライター",
+    occupation: "copywriter",
     mbti: "ENFP",
     description: "あなたは広告界のパイオニアであるウェルズ・ローレンスのような、独自の視点と情熱で消費者の心をつかむコピーライター！斬新なアイデアでブランドを輝かせることができます。",
     imageUrl: "https://images.pexels.com/photos/3182774/pexels-photo-3182774.jpeg",
@@ -1465,7 +1465,7 @@ export const results: Result[] = [
   },
   {
     name: "クロード・C・ホプキンス",
-    occupation: "コピーライター",
+    occupation: "copywriter",
     mbti: "ISTJ",
     description: "あなたはホプキンスのような徹底したテストと数値思考で成果を導く手法を持つコピーライター！広告を科学し、人々の心を確かな実証に基づいて動かすことができるでしょう。",
     imageUrl: "https://images.pexels.com/photos/3182775/pexels-photo-3182775.jpeg",
@@ -1478,7 +1478,7 @@ export const results: Result[] = [
   },
   {
     name: "レオ・バーネット",
-    occupation: "コピーライター",
+    occupation: "copywriter",
     mbti: "INFJ",
     description: "あなたは“広告に心を宿す”伝説的クリエイター、バーネットに匹敵する情緒的訴求力を持つコピーライター！人々の記憶に残る物語と温かなキャラクターでブランド価値を永続的に高めます",
     imageUrl: "https://images.pexels.com/photos/3182776/pexels-photo-3182776.jpeg",
@@ -1493,7 +1493,7 @@ export const results: Result[] = [
   // Film Directors
   {
     name: "アルフレッド・ヒッチコック",
-    occupation: "映画監督",
+    occupation: "director",
     mbti: "INTJ",
     description: "あなたはヒッチコックのように巧みな伏線と心理操作ができる映画監督！緻密なストーリーテリングとサスペンスの演出で、観客を引き込む力があります。",
     imageUrl: "https://images.pexels.com/photos/274937/pexels-photo-274937.jpeg",
@@ -1506,7 +1506,7 @@ export const results: Result[] = [
   },
   {
     name: "スティーブン・スピルバーグ",
-    occupation: "映画監督",
+    occupation: "director",
     mbti: "ENFJ",
     description: "あなたは豊かな情感と抜群のエンタメ性を持つ映画監督！スピルバーグのように、観客の心を掴む感動的な物語を紡ぎ出すことができます。",
     imageUrl: "https://images.pexels.com/photos/274938/pexels-photo-274938.jpeg",
@@ -1519,7 +1519,7 @@ export const results: Result[] = [
   },
   {
     name: "スタンリー・キューブリック",
-    occupation: "映画監督",
+    occupation: "director",
     mbti: "INTP",
     description: "あなたは徹底したディテール追求と前衛的演出ができる映画監督！キューブリックのようにこだわり抜いた映像で観客を唸らせます。",
     imageUrl: "https://images.pexels.com/photos/274939/pexels-photo-274939.jpeg",
@@ -1532,7 +1532,7 @@ export const results: Result[] = [
   },
   {
     name: "アニエス・ヴァルダ",
-    occupation: "映画監督",
+    occupation: "director",
     mbti: "ENFP",
     description: "あなたは自由な構成とパーソナルな視点を持っている映画監督！ヴァルダのようにドキュメンタリーとフィクションを融合させた独自のスタイルで、観客に深い感動を与えることができます。",
     imageUrl: "https://images.pexels.com/photos/274940/pexels-photo-274940.jpeg",
