@@ -165,7 +165,7 @@ export const questions: { [key: string]: Question[] } = {
   /* Q3 : T / F */
   {
     id: 3,
-    text: "学生が理由を述べて課題を遅れて提出したとき、あなたはどうしますか？",
+    text: "学生が理由を述べて課題を遅れて提出したとき、あなたはどうする？",
     choices: [
       { id: "t3a", text: "公平を保つためシラバス通りに減点", type: "T" },
       { id: "t3b", text: "基準を明確にした追課題を用意", type: "T" },
@@ -189,7 +189,7 @@ export const questions: { [key: string]: Question[] } = {
   /* Q1 : E / I */
   {
     id: 1,
-    text: "あなたが医者になったら、どんな診察スタイルをとりますか？",
+    text: "あなたが医者になったら、どんな診察スタイルをとる？",
     choices: [
       { id: "m1a", text: "まずは世間話や健康習慣の話題で緊張をほぐし、診療の本題へ誘導する", type: "E" },
       { id: "m1b", text: "電子カルテを共有モニターに映し、患者さんと一緒に情報を確認しながら進める", type: "E" },
@@ -200,7 +200,7 @@ export const questions: { [key: string]: Question[] } = {
   /* Q2 : S / N */
   {
     id: 2,
-    text: "診察室に患者さんが入ってきた瞬間、まず注目するのは…？",
+    text: "診察室に患者さんが入ってきた瞬間、まず注目するのは？",
     choices: [
       { id: "m2a", text: "呼吸数・皮膚色・歩き方など客観的バイタルサイン",      type: "S" },
       { id: "m2b", text: "問診票に書かれたキーワードの有無",     type: "S" },
@@ -211,7 +211,7 @@ export const questions: { [key: string]: Question[] } = {
   /* Q3 : T / F */
   {
     id: 3,
-    text: "治療法を提案するとき、あなたが強調するのは…？",
+    text: "治療法を提案するとき、あなたが強調するのは？",
     choices: [
       { id: "m3a", text: "エビデンスに基づく統計とリスク・ベネフィット", type: "T" },
       { id: "m3b", text: "診療ガイドラインと論理的根拠",       type: "T" },
@@ -257,7 +257,7 @@ export const questions: { [key: string]: Question[] } = {
   /* Q3 : T / F */
   {
     id: 3,
-    text: "チームメイトがリスクの高いリファクタリングを提案してきた。判断基準として最優先するのはどれですか？",
+    text: "チームメイトがリスクの高いリファクタリングを提案してきた。判断基準として最優先するのはどれ？",
     choices: [
       { id: "en3a", text: "パフォーマンス指標やアルゴリズム効率", type: "T" },
       { id: "en3b", text: "論理的一貫性と技術的負債の削減",  type: "T" },
@@ -314,7 +314,7 @@ export const questions: { [key: string]: Question[] } = {
   /* Q4 : J / P */
   {
     id: 4,
-    text: "展示会の締め切りが迫ってきたとき、あなたはどのように進めますか？",
+    text: "展示会の締め切りが迫ってきたとき、あなたはどのように進める？",
     choices: [
       { id: "a4a", text: "厳格なスケジュールを組み、マイルストーンを死守する",  type: "J" },
       { id: "a4b", text: "各要素を完全に仕上げてから次の工程へ進む",   type: "J" },
@@ -327,45 +327,45 @@ export const questions: { [key: string]: Question[] } = {
   /* Q1 : E / I */
   {
     id: 1,
-    text: "A potential scoop drops—first thing you do?",
+    text: "あなたの元へ特ダネの情報が迷い込んだ！あなたが真っ先にすることは？",
     choices: [
-      { id: "j1a", text: "Ring key sources right away for live quotes.",        type: "E" },
-      { id: "j1b", text: "Rush to the scene to interview eyewitnesses.",        type: "E" },
-      { id: "j1c", text: "Dive into archives and databases on your own first.", type: "I" },
-      { id: "j1d", text: "Sketch questions privately before contacting anyone.",type: "I" }
+      { id: "j1a", text: "関係者に即電話してコメントをもらう",        type: "E" },
+      { id: "j1b", text: "現場へ飛び、目撃者に直接インタビューする",        type: "E" },
+      { id: "j1c", text: "まず一人で資料やデータを掘り下げ、情報を集め尽くす", type: "I" },
+      { id: "j1d", text: "まずは原稿の骨組みと質問表を作り込む",type: "I" }
     ]
   },
   /* Q2 : S / N */
   {
     id: 2,
-    text: "Your go-to evidence-gathering style is…",
+    text: "あなたの情報収集スタイルはどれになりそう？",
     choices: [
-      { id: "j2a", text: "Verify official documents and statistics.",       type: "S" },
-      { id: "j2b", text: "Cite on-record statements and concrete facts.",    type: "S" },
-      { id: "j2c", text: "Trace hidden patterns across disparate clues.",    type: "N" },
-      { id: "j2d", text: "Imagine scenarios to uncover bigger narratives.",  type: "N" }
+      { id: "j2a", text: "公的文書や統計を照合して裏付けを取る",       type: "S" },
+      { id: "j2b", text: "公式発言や具体的事実を引用する",    type: "S" },
+      { id: "j2c", text: "バラバラの手がかりをつなげてパターンを見抜く",    type: "N" },
+      { id: "j2d", text: "自分の仮説を軸に壮大なストーリーを組み立てる",  type: "N" }
     ]
   },
   /* Q3 : T / F */
   {
     id: 3,
-    text: "When shaping your article’s angle, you rely most on…",
+    text: "記事の“どの視点で攻めるか”を決めるとき、あなたが一番重視するのは？",
     choices: [
-      { id: "j3a", text: "Logical flow supported by hard evidence.",     type: "T" },
-      { id: "j3b", text: "Data visuals that prove the claim.",           type: "T" },
-      { id: "j3c", text: "Emotional power of personal stories.",         type: "F" },
-      { id: "j3d", text: "Potential social impact of the piece.",        type: "F" }
+      { id: "j3a", text: "確かな証拠で支える論理的な構成",     type: "T" },
+      { id: "j3b", text: "主張を裏付けるデータ図やグラフ",           type: "T" },
+      { id: "j3c", text: "心に響く当事者のストーリー",         type: "F" },
+      { id: "j3d", text: "社会に与えるインパクトの大きさ",        type: "F" }
     ]
   },
   /* Q4 : J / P */
   {
     id: 4,
-    text: "A breaking-news deadline looms. You tend to…",
+    text: "締め切り直前に新しい情報が飛び込んできた！あなたはどうする？",
     choices: [
-      { id: "j4a", text: "Lock sections as you finish and file early.",       type: "J" },
-      { id: "j4b", text: "Follow a strict outline and timetable.",            type: "J" },
-      { id: "j4c", text: "Keep tweaking copy as fresh info rolls in.",        type: "P" },
-      { id: "j4d", text: "Stay flexible, ready to rewrite at the last minute.",type: "P" }
+      { id: "j4a", text: "書けた段落から保存して先に送稿する",       type: "J" },
+      { id: "j4b", text: "厳密なアウトラインと時間表に沿って進める",            type: "J" },
+      { id: "j4c", text: "新情報が入るたび原稿を微調整し続ける",        type: "P" },
+      { id: "j4d", text: "締切ギリギリまで待ち、必要なら”全面”を一気に書き直す",type: "P" }
     ]
   }
 ],
@@ -373,45 +373,45 @@ export const questions: { [key: string]: Question[] } = {
   /* Q1 : E / I */
   {
     id: 1,
-    text: "At the start of a new case, your first move is…",
+    text: "あなたへ新しい案件の依頼が来た！まず何をする？",
     choices: [
-      { id: "l1a", text: "Call a team huddle to brainstorm angles.", type: "E" },
-      { id: "l1b", text: "Interview key witnesses right away.",     type: "E" },
-      { id: "l1c", text: "Study the case files quietly on your own.",type: "I" },
-      { id: "l1d", text: "Draft preliminary arguments in solitude.", type: "I" }
+      { id: "l1a", text: "チームメンバーを集めて作戦会議", type: "E" },
+      { id: "l1b", text: "重要証人に即インタビューしに行く",     type: "E" },
+      { id: "l1c", text: "まず一人で資料をじっくり読み込む",type: "I" },
+      { id: "l1d", text: "一人で初期弁論を下書きする", type: "I" }
     ]
   },
   /* Q2 : S / N */
   {
     id: 2,
-    text: "When building your argument, you lean most on…",
+    text: "主法律的主張を組み立てるとき、まず拠り所にするのはどれ？",
     choices: [
-      { id: "l2a", text: "Documented precedents and statutes.",                  type: "S" },
-      { id: "l2b", text: "Concrete timelines and physical evidence.",            type: "S" },
-      { id: "l2c", text: "Novel interpretations that reframe the law.",          type: "N" },
-      { id: "l2d", text: "Big-picture principles that could set new precedent.", type: "N" }
+      { id: "l2a", text: "判例や条文など「決まったルール」",                  type: "S" },
+      { id: "l2b", text: "時系列と物的証拠など「動かぬ事実」",            type: "S" },
+      { id: "l2c", text: "従来を覆す「まったく新しい法解釈」",          type: "N" },
+      { id: "l2d", text: "未来の判例になるかもしれない「大きな理念・ビジョン」", type: "N" }
     ]
   },
   /* Q3 : T / F */
   {
     id: 3,
-    text: "What guides your courtroom persuasion style?",
+    text: "法廷で陪審員に説明する際、まず最初に採るべき説得スタイルはどれ？",
     choices: [
-      { id: "l3a", text: "Logical, point-by-point refutation.",      type: "T" },
-      { id: "l3b", text: "Data-driven exhibits and analytics.",      type: "T" },
-      { id: "l3c", text: "Compelling stories that humanise clients.",type: "F" },
-      { id: "l3d", text: "Appeals to shared values and fairness.",   type: "F" }
+      { id: "l3a", text: "論点を順に検証して反証するロジカルアプローチ",      type: "T" },
+      { id: "l3b", text: "データ解析や図表を駆使した証拠提示",      type: "T" },
+      { id: "l3c", text: "依頼人の人間味を引き立てるストーリーテリング",type: "F" },
+      { id: "l3d", text: "共通の価値観や公平さへの訴え",   type: "F" }
     ]
   },
   /* Q4 : J / P */
   {
     id: 4,
-    text: "Mid-trial, new evidence surfaces. You tend to…",
+    text: "もし公判中に新たな証拠が出てきたら、あなたはどう対応する？",
     choices: [
-      { id: "l4a", text: "Revise your brief and lock the plan quickly.", type: "J" },
-      { id: "l4b", text: "Create a strict updated timeline to follow.", type: "J" },
-      { id: "l4c", text: "Stay agile—adjust arguments on the fly.",     type: "P" },
-      { id: "l4d", text: "Keep options open and improvise in questioning.", type: "P" }
+      { id: "l4a", text: "直ちに書面を修正し、戦略を確定して固める", type: "J" },
+      { id: "l4b", text: "裁判所の手続き規則を再確認し、必要な申立てを即座に行う", type: "J" },
+      { id: "l4c", text: "状況に応じて議論を柔軟に組み替える",     type: "P" },
+      { id: "l4d", text: "質問を即興で調整し、流れに乗る", type: "P" }
     ]
   }
 ],
