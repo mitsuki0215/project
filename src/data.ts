@@ -1012,57 +1012,101 @@ export const results: Result[] = [
 
   // Engineers
   {
-    name: "Nikola Tesla",
-    occupation: "engineer",
-    mbti: "INTJ",
-    description: "A brilliant electrical engineer and inventor. Your innovative thinking and dedication to perfection mirror Tesla's groundbreaking work.",
-    imageUrl: "https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Nikola_Tesla",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Grace Hopper",
-    occupation: "engineer",
-    mbti: "ENTP",
-    description: "A pioneer in computer programming. Your problem-solving creativity and forward-thinking approach reflect Hopper's revolutionary contributions.",
-    imageUrl: "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Grace_Hopper",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Leonardo da Vinci",
-    occupation: "engineer",
-    mbti: "ENFP",
-    description: "A Renaissance engineer and inventor. Your diverse interests and creative approach to engineering match da Vinci's innovative spirit.",
-    imageUrl: "https://images.pexels.com/photos/8197534/pexels-photo-8197534.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Leonardo_da_Vinci",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Henry Ford",
-    occupation: "engineer",
-    mbti: "ISTJ",
-    description: "The pioneer of modern assembly-line production. Your systematic approach to efficiency aligns with Ford's revolutionary manufacturing methods.",
-    imageUrl: "https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Henry_Ford",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
+  name: "ニコラ・テスラ",
+  occupation: "engineer",
+  mbti: "INTJ",
+  description:
+    "交流電力や無線送電など、時代を超えるテクノロジーを生み出した〈孤高の発明家〉。数学的な思考で壮大なビジョンを設計し、完璧を追求する職人気質が光ります。",
+  imageUrl: "https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Nikola_Tesla",
+  strengths: [
+    "未来を先読みするシステム設計力と洞察力",
+    "複雑理論を具体的装置に落とし込む技術応用力",
+    "長時間の集中を維持し細部まで最適化できる探究心"
+  ],
+  weaknesses: [
+    "量産化・資金調達など事業面への関心が薄い",
+    "コラボレーションや交渉より技術を優先しがち",
+    "自己管理を後回しにし健康を損ねやすい"
+  ],
+  actionSteps: [
+    "早期プロトタイプを公開し投資家やパートナーを巻き込む",
+    "仕様・実験結果を文書化し知識共有を強化",
+    "ワークライフバランスを意識し定期的にリフレッシュする"
+  ]
+},
+{
+  name: "グレース・ホッパー",
+  occupation: "engineer",
+  mbti: "ENTP",
+  description:
+    "世界初のコンパイラを生み、誰もがコードを書ける未来を切り開いた〈計算機科学の開拓者〉。既存の枠を疑い、問題をユーモアと行動力で解決します。",
+  imageUrl: "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Grace_Hopper",
+  strengths: [
+    "抽象概念をわかりやすい言語・ツールへ翻訳する力",
+    "「なぜ？」を問い続け変革を推進するリーダーシップ",
+    "障害をチャンスに変える大胆な試行錯誤精神"
+  ],
+  weaknesses: [
+    "興味が多岐にわたりタスクが拡散しやすい",
+    "規則や手順を飛ばして周囲を混乱させることがある",
+    "細部の詰めが甘く品質リスクを招く場合がある"
+  ],
+  actionSteps: [
+    "週次で優先順位を見直し成果物を小刻みにデリバリー",
+    "品質チェックリストを導入しリリース前にギャップを補正",
+    "若手や多職種と協働し好奇心を組織学習へ昇華させる"
+  ]
+},
+{
+  name: "レオナルド・ダ・ヴィンチ",
+  occupation: "engineer",
+  mbti: "ENFP",
+  description:
+    "芸術・解剖・機械工学を横断し未来をスケッチした〈万能の天才〉。好奇心に導かれ、自然の法則を探りながら革新的な機構を次々と着想します。",
+  imageUrl: "https://images.pexels.com/photos/8197534/pexels-photo-8197534.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Leonardo_da_Vinci",
+  strengths: [
+    "分野を越境してアイデアを結び付ける創造的連想力",
+    "細密な観察とスケッチで概念を視覚化する力",
+    "人文学的視点を技術に取り込みユーザー体験を豊かにする感性"
+  ],
+  weaknesses: [
+    "新構想に惹かれ完成まで至らないプロジェクトが多い",
+    "長期的な実装フェーズへの集中が続きにくい",
+    "実験コストやスケジュールを見積もるのが苦手"
+  ],
+  actionSteps: [
+    "ゴールとマイルストーンを定義し進捗を可視化",
+    "実装フェーズは協力者に委任し自らはアーキテクトに専念",
+    "アイデアノートを体系化し再利用・共有できる知識資産にする"
+  ]
+},
+{
+  name: "ヘンリー・フォード",
+  occupation: "engineer",
+  mbti: "ISTJ",
+  description:
+    "ベルトコンベア方式で大量生産を確立し、社会をモータリゼーションへ導いた〈効率化の達人〉。厳格なプロセス管理と堅実な品質基準が強みです。",
+  imageUrl: "https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Henry_Ford",
+  strengths: [
+    "工程を標準化しコストと品質を最適化するシステム思考",
+    "データに基づく堅実な意思決定とリスク管理",
+    "継続的改善（Kaizen）のマインドで効率を高める実行力"
+  ],
+  weaknesses: [
+    "革新的アイデアより既存プロセスの最適化を優先しがち",
+    "変化への抵抗感が強く柔軟性に欠ける場合がある",
+    "ヒト・社会・環境など非効率でも重要な要素を軽視しやすい"
+  ],
+  actionSteps: [
+    "デザイン思考やリーンスタートアップを学び革新志向を補完",
+    "多様な専門家とワークショップを行い新視点を導入",
+    "効率指標に顧客満足度や環境負荷を追加しバランスを取る"
+  ]
+},
 
   // Artists
   {
