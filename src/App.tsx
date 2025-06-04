@@ -158,7 +158,7 @@ function App() {
         {step === 'occupation' && (
           <div>
             <h3 className="text-lg font-medium text-gray-900 mb-4">
-              Select <b>one</b> occupation:
+              将来なりたい職業を<b>1つ</b>選択してください:
             </h3>
             <div className="grid grid-cols-2 gap-4">
               {occupations.map((o) => (
@@ -180,7 +180,7 @@ function App() {
                 onClick={() => setStep('questions')}
                 className="mt-6 w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700"
               >
-                Continue
+                診断を始める
               </button>
             )}
           </div>
@@ -269,7 +269,7 @@ function App() {
                 onClick={resetQuiz}
                 className="mt-8 w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700"
               >
-                Start Over
+                もう一度診断を始める
               </button>
             </div>
           </div>
