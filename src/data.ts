@@ -53,7 +53,7 @@ export const questions: { [key: string]: Question[] } = {
     id: 1,
     text: "新たなビジネスアイデアが浮かんだ時、あなたはまず何をしますか？",
     choices: [
-      { id: "e1a", text: "共に立ち上げたい相手に電話して、ブレーンストーミングをする",      type: "E" },
+      { id: "e1a", text: "共に立ち上げたい相手に電話して、ブレインストーミングをする",      type: "E" },
       { id: "e1b", text: "オンラインで公開して、協力したい人を募りつつ意見を聞く",    type: "E" },
       { id: "e1c", text: "まず自分用メモに書き出し、じっくり肉付けする",      type: "I" },
       { id: "e1d", text: "アイデアを一晩寝かせてから、人に共有する",       type: "I" }
@@ -143,45 +143,45 @@ export const questions: { [key: string]: Question[] } = {
   /* Q1 : E / I */
   {
     id: 1,
-    text: "On the first day of a new term, what’s your default style?",
+    text: "新学期の朝、クラスを持った時まずどんな空気をつくる？",
     choices: [
-      { id: "t1a", text: "Kick off with energetic ice-breakers for the whole class.", type: "E" },
-      { id: "t1b", text: "Invite open discussion to get everyone talking right away.", type: "E" },
-      { id: "t1c", text: "Observe quietly and learn each student’s name and vibe first.", type: "I" },
-      { id: "t1d", text: "Prepare a calm introduction and one-to-one check-ins later.",  type: "I" }
+      { id: "t1a", text: "元気一杯なアイスブレイクで一気に場を温める！", type: "E" },
+      { id: "t1b", text: "ワイワイ全員参加のフリートークを回していく", type: "E" },
+      { id: "t1c", text: "生徒に自己紹介をさせ、その様子を見守る", type: "I" },
+      { id: "t1d", text: "自分の落ち着いた自己紹介からスタート",  type: "I" }
     ]
   },
   /* Q2 : S / N */
   {
     id: 2,
-    text: "When designing curriculum materials, you rely most on…",
+    text: "テストを作るとき、何をいちばん大事にする？",
     choices: [
-      { id: "t2a", text: "Concrete examples and step-by-step demonstrations.", type: "S" },
-      { id: "t2b", text: "Hands-on activities grounded in real-world tasks.",  type: "S" },
-      { id: "t2c", text: "Big-picture themes that spark imagination.",        type: "N" },
-      { id: "t2d", text: "Abstract questions that challenge conventional ideas.", type: "N" }
+      { id: "t2a", text: "過去問や授業内容をベースに、レベルを段階的に上げる", type: "S" },
+      { id: "t2b", text: "日常シーンを再現した実践型の応用問題にする",  type: "S" },
+      { id: "t2c", text: "授業内容を軸にしつつ、関連トピックへ発想力を鍛えられるようにする",        type: "N" },
+      { id: "t2d", text: "「それ、ホントに正解？」と常識を覆す思考トラップで揺さぶる", type: "N" }
     ]
   },
   /* Q3 : T / F */
   {
     id: 3,
-    text: "A student submits late work citing personal issues. Your instinct is to…",
+    text: "学生が理由を述べて課題を遅れて提出したとき、あなたはどうしますか？",
     choices: [
-      { id: "t3a", text: "Apply the penalty stated in the syllabus for fairness.", type: "T" },
-      { id: "t3b", text: "Offer a structured make-up assignment with clear criteria.", type: "T" },
-      { id: "t3c", text: "Listen to their situation and adjust the deadline compassionately.", type: "F" },
-      { id: "t3d", text: "Provide encouragement and alternative ways to demonstrate learning.", type: "F" }
+      { id: "t3a", text: "公平を保つためシラバス通りに減点", type: "T" },
+      { id: "t3b", text: "基準を明確にした追課題を用意", type: "T" },
+      { id: "t3c", text: "事情を聞き、期限を思いやりを持って調整", type: "F" },
+      { id: "t3d", text: "いま取り組める別の課題にしっかり取り組むよう伝える", type: "F" }
     ]
   },
   /* Q4 : J / P */
   {
     id: 4,
-    text: "Mid-semester, the school introduces a new policy that shifts your schedule. You…",
+    text: "もし学期途中で期末考査が１週前倒しになり、授業数が不足しそうだと分かったらどうする？",
     choices: [
-      { id: "t4a", text: "Rewrite your lesson plans immediately to align with the new timeline.", type: "J" },
-      { id: "t4b", text: "Create a detailed calendar with checkpoints to stay on track.",        type: "J" },
-      { id: "t4c", text: "Adjust organically, updating content as you gauge student progress.",  type: "P" },
-      { id: "t4d", text: "Embrace the change and experiment with fresh activities week by week.", type: "P" }
+      { id: "t4a", text: "すぐにシラバスを改訂し、短縮版の日程表を学生と教師に配布する", type: "J" },
+      { id: "t4b", text: "残り授業を単元ごとに再配置したガントチャートを作り、各回の到達目標を明示する",        type: "J" },
+      { id: "t4c", text: "学生の理解度を見ながら要点を優先し、授業ごとに内容を微調整していく",  type: "P" },
+      { id: "t4d", text: "週ごとに新しいアクティビティと自己評価を試して柔軟に補う", type: "P" }
     ]
   }
 ],
@@ -189,45 +189,45 @@ export const questions: { [key: string]: Question[] } = {
   /* Q1 : E / I */
   {
     id: 1,
-    text: "During a patient consultation, your natural style is to…",
+    text: "あなたが医者になったら、どんな診察スタイルをとりますか？",
     choices: [
-      { id: "m1a", text: "Lead an open conversation to put the patient at ease.", type: "E" },
-      { id: "m1b", text: "Invite nurses / family into the dialogue for more insight.", type: "E" },
-      { id: "m1c", text: "Listen quietly, taking detailed notes before responding.",  type: "I" },
-      { id: "m1d", text: "Focus on a calm one-to-one discussion in a private setting.", type: "I" }
+      { id: "m1a", text: "まずは世間話や健康習慣の話題で緊張をほぐし、診療の本題へ誘導する", type: "E" },
+      { id: "m1b", text: "電子カルテを共有モニターに映し、患者さんと一緒に情報を確認しながら進める", type: "E" },
+      { id: "m1c", text: "事前にカルテと画像を読み込み、要点を整理してから静かに質問を始める",  type: "I" },
+      { id: "m1d", text: "チェックリストを手元に置き、短い質問を重ねて症状を体系的に絞り込む", type: "I" }
     ]
   },
   /* Q2 : S / N */
   {
     id: 2,
-    text: "When collecting diagnostic clues, you rely most on…",
+    text: "診察室に患者さんが入ってきた瞬間、まず注目するのは…？",
     choices: [
-      { id: "m2a", text: "Physical exam findings and lab results.",      type: "S" },
-      { id: "m2b", text: "Observable symptoms and patient history.",     type: "S" },
-      { id: "m2c", text: "Connecting subtle patterns to rare conditions.",type: "N" },
-      { id: "m2d", text: "Theoretical models of underlying diseases.",   type: "N" }
+      { id: "m2a", text: "呼吸数・皮膚色・歩き方など客観的バイタルサイン",      type: "S" },
+      { id: "m2b", text: "問診票に書かれたキーワードの有無",     type: "S" },
+      { id: "m2c", text: "症状の組み合わせから“隠れた共通メカニズム”を連想",type: "N" },
+      { id: "m2d", text: "患者さんの話し方・表情から潜在的ストーリーを推測",   type: "N" }
     ]
   },
   /* Q3 : T / F */
   {
     id: 3,
-    text: "When presenting treatment options, you emphasize…",
+    text: "治療法を提案するとき、あなたが強調するのは…？",
     choices: [
-      { id: "m3a", text: "Evidence-based statistics and risk–benefit data.", type: "T" },
-      { id: "m3b", text: "Clinical guidelines and logical rationale.",       type: "T" },
-      { id: "m3c", text: "How each option aligns with the patient’s values.", type: "F" },
-      { id: "m3d", text: "Emotional support and quality-of-life factors.",    type: "F" }
+      { id: "m3a", text: "エビデンスに基づく統計とリスク・ベネフィット", type: "T" },
+      { id: "m3b", text: "診療ガイドラインと論理的根拠",       type: "T" },
+      { id: "m3c", text: "各選択肢が患者さんの価値観にどう合うか", type: "F" },
+      { id: "m3d", text: "心のケアや生活の質への影響",    type: "F" }
     ]
   },
   /* Q4 : J / P */
   {
     id: 4,
-    text: "If a treatment plan must change suddenly, you tend to…",
+    text: "患者さんの状態が急変し、治療計画を見直す必要が出たとき、あなたはどうしますか？",
     choices: [
-      { id: "m4a", text: "Re-schedule immediately and issue clear new orders.", type: "J" },
-      { id: "m4b", text: "Document a step-by-step protocol to stay on track.",   type: "J" },
-      { id: "m4c", text: "Keep several options open and adjust on the fly.",     type: "P" },
-      { id: "m4d", text: "Iterate with the patient’s feedback as the situation evolves.", type: "P" }
+      { id: "m4a", text: "まず緊急対応チームを招集し、変更した治療プランとタイムラインを即時に会議する", type: "J" },
+      { id: "m4b", text: "当者・手技・投薬スケジュールをチェックリスト化して共有する",   type: "J" },
+      { id: "m4c", text: "検査結果が出るたびに複数案を比べながらプランを更新する",     type: "P" },
+      { id: "m4d", text: "患者さんのフィードバックを受け取りつつ状況に合わせて更新する", type: "P" }
     ]
   }
 ],
@@ -235,45 +235,45 @@ export const questions: { [key: string]: Question[] } = {
   /* Q1 : E / I */
   {
     id: 1,
-    text: "At project kickoff, your instinctive working style is to…",
+    text: "プロジェクトキックオフ時、あなたがまず取る行動はどれ？",
     choices: [
-      { id: "en1a", text: "Host a white-board session to spark team ideas.", type: "E" },
-      { id: "en1b", text: "Pair-program or mob-code to share knowledge fast.", type: "E" },
-      { id: "en1c", text: "Sketch a prototype solo before sharing anything.",  type: "I" },
-      { id: "en1d", text: "Dive into documentation quietly to map the problem.", type: "I" }
+      { id: "en1a", text: "ホワイトボード等のツールを使用して、ブレインストーミングをチームでする", type: "E" },
+      { id: "en1b", text: "みんなで画面を囲んでワイワイ実装をする", type: "E" },
+      { id: "en1c", text: "まず一人でプロトタイプを作り、形にしてから共有する",  type: "I" },
+      { id: "en1d", text: "静かに資料を読み漁り、課題をマインドマップ化", type: "I" }
     ]
   },
   /* Q2 : S / N */
   {
     id: 2,
-    text: "When comparing design options, you lean on…",
+    text: "アーキテクチャを比較するとき、重要視するには？",
     choices: [
-      { id: "en2a", text: "Concrete benchmarks and proven patterns.", type: "S" },
-      { id: "en2b", text: "Detailed specs and edge-case checklists.",  type: "S" },
-      { id: "en2c", text: "Visionary architecture that scales to unseen needs.", type: "N" },
-      { id: "en2d", text: "Creative leaps that could disrupt current limits.",    type: "N" }
+      { id: "en2a", text: "数字で証明済み！鉄板ベンチマーク＋王道パターン", type: "S" },
+      { id: "en2b", text: "仕様書とエッジケースを根こそぎ潰す“抜け漏れゼロ”リスト",  type: "S" },
+      { id: "en2c", text: "変化ウェルカム！未知を呑み込むフューチャープルーフ設計", type: "N" },
+      { id: "en2d", text: "常識をぶち破るクリエイティブジャンプで現状打破案",    type: "N" }
     ]
   },
   /* Q3 : T / F */
   {
     id: 3,
-    text: "A teammate proposes a risky refactor; your main criterion is…",
+    text: "チームメイトがリスクの高いリファクタリングを提案してきた。判断基準として最優先するのはどれですか？",
     choices: [
-      { id: "en3a", text: "Performance metrics and algorithmic efficiency.", type: "T" },
-      { id: "en3b", text: "Logical soundness and technical debt reduction.",  type: "T" },
-      { id: "en3c", text: "Impact on developer morale and user delight.",     type: "F" },
-      { id: "en3d", text: "Whether it fosters collaboration and team growth.", type: "F" }
+      { id: "en3a", text: "パフォーマンス指標やアルゴリズム効率", type: "T" },
+      { id: "en3b", text: "論理的一貫性と技術的負債の削減",  type: "T" },
+      { id: "en3c", text: "開発者の士気とユーザー体験へのインパクト",     type: "F" },
+      { id: "en3d", text: "コラボレーションやチーム成長を促すかどうか", type: "F" }
     ]
   },
   /* Q4 : J / P */
   {
     id: 4,
-    text: "Mid-sprint, requirements change drastically. You usually…",
+    text: "スプリント途中で要件が大幅変更。あなたはどう動く？",
     choices: [
-      { id: "en4a", text: "Re-draft a timeline and lock in new deliverables.", type: "J" },
-      { id: "en4b", text: "Document clear acceptance criteria right away.",     type: "J" },
-      { id: "en4c", text: "Keep options open and iterate with quick spikes.",   type: "P" },
-      { id: "en4d", text: "Prototype multiple paths and decide as data arrives.",type: "P" }
+      { id: "en4a", text: "新しいタスクを決めてスケジュールを組み直す", type: "J" },
+      { id: "en4b", text: "すぐに受け入れ条件を書き出して明確化する",     type: "J" },
+      { id: "en4c", text: "選択肢を残しつつ短期で試作をたくさん作る",   type: "P" },
+      { id: "en4d", text: "複数のプロトタイプを走らせ、データを見て決める",type: "P" }
     ]
   }
 ],
@@ -281,45 +281,45 @@ export const questions: { [key: string]: Question[] } = {
   /* Q1 : E / I */
   {
     id: 1,
-    text: "When a new idea sparks, your next move is to…",
+    text: "アイデアが閃いた直後、あなたはどんな行動を取る？",
     choices: [
-      { id: "a1a", text: "Call a friend or fellow artist to jam on it together.", type: "E" },
-      { id: "a1b", text: "Post a rough sketch online to gather quick feedback.",  type: "E" },
-      { id: "a1c", text: "Retreat to your studio and sketch privately first.",   type: "I" },
-      { id: "a1d", text: "Keep it in a personal journal until the concept is clear.", type: "I" }
+      { id: "a1a", text: "友人や仲間のアーティストに連絡し、一緒に演奏する", type: "E" },
+      { id: "a1b", text: "ラフスケッチをSNSに投稿し、すぐフィードバックを集める",  type: "E" },
+      { id: "a1c", text: "ひたすら書き殴り、形より量でアイデアを出す",   type: "I" },
+      { id: "a1d", text: "情報を集めて構造化し、完成イメージが見えるまで整理する", type: "I" }
     ]
   },
   /* Q2 : S / N */
   {
     id: 2,
-    text: "Your strongest source of inspiration typically comes from…",
+    text: "インスピレーションの源としてもっとも強いのはどれ？？",
     choices: [
-      { id: "a2a", text: "Real-world textures, colors, and everyday scenes.", type: "S" },
-      { id: "a2b", text: "Historical techniques and classical references.",   type: "S" },
-      { id: "a2c", text: "Symbolic imagery and abstract concepts.",           type: "N" },
-      { id: "a2d", text: "Dream-like ideas that push beyond reality.",        type: "N" }
+      { id: "a2a", text: "現実世界の質感・色彩・日常の風景", type: "S" },
+      { id: "a2b", text: "古典的技法や美術史のリファレンス",   type: "S" },
+      { id: "a2c", text: "象徴的イメージや抽象的コンセプト",           type: "N" },
+      { id: "a2d", text: "現実を超えた夢幻的アイデア",        type: "N" }
     ]
   },
   /* Q3 : T / F */
   {
     id: 3,
-    text: "When judging whether a piece is finished, you rely on…",
+    text: "何を基準に作品が完成したと判断しますか？",
     choices: [
-      { id: "a3a", text: "Balanced composition and technical precision.",   type: "T" },
-      { id: "a3b", text: "Adherence to design principles and proportions.", type: "T" },
-      { id: "a3c", text: "Whether it conveys the intended emotion.",        type: "F" },
-      { id: "a3d", text: "The personal or social story it tells.",          type: "F" }
+      { id: "a3a", text: "構図のバランスと技術的な精度",   type: "T" },
+      { id: "a3b", text: "黄金比など理論ルールへの合致", type: "T" },
+      { id: "a3c", text: "狙った感情がしっかり伝わっているか",        type: "F" },
+      { id: "a3d", text: "個人的または社会的な物語が語ることができてるか",          type: "F" }
     ]
   },
   /* Q4 : J / P */
   {
     id: 4,
-    text: "Faced with a looming exhibition deadline, you tend to…",
+    text: "展示会の締め切りが迫ってきたとき、あなたはどのように進めますか？",
     choices: [
-      { id: "a4a", text: "Create a strict schedule and stick to milestones.",  type: "J" },
-      { id: "a4b", text: "Finalize each element before moving to the next.",   type: "J" },
-      { id: "a4c", text: "Experiment up to the last minute, adjusting as you go.", type: "P" },
-      { id: "a4d", text: "Leave space for spontaneous changes on installation day.", type: "P" }
+      { id: "a4a", text: "厳格なスケジュールを組み、マイルストーンを死守する",  type: "J" },
+      { id: "a4b", text: "各要素を完全に仕上げてから次の工程へ進む",   type: "J" },
+      { id: "a4c", text: "締切ギリギリまで施策を続け、その都度調整する", type: "P" },
+      { id: "a4d", text: "設営当日に起こる即興の変化を楽しむ", type: "P" }
     ]
   }
 ],
