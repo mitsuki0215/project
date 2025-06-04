@@ -7,22 +7,22 @@ import { Occupation, Result, PersonalityStats } from './types';
   1. 職業リスト
 ───────────────────────────────────────────*/
 const occupations: Occupation[] = [
-  { id: 'scientist',    name: 'scientist' },
-  { id: 'entrepreneur', name: 'entrepreneur' },
-  { id: 'designer',     name: 'designer' },
-  { id: 'teacher',      name: 'teacher' },
-  { id: 'doctor',       name: 'doctor' },
-  { id: 'engineer',     name: 'engineer' },
-  { id: 'artist',       name: 'artist' },
-  { id: 'journalist',   name: 'journalist' },
-  { id: 'lawyer',       name: 'lawyer' },
-  { id: 'investor',     name: 'investor' },
-  { id: 'professor',    name: 'professor' },
-  { id: 'consultant',   name: 'consultant' },
-  { id: 'researcher',   name: 'researcher' },
-  { id: 'architect',    name: 'architect' },
-  { id: 'copywriter',   name: 'copywriter' },
-  { id: 'director',     name: 'film director' }
+  { id: 'scientist',    name: '科学者' },
+  { id: 'entrepreneur', name: '起業家' },
+  { id: 'designer',     name: 'デザイナー' },
+  { id: 'teacher',      name: '教師' },
+  { id: 'doctor',       name: '医者' },
+  { id: 'engineer',     name: 'エンジニア' },
+  { id: 'artist',       name: 'アーティスト' },
+  { id: 'journalist',   name: 'ジャーナリスト' },
+  { id: 'lawyer',       name: '弁護士' },
+  { id: 'investor',     name: '投資家' },
+  { id: 'professor',    name: '教授' },
+  { id: 'consultant',   name: 'コンサルタント' },
+  { id: 'researcher',   name: '研究者' },
+  { id: 'architect',    name: '建築家' },
+  { id: 'copywriter',   name: 'コピーライター' },
+  { id: 'director',     name: '映画監督' }
 ];
 
 /* Q 番号 ↔ MBTI ペア対応表  */
