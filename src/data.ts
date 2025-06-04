@@ -140,47 +140,51 @@ export const questions: { [key: string]: Question[] } = {
   }
 ],
   teacher: [
-    {
-      id: 1,
-      text: "What teaching approach do you prefer?",
-      choices: [
-        { id: "t1a", text: "Structured lesson plans", type: "J" },
-        { id: "t1b", text: "Flexible, adaptive teaching", type: "P" },
-        { id: "t1c", text: "Interactive group activities", type: "E" },
-        { id: "t1d", text: "Individual student guidance", type: "I" }
-      ]
-    },
-    {
-      id: 2,
-      text: "How do you assess student progress?",
-      choices: [
-        { id: "t2a", text: "Objective performance metrics", type: "T" },
-        { id: "t2b", text: "Overall growth and effort", type: "F" },
-        { id: "t2c", text: "Practical skill demonstration", type: "S" },
-        { id: "t2d", text: "Creative problem-solving", type: "N" }
-      ]
-    },
-    {
-      id: 3,
-      text: "What motivates you as a teacher?",
-      choices: [
-        { id: "t3a", text: "Student academic achievement", type: "T" },
-        { id: "t3b", text: "Personal growth of students", type: "F" },
-        { id: "t3c", text: "Maintaining classroom order", type: "J" },
-        { id: "t3d", text: "Fostering creativity", type: "P" }
-      ]
-    },
-    {
-      id: 4,
-      text: "How do you handle challenging students?",
-      choices: [
-        { id: "t4a", text: "Follow disciplinary procedures", type: "J" },
-        { id: "t4b", text: "Adapt to individual needs", type: "P" },
-        { id: "t4c", text: "Seek peer/parent collaboration", type: "E" },
-        { id: "t4d", text: "One-on-one mentoring", type: "I" }
-      ]
-    }
-  ],
+  /* Q1 : E / I */
+  {
+    id: 1,
+    text: "On the first day of a new term, what’s your default style?",
+    choices: [
+      { id: "t1a", text: "Kick off with energetic ice-breakers for the whole class.", type: "E" },
+      { id: "t1b", text: "Invite open discussion to get everyone talking right away.", type: "E" },
+      { id: "t1c", text: "Observe quietly and learn each student’s name and vibe first.", type: "I" },
+      { id: "t1d", text: "Prepare a calm introduction and one-to-one check-ins later.",  type: "I" }
+    ]
+  },
+  /* Q2 : S / N */
+  {
+    id: 2,
+    text: "When designing curriculum materials, you rely most on…",
+    choices: [
+      { id: "t2a", text: "Concrete examples and step-by-step demonstrations.", type: "S" },
+      { id: "t2b", text: "Hands-on activities grounded in real-world tasks.",  type: "S" },
+      { id: "t2c", text: "Big-picture themes that spark imagination.",        type: "N" },
+      { id: "t2d", text: "Abstract questions that challenge conventional ideas.", type: "N" }
+    ]
+  },
+  /* Q3 : T / F */
+  {
+    id: 3,
+    text: "A student submits late work citing personal issues. Your instinct is to…",
+    choices: [
+      { id: "t3a", text: "Apply the penalty stated in the syllabus for fairness.", type: "T" },
+      { id: "t3b", text: "Offer a structured make-up assignment with clear criteria.", type: "T" },
+      { id: "t3c", text: "Listen to their situation and adjust the deadline compassionately.", type: "F" },
+      { id: "t3d", text: "Provide encouragement and alternative ways to demonstrate learning.", type: "F" }
+    ]
+  },
+  /* Q4 : J / P */
+  {
+    id: 4,
+    text: "Mid-semester, the school introduces a new policy that shifts your schedule. You…",
+    choices: [
+      { id: "t4a", text: "Rewrite your lesson plans immediately to align with the new timeline.", type: "J" },
+      { id: "t4b", text: "Create a detailed calendar with checkpoints to stay on track.",        type: "J" },
+      { id: "t4c", text: "Adjust organically, updating content as you gauge student progress.",  type: "P" },
+      { id: "t4d", text: "Embrace the change and experiment with fresh activities week by week.", type: "P" }
+    ]
+  }
+],
   doctor: [
     {
       id: 1,
