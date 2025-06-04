@@ -958,58 +958,97 @@ export const results: Result[] = [
 
   // Doctors
   {
-    name: "Elizabeth Blackwell",
-    occupation: "doctor",
-    mbti: "ISTJ",
-    description: "The first woman to receive a medical degree in the US. Your dedication to excellence and breaking barriers reflects Blackwell's pioneering spirit.",
-    imageUrl: "https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Elizabeth_Blackwell",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Paul Farmer",
-    occupation: "doctor",
-    mbti: "ENFJ",
-    description: "A global health pioneer. Your commitment to healthcare equality and community service mirrors Farmer's humanitarian approach to medicine.",
-    imageUrl: "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Paul_Farmer",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Oliver Sacks",
-    occupation: "doctor",
-    mbti: "INFP",
-    description: "A neurologist and author known for his empathetic case studies. Your deep understanding of human experience matches Sacks' compassionate approach.",
-    imageUrl: "https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Oliver_Sacks",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Jonas Salk",
-    occupation: "doctor",
-    mbti: "INTJ",
-    description: "The developer of the polio vaccine. Your methodical approach to problem-solving reflects Salk's dedication to medical research.",
-    imageUrl: "https://images.pexels.com/photos/4386464/pexels-photo-4386464.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Jonas_Salk",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-
+  name: "エリザベス・ブラックウェル",
+  occupation: "doctor",
+  mbti: "ISTJ",
+  description:
+    "米国初の女性医師として医学の門戸を開いた〈先駆的リーダー〉。公衆衛生の制度化と医学教育の質向上に生涯を捧げ、確固たる倫理観で患者と社会に貢献しました。",
+  imageUrl: "https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Elizabeth_Blackwell",
+  strengths: [
+    "膨大な症例を几帳面に記録・分析するデータ管理力",
+    "規範を守り抜く責任感と忍耐力で高い信頼を得る",
+    "教育体制や制度を整備するオーガナイズ能力"
+  ],
+  weaknesses: [
+    "新奇な治療法より確立手順を優先し変化に慎重",
+    "自己犠牲的に働き続け心身の負荷を抱えやすい"
+  ],
+  actionSteps: [
+    "最新エビデンスを定期レビューし革新的治療も検討する",
+    "タスクを委任しセルフケアの時間を確保する",
+    "若手医師のメンタリングで知識と価値観を継承する"
+  ]
+},
+{
+  name: "ポール・ファーマー",
+  occupation: "doctor",
+  mbti: "ENFJ",
+  description:
+    "「誰一人置き去りにしない医療」を掲げ、世界の僻地で包括的ケアを実践した〈グローバル・ヒューマニスト〉。共感力と行動力でコミュニティを巻き込み健康格差に挑んできました。",
+  imageUrl: "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Paul_Farmer",
+  strengths: [
+    "異文化と協調し信頼関係を築くコミュニケーション力",
+    "医療・社会・経済を統合するシステム思考",
+    "チームを鼓舞し資金・資源を引き寄せるリーダーシップ"
+  ],
+  weaknesses: [
+    "理想を追い過ぎて資金・時間の制約を超過しがち",
+    "対人対応が多く自身の研究時間を確保しにくい"
+  ],
+  actionSteps: [
+    "プロジェクトにKPIを設定しリソース配分を最適化",
+    "後進リーダーを育成し運営を分担する",
+    "デジタルヘルスツールを導入し現場データを即時共有"
+  ]
+},
+{
+  name: "オリバー・サックス",
+  occupation: "doctor",
+  mbti: "INFP",
+  description:
+    "患者の物語を丁寧に掬い上げた〈神経学のストーリーテラー〉。臨床と文学を融合し、人間の不思議と尊厳を世に伝えることで医療の奥深さを示しました。",
+  imageUrl: "https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Oliver_Sacks",
+  strengths: [
+    "症例一つひとつに寄り添う深い共感力",
+    "複雑な神経症状を物語として分かりやすく伝える表現力",
+    "学際的視点で医学と芸術・哲学を結びつける創造性"
+  ],
+  weaknesses: [
+    "感情移入が強く客観的データとのバランスを崩しやすい",
+    "研究より執筆を優先し学術的発表が後回しになる傾向"
+  ],
+  actionSteps: [
+    "定量的評価指標を導入し症例記述と統計を両立",
+    "共同研究者と論文化を進め臨床知見を共有",
+    "自己ケアの時間を確保し感情負荷をコントロールする"
+  ]
+},
+{
+  name: "ジョナス・ソーク",
+  occupation: "doctor",
+  mbti: "INTJ",
+  description:
+    "不可能と言われたポリオワクチンを開発し世界の公衆衛生を変えた〈戦略的イノベーター〉。緻密な実験計画と社会的使命感で科学を実装しました。",
+  imageUrl: "https://images.pexels.com/photos/4386464/pexels-photo-4386464.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Jonas_Salk",
+  strengths: [
+    "大規模臨床試験を設計・統括する計画力",
+    "疾患根絶を目指す長期ビジョンと使命感",
+    "研究成果を迅速に社会実装する実行力"
+  ],
+  weaknesses: [
+    "理論検証を優先し臨床現場の声を取りこぼすことがある",
+    "細部まで統制したい完璧主義で意思決定が遅延しがち"
+  ],
+  actionSteps: [
+    "現場医師や患者団体と定期ミーティングしニーズを反映",
+    "アジャイル研究プロセスを導入しスピードと品質を両立",
+    "成果普及のため政策提言や教育活動にも時間を割く"
+  ]
+},
   // Engineers
   {
   name: "ニコラ・テスラ",
