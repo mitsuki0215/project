@@ -796,57 +796,97 @@ export const results: Result[] = [
 
   // Entrepreneurs
   {
-    name: "Steve Jobs",
-    occupation: "entrepreneur",
-    mbti: "ENTJ",
-    description: "The visionary co-founder of Apple. Like Jobs, you combine creativity with strong leadership abilities to bring innovative ideas to life.",
-    imageUrl: "https://images.pexels.com/photos/5473955/pexels-photo-5473955.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Steve_Jobs",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Elon Musk",
-    occupation: "entrepreneur",
-    mbti: "INTJ",
-    description: "The innovative founder of Tesla and SpaceX. Your strategic thinking and long-term vision mirror Musk's approach to transformative technology.",
-    imageUrl: "https://images.pexels.com/photos/5232929/pexels-photo-5232929.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Elon_Musk",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Oprah Winfrey",
-    occupation: "entrepreneur",
-    mbti: "ENFJ",
-    description: "A media mogul and philanthropist. Your emotional intelligence and ability to connect with others reflect Winfrey's influential leadership style.",
-    imageUrl: "https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Oprah_Winfrey",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Walt Disney",
-    occupation: "entrepreneur",
-    mbti: "ENFP",
-    description: "The creative force behind Disney. Your imagination and ability to inspire others align with Disney's magical approach to entertainment.",
-    imageUrl: "https://images.pexels.com/photos/3678428/pexels-photo-3678428.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Walt_Disney",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
+  name: "スティーブ・ジョブズ",
+  occupation: "entrepreneur",
+  mbti: "ENTJ",
+  description:
+    "デザインとテクノロジーを融合し “人々の生活を一変させる製品” を次々と世に送り出した〈完璧主義のカリスマ〉。卓越した審美眼とプレゼン力で、まだ見ぬ未来像を大衆に提示しました。",
+  imageUrl: "https://images.pexels.com/photos/5473955/pexels-photo-5473955.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Steve_Jobs",
+  strengths: [
+    "ビジョンを言語化しチームを鼓舞するリーダーシップ",
+    "妥協を許さない品質基準とUXへのこだわり",
+    "市場ニーズを直感的に捉える洞察力"
+  ],
+  weaknesses: [
+    "完璧主義ゆえ周囲に厳しく摩擦を生むことがある",
+    "感情起伏が激しく組織運営が不安定になりがち"
+  ],
+  actionSteps: [
+    "エンパシーを鍛え、メンバーの動機や課題を継続的にヒアリングする",
+    "迅速なユーザーテストで“80% の完成度”を許容し学習サイクルを短縮",
+    "環境・社会インパクトを評価基準に加え、中長期のブランド価値を最大化"
+  ]
+},
+{
+  name: "イーロン・マスク",
+  occupation: "entrepreneur",
+  mbti: "INTJ",
+  description:
+    "電気自動車・宇宙開発・AI など複数領域で常識を覆す〈破壊的イノベーター〉。長期的ビジョンと大胆なリスクテイクで、人類規模の課題解決に挑み続けます。",
+  imageUrl: "https://images.pexels.com/photos/5232929/pexels-photo-5232929.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Elon_Musk",
+  strengths: [
+    "数十年先を見据えたシステム思考と戦略立案力",
+    "高度な技術理解と大胆な実行スピード",
+    "複数企業を統括しシナジーを生むマルチタスク能力"
+  ],
+  weaknesses: [
+    "タイムラインが楽観的で計画遅延を招きやすい",
+    "詳細に介入しすぎマイクロマネジメント傾向がある"
+  ],
+  actionSteps: [
+    "現場リーダーへ権限委譲し自律的な問題解決を促進",
+    "社内外のコミュニケーションチームを整備し情報伝達を円滑化",
+    "実現可能なマイルストーンを設定し投資家・社員の信頼を強化"
+  ]
+},
+{
+  name: "オプラ・ウィンフリー",
+  occupation: "entrepreneur",
+  mbti: "ENFJ",
+  description:
+    "温かな共感力と鋭い洞察で視聴者を魅了し、メディア帝国を築いた〈ストーリーテリングの女王〉。人の潜在能力を引き出し、社会課題にも光を当てる影響力を持ちます。",
+  imageUrl: "https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Oprah_Winfrey",
+  strengths: [
+    "高い感情知能で信頼と共感を醸成",
+    "物語を通じブランド価値を高めるストーリーテラー",
+    "コミュニティを巻き込み社会的インパクトを拡大"
+  ],
+  weaknesses: [
+    "人情に流され意思決定が遅れることがある",
+    "セルフブランディングの負荷でリソースが分散しやすい"
+  ],
+  actionSteps: [
+    "データドリブン指標を導入し感情と客観のバランスを取る",
+    "役割と境界線を明確にし経営判断のスピードを保つ",
+    "複数収益源を設計しリスクを分散するポートフォリオ戦略を採用"
+  ]
+},
+{
+  name: "ウォルト・ディズニー",
+  occupation: "entrepreneur",
+  mbti: "ENFP",
+  description:
+    "物語・アニメーション・テーマパークを融合し“体験価値”を創造した〈想像力の巨匠〉。夢と魔法をビジネスへ昇華し、人々の心に残るブランドを築きました。",
+  imageUrl: "https://images.pexels.com/photos/3678428/pexels-photo-3678428.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Walt_Disney",
+  strengths: [
+    "豊かな想像力で独自の世界観を構築",
+    "チームを鼓舞し共通の夢に向かわせるビジョナリー力",
+    "体験全体を設計するクロスメディア発想"
+  ],
+  weaknesses: [
+    "収益管理より創造性を優先しコスト超過の恐れ",
+    "アイデアが多岐にわたり焦点を失うことがある"
+  ],
+  actionSteps: [
+    "財務・運営の専門家とパートナーを組み経営基盤を強化",
+    "アイデア評価フレームを導入し集中すべきプロジェクトを選別",
+    "ロードマップを明文化し短期・中期・長期の成果指標を設置"
+  ]
+},
 
   // Designers
   // Designers ── 詳細版 ─────────────────────────────────────────────
