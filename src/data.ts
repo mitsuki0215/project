@@ -94,47 +94,51 @@ export const questions: { [key: string]: Question[] } = {
   }
 ],
   designer: [
-    {
-      id: 1,
-      text: "What inspires your design process?",
-      choices: [
-        { id: "d1a", text: "User research and feedback", type: "S" },
-        { id: "d1b", text: "Abstract concepts and imagination", type: "N" },
-        { id: "d1c", text: "Current design trends", type: "E" },
-        { id: "d1d", text: "Personal artistic vision", type: "I" }
-      ]
-    },
-    {
-      id: 2,
-      text: "How do you approach design projects?",
-      choices: [
-        { id: "d2a", text: "Detailed planning and wireframes", type: "J" },
-        { id: "d2b", text: "Iterative experimentation", type: "P" },
-        { id: "d2c", text: "Collaborative brainstorming", type: "E" },
-        { id: "d2d", text: "Independent conceptualization", type: "I" }
-      ]
-    },
-    {
-      id: 3,
-      text: "What's most important in your design decisions?",
-      choices: [
-        { id: "d3a", text: "User experience metrics", type: "T" },
-        { id: "d3b", text: "Emotional impact", type: "F" },
-        { id: "d3c", text: "Technical feasibility", type: "S" },
-        { id: "d3d", text: "Innovation potential", type: "N" }
-      ]
-    },
-    {
-      id: 4,
-      text: "How do you handle client feedback?",
-      choices: [
-        { id: "d4a", text: "Analyze objectively", type: "T" },
-        { id: "d4b", text: "Consider emotional context", type: "F" },
-        { id: "d4c", text: "Follow structured revision process", type: "J" },
-        { id: "d4d", text: "Adapt and explore new directions", type: "P" }
-      ]
-    }
-  ],
+  /* Q1 : E / I */
+  {
+    id: 1,
+    text: "When starting a new design project, what’s your first move?",
+    choices: [
+      { id: "d1a", text: "Fire up a live Figma session to brainstorm with the team.",           type: "E" },
+      { id: "d1b", text: "Run a quick workshop with stakeholders to spark ideas.",              type: "E" },
+      { id: "d1c", text: "Sketch rough concepts alone to clarify your own vision first.",       type: "I" },
+      { id: "d1d", text: "Research quietly and prepare mood boards before sharing anything.",   type: "I" }
+    ]
+  },
+  /* Q2 : S / N */
+  {
+    id: 2,
+    text: "Which source fuels your creative inspiration the most?",
+    choices: [
+      { id: "d2a", text: "Usability test findings and real user feedback.",        type: "S" },
+      { id: "d2b", text: "Current UI pattern libraries and design benchmarks.",    type: "S" },
+      { id: "d2c", text: "Abstract art movements and cross-disciplinary concepts.",type: "N" },
+      { id: "d2d", text: "Speculative future tech and ‘what-if’ scenarios.",       type: "N" }
+    ]
+  },
+  /* Q3 : T / F */
+  {
+    id: 3,
+    text: "Choosing between two color palettes, what tips the scale for you?",
+    choices: [
+      { id: "d3a", text: "Contrast ratios, accessibility scores, brand guidelines.", type: "T" },
+      { id: "d3b", text: "A/B test data showing higher conversion.",                 type: "T" },
+      { id: "d3c", text: "The emotional tone and story the colors evoke.",           type: "F" },
+      { id: "d3d", text: "How the palette makes users feel at first glance.",        type: "F" }
+    ]
+  },
+  /* Q4 : J / P */
+  {
+    id: 4,
+    text: "Your workflow style when deadlines get closer?",
+    choices: [
+      { id: "d4a", text: "Lock layouts early and follow a strict checklist.",      type: "J" },
+      { id: "d4b", text: "Adhere to the design system to avoid last-minute chaos.",type: "J" },
+      { id: "d4c", text: "Keep experimenting and refine until the final hand-off.",type: "P" },
+      { id: "d4d", text: "Embrace last-minute tweaks and spontaneous ideas.",      type: "P" }
+    ]
+  }
+],
   teacher: [
     {
       id: 1,
