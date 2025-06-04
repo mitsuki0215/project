@@ -1387,61 +1387,99 @@ export const results: Result[] = [
     idealRoles: ["〈推奨ロール〉"],
     actionSteps: ["〈成長アドバイス〉"]
   },
-
-  // Researchers
-  {
-    name: "スティーブン・ホーキング",
-    occupation: "researcher",
-    mbti: "INTJ",
-    description: "あなたは卓越した分析力と独創的な思考を持つ研究者！ホーキングのように、宇宙の謎を解き明かすための理論を構築する力があります。",
-    imageUrl: "https://images.pexels.com/photos/2156/sky-space-dark-galaxy.jpg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Stephen_Hawking",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "ジェーン・グドール",
-    occupation: "researcher",
-    mbti: "INFJ",
-    description: "あなたは霊長類研究のパイオニア、グドールに匹敵する洞察力の持ち主！精神を宿す優しい眼差しと揺るぎない探究心で、自然界の秘密を解き明かすことができます。",
-    imageUrl: "https://images.pexels.com/photos/4666751/pexels-photo-4666751.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Jane_Goodall",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "ニール・ドグラース・タイソン",
-    occupation: "researcher",
-    mbti: "ENTJ",
-    description: "あなたは複雑な概念を魅力的に語る手腕のあるかつリーダーシップも持ち合わせる研究者！その情熱は人々に、宇宙への憧憬を新たに呼び覚まします。",
-    imageUrl: "https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Neil_deGrasse_Tyson",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "バーバラ・マクリントック",
-    occupation: "researcher",
-    mbti: "INTP",
-    description: "あなたはマクリントックのような鋭い洞察力を生かし、斬新なアイデアを語る研究者！洞察力を磨き続ければ、ノーベル賞受賞も夢では終わらないかも！？",
-    imageUrl: "https://images.pexels.com/photos/4666754/pexels-photo-4666754.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Barbara_McClintock",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-
+  // Resercher
+{
+  name: "スティーブン・ホーキング",
+  occupation: "researcher",
+  mbti: "INTJ",
+  description:
+    "ブラックホール蒸発理論で宇宙観を刷新した“車椅子の天才理論物理学者”。思考実験を駆使し、抽象理論を一枚の式に凝縮する設計者型です。",
+  imageUrl: "https://images.pexels.com/photos/2156/sky-space-dark-galaxy.jpg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Stephen_Hawking",
+  strengths: [
+    "複雑な数式モデルを直観的に操る抽象化能力",
+    "膨大な文献を統合し新理論へ昇華する分析力",
+    "逆境をも力に変える粘り強い探究心"
+  ],
+  weaknesses: [
+    "理論に没頭し過ぎて実験・観測との接点が希薄になりやすい",
+    "完璧を求め発表タイミングを逃すことがある"
+  ],
+  actionSteps: [
+    "共同研究者と定期レビューを設け実証フェーズを強化",
+    "研究アイデアを小刻みに論文化し知見共有の速度を上げる",
+    "若手へメンタリングし新視点を取り入れて仮説を進化させる"
+  ]
+},
+{
+  name: "ジェーン・グドール",
+  occupation: "researcher",
+  mbti: "INFJ",
+  description:
+    "チンパンジー研究で“動物に心を見出した”フィールドサイエンティスト。洞察と共感で被写体との垣根を取り払い、物語性ある科学を創ります。",
+  imageUrl: "https://images.pexels.com/photos/4666751/pexels-photo-4666751.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Jane_Goodall",
+  strengths: [
+    "長期観察で行動変化を丁寧に追う粘着質な観察眼",
+    "動物・人・社会を結ぶストーリーテリング力",
+    "保全活動へつなげる使命感とリーダーシップ"
+  ],
+  weaknesses: [
+    "現場への愛着が強く客観データ化が後手になることがある",
+    "感情移入しすぎて批判的再検討を後回しにしやすい"
+  ],
+  actionSteps: [
+    "行動データを定量指標に落とし込み統計解析を補完",
+    "第三者レビューでバイアスをチェックし再現性を確保",
+    "研究成果を政策提言に翻訳し影響力を拡大"
+  ]
+},
+{
+  name: "ニール・ドグラース・タイソン",
+  occupation: "researcher",
+  mbti: "ENTJ",
+  description:
+    "宇宙の魅力を軽妙な語り口で届ける“サイエンス・コミュニケーター”。大局観とプレゼンスで研究と社会を橋渡しします。",
+  imageUrl: "https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Neil_deGrasse_Tyson",
+  strengths: [
+    "難解な概念を比喩で噛み砕くストーリーテリング",
+    "メディア・イベントを活用し研究資源を獲得する交渉力",
+    "多分野の専門家を束ねる統率力"
+  ],
+  weaknesses: [
+    "メッセージ性を優先し細部の厳密さが犠牲になる恐れ",
+    "決断が速いぶん周囲の合意形成が追いつかないことがある"
+  ],
+  actionSteps: [
+    "ピアレビュー前の内部校閲を徹底し精度を担保",
+    "議論の場で傾聴を意識し協働関係を強化",
+    "若手研究者の広報スキル育成プログラムを主導しチーム力向上"
+  ]
+},
+{
+  name: "バーバラ・マクリントック",
+  occupation: "researcher",
+  mbti: "INTP",
+  description:
+    "“トランスポゾン”の発見で遺伝学を塗り替えた独創的実験家。孤高の集中力でデータに語らせ、思わぬパターンを掘り当てる探検者です。",
+  imageUrl: "https://images.pexels.com/photos/4666754/pexels-photo-4666754.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Barbara_McClintock",
+  strengths: [
+    "大量の実験データから相関を見抜くパターン認識力",
+    "既存理論に縛られず自由に仮説を立て検証する独立心",
+    "技術習得が速く新手法を自作できる器用さ"
+  ],
+  weaknesses: [
+    "他者との議論を省きがちで理解を得るまで時間がかかる",
+    "興味が拡散しプロジェクト完了に時間がかかることがある"
+  ],
+  actionSteps: [
+    "定期セミナーで研究進捗を共有しフィードバックを得る",
+    "論文化プロセスをスケジュール化し成果を可視化",
+    "共同著者を迎え入れ検証ステップを効率化"
+  ]
+},
   // Architects
   {
   name: "フランク・ロイド・ライト",
