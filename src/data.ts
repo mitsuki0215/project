@@ -1552,55 +1552,95 @@ export const results: Result[] = [
 
   // Film Directors
   {
-    name: "アルフレッド・ヒッチコック",
-    occupation: "director",
-    mbti: "INTJ",
-    description: "あなたはヒッチコックのように巧みな伏線と心理操作ができる映画監督！緻密なストーリーテリングとサスペンスの演出で、観客を引き込む力があります。",
-    imageUrl: "https://images.pexels.com/photos/274937/pexels-photo-274937.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Alfred_Hitchcock",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "スティーブン・スピルバーグ",
-    occupation: "director",
-    mbti: "ENFJ",
-    description: "あなたは豊かな情感と抜群のエンタメ性を持つ映画監督！スピルバーグのように、観客の心を掴む感動的な物語を紡ぎ出すことができます。",
-    imageUrl: "https://images.pexels.com/photos/274938/pexels-photo-274938.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Steven_Spielberg",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "スタンリー・キューブリック",
-    occupation: "director",
-    mbti: "INTP",
-    description: "あなたは徹底したディテール追求と前衛的演出ができる映画監督！キューブリックのようにこだわり抜いた映像で観客を唸らせます。",
-    imageUrl: "https://images.pexels.com/photos/274939/pexels-photo-274939.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Stanley_Kubrick",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "アニエス・ヴァルダ",
-    occupation: "director",
-    mbti: "ENFP",
-    description: "あなたは自由な構成とパーソナルな視点を持っている映画監督！ヴァルダのようにドキュメンタリーとフィクションを融合させた独自のスタイルで、観客に深い感動を与えることができます。",
-    imageUrl: "https://images.pexels.com/photos/274940/pexels-photo-274940.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Agn%C3%A8s_Varda",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  }
+  name: "アルフレッド・ヒッチコック",
+  occupation: "director",
+  mbti: "INTJ",
+  description:
+    "緻密なプロットと心理的サスペンスで観客を翻弄する“サスペンスの巨匠”。情報を小出しにして緊張を高める設計力と、全工程を見通した統率力が光ります。",
+  imageUrl: "https://images.pexels.com/photos/274937/pexels-photo-274937.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Alfred_Hitchcock",
+  strengths: [
+    "長期的ビジョンで伏線を張り巡らせる構成力",
+    "観客心理を読み解く分析的思考",
+    "編集・撮影まで一貫して管理できる戦略性"
+  ],
+  weaknesses: [
+    "完璧主義ゆえ意思決定が遅れることがある",
+    "コラボレーションより統制を優先しがち"
+  ],
+  actionSteps: [
+    "チームメンバーへ権限委譲し、柔軟な意見交換を取り入れる",
+    "段階的なマイルストーンを設定し、完璧主義による遅延を防止",
+    "テスト試写で観客フィードバックを取り込みバランス感覚を磨く"
+  ]
+},
+{
+  name: "スティーブン・スピルバーグ",
+  occupation: "director",
+  mbti: "ENFJ",
+  description:
+    "壮大なスケールと豊かな感情表現で観客を魅了する“物語の魔術師”。人の心を動かすテーマ設定とチームを鼓舞するリーダーシップが特徴です。",
+  imageUrl: "https://images.pexels.com/photos/274938/pexels-photo-274938.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Steven_Spielberg",
+  strengths: [
+    "感情移入を促すストーリーテリング",
+    "大人数のクルーをまとめる共感型リーダーシップ",
+    "マスマーケット向けのエンタメ性と社会的メッセージの両立"
+  ],
+  weaknesses: [
+    "情熱が先行してスケジュール・予算が膨らみやすい",
+    "感情移入しすぎて客観性を失う瞬間がある"
+  ],
+  actionSteps: [
+    "データドリブンな進行管理で情熱と現実のバランスを取る",
+    "静かな内省時間を確保し脚本の本質を再点検する",
+    "信頼できるプロデューサーと財務面を二重チェックする"
+  ]
+},
+{
+  name: "スタンリー・キューブリック",
+  occupation: "director",
+  mbti: "INTP",
+  description:
+    "映像技法と哲学的テーマを極限まで追求した“完璧主義の研究者”。斬新なカメラワークと徹底的なリサーチで映画表現を革新しました。",
+  imageUrl: "https://images.pexels.com/photos/274939/pexels-photo-274939.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Stanley_Kubrick",
+  strengths: [
+    "技術・美術・脚本を横断する深い探究心",
+    "誰も試みない撮影手法を生むイノベーション力",
+    "論理的分析でテーマを掘り下げる洞察力"
+  ],
+  weaknesses: [
+    "完璧を求めすぎて制作期間・コストが膨張しやすい",
+    "対人コミュニケーションが最小化され誤解を生むことがある"
+  ],
+  actionSteps: [
+    "早期にプロトタイプ映像を制作し方向性を可視化",
+    "定期レビューを設けチームと進捗・課題を共有",
+    "完成度80%で一旦区切る“ベータ版思考”を取り入れる"
+  ]
+},
+{
+  name: "アニエス・ヴァルダ",
+  occupation: "director",
+  mbti: "ENFP",
+  description:
+    "ドキュメンタリーとフィクションを自由に往来する“映画界のグランマザー”。直感的かつ詩的な視点で人々の日常に潜む物語を掘り起こします。",
+  imageUrl: "https://images.pexels.com/photos/274940/pexels-photo-274940.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Agn%C3%A8s_Varda",
+  strengths: [
+    "柔軟な発想でジャンルや形式を横断する創造性",
+    "被写体との信頼関係を築く共感力",
+    "少人数クルーでも高い作品完成度を実現するフットワーク"
+  ],
+  weaknesses: [
+    "アイデアが広がりすぎてテーマが散漫になりがち",
+    "制作管理よりも創作衝動を優先し予算超過の恐れ"
+  ],
+  actionSteps: [
+    "信頼できるプロデューサーと連携し資金計画を可視化",
+    "定期的に作品テーマを言語化して方向性をブレ防止",
+    "フィードバック上映を行い客観的視点を取り入れる"
+  ]
+}
 ];
