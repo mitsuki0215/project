@@ -741,7 +741,12 @@ export const results: Result[] = [
     mbti: "ENTJ",
     description: "The visionary co-founder of Apple. Like Jobs, you combine creativity with strong leadership abilities to bring innovative ideas to life.",
     imageUrl: "https://images.pexels.com/photos/5473955/pexels-photo-5473955.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Steve_Jobs"
+    wikiUrl: "https://en.wikipedia.org/wiki/Steve_Jobs",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Elon Musk",
@@ -749,7 +754,12 @@ export const results: Result[] = [
     mbti: "INTJ",
     description: "The innovative founder of Tesla and SpaceX. Your strategic thinking and long-term vision mirror Musk's approach to transformative technology.",
     imageUrl: "https://images.pexels.com/photos/5232929/pexels-photo-5232929.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Elon_Musk"
+    wikiUrl: "https://en.wikipedia.org/wiki/Elon_Musk",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Oprah Winfrey",
@@ -757,7 +767,12 @@ export const results: Result[] = [
     mbti: "ENFJ",
     description: "A media mogul and philanthropist. Your emotional intelligence and ability to connect with others reflect Winfrey's influential leadership style.",
     imageUrl: "https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Oprah_Winfrey"
+    wikiUrl: "https://en.wikipedia.org/wiki/Oprah_Winfrey",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Walt Disney",
@@ -765,7 +780,12 @@ export const results: Result[] = [
     mbti: "ENFP",
     description: "The creative force behind Disney. Your imagination and ability to inspire others align with Disney's magical approach to entertainment.",
     imageUrl: "https://images.pexels.com/photos/3678428/pexels-photo-3678428.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Walt_Disney"
+    wikiUrl: "https://en.wikipedia.org/wiki/Walt_Disney",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
 
   // Designers
@@ -775,7 +795,12 @@ export const results: Result[] = [
     mbti: "INTJ",
     description: "Apple's legendary product designer. Your attention to detail and minimalist aesthetic mirror Ive's revolutionary design philosophy.",
     imageUrl: "https://images.pexels.com/photos/326502/pexels-photo-326502.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Jonathan_Ive"
+    wikiUrl: "https://en.wikipedia.org/wiki/Jonathan_Ive",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Ray Eames",
@@ -783,7 +808,12 @@ export const results: Result[] = [
     mbti: "ENFP",
     description: "A pioneering modernist designer. Your creative problem-solving and innovative spirit reflect Eames' influential approach to design.",
     imageUrl: "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Ray_Eames"
+    wikiUrl: "https://en.wikipedia.org/wiki/Ray_Eames",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Dieter Rams",
@@ -791,7 +821,12 @@ export const results: Result[] = [
     mbti: "ISTJ",
     description: "The influential Braun designer. Your methodical approach and focus on functionality align with Rams' 'less is more' design principles.",
     imageUrl: "https://images.pexels.com/photos/2251247/pexels-photo-2251247.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Dieter_Rams"
+    wikiUrl: "https://en.wikipedia.org/wiki/Dieter_Rams",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Philippe Starck",
@@ -799,7 +834,12 @@ export const results: Result[] = [
     mbti: "ENTP",
     description: "A versatile and innovative designer. Your experimental nature and broad creative vision match Starck's boundary-pushing design approach.",
     imageUrl: "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Philippe_Starck"
+    wikiUrl: "https://en.wikipedia.org/wiki/Philippe_Starck",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
 
   // Teachers
@@ -809,7 +849,12 @@ export const results: Result[] = [
     mbti: "INFJ",
     description: "The founder of the Montessori education method. Your intuitive understanding of individual needs reflects Montessori's child-centered approach.",
     imageUrl: "https://images.pexels.com/photos/8466776/pexels-photo-8466776.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Maria_Montessori"
+    wikiUrl: "https://en.wikipedia.org/wiki/Maria_Montessori",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "John Dewey",
@@ -817,7 +862,12 @@ export const results: Result[] = [
     mbti: "INTP",
     description: "A pioneering educational reformer. Your analytical approach to education mirrors Dewey's philosophy of learning through experience.",
     imageUrl: "https://images.pexels.com/photos/5427654/pexels-photo-5427654.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/John_Dewey"
+    wikiUrl: "https://en.wikipedia.org/wiki/John_Dewey",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Anne Sullivan",
@@ -825,7 +875,12 @@ export const results: Result[] = [
     mbti: "ENFJ",
     description: "Helen Keller's dedicated teacher. Your patience and determination to help others learn match Sullivan's transformative teaching style.",
     imageUrl: "https://images.pexels.com/photos/8467079/pexels-photo-8467079.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Anne_Sullivan"
+    wikiUrl: "https://en.wikipedia.org/wiki/Anne_Sullivan",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Ken Robinson",
@@ -833,7 +888,12 @@ export const results: Result[] = [
     mbti: "ENFP",
     description: "An advocate for creativity in education. Your innovative teaching style and ability to inspire align with Robinson's educational philosophy.",
     imageUrl: "https://images.pexels.com/photos/5427867/pexels-photo-5427867.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Ken_Robinson_(educator)"
+    wikiUrl: "https://en.wikipedia.org/wiki/Ken_Robinson_(educator)",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
 
   // Doctors
@@ -843,7 +903,12 @@ export const results: Result[] = [
     mbti: "ISTJ",
     description: "The first woman to receive a medical degree in the US. Your dedication to excellence and breaking barriers reflects Blackwell's pioneering spirit.",
     imageUrl: "https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Elizabeth_Blackwell"
+    wikiUrl: "https://en.wikipedia.org/wiki/Elizabeth_Blackwell",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Paul Farmer",
@@ -851,7 +916,12 @@ export const results: Result[] = [
     mbti: "ENFJ",
     description: "A global health pioneer. Your commitment to healthcare equality and community service mirrors Farmer's humanitarian approach to medicine.",
     imageUrl: "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Paul_Farmer"
+    wikiUrl: "https://en.wikipedia.org/wiki/Paul_Farmer",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Oliver Sacks",
@@ -859,7 +929,12 @@ export const results: Result[] = [
     mbti: "INFP",
     description: "A neurologist and author known for his empathetic case studies. Your deep understanding of human experience matches Sacks' compassionate approach.",
     imageUrl: "https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Oliver_Sacks"
+    wikiUrl: "https://en.wikipedia.org/wiki/Oliver_Sacks",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Jonas Salk",
@@ -867,7 +942,12 @@ export const results: Result[] = [
     mbti: "INTJ",
     description: "The developer of the polio vaccine. Your methodical approach to problem-solving reflects Salk's dedication to medical research.",
     imageUrl: "https://images.pexels.com/photos/4386464/pexels-photo-4386464.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Jonas_Salk"
+    wikiUrl: "https://en.wikipedia.org/wiki/Jonas_Salk",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
 
   // Engineers
@@ -877,7 +957,12 @@ export const results: Result[] = [
     mbti: "INTJ",
     description: "A brilliant electrical engineer and inventor. Your innovative thinking and dedication to perfection mirror Tesla's groundbreaking work.",
     imageUrl: "https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Nikola_Tesla"
+    wikiUrl: "https://en.wikipedia.org/wiki/Nikola_Tesla",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Grace Hopper",
@@ -885,7 +970,12 @@ export const results: Result[] = [
     mbti: "ENTP",
     description: "A pioneer in computer programming. Your problem-solving creativity and forward-thinking approach reflect Hopper's revolutionary contributions.",
     imageUrl: "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Grace_Hopper"
+    wikiUrl: "https://en.wikipedia.org/wiki/Grace_Hopper",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Leonardo da Vinci",
@@ -893,7 +983,12 @@ export const results: Result[] = [
     mbti: "ENFP",
     description: "A Renaissance engineer and inventor. Your diverse interests and creative approach to engineering match da Vinci's innovative spirit.",
     imageUrl: "https://images.pexels.com/photos/8197534/pexels-photo-8197534.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Leonardo_da_Vinci"
+    wikiUrl: "https://en.wikipedia.org/wiki/Leonardo_da_Vinci",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Henry Ford",
@@ -901,7 +996,12 @@ export const results: Result[] = [
     mbti: "ISTJ",
     description: "The pioneer of modern assembly-line production. Your systematic approach to efficiency aligns with Ford's revolutionary manufacturing methods.",
     imageUrl: "https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Henry_Ford"
+    wikiUrl: "https://en.wikipedia.org/wiki/Henry_Ford",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
 
   // Artists
@@ -911,7 +1011,12 @@ export const results: Result[] = [
     mbti: "INFP",
     description: "A post-impressionist painter known for emotional expression. Your passionate creativity and unique vision reflect van Gogh's artistic intensity.",
     imageUrl: "https://images.pexels.com/photos/1568607/pexels-photo-1568607.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Vincent_van_Gogh"
+    wikiUrl: "https://en.wikipedia.org/wiki/Vincent_van_Gogh",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Frida Kahlo",
@@ -919,7 +1024,12 @@ export const results: Result[] = [
     mbti: "ISFP",
     description: "A symbolic self-portrait artist. Your authentic self-expression and emotional depth mirror Kahlo's powerful artistic voice.",
     imageUrl: "https://images.pexels.com/photos/2123337/pexels-photo-2123337.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Frida_Kahlo"
+    wikiUrl: "https://en.wikipedia.org/wiki/Frida_Kahlo",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Pablo Picasso",
@@ -927,7 +1037,12 @@ export const results: Result[] = [
     mbti: "ENTP",
     description: "A revolutionary modern artist. Your innovative approach and willingness to break conventions align with Picasso's artistic breakthroughs.",
     imageUrl: "https://images.pexels.com/photos/1918290/pexels-photo-1918290.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Pablo_Picasso"
+    wikiUrl: "https://en.wikipedia.org/wiki/Pablo_Picasso",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Georgia O'Keeffe",
@@ -935,7 +1050,12 @@ export const results: Result[] = [
     mbti: "INTJ",
     description: "A modernist painter known for abstract natural forms. Your precise observation and unique interpretation match O'Keeffe's distinctive style.",
     imageUrl: "https://images.pexels.com/photos/2693212/pexels-photo-2693212.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Georgia_O%27Keeffe"
+    wikiUrl: "https://en.wikipedia.org/wiki/Georgia_O%27Keeffe",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
 
   // Journalists
@@ -945,7 +1065,12 @@ export const results: Result[] = [
     mbti: "INTJ",
     description: "A pioneering broadcast journalist. Your integrity and analytical approach reflect Murrow's commitment to truth in reporting.",
     imageUrl: "https://images.pexels.com/photos/2325729/pexels-photo-2325729.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Edward_R._Murrow"
+    wikiUrl: "https://en.wikipedia.org/wiki/Edward_R._Murrow",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Christiane Amanpour",
@@ -953,7 +1078,12 @@ export const results: Result[] = [
     mbti: "ENFJ",
     description: "An influential international correspondent. Your dedication to storytelling and global perspective mirror Amanpour's impactful journalism.",
     imageUrl: "https://images.pexels.com/photos/3944454/pexels-photo-3944454.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Christiane_Amanpour"
+    wikiUrl: "https://en.wikipedia.org/wiki/Christiane_Amanpour",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Hunter S. Thompson",
@@ -961,7 +1091,12 @@ export const results: Result[] = [
     mbti: "ENTP",
     description: "The founder of Gonzo journalism. Your unique perspective and unconventional approach match Thompson's revolutionary reporting style.",
     imageUrl: "https://images.pexels.com/photos/3944377/pexels-photo-3944377.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Hunter_S._Thompson"
+    wikiUrl: "https://en.wikipedia.org/wiki/Hunter_S._Thompson",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Bob Woodward",
@@ -969,7 +1104,12 @@ export const results: Result[] = [
     mbti: "ISTJ",
     description: "An investigative journalist known for uncovering Watergate. Your methodical research and attention to detail align with Woodward's thorough reporting.",
     imageUrl: "https://images.pexels.com/photos/3944434/pexels-photo-3944434.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Bob_Woodward"
+    wikiUrl: "https://en.wikipedia.org/wiki/Bob_Woodward",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
 
   // Lawyers
@@ -979,7 +1119,12 @@ export const results: Result[] = [
     mbti: "ENFJ",
     description: "The first African American Supreme Court Justice. Your commitment to justice and advocacy reflect Marshall's groundbreaking legal career.",
     imageUrl: "https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Thurgood_Marshall"
+    wikiUrl: "https://en.wikipedia.org/wiki/Thurgood_Marshall",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Ruth Bader Ginsburg",
@@ -987,7 +1132,12 @@ export const results: Result[] = [
     mbti: "INTJ",
     description: "A champion of gender equality and civil rights. Your strategic thinking and determination mirror Ginsburg's influential legal approach.",
     imageUrl: "https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Ruth_Bader_Ginsburg"
+    wikiUrl: "https://en.wikipedia.org/wiki/Ruth_Bader_Ginsburg",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Clarence Darrow",
@@ -995,7 +1145,12 @@ export const results: Result[] = [
     mbti: "ENTP",
     description: "A legendary criminal defense lawyer. Your eloquence and innovative legal strategies align with Darrow's compelling courtroom presence.",
     imageUrl: "https://images.pexels.com/photos/5668482/pexels-photo-5668482.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Clarence_Darrow"
+    wikiUrl: "https://en.wikipedia.org/wiki/Clarence_Darrow",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Mary Jo White",
@@ -1003,7 +1158,12 @@ export const results: Result[] = [
     mbti: "ISTJ",
     description: "A former SEC Chair and prosecutor. Your methodical approach and commitment to rules reflect White's distinguished legal career.",
     imageUrl: "https://images.pexels.com/photos/5668788/pexels-photo-5668788.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Mary_Jo_White"
+    wikiUrl: "https://en.wikipedia.org/wiki/Mary_Jo_White",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
 
   // Investors
@@ -1013,7 +1173,12 @@ export const results: Result[] = [
     mbti: "ISTJ",
     description: "The Oracle of Omaha. Your patient, analytical approach to investment mirrors Buffett's value investing strategy.",
     imageUrl: "https://images.pexels.com/photos/534216/pexels-photo-534216.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Warren_Buffett"
+    wikiUrl: "https://en.wikipedia.org/wiki/Warren_Buffett",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "George Soros",
@@ -1021,7 +1186,12 @@ export const results: Result[] = [
     mbti: "INTJ",
     description: "A legendary hedge fund manager. Your strategic thinking and global perspective reflect Soros's innovative investment approach.",
     imageUrl: "https://images.pexels.com/photos/534217/pexels-photo-534217.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/George_Soros"
+    wikiUrl: "https://en.wikipedia.org/wiki/George_Soros",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Cathie Wood",
@@ -1029,7 +1199,12 @@ export const results: Result[] = [
     mbti: "ENFJ",
     description: "A visionary tech investor. Your forward-thinking approach and ability to spot trends align with Wood's innovative investment strategy.",
     imageUrl: "https://images.pexels.com/photos/534218/pexels-photo-534218.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Cathie_Wood"
+    wikiUrl: "https://en.wikipedia.org/wiki/Cathie_Wood",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Ray Dalio",
@@ -1037,7 +1212,12 @@ export const results: Result[] = [
     mbti: "ENTP",
     description: "The founder of Bridgewater Associates. Your systematic approach and principle-based thinking match Dalio's investment philosophy.",
     imageUrl: "https://images.pexels.com/photos/534219/pexels-photo-534219.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Ray_Dalio"
+    wikiUrl: "https://en.wikipedia.org/wiki/Ray_Dalio",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
 
   // Professors
@@ -1047,7 +1227,12 @@ export const results: Result[] = [
     mbti: "INTJ",
     description: "A revolutionary linguist and philosopher. Your analytical mind and systematic approach reflect Chomsky's groundbreaking academic work.",
     imageUrl: "https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Noam_Chomsky"
+    wikiUrl: "https://en.wikipedia.org/wiki/Noam_Chomsky",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "bell hooks",
@@ -1055,7 +1240,12 @@ export const results: Result[] = [
     mbti: "ENFJ",
     description: "An influential cultural critic. Your passion for teaching and social justice mirrors hooks' transformative educational philosophy.",
     imageUrl: "https://images.pexels.com/photos/3184329/pexels-photo-3184329.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Bell_hooks"
+    wikiUrl: "https://en.wikipedia.org/wiki/Bell_hooks",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Richard Feynman",
@@ -1063,7 +1253,12 @@ export const results: Result[] = [
     mbti: "ENTP",
     description: "A brilliant physics educator. Your engaging teaching style and ability to simplify complex concepts match Feynman's legendary lectures.",
     imageUrl: "https://images.pexels.com/photos/3184330/pexels-photo-3184330.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Richard_Feynman"
+    wikiUrl: "https://en.wikipedia.org/wiki/Richard_Feynman",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "Hannah Arendt",
@@ -1071,176 +1266,281 @@ export const results: Result[] = [
     mbti: "INTP",
     description: "A political theorist and philosopher. Your deep thinking and original insights align with Arendt's influential academic contributions.",
     imageUrl: "https://images.pexels.com/photos/3184331/pexels-photo-3184331.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Hannah_Arendt"
+    wikiUrl: "https://en.wikipedia.org/wiki/Hannah_Arendt",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
 
   // Consultants
   {
     name: "ピーター・ドラッカー",
-    occupation: "コンサルタント",
+    occupation: "consultant",
     mbti: "INTJ",
     description: "近代経営学の父であるドラッカーに匹敵する戦略的洞察力の持ち主！あなたの分析的思考と長期的なビジョンは、複雑な課題を明快なアクションへと導くでしょう。",
     imageUrl: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Peter_Drucker"
+    wikiUrl: "https://en.wikipedia.org/wiki/Peter_Drucker",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "クレイトン・クリステンセン",
-    occupation: "コンサルタント",
+    occupation: "consultant",
     mbti: "ENFJ",
     description: "あなたは組織の動きをスッと見抜いて、新しい波を起こせるコンサルタント！まさに、クリステンセンの”破壊的イノベーション”理論を体現してるかのよう。",
     imageUrl: "https://images.pexels.com/photos/3183151/pexels-photo-3183151.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Clayton_Christensen"
+    wikiUrl: "https://en.wikipedia.org/wiki/Clayton_Christensen",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "マイケル・ポーター",
-    occupation: "コンサルタント",
+    occupation: "consultant",
     mbti: "ISTJ",
     description: "あなたは市場を冷静に読み解いて、有利なポジションをしっかりと築くコンサルタント！ポーターの競争戦略理論を実践するかのような、堅実なアプローチが光ります。",
     imageUrl: "https://images.pexels.com/photos/3183152/pexels-photo-3183152.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Michael_Porter"
+    wikiUrl: "https://en.wikipedia.org/wiki/Michael_Porter",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "インドラ・ヌーイ",
-    occupation: "コンサルタント",
+    occupation: "consultant",
     mbti: "ENTJ",
     description: "あなたはヌーイのように先を見据えて、きちんとビジョンを形にできるコンサルタント！アイデアを現実に変える力は、まさにビジネス界の変革者そのもの。",
     imageUrl: "https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Indra_Nooyi"
+    wikiUrl: "https://en.wikipedia.org/wiki/Indra_Nooyi",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
 
   // Researchers
   {
     name: "スティーブン・ホーキング",
-    occupation: "研究者",
+    occupation: "researcher",
     mbti: "INTJ",
     description: "あなたは卓越した分析力と独創的な思考を持つ研究者！ホーキングのように、宇宙の謎を解き明かすための理論を構築する力があります。",
     imageUrl: "https://images.pexels.com/photos/2156/sky-space-dark-galaxy.jpg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Stephen_Hawking"
+    wikiUrl: "https://en.wikipedia.org/wiki/Stephen_Hawking",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "ジェーン・グドール",
-    occupation: "研究者",
+    occupation: "researcher",
     mbti: "INFJ",
     description: "あなたは霊長類研究のパイオニア、グドールに匹敵する洞察力の持ち主！精神を宿す優しい眼差しと揺るぎない探究心で、自然界の秘密を解き明かすことができます。",
     imageUrl: "https://images.pexels.com/photos/4666751/pexels-photo-4666751.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Jane_Goodall"
+    wikiUrl: "https://en.wikipedia.org/wiki/Jane_Goodall",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "ニール・ドグラース・タイソン",
-    occupation: "研究者",
+    occupation: "researcher",
     mbti: "ENTJ",
     description: "あなたは複雑な概念を魅力的に語る手腕のあるかつリーダーシップも持ち合わせる研究者！その情熱は人々に、宇宙への憧憬を新たに呼び覚まします。",
     imageUrl: "https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Neil_deGrasse_Tyson"
+    wikiUrl: "https://en.wikipedia.org/wiki/Neil_deGrasse_Tyson",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "バーバラ・マクリントック",
-    occupation: "研究者",
+    occupation: "researcher",
     mbti: "INTP",
     description: "あなたはマクリントックのような鋭い洞察力を生かし、斬新なアイデアを語る研究者！洞察力を磨き続ければ、ノーベル賞受賞も夢では終わらないかも！？",
     imageUrl: "https://images.pexels.com/photos/4666754/pexels-photo-4666754.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Barbara_McClintock"
+    wikiUrl: "https://en.wikipedia.org/wiki/Barbara_McClintock",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
 
   // Architects
   {
     name: "フランク・ロイド・ライト",
-    occupation: "建築家",
+    occupation: "architect",
     mbti: "INTJ",
     description: "あなたは有機的建築家の巨匠ライトのような、革新的設計思想を持つ建築家！自然と一体化した空間作りを細部までこだわった設計を実現します。",
     imageUrl: "https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Frank_Lloyd_Wright"
+    wikiUrl: "https://en.wikipedia.org/wiki/Frank_Lloyd_Wright",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "ザハ・ハディド",
-    occupation: "建築家",
+    occupation: "architect",
     mbti: "ENTJ",
     description: "あなたはハディドの魂を宿す奔放な曲線美と不屈の創造力で、空間そのものをアートへと昇華させ、新たな時代の鼓動を響かせるでしょう！",
     imageUrl: "https://images.pexels.com/photos/1732415/pexels-photo-1732415.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Zaha_Hadid"
+    wikiUrl: "https://en.wikipedia.org/wiki/Zaha_Hadid",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "ル・コルビュジエ",
-    occupation: "建築家",
+    occupation: "architect",
     mbti: "ISTJ",
     description: "あなたはコルビュジエの精神を継ぐ理知的な美意識と周到な空間計画を持つ建築家！ムダのないスマートなデザインで暮らしやすさを考えるのが好きなタイプです。",
     imageUrl: "https://images.pexels.com/photos/1732416/pexels-photo-1732416.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Le_Corbusier"
+    wikiUrl: "https://en.wikipedia.org/wiki/Le_Corbusier",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "アントニ・ガウディ",
-    occupation: "建築家",
+    occupation: "architect",
     mbti: "INFP",
     description: "あなたは自然を取り込む独創的表現とディテールへの情熱を持つ建築家！サグラダ・ファミリアのような人々を魅了する建築を創り出せること間違いなし。",
     imageUrl: "https://images.pexels.com/photos/1732417/pexels-photo-1732417.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Antoni_Gaud%C3%AD"
+    wikiUrl: "https://en.wikipedia.org/wiki/Antoni_Gaud%C3%AD",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
 
   // Copywriters
   {
     name: "デイビッド・オグルヴィ",
-    occupation: "コピーライター",
+    occupation: "copywriter",
     mbti: "ENTJ",
     description: "あなたはオグルヴィの精神を宿す卓越した洞察と物語力で、広告の力を最大限に引き出すコピーライター！消費者の心をつかむ言葉を巧みに操ることができます。",
     imageUrl: "https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/David_Ogilvy_(businessman)"
+    wikiUrl: "https://en.wikipedia.org/wiki/David_Ogilvy_(businessman)",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "メアリー・ウェルズ・ローレンス",
-    occupation: "コピーライター",
+    occupation: "copywriter",
     mbti: "ENFP",
     description: "あなたは広告界のパイオニアであるウェルズ・ローレンスのような、独自の視点と情熱で消費者の心をつかむコピーライター！斬新なアイデアでブランドを輝かせることができます。",
     imageUrl: "https://images.pexels.com/photos/3182774/pexels-photo-3182774.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Mary_Wells_Lawrence"
+    wikiUrl: "https://en.wikipedia.org/wiki/Mary_Wells_Lawrence",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "クロード・C・ホプキンス",
-    occupation: "コピーライター",
+    occupation: "copywriter",
     mbti: "ISTJ",
     description: "あなたはホプキンスのような徹底したテストと数値思考で成果を導く手法を持つコピーライター！広告を科学し、人々の心を確かな実証に基づいて動かすことができるでしょう。",
     imageUrl: "https://images.pexels.com/photos/3182775/pexels-photo-3182775.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Claude_C._Hopkins"
+    wikiUrl: "https://en.wikipedia.org/wiki/Claude_C._Hopkins",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "レオ・バーネット",
-    occupation: "コピーライター",
+    occupation: "copywriter",
     mbti: "INFJ",
     description: "あなたは“広告に心を宿す”伝説的クリエイター、バーネットに匹敵する情緒的訴求力を持つコピーライター！人々の記憶に残る物語と温かなキャラクターでブランド価値を永続的に高めます",
     imageUrl: "https://images.pexels.com/photos/3182776/pexels-photo-3182776.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Leo_Burnett"
+    wikiUrl: "https://en.wikipedia.org/wiki/Leo_Burnett",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
 
   // Film Directors
   {
     name: "アルフレッド・ヒッチコック",
-    occupation: "映画監督",
+    occupation: "director",
     mbti: "INTJ",
     description: "あなたはヒッチコックのように巧みな伏線と心理操作ができる映画監督！緻密なストーリーテリングとサスペンスの演出で、観客を引き込む力があります。",
     imageUrl: "https://images.pexels.com/photos/274937/pexels-photo-274937.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Alfred_Hitchcock"
+    wikiUrl: "https://en.wikipedia.org/wiki/Alfred_Hitchcock",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "スティーブン・スピルバーグ",
-    occupation: "映画監督",
+    occupation: "director",
     mbti: "ENFJ",
     description: "あなたは豊かな情感と抜群のエンタメ性を持つ映画監督！スピルバーグのように、観客の心を掴む感動的な物語を紡ぎ出すことができます。",
     imageUrl: "https://images.pexels.com/photos/274938/pexels-photo-274938.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Steven_Spielberg"
+    wikiUrl: "https://en.wikipedia.org/wiki/Steven_Spielberg",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "スタンリー・キューブリック",
-    occupation: "映画監督",
+    occupation: "director",
     mbti: "INTP",
     description: "あなたは徹底したディテール追求と前衛的演出ができる映画監督！キューブリックのようにこだわり抜いた映像で観客を唸らせます。",
     imageUrl: "https://images.pexels.com/photos/274939/pexels-photo-274939.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Stanley_Kubrick"
+    wikiUrl: "https://en.wikipedia.org/wiki/Stanley_Kubrick",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   },
   {
     name: "アニエス・ヴァルダ",
-    occupation: "映画監督",
+    occupation: "director",
     mbti: "ENFP",
     description: "あなたは自由な構成とパーソナルな視点を持っている映画監督！ヴァルダのようにドキュメンタリーとフィクションを融合させた独自のスタイルで、観客に深い感動を与えることができます。",
     imageUrl: "https://images.pexels.com/photos/274940/pexels-photo-274940.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Agn%C3%A8s_Varda"
+    wikiUrl: "https://en.wikipedia.org/wiki/Agn%C3%A8s_Varda",
+    strengths: ["〈強み〉"],
+    weaknesses: ["〈弱み〉"],
+    bestEnvironments: ["〈最適環境〉"],
+    idealRoles: ["〈推奨ロール〉"],
+    actionSteps: ["〈成長アドバイス〉"]
   }
 ];
