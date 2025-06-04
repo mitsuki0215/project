@@ -1066,57 +1066,101 @@ export const results: Result[] = [
 
   // Artists
   {
-    name: "Vincent van Gogh",
-    occupation: "artist",
-    mbti: "INFP",
-    description: "A post-impressionist painter known for emotional expression. Your passionate creativity and unique vision reflect van Gogh's artistic intensity.",
-    imageUrl: "https://images.pexels.com/photos/1568607/pexels-photo-1568607.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Vincent_van_Gogh",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Frida Kahlo",
-    occupation: "artist",
-    mbti: "ISFP",
-    description: "A symbolic self-portrait artist. Your authentic self-expression and emotional depth mirror Kahlo's powerful artistic voice.",
-    imageUrl: "https://images.pexels.com/photos/2123337/pexels-photo-2123337.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Frida_Kahlo",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Pablo Picasso",
-    occupation: "artist",
-    mbti: "ENTP",
-    description: "A revolutionary modern artist. Your innovative approach and willingness to break conventions align with Picasso's artistic breakthroughs.",
-    imageUrl: "https://images.pexels.com/photos/1918290/pexels-photo-1918290.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Pablo_Picasso",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Georgia O'Keeffe",
-    occupation: "artist",
-    mbti: "INTJ",
-    description: "A modernist painter known for abstract natural forms. Your precise observation and unique interpretation match O'Keeffe's distinctive style.",
-    imageUrl: "https://images.pexels.com/photos/2693212/pexels-photo-2693212.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Georgia_O%27Keeffe",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
+  name: "フィンセント・ファン・ゴッホ",
+  occupation: "artist",
+  mbti: "INFP",
+  description:
+    "渦巻く筆致と鮮烈な色彩で内面世界をキャンバスに刻んだ〈魂の画家〉。孤高の感受性と自然への畏敬が、ありふれた風景に壮大なドラマを宿します。",
+  imageUrl: "https://images.pexels.com/photos/1568607/pexels-photo-1568607.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Vincent_van_Gogh",
+  strengths: [
+    "感情を色とタッチに昇華する卓越した表現力",
+    "日常の隠れた美を見抜く繊細な観察眼",
+    "独自技法を試行錯誤し続ける探究心"
+  ],
+  weaknesses: [
+    "情緒の起伏で制作ペースが不安定になりやすい",
+    "批評や商業的プレッシャーへの耐性が低い",
+    "自己評価が低く他者と比較して落ち込みやすい"
+  ],
+  actionSteps: [
+    "ルーティンと休息時間を明確に区切り心身を安定化させる",
+    "制作進捗を共有できる仲間やメンターを持ち孤立を防ぐ",
+    "作品をシリーズ化し一貫したテーマでブランド価値を高める"
+  ]
+},
+{
+  name: "フリーダ・カーロ",
+  occupation: "artist",
+  mbti: "ISFP",
+  description:
+    "痛みとアイデンティティを鮮烈な色彩で告白する〈自己を描く象徴派〉。メキシコ文化と個人の物語を重ね、観る者に深い共感を呼び起こします。",
+  imageUrl: "https://images.pexels.com/photos/2123337/pexels-photo-2123337.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Frida_Kahlo",
+  strengths: [
+    "個人的体験を普遍的象徴へ昇華する洞察力",
+    "大胆な色彩と記号で視覚的インパクトを与える",
+    "文化的ルーツを作品に織り込み多様性を訴求する力"
+  ],
+  weaknesses: [
+    "内省が深く制作が自己完結しがちで外部視点が不足",
+    "感情的負荷が高くバーンアウトを招きやすい",
+    "自己プロモーションを後回しにし機会を逃しがち"
+  ],
+  actionSteps: [
+    "セルフケアのルーティンを設け感情を整理する",
+    "外部アーティストとコラボし視点の拡張と刺激を得る",
+    "SNSや展示声明で物語を発信しファンコミュニティを育てる"
+  ]
+},
+{
+  name: "パブロ・ピカソ",
+  occupation: "artist",
+  mbti: "ENTP",
+  description:
+    "キュビスムをはじめ次々と様式を刷新した〈終わりなき革新者〉。既成概念を分解し再構築する発想で20世紀美術を塗り替えました。",
+  imageUrl: "https://images.pexels.com/photos/1918290/pexels-photo-1918290.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Pablo_Picasso",
+  strengths: [
+    "概念を解体し新構造へ転換する創造的思考",
+    "多作で高速なプロトタイピング能力",
+    "社交性と市場洞察でトレンドを先取りする嗅覚"
+  ],
+  weaknesses: [
+    "興味が移ろいやすくテーマが散漫になりがち",
+    "挑発的姿勢が批判を呼びやすい",
+    "スピード重視で作品の粗さが残ることがある"
+  ],
+  actionSteps: [
+    "長期ビジョンを設定しコアテーマを定める",
+    "批判を分析し次の革新のヒントとして活用",
+    "一部作品でスロー制作を試し完成度を高める訓練を行う"
+  ]
+},
+{
+  name: "ジョージア・オキーフ",
+  occupation: "artist",
+  mbti: "INTJ",
+  description:
+    "花弁や砂漠を抽象化し本質を射抜く〈静謐なるモダニスト〉。緻密な観察と構成力でミニマルながら強烈なイメージを創出しました。",
+  imageUrl: "https://images.pexels.com/photos/2693212/pexels-photo-2693212.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Georgia_O%27Keeffe",
+  strengths: [
+    "対象を抽象化し核心を捉える分析力",
+    "ミニマル構図で強いメッセージを放つ設計力",
+    "孤独な環境でも高集中を維持する自己管理力"
+  ],
+  weaknesses: [
+    "完璧を求め決定が遅れ制作が長期化しやすい",
+    "個人のペースを優先しチーム活動に消極的",
+    "急速なトレンド変化への関心が薄い傾向"
+  ],
+  actionSteps: [
+    "制作工程に明確なデッドラインを設け意思決定を迅速化",
+    "アートコミュニティで議論し外部フィードバックを取り入れる",
+    "年次計画に新技法やデジタルツール習得を組み込み進化を継続"
+  ]
+},
 
   // Journalists
   {
