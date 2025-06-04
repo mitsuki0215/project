@@ -849,58 +849,99 @@ export const results: Result[] = [
   },
 
   // Designers
-  {
-    name: "Jonathan Ive",
-    occupation: "designer",
-    mbti: "INTJ",
-    description: "Apple's legendary product designer. Your attention to detail and minimalist aesthetic mirror Ive's revolutionary design philosophy.",
-    imageUrl: "https://images.pexels.com/photos/326502/pexels-photo-326502.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Jonathan_Ive",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Ray Eames",
-    occupation: "designer",
-    mbti: "ENFP",
-    description: "A pioneering modernist designer. Your creative problem-solving and innovative spirit reflect Eames' influential approach to design.",
-    imageUrl: "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Ray_Eames",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Dieter Rams",
-    occupation: "designer",
-    mbti: "ISTJ",
-    description: "The influential Braun designer. Your methodical approach and focus on functionality align with Rams' 'less is more' design principles.",
-    imageUrl: "https://images.pexels.com/photos/2251247/pexels-photo-2251247.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Dieter_Rams",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Philippe Starck",
-    occupation: "designer",
-    mbti: "ENTP",
-    description: "A versatile and innovative designer. Your experimental nature and broad creative vision match Starck's boundary-pushing design approach.",
-    imageUrl: "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Philippe_Starck",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
+  // Designers ── 詳細版 ─────────────────────────────────────────────
+{
+  name: "ジョナサン・アイブ",
+  occupation: "designer",
+  mbti: "INTJ",
+  description:
+    "“形は体験に奉仕する”を体現し、徹底したミニマリズムで Apple 製品を象徴へと昇華させた〈寡黙なビジョナリー〉。機能と感情のバランスを緻密に設計し、全工程を俯瞰する統率力が光ります。",
+  imageUrl: "https://images.pexels.com/photos/326502/pexels-photo-326502.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Jonathan_Ive",
+  strengths: [
+    "ユーザー体験を核に据えたシステム思考",
+    "細部まで徹底する審美眼と検証プロセス",
+    "エンジニア・経営陣と橋渡しする戦略性"
+  ],
+  weaknesses: [
+    "完璧主義が開発サイクルを延長させがち",
+    "意匠優先でコスト感覚を忘れることがある"
+  ],
+  actionSteps: [
+    "早期プロトタイプでフィードバックループを短縮",
+    "コスト・環境負荷の指標を意思決定フレームに追加",
+    "若手デザイナーへレビュー権限を委譲し視点を多角化"
+  ]
+},
+{
+  name: "レイ・イームズ",
+  occupation: "designer",
+  mbti: "ENFP",
+  description:
+    "家具・映像・グラフィックを横断し、人間の好奇心をかき立てた〈ミッドセンチュリーの発明家〉。遊び心と実験精神で“デザインは日常を楽しくする”ことを実証しました。",
+  imageUrl: "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Ray_Eames",
+  strengths: [
+    "分野を越境して着想を拡げる発想力",
+    "共創ワークショップでチームを鼓舞するコミュ力",
+    "材料や技法を試しながら形にするプロトタイピング速度"
+  ],
+  weaknesses: [
+    "アイデアが拡散しコンセプトが散漫になることがある",
+    "スケジュール管理より探究を優先し納期が厳しくなる"
+  ],
+  actionSteps: [
+    "最終アウトカムを一句で表す“コアメッセージ”を設定",
+    "時限付きスプリントで実験と収束をリズム化",
+    "ビジネス側パートナーと早期に仕様・予算を共有"
+  ]
+},
+{
+  name: "ディーター・ラムス",
+  occupation: "designer",
+  mbti: "ISTJ",
+  description:
+    "“Less, but better” を信条に余計な装飾をそぎ落とし、機能美を極めた〈静かな職人〉。10 原則に基づくタイムレスなプロダクトは、今なお UX の礎となっています。",
+  imageUrl: "https://images.pexels.com/photos/2251247/pexels-photo-2251247.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Dieter_Rams",
+  strengths: [
+    "機能要件を優先し一貫性を保つ判断力",
+    "長期使用を想定した耐久性・修理性への配慮",
+    "デザインガイドラインを体系化するドキュメント力"
+  ],
+  weaknesses: [
+    "大胆なビジュアル表現を避けイノベーション機会を逃す",
+    "ユーザーテストより理論・原則を重視しがち"
+  ],
+  actionSteps: [
+    "エモーショナル価値の測定指標を試験導入",
+    "ラピッドプロトタイプで市場のリアルな反応を検証",
+    "サステナビリティ要件を10 原則に統合しアップデート"
+  ]
+},
+{
+  name: "フィリップ・スタルク",
+  occupation: "designer",
+  mbti: "ENTP",
+  description:
+    "日用品から宇宙船まで、ユーモアと挑発で“あり得ない”を実現する〈ボーダーレス・クリエイター〉。社会批評とテクノロジーを掛け合わせ、驚きと機能を両立させます。",
+  imageUrl: "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Philippe_Starck",
+  strengths: [
+    "既成概念を打破するコンセプトメイキング",
+    "多様な業界とコラボしアイデアを量産する影響力",
+    "ユーザー体験を物語として設計するストーリーテリング"
+  ],
+  weaknesses: [
+    "奇抜さを追求し製造コストや量産性が課題化",
+    "意見が鋭く衝突を生みやすいコミュニケーション"
+  ],
+  actionSteps: [
+    "製造パートナーと早期連携し量産の壁を共有",
+    "コンセプト段階で KPI を設定しビジネス価値を明確化",
+    "フィードバックセッションで多様な視点を受け入れる姿勢を養う"
+  ]
+},
 
   // Teachers
   {
