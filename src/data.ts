@@ -1174,57 +1174,97 @@ export const results: Result[] = [
 
   // Lawyers
   {
-    name: "Thurgood Marshall",
-    occupation: "lawyer",
-    mbti: "ENFJ",
-    description: "The first African American Supreme Court Justice. Your commitment to justice and advocacy reflect Marshall's groundbreaking legal career.",
-    imageUrl: "https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Thurgood_Marshall",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Ruth Bader Ginsburg",
-    occupation: "lawyer",
-    mbti: "INTJ",
-    description: "A champion of gender equality and civil rights. Your strategic thinking and determination mirror Ginsburg's influential legal approach.",
-    imageUrl: "https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Ruth_Bader_Ginsburg",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Clarence Darrow",
-    occupation: "lawyer",
-    mbti: "ENTP",
-    description: "A legendary criminal defense lawyer. Your eloquence and innovative legal strategies align with Darrow's compelling courtroom presence.",
-    imageUrl: "https://images.pexels.com/photos/5668482/pexels-photo-5668482.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Clarence_Darrow",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "Mary Jo White",
-    occupation: "lawyer",
-    mbti: "ISTJ",
-    description: "A former SEC Chair and prosecutor. Your methodical approach and commitment to rules reflect White's distinguished legal career.",
-    imageUrl: "https://images.pexels.com/photos/5668788/pexels-photo-5668788.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Mary_Jo_White",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
+  name: "サーグッド・マーシャル",
+  occupation: "lawyer",
+  mbti: "ENFJ",
+  description:
+    "人種差別撤廃へ道を開いた〈公民権の旗手〉。弱者の声に寄り添いながら、大胆な戦略と情熱的スピーチで合衆国憲法の解釈を塗り替えた行動派リーダーです。",
+  imageUrl: "https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Thurgood_Marshall",
+  strengths: [
+    "高い共感力と道義的カリスマで支持を集める",
+    "多様な利害関係者を束ねるコーチング型リーダーシップ",
+    "判例の社会的インパクトを読み切るビジョン"
+  ],
+  weaknesses: [
+    "当事者意識が強すぎて冷静さを欠くことがある",
+    "情熱が先行し準備工数・リソースを過大投入しやすい"
+  ],
+  actionSteps: [
+    "エビデンスに基づく客観評価シートで感情と分析のバランスを取る",
+    "案件ごとに優先順位を可視化し投入リソースを最適化",
+    "異なる法分野の専門家と交差レビューを行い視野を拡張"
+  ]
+},
+{
+  name: "ルース・ベイダー・ギンズバーグ",
+  occupation: "lawyer",
+  mbti: "INTJ",
+  description:
+    "緻密な論理と鉄の意志でジェンダー平等を切り拓いた〈リーガル・アーキテクト〉。最少の語数で最大の説得力を生む意見書はまさに芸術品。",
+  imageUrl: "https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Ruth_Bader_Ginsburg",
+  strengths: [
+    "判例・統計を組み合わせた戦略的ロジック構築",
+    "粘り強く目標を追い続ける計画遂行力",
+    "簡潔で鋭いリーガルライティング"
+  ],
+  weaknesses: [
+    "完璧主義ゆえ判断が遅れがち",
+    "自己完結しやすくチームの協働機会を逃すことがある"
+  ],
+  actionSteps: [
+    "80%完成時点でドラフト共有し即時フィードバックを取り入れる",
+    "業務をモジュール化して若手に権限委譲し育成を両立",
+    "健康管理とワークライフバランスを意識し持続可能性を高める"
+  ]
+},
+{
+  name: "クラレンス・ダロウ",
+  occupation: "lawyer",
+  mbti: "ENTP",
+  description:
+    "機転の利くクロスエグザミネーションとウィットに富んだ弁論で陪審員を魅了した〈法廷の自由人〉。既存の枠を打ち破る創造的ディフェンスが持ち味です。",
+  imageUrl: "https://images.pexels.com/photos/5668482/pexels-photo-5668482.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Clarence_Darrow",
+  strengths: [
+    "即興的な質問で証言の矛盾を突く洞察力",
+    "ストーリーテリングを駆使した説得力あるプレゼン",
+    "型破りな戦略で前例を作るイノベーション志向"
+  ],
+  weaknesses: [
+    "細部の事務作業や長期計画を後回しにしがち",
+    "議論好きが高じて対立を生むことがある"
+  ],
+  actionSteps: [
+    "ディテール志向のパートナーとチームを組み抜け漏れを補完",
+    "事前にスクリプトを作成し要点を絞った議論を意識",
+    "判例リサーチのフレームワークを標準化し効率を向上"
+  ]
+},
+{
+  name: "メアリー・ジョー・ホワイト",
+  occupation: "lawyer",
+  mbti: "ISTJ",
+  description:
+    "SEC長官として市場の公正性を守り抜いた〈金融規制の番人〉。証拠を積み重ねる堅実さと不偏不党の姿勢で信頼を勝ち取る“鉄の検察官”タイプ。",
+  imageUrl: "https://images.pexels.com/photos/5668788/pexels-photo-5668788.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Mary_Jo_White",
+  strengths: [
+    "事実関係を網羅する緻密なドキュメンテーション",
+    "規制・コンプライアンスの枠内で最適解を導く判断力",
+    "プレッシャー下でも揺るがない責任感"
+  ],
+  weaknesses: [
+    "規則重視のため柔軟な発想が生まれにくい",
+    "変化の激しい案件で適応が後手に回ることがある"
+  ],
+  actionSteps: [
+    "新領域のケーススタディを取り入れ創造的思考を刺激",
+    "アジャイルなプロジェクト管理手法を試験導入",
+    "交渉術やソフトスキル研修で対人影響力を強化"
+  ]
+},
 
   // Investors
   {
