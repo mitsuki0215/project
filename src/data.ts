@@ -1444,57 +1444,97 @@ export const results: Result[] = [
 
   // Architects
   {
-    name: "フランク・ロイド・ライト",
-    occupation: "architect",
-    mbti: "INTJ",
-    description: "あなたは有機的建築家の巨匠ライトのような、革新的設計思想を持つ建築家！自然と一体化した空間作りを細部までこだわった設計を実現します。",
-    imageUrl: "https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Frank_Lloyd_Wright",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "ザハ・ハディド",
-    occupation: "architect",
-    mbti: "ENTJ",
-    description: "あなたはハディドの魂を宿す奔放な曲線美と不屈の創造力で、空間そのものをアートへと昇華させ、新たな時代の鼓動を響かせるでしょう！",
-    imageUrl: "https://images.pexels.com/photos/1732415/pexels-photo-1732415.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Zaha_Hadid",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "ル・コルビュジエ",
-    occupation: "architect",
-    mbti: "ISTJ",
-    description: "あなたはコルビュジエの精神を継ぐ理知的な美意識と周到な空間計画を持つ建築家！ムダのないスマートなデザインで暮らしやすさを考えるのが好きなタイプです。",
-    imageUrl: "https://images.pexels.com/photos/1732416/pexels-photo-1732416.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Le_Corbusier",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
-  {
-    name: "アントニ・ガウディ",
-    occupation: "architect",
-    mbti: "INFP",
-    description: "あなたは自然を取り込む独創的表現とディテールへの情熱を持つ建築家！サグラダ・ファミリアのような人々を魅了する建築を創り出せること間違いなし。",
-    imageUrl: "https://images.pexels.com/photos/1732417/pexels-photo-1732417.jpeg",
-    wikiUrl: "https://en.wikipedia.org/wiki/Antoni_Gaud%C3%AD",
-    strengths: ["〈強み〉"],
-    weaknesses: ["〈弱み〉"],
-    bestEnvironments: ["〈最適環境〉"],
-    idealRoles: ["〈推奨ロール〉"],
-    actionSteps: ["〈成長アドバイス〉"]
-  },
+  name: "フランク・ロイド・ライト",
+  occupation: "architect",
+  mbti: "INTJ",
+  description:
+    "敷地・構造・家具までを統合し“有機的建築”を生んだ構想家。自然との調和を図りつつ綿密な計算で空間体験をデザインします。",
+  imageUrl: "https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Frank_Lloyd_Wright",
+  strengths: [
+    "全体を俯瞰しコンセプトからディテールまで一貫させる体系的思考",
+    "自然素材と幾何学を掛け合わせた革新的デザイン発想",
+    "長期的ビジョンを掲げクライアントを説得する戦略性"
+  ],
+  weaknesses: [
+    "完璧主義ゆえ設計変更に柔軟に応じにくい",
+    "自己の美学を優先しチームの意見を取りこぼす傾向"
+  ],
+  actionSteps: [
+    "早期にモックアップを共有し利害関係者との合意形成を強化",
+    "サステナビリティ指標を導入し客観的な評価軸を拡充",
+    "タスクを委任しプロセスを可視化してリードタイムを短縮"
+  ]
+},
+{
+  name: "ザハ・ハディド",
+  occupation: "architect",
+  mbti: "ENTJ",
+  description:
+    "力強い曲線とダイナミックな空間で“脱構築”を体現したビジョナリー。大胆なコンセプトで都市景観に新しいリズムを刻みます。",
+  imageUrl: "https://images.pexels.com/photos/1732415/pexels-photo-1732415.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Zaha_Hadid",
+  strengths: [
+    "常識を打ち破るフォルムを実現する先見性とリーダーシップ",
+    "構造・材料の限界を押し広げる技術コラボ推進力",
+    "プレゼンテーション力が高く大型案件を獲得する交渉力"
+  ],
+  weaknesses: [
+    "コスト・工期が膨らみやすく実現性の調整に時間がかかる",
+    "要求水準が高くチームの疲弊を招くリスク"
+  ],
+  actionSteps: [
+    "初期段階で施工チームと協働し実現性を段階的に検証",
+    "BIMデータを活用しコストシミュレーションを可視化",
+    "若手スタッフに権限委譲し育成と負荷分散を図る"
+  ]
+},
+{
+  name: "ル・コルビュジエ",
+  occupation: "architect",
+  mbti: "ISTJ",
+  description:
+    "“住宅は住むための機械”と唱えた機能主義の旗手。モジュール化と合理性を武器に都市計画まで体系化しました。",
+  imageUrl: "https://images.pexels.com/photos/1732416/pexels-photo-1732416.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Le_Corbusier",
+  strengths: [
+    "機能・寸法を標準化し生産効率を高めるロジカルシンキング",
+    "緻密なドローイングと書籍執筆でビジョンを共有する文書化力",
+    "都市スケールまで視野に入れるマスタープラン能力"
+  ],
+  weaknesses: [
+    "実用性を重視しすぎて温かみを欠くことがある",
+    "計画に固執し予期せぬ要求変化に対応しづらい"
+  ],
+  actionSteps: [
+    "ワークショップで住民の感情的ニーズをヒアリング",
+    "素材・色彩の実験で人間味をプラス",
+    "アジャイルな設計レビューを導入し途中変更に備える"
+  ]
+},
+{
+  name: "アントニ・ガウディ",
+  occupation: "architect",
+  mbti: "INFP",
+  description:
+    "自然物の曲線やカラフルな装飾を取り入れた“詩的建築”の創造者。直感と信仰心を頼りに唯一無二の空間を紡ぎ出しました。",
+  imageUrl: "https://images.pexels.com/photos/1732417/pexels-photo-1732417.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Antoni_Gaud%C3%AD",
+  strengths: [
+    "自然形態を観察し構造美へ昇華する創造性",
+    "細部のモザイクや彫刻に魂を込める職人肌のこだわり",
+    "スケール模型を駆使し空間を感覚的に検証する能力"
+  ],
+  weaknesses: [
+    "ビジョンが抽象的で図面化・共有に時間がかかる",
+    "情熱が強すぎ予算やスケジュール管理が後手に回る"
+  ],
+  actionSteps: [
+    "3DスキャンやVRでアイデアを早期可視化し関係者と共有",
+    "プロジェクトマネージャーと二人三脚で工期・費用を管理",
+    "定期的にコンセプトを文章化し目的と進捗を確認"
+  ]
+},
 
   // Copywriters
 {
