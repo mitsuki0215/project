@@ -48,47 +48,51 @@ export const questions: { [key: string]: Question[] } = {
   }
 ],
   entrepreneur: [
-    {
-      id: 1,
-      text: "What drives your business decisions?",
-      choices: [
-        { id: "e1a", text: "Market data and analytics", type: "T" },
-        { id: "e1b", text: "Gut feeling and intuition", type: "F" },
-        { id: "e1c", text: "Industry trends and patterns", type: "S" },
-        { id: "e1d", text: "Vision of future possibilities", type: "N" }
-      ]
-    },
-    {
-      id: 2,
-      text: "How do you prefer to grow your business?",
-      choices: [
-        { id: "e2a", text: "Strategic partnerships and networking", type: "E" },
-        { id: "e2b", text: "Focused individual effort", type: "I" },
-        { id: "e2c", text: "Systematic expansion plans", type: "J" },
-        { id: "e2d", text: "Adaptable growth strategies", type: "P" }
-      ]
-    },
-    {
-      id: 3,
-      text: "What's your approach to team management?",
-      choices: [
-        { id: "e3a", text: "Clear hierarchy and structure", type: "J" },
-        { id: "e3b", text: "Flexible and collaborative environment", type: "P" },
-        { id: "e3c", text: "Data-driven performance metrics", type: "T" },
-        { id: "e3d", text: "Focus on team harmony and motivation", type: "F" }
-      ]
-    },
-    {
-      id: 4,
-      text: "How do you handle business challenges?",
-      choices: [
-        { id: "e4a", text: "Analyze problems systematically", type: "T" },
-        { id: "e4b", text: "Trust your entrepreneurial instincts", type: "F" },
-        { id: "e4c", text: "Seek advice from mentors", type: "E" },
-        { id: "e4d", text: "Reflect and strategize alone", type: "I" }
-      ]
-    }
-  ],
+  /* Q1 : E / I */
+  {
+    id: 1,
+    text: "A new business idea pops into your head. What’s your immediate move?",
+    choices: [
+      { id: "e1a", text: "Call a potential co-founder to brainstorm possibilities.",      type: "E" },
+      { id: "e1b", text: "Post it in a founders’ Slack channel for instant feedback.",    type: "E" },
+      { id: "e1c", text: "Open a private doc and flesh out the concept solo first.",      type: "I" },
+      { id: "e1d", text: "Sleep on it and refine the idea quietly before sharing.",       type: "I" }
+    ]
+  },
+  /* Q2 : S / N */
+  {
+    id: 2,
+    text: "Which research approach guides your market validation?",
+    choices: [
+      { id: "e2a", text: "Customer interviews and hard usage metrics.",         type: "S" },
+      { id: "e2b", text: "Competitive benchmarking and current best practices.",type: "S" },
+      { id: "e2c", text: "Imagining future trends that haven’t surfaced yet.",   type: "N" },
+      { id: "e2d", text: "Connecting disparate insights to spot hidden niches.", type: "N" }
+    ]
+  },
+  /* Q3 : T / F */
+  {
+    id: 3,
+    text: "When choosing between two product features, what tips the scale?",
+    choices: [
+      { id: "e3a", text: "Projected ROI and scalability.",           type: "T" },
+      { id: "e3b", text: "Data-driven A/B test results.",            type: "T" },
+      { id: "e3c", text: "Positive impact on users’ lives.",         type: "F" },
+      { id: "e3d", text: "Alignment with the company’s mission and values.", type: "F" }
+    ]
+  },
+  /* Q4 : J / P */
+  {
+    id: 4,
+    text: "Your go-to style for steering a growing startup is…",
+    choices: [
+      { id: "e4a", text: "Set quarterly OKRs and follow a strict roadmap.",     type: "J" },
+      { id: "e4b", text: "Create clear roles, processes, and review cycles.",   type: "J" },
+      { id: "e4c", text: "Keep plans light and pivot whenever new data arrives.",type: "P" },
+      { id: "e4d", text: "Experiment rapidly and iterate based on learnings.",  type: "P" }
+    ]
+  }
+],
   designer: [
     {
       id: 1,
