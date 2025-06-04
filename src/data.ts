@@ -278,47 +278,51 @@ export const questions: { [key: string]: Question[] } = {
   }
 ],
   artist: [
-    {
-      id: 1,
-      text: "What inspires your creative process?",
-      choices: [
-        { id: "a1a", text: "Technical mastery", type: "S" },
-        { id: "a1b", text: "Abstract concepts", type: "N" },
-        { id: "a1c", text: "Emotional expression", type: "F" },
-        { id: "a1d", text: "Logical composition", type: "T" }
-      ]
-    },
-    {
-      id: 2,
-      text: "How do you approach your artwork?",
-      choices: [
-        { id: "a2a", text: "Planned and structured", type: "J" },
-        { id: "a2b", text: "Spontaneous and intuitive", type: "P" },
-        { id: "a2c", text: "Collaborative projects", type: "E" },
-        { id: "a2d", text: "Solo creative work", type: "I" }
-      ]
-    },
-    {
-      id: 3,
-      text: "What drives your artistic decisions?",
-      choices: [
-        { id: "a3a", text: "Visual harmony", type: "S" },
-        { id: "a3b", text: "Conceptual meaning", type: "N" },
-        { id: "a3c", text: "Audience impact", type: "E" },
-        { id: "a3d", text: "Personal vision", type: "I" }
-      ]
-    },
-    {
-      id: 4,
-      text: "How do you develop your artistic style?",
-      choices: [
-        { id: "a4a", text: "Study traditional techniques", type: "S" },
-        { id: "a4b", text: "Experimental approaches", type: "N" },
-        { id: "a4c", text: "Feedback from others", type: "E" },
-        { id: "a4d", text: "Inner exploration", type: "I" }
-      ]
-    }
-  ],
+  /* Q1 : E / I */
+  {
+    id: 1,
+    text: "When a new idea sparks, your next move is to…",
+    choices: [
+      { id: "a1a", text: "Call a friend or fellow artist to jam on it together.", type: "E" },
+      { id: "a1b", text: "Post a rough sketch online to gather quick feedback.",  type: "E" },
+      { id: "a1c", text: "Retreat to your studio and sketch privately first.",   type: "I" },
+      { id: "a1d", text: "Keep it in a personal journal until the concept is clear.", type: "I" }
+    ]
+  },
+  /* Q2 : S / N */
+  {
+    id: 2,
+    text: "Your strongest source of inspiration typically comes from…",
+    choices: [
+      { id: "a2a", text: "Real-world textures, colors, and everyday scenes.", type: "S" },
+      { id: "a2b", text: "Historical techniques and classical references.",   type: "S" },
+      { id: "a2c", text: "Symbolic imagery and abstract concepts.",           type: "N" },
+      { id: "a2d", text: "Dream-like ideas that push beyond reality.",        type: "N" }
+    ]
+  },
+  /* Q3 : T / F */
+  {
+    id: 3,
+    text: "When judging whether a piece is finished, you rely on…",
+    choices: [
+      { id: "a3a", text: "Balanced composition and technical precision.",   type: "T" },
+      { id: "a3b", text: "Adherence to design principles and proportions.", type: "T" },
+      { id: "a3c", text: "Whether it conveys the intended emotion.",        type: "F" },
+      { id: "a3d", text: "The personal or social story it tells.",          type: "F" }
+    ]
+  },
+  /* Q4 : J / P */
+  {
+    id: 4,
+    text: "Faced with a looming exhibition deadline, you tend to…",
+    choices: [
+      { id: "a4a", text: "Create a strict schedule and stick to milestones.",  type: "J" },
+      { id: "a4b", text: "Finalize each element before moving to the next.",   type: "J" },
+      { id: "a4c", text: "Experiment up to the last minute, adjusting as you go.", type: "P" },
+      { id: "a4d", text: "Leave space for spontaneous changes on installation day.", type: "P" }
+    ]
+  }
+],
   journalist: [
     {
       id: 1,
