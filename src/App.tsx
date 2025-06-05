@@ -220,7 +220,7 @@ function App() {
                 <div
                   className="h-2 bg-indigo-600 rounded-full transition-all duration-300"
                   style={{
-                    width: `${((currentQuestion + 1) / currentQuestions.length) * 100}%`
+                    width: `${((currentQuestion) / currentQuestions.length) * 100}%`
                   }}
                 />
               </div>
