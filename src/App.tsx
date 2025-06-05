@@ -289,7 +289,7 @@ function App() {
               <img
                 src={result.imageUrl}
                 alt={result.name}
-                className="w-full h-48 object-cover rounded-lg"
+                className="w-full aspect-square object-cover rounded-lg"
               />
 
               {/* 画像ソース URL を小さく表示 */}
