@@ -4,7 +4,7 @@ import { questions, results } from './data';
 import { Occupation, Result, PersonalityStats } from './types';
 
 /*───────────────────────────────────────────
-  1. 職業リスト
+  職業リスト
 ───────────────────────────────────────────*/
 const occupations: Occupation[] = [
   { id: 'scientist',    name: '科学者' },
@@ -25,145 +25,113 @@ const occupations: Occupation[] = [
   { id: 'director',     name: '映画監督' }
 ];
 
-/* Q 番号 ↔ MBTI ペア対応表 */
+/* Q ↔ MBTI ペア */
 const pairOrder = [
-  { pair: ['E', 'I'] }, // Q1
-  { pair: ['S', 'N'] }, // Q2
-  { pair: ['T', 'F'] }, // Q3
-  { pair: ['J', 'P'] }  // Q4
+  { pair: ['E', 'I'] },
+  { pair: ['S', 'N'] },
+  { pair: ['T', 'F'] },
+  { pair: ['J', 'P'] }
 ];
 
 /*───────────────────────────────────────────
   補助関数
 ───────────────────────────────────────────*/
-/**
- * MBTI 文字列がどのくらい似ているか（異なる文字数）を返す
- */
-function mbtiDistance(a: string, b: string) {
-  return [...a].reduce((acc, ch, idx) => acc + (ch === b[idx] ? 0 : 1), 0);
-}
+const mbtiDistance = (a: string, b: string) =>
+  [...a].reduce((acc, ch, i) => acc + (ch !== b[i] ? 1 : 0), 0);
 
-/**
- * 性格統計から MBTI 文字列を生成
- */
-function makeMbti(stats: PersonalityStats): string {
-  return [
-    stats.E >= stats.I ? 'E' : 'I',
-    stats.S >= stats.N ? 'S' : 'N',
-    stats.T >= stats.F ? 'T' : 'F',
-    stats.J >= stats.P ? 'J' : 'P'
-  ].join('');
-}
+const makeMbti = (s: PersonalityStats) =>
+  [s.E >= s.I ? 'E' : 'I', s.S >= s.N ? 'S' : 'N',
+   s.T >= s.F ? 'T' : 'F', s.J >= s.P ? 'J' : 'P'].join('');
+
+/*───────────────────────────────────────────
+  App
+───────────────────────────────────────────*/
+type Step = 'intro' | 'occupation' | 'questions' | 'loading' | 'result';
 
 function App() {
   /*───────── state ─────────*/
-  const [step, setStep] = useState<'occupation' | 'questions' | 'result'>('occupation');
-  const [selectedOccupation, setSelectedOccupation] = useState<string | null>(null);
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [stats, setStats] = useState<PersonalityStats>({
-    E: 0, I: 0, N: 0, S: 0, T: 0, F: 0, J: 0, P: 0
+  const [step, setStep]           = useState<Step>('intro');
+  const [selectedOcc, setSelectedOcc] = useState<string | null>(null);
+  const [currentQ, setCurrentQ]   = useState(0);
+  const [answered, setAnswered]   = useState(0);
+  const [stats, setStats]         = useState<PersonalityStats>({
+    E:0,I:0,S:0,N:0,T:0,F:0,J:0,P:0
   });
-  const [result, setResult] = useState<Result | null>(null);
+  const [result, setResult]       = useState<Result | null>(null);
 
-  /*───────── handlers ─────────*/
-  const handleOccupationSelect = (id: string) => {
-    setSelectedOccupation(id === selectedOccupation ? null : id);
+  /*───────── navigation ─────────*/
+  const startFromIntro = () => setStep('occupation');
+
+  const startQuestions = (occId: string) => {
+    setSelectedOcc(occId);
+    setStats({ E:0,I:0,S:0,N:0,T:0,F:0,J:0,P:0 });
+    setCurrentQ(0);
+    setAnswered(0);
+    setStep('questions');
   };
 
-  const currentQuestions =
-    selectedOccupation ? questions[selectedOccupation] ?? [] : [];
-
-  const handleAnswer = (letter: keyof PersonalityStats) => {
-    if (!selectedOccupation) return; // safety guard
-
-    // 更新後の統計を先に計算（setState が async なので）
-    const opposing = pairOrder[currentQuestion].pair.find((l) => l !== letter) as keyof PersonalityStats;
-    const updatedStats: PersonalityStats = {
-      ...stats,
-      [letter]: 1,
-      [opposing]: 0
-    } as PersonalityStats;
-
-    // まだ質問が残っている場合は次へ。
-    if (currentQuestion < currentQuestions.length - 1) {
-      setStats(updatedStats);
-      setCurrentQuestion((q) => q + 1);
-      return;
-    }
-
-    /* ───── 回答完了: MBTI & 偉人決定 ───── */
-    const mbtiString = makeMbti(updatedStats);
-
-    // 1) 同職業で MBTI が完全一致
-    const sameOcc = results.filter((r) => r.occupation === selectedOccupation);
-    let finalResult = sameOcc.find((r) => r.mbti === mbtiString);
-
-    // 2) 見つからなければ MBTI が最も近い偉人を選択（距離 1 → 2 → 3...）
-    if (!finalResult) {
-      finalResult = sameOcc.reduce<Result | null>((best, curr) => {
-        if (!best) return curr;
-        return mbtiDistance(curr.mbti, mbtiString) < mbtiDistance(best.mbti, mbtiString) ? curr : best;
-      }, null as unknown as Result);
-    }
-
-    // 3) 万一同職業に偉人データがない場合は全職業から一番近いもの
-    if (!finalResult) {
-      finalResult = results.reduce<Result | null>((best, curr) => {
-        if (!best) return curr;
-        return mbtiDistance(curr.mbti, mbtiString) < mbtiDistance(best.mbti, mbtiString) ? curr : best;
-      }, null as unknown as Result);
-    }
-
-    // state 更新
-    setStats(updatedStats);
-    setResult(finalResult);
-    setStep('result');
-  };
-
-  const resetQuiz = () => {
-    setStep('occupation');
-    setSelectedOccupation(null);
-    setCurrentQuestion(0);
-    setStats({ E: 0, I: 0, N: 0, S: 0, T: 0, F: 0, J: 0, P: 0 });
+  const resetApp = () => {
+    setStep('intro');
+    setSelectedOcc(null);
+    setCurrentQ(0);
+    setAnswered(0);
+    setStats({ E:0,I:0,S:0,N:0,T:0,F:0,J:0,P:0 });
     setResult(null);
   };
 
-  /*───────── UI helpers ─────────*/
-  const renderPersonalityStats = () => {
-    const pairs = [
-      { left: 'E', right: 'I' },
-      { left: 'S', right: 'N' },
-      { left: 'T', right: 'F' },
-      { left: 'J', right: 'P' }
-    ];
+  /*───────── derived data ─────────*/
+  const currentQs = selectedOcc ? questions[selectedOcc] ?? [] : [];
+  const progressPct =
+    selectedOcc && currentQs.length ? (answered / currentQs.length) * 100 : 0;
 
+  /*───────── answer handler ─────────*/
+  const handleAnswer = (l: keyof PersonalityStats) => {
+    if (!selectedOcc) return;
+    const opp = pairOrder[currentQ].pair.find(x=>x!==l)! as keyof PersonalityStats;
+    const newStats = { ...stats, [l]:1, [opp]:0 } as PersonalityStats;
+    setAnswered(a=>a+1);
+
+    if (currentQ < currentQs.length-1){
+      setStats(newStats);
+      setCurrentQ(q=>q+1);
+      return;
+    }
+
+    /*―― 最終回答 ――*/
+    const mbti = makeMbti(newStats);
+    const sameOcc = results.filter(r=>r.occupation===selectedOcc);
+    let best =
+      sameOcc.find(r=>r.mbti===mbti) ??
+      sameOcc.reduce<Result|null>((b,c)=>
+        !b||mbtiDistance(c.mbti,mbti)<mbtiDistance(b.mbti,mbti)?c:b,null) ??
+      results.reduce<Result|null>((b,c)=>
+        !b||mbtiDistance(c.mbti,mbti)<mbtiDistance(b.mbti,mbti)?c:b,null);
+
+    setStats(newStats);
+    setStep('loading');
+    setTimeout(()=>{setResult(best);setStep('result');},600);
+  };
+
+  /*───────── components ─────────*/
+  const PersonalityBars = () => {
+    const pairs = [['E','I'],['S','N'],['T','F'],['J','P']] as const;
     return (
       <div className="mt-8 space-y-4">
-        <h3 className="text-lg font-semibold text-gray-700 flex items-center gap-2">
-          <BarChart className="w-5 h-5" />
-          BioFit 4Q（あなたの回答）
+        <h3 className="flex items-center gap-2 text-indigo-600 font-semibold">
+          <BarChart className="w-5 h-5"/> あなたの 4Q プロファイル
         </h3>
-        {pairs.map(({ left, right }) => {
-          const total = stats[left as keyof PersonalityStats] + stats[right as keyof PersonalityStats] || 1;
-          const leftPct = (stats[left as keyof PersonalityStats] / total) * 100;
-          const rightPct = (stats[right as keyof PersonalityStats] / total) * 100;
-
+        {pairs.map(([l,r])=>{
+          const total = stats[l]+stats[r]||1;
           return (
-            <div key={left} className="flex items-center gap-2">
-              <span className="w-8 text-right font-medium">{left}</span>
-              <div className="flex-1 h-4 bg-gray-200 rounded-full overflow-hidden">
-                <div
-                  className="h-full bg-indigo-600 rounded-full"
-                  style={{ width: `${leftPct}%` }}
-                />
+            <div key={l} className="flex items-center gap-2">
+              <span className="w-8 text-right font-medium">{l}</span>
+              <div className="flex-1 h-3 bg-gray-200 rounded-full overflow-hidden">
+                <div className="h-full bg-indigo-600" style={{width:`${(stats[l]/total)*100}%`}}/>
               </div>
-              <div className="flex-1 h-4 bg-gray-200 rounded-full overflow-hidden">
-                <div
-                  className="h-full bg-indigo-600 rounded-full"
-                  style={{ width: `${rightPct}%` }}
-                />
+              <div className="flex-1 h-3 bg-gray-200 rounded-full overflow-hidden">
+                <div className="h-full bg-indigo-600" style={{width:`${(stats[r]/total)*100}%`}}/>
               </div>
-              <span className="w-8 font-medium">{right}</span>
+              <span className="w-8 font-medium">{r}</span>
             </div>
           );
         })}
@@ -171,147 +139,189 @@ function App() {
     );
   };
 
-  /*───────── render ─────────*/
+  /*─────────────────────────────────────────── render */
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-md mx-auto">
-        <div className="text-center mb-8">
-          <Brain className="mx-auto h-12 w-12 text-indigo-600" />
-          <h2 className="mt-6 text-3xl font-bold text-gray-900">BioFit 4Q</h2>
-        </div>
+    <div className="min-h-screen bg-gray-50 flex items-start justify-center px-4 py-10">
+      <div className="w-full max-w-md">
 
-        {/* Step 1 ─ Occupation */}
-        {step === 'occupation' && (
+        {/*──────── Intro Page ─────────*/}
+        {step==='intro' && (
+          <div className="space-y-10">
+            <header className="text-center space-y-4">
+              <Brain className="mx-auto h-16 w-16 text-indigo-600" />
+              <h1 className="text-4xl font-extrabold text-gray-900">BioFit&nbsp;4Q</h1>
+              <p className="text-2xl sm:text-3xl font-extrabold text-indigo-600">
+                キャッチフレーズ入力欄
+              </p>
+            </header>
+
+            <section className="bg-white/80 backdrop-blur-sm shadow-lg rounded-2xl p-6 space-y-6">
+              <p className="text-gray-700 leading-relaxed">
+                BioFit&nbsp;4Q は、<b className="text-indigo-600">4 つの質問</b>で
+                あなたの思考スタイルを MBTI ライクな 4 文字へマッピング。
+                さらに歴史上の <b className="text-indigo-600">“似ている偉人”</b>
+                を提示する、スマホ特化のセルフコーチングツールです。
+              </p>
+              {['診断を始めるボタンをタップ',
+                '興味のある職業を 1 つ選択',
+                '4 問に直感で回答',
+                '偉人タイプ & 強み / 弱み / 行動提案 を受け取る'
+              ].map((t,i)=>(
+                <div key={i} className="flex items-start gap-3">
+                  <div className="w-8 h-8 flex-none rounded-full bg-indigo-600
+                                  text-white flex items-center justify-center font-bold">
+                    {i+1}
+                  </div>
+                  <p className="flex-1 text-gray-800">{t}</p>
+                </div>
+              ))}
+            </section>
+
+            <button
+              onClick={startFromIntro}
+              className="w-full py-4 rounded-xl bg-indigo-600 hover:bg-indigo-700
+                         text-white text-lg font-semibold shadow-md">
+              診断を始める
+            </button>
+          </div>
+        )}
+
+        {/*──────── Occupation Page ─────────*/}
+        {step==='occupation' && (
           <div>
+            <div className="text-center mb-6 space-y-2">
+              <Brain className="mx-auto h-12 w-12 text-indigo-600"/>
+              <h2 className="text-3xl font-bold text-gray-900">BioFit 4Q</h2>
+            </div>
+
             <h3 className="text-lg font-medium text-gray-900 mb-4">
-              将来なりたい職業を<b>1つ</b>選択してください:
+              興味のある職業を<b>1つ</b>選択してください
             </h3>
+
             <div className="grid grid-cols-2 gap-4">
-              {occupations.map((o) => (
-                <button
-                  key={o.id}
-                  onClick={() => handleOccupationSelect(o.id)}
-                  className={`p-3 rounded-lg text-sm font-medium ${
-                    selectedOccupation === o.id
-                      ? 'bg-indigo-600 text-white'
-                      : 'bg-white text-gray-700 border border-gray-300'
-                  }`}
-                >
+              {occupations.map(o=>(
+                <button key={o.id}
+                  onClick={()=>startQuestions(o.id)}
+                  className="p-3 rounded-lg bg-white border border-gray-300
+                             text-sm font-medium text-gray-800 hover:bg-indigo-50">
                   {o.name}
                 </button>
               ))}
             </div>
-            {selectedOccupation && (
-              <button
-                onClick={() => setStep('questions')}
-                className="mt-6 w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700"
-              >
-                診断を始める
-              </button>
-            )}
           </div>
         )}
 
-        {/* Step 2 ─ Questions */}
-        {step === 'questions' && currentQuestions.length > 0 && (
+        {/*──────── Questions Page ─────────*/}
+        {step==='questions' && currentQs.length>0 && (
           <div>
-            <div className="mb-4">
-              <div className="h-2 bg-gray-200 rounded-full">
-                <div
-                  className="h-2 bg-indigo-600 rounded-full transition-all duration-300"
-                  style={{
-                    width: `${((currentQuestion) / currentQuestions.length) * 100}%`
-                  }}
-                />
-              </div>
+            {/* app header */}
+            <div className="text-center mb-6 space-y-2">
+              <Brain className="mx-auto h-12 w-12 text-indigo-600"/>
+              <h2 className="text-3xl font-bold text-gray-900">BioFit 4Q</h2>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow">
-              <h3 className="text-lg font-medium text-gray-900 mb-4">
-                {currentQuestions[currentQuestion].text}
-              </h3>
-              <div className="space-y-3">
-                {currentQuestions[currentQuestion].choices.map((c) => (
-                  <button
-                    key={c.id}
-                    onClick={() => handleAnswer(c.type as keyof PersonalityStats)}
-                    className="w-full text-left p-3 rounded-lg border border-gray-300 hover:border-indigo-500 hover:bg-indigo-50"
-                  >
-                    {c.text}
-                  </button>
-                ))}
+
+            {/* progress */}
+            <div className="mb-4">
+              <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
+                <div className="h-full bg-indigo-600 transition-all duration-300"
+                     style={{width:`${progressPct}%`}}/>
               </div>
+              <p className="mt-1 text-right text-sm text-gray-600">
+                {currentQ+1} / {currentQs.length} 問
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow space-y-4">
+              <h3 className="text-lg font-semibold text-gray-900">
+                {currentQs[currentQ].text}
+              </h3>
+              {currentQs[currentQ].choices.map(c=>(
+                <button key={c.id}
+                  onClick={()=>handleAnswer(c.type as keyof PersonalityStats)}
+                  className="w-full py-3 px-4 text-left rounded-lg border border-gray-300
+                             bg-gray-50 hover:border-indigo-500 hover:bg-indigo-50">
+                  {c.text}
+                </button>
+              ))}
             </div>
           </div>
         )}
 
-        {/* Step 3 ─ Result */}
-        {step === 'result' && result && (
-          <div className="bg-white p-6 rounded-lg shadow">
-            <div className="text-center">
-              <CheckCircle2 className="mx-auto h-12 w-12 text-green-500" />
-              <a
-                href={result.wikiUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 text-xl font-bold text-gray-900 hover:text-indigo-600"
-              >
-                {result.name}
-              </a>
-              <p className="text-sm text-gray-500">{result.mbti}</p>
-              <img
-                src={result.imageUrl}
-                alt={result.name}
-                className="mt-6 w-full h-48 object-cover rounded-lg"
-              />
-              <p className="mt-4 text-gray-600">{result.description}</p>
+        {/*──────── Loading Page ─────────*/}
+        {step==='loading' && (
+          <div>
+            <div className="text-center mb-6 space-y-2">
+              <Brain className="mx-auto h-12 w-12 text-indigo-600"/>
+              <h2 className="text-3xl font-bold text-gray-900">BioFit 4Q</h2>
+            </div>
 
-              {/* ───────── Added Analysis Sections ───────── */}
-              {result.strengths && result.strengths.length > 0 && (
-                <Section title="Strengths" items={result.strengths} />
-              )}
-              {result.weaknesses && result.weaknesses.length > 0 && (
-                <Section title="Weaknesses" items={result.weaknesses} />
-              )}
-              {result.actionSteps && result.actionSteps.length > 0 && (
-                <Section title="Action Steps" items={result.actionSteps} />
-              )}
-              {/* ─────────────────────────────────────────── */}
+            <div className="mb-4">
+              <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
+                <div className="h-full bg-indigo-600 transition-all duration-500 w-full"/>
+              </div>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow text-center">
+              <p className="text-lg text-gray-700">診断結果を計算中…</p>
+            </div>
+          </div>
+        )}
 
-              {renderPersonalityStats()}
+        {/*──────── Result Page ─────────*/}
+        {step==='result' && result && (
+          <div className="space-y-6">
+            {/* app header */}
+            <div className="text-center mb-2 space-y-2">
+              <Brain className="mx-auto h-12 w-12 text-indigo-600"/>
+              <h2 className="text-3xl font-bold text-gray-900">BioFit 4Q</h2>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow space-y-6">
+              <div className="text-center space-y-2">
+                <CheckCircle2 className="mx-auto h-12 w-12 text-green-500"/>
+                <a href={result.wikiUrl} target="_blank" rel="noopener noreferrer"
+                  className="block text-xl font-bold text-gray-900 hover:text-indigo-600">
+                  {result.name}
+                </a>
+                <span className="text-sm text-gray-500">{result.mbti}</span>
+              </div>
+
+              <img src={result.imageUrl} alt={result.name}
+                    className="w-full h-48 object-cover rounded-lg"/>
+
+              <p className="text-gray-700 leading-relaxed">{result.description}</p>
+
+              {result.strengths && <Section title="Strengths" items={result.strengths}/>}
+              {result.weaknesses && <Section title="Weaknesses" items={result.weaknesses}/>}
+              {result.actionSteps && <Section title="Action Steps" items={result.actionSteps}/>}
+
+              <PersonalityBars/>
 
               <button
-                onClick={resetQuiz}
-                className="mt-8 w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700"
-              >
-                もう一度診断を始める
+                onClick={resetApp}
+                className="w-full py-4 bg-indigo-600 hover:bg-indigo-700
+                           text-white font-semibold rounded-lg">
+                もう一度診断する
               </button>
             </div>
           </div>
         )}
+
       </div>
     </div>
   );
 }
 
 /*───────────────────────────────────────────
-  汎用リスト表示コンポーネント
+  汎用リスト表示
 ───────────────────────────────────────────*/
-function Section({
-  title,
-  items
-}: {
-  title: string;
-  items: string[];
-}) {
+function Section({title,items}:{title:string;items:string[]}) {
   return (
-    <div className="text-left mt-6">
-      <h4 className="font-semibold text-gray-800 mb-1">{title}</h4>
-      <ul className="list-disc list-inside text-gray-700 space-y-1">
-        {items.map((t, i) => (
-          <li key={`${title}-${i}`}>{t}</li>
-        ))}
+    <section className="space-y-2">
+      <h4 className="font-semibold text-gray-800">{title}</h4>
+      <ul className="list-disc list-inside space-y-1 text-gray-700">
+        {items.map((t,i)=><li key={i}>{t}</li>)}
       </ul>
-    </div>
+    </section>
   );
 }
 
