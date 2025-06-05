@@ -150,7 +150,7 @@ function App() {
         <div className="text-center mb-8">
           <Brain className="mx-auto h-12 w-12 text-indigo-600" />
           <h2 className="mt-6 text-3xl font-bold text-gray-900">
-            Personality Type Analyzer
+            BioFit 4Q
           </h2>
         </div>
 
