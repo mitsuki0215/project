@@ -5,45 +5,45 @@ export const questions: { [key: string]: Question[] } = {
   /* Q1 : E / I */
   {
     id: 1,
-    text: "When you get a breakthrough idea, what’s your first instinct?",
+    text: "あなたは画期的なアイデアを思いついた時、最初に何をしますか？",
     choices: [
-      { id: "s1a", text: "Share it right away with lab mates to spark discussion.", type: "E" },
-      { id: "s1b", text: "Talk it through aloud to refine the concept.",          type: "E" },
-      { id: "s1c", text: "Retreat to a quiet spot and map it out by myself.",      type: "I" },
-      { id: "s1d", text: "Think it over privately before involving others.",       type: "I" }
+      { id: "s1a", text: "すぐに研究仲間に共有し議論をする", type: "E" },
+      { id: "s1b", text: "口に出しながらアイデアをブラッシュアップする",          type: "E" },
+      { id: "s1c", text: "静かな場所にこもり、とりあえず図や式を描いてみる",      type: "I" },
+      { id: "s1d", text: "ひとまず頭の中でモデルを組み立て、数日寝かせてから共有する",       type: "I" }
     ]
   },
   /* Q2 : S / N */
   {
     id: 2,
-    text: "Which evidence-gathering style fits you best?",
+    text: "事実を裏付ける材料を探すとき、どの方法がいいと思いますか？",
     choices: [
-      { id: "s2a", text: "Precise measurements from controlled experiments.", type: "S" },
-      { id: "s2b", text: "Detailed observation of tangible phenomena.",       type: "S" },
-      { id: "s2c", text: "Exploring theoretical models and possibilities.",    type: "N" },
-      { id: "s2d", text: "Looking for hidden patterns beyond the data.",       type: "N" }
+      { id: "s2a", text: "実験の数値データをまず信頼する", type: "S" },
+      { id: "s2b", text: "肉眼で確かめた現象を丹念に記録する",       type: "S" },
+      { id: "s2c", text: "数式や理論モデルから可能性を広げて考える",    type: "N" },
+      { id: "s2d", text: "一見バラバラな数値の中から相関や法則性を見いだす",       type: "N" }
     ]
   },
   /* Q3 : T / F */
   {
     id: 3,
-    text: "When choosing between two hypotheses, what weighs more?",
+    text: "２つの仮説を比べるとき、まずチェックするのはどこですか？",
     choices: [
-      { id: "s3a", text: "Logical consistency and rigorous proof.",  type: "T" },
-      { id: "s3b", text: "Replicable metrics and hard data.",        type: "T" },
-      { id: "s3c", text: "Potential benefit to people or the planet.", type: "F" },
-      { id: "s3d", text: "Ethical impact on living beings.",           type: "F" }
+      { id: "s3a", text: "理論が一貫していて矛盾がないか",  type: "T" },
+      { id: "s3b", text: "テストしても毎回同じ結果になるか",        type: "T" },
+      { id: "s3c", text: "人や環境の役に立つか", type: "F" },
+      { id: "s3d", text: "現状の生態系に悪影響が出ないか",           type: "F" }
     ]
   },
   /* Q4 : J / P */
   {
     id: 4,
-    text: "Your project schedule shifts suddenly. How do you respond?",
+    text: "研究の状況が一変した時、あなたはどう対応しますか？",
     choices: [
-      { id: "s4a", text: "Re-plan immediately and stick to the new timeline.", type: "J" },
-      { id: "s4b", text: "Set clear milestones to regain control.",            type: "J" },
-      { id: "s4c", text: "Stay flexible and adjust as new info emerges.",      type: "P" },
-      { id: "s4d", text: "Keep options open and improvise step by step.",      type: "P" }
+      { id: "s4a", text: "すぐ新しい工程表を作り、決めた順序で進める", type: "J" },
+      { id: "s4b", text: "マイルストーンを設定して立て直す",            type: "J" },
+      { id: "s4c", text: "状況に合わせてその都度、柔軟にやり方を変える",      type: "P" },
+      { id: "s4d", text: "考えるより先に動き、臨機応変に方向転換する",      type: "P" }
     ]
   }
 ],
@@ -51,45 +51,45 @@ export const questions: { [key: string]: Question[] } = {
   /* Q1 : E / I */
   {
     id: 1,
-    text: "A new business idea pops into your head. What’s your immediate move?",
+    text: "新たなビジネスアイデアが浮かんだ時、あなたはまず何をしますか？",
     choices: [
-      { id: "e1a", text: "Call a potential co-founder to brainstorm possibilities.",      type: "E" },
-      { id: "e1b", text: "Post it in a founders’ Slack channel for instant feedback.",    type: "E" },
-      { id: "e1c", text: "Open a private doc and flesh out the concept solo first.",      type: "I" },
-      { id: "e1d", text: "Sleep on it and refine the idea quietly before sharing.",       type: "I" }
+      { id: "e1a", text: "共に立ち上げたい相手に電話して、ブレインストーミングをする",      type: "E" },
+      { id: "e1b", text: "オンラインで公開して、協力したい人を募りつつ意見を聞く",    type: "E" },
+      { id: "e1c", text: "まず自分用メモに書き出し、じっくり肉付けする",      type: "I" },
+      { id: "e1d", text: "アイデアを一晩寝かせてから、人に共有する",       type: "I" }
     ]
   },
   /* Q2 : S / N */
   {
     id: 2,
-    text: "Which research approach guides your market validation?",
+    text: "市場調査をするとき、どんな調査方法が良いと思いますか？",
     choices: [
-      { id: "e2a", text: "Customer interviews and hard usage metrics.",         type: "S" },
-      { id: "e2b", text: "Competitive benchmarking and current best practices.",type: "S" },
-      { id: "e2c", text: "Imagining future trends that haven’t surfaced yet.",   type: "N" },
-      { id: "e2d", text: "Connecting disparate insights to spot hidden niches.", type: "N" }
+      { id: "e2a", text: "ユーザーに直接ヒアリングし、実際の利用データを見る",         type: "S" },
+      { id: "e2b", text: "競合分析と成功事例を徹底的に調べて、ギャップを洗い出す",type: "S" },
+      { id: "e2c", text: "資料を読み、〇〇年後に伸びる需要を推測する",   type: "N" },
+      { id: "e2d", text: "ニュースやSNSの小さな兆しを集め、手つかずのニッチを探す", type: "N" }
     ]
   },
   /* Q3 : T / F */
   {
     id: 3,
-    text: "When choosing between two product features, what tips the scale?",
+    text: "２つの製品（サービス）の「売り」で迷ったとき、決め手になるのは？",
     choices: [
-      { id: "e3a", text: "Projected ROI and scalability.",           type: "T" },
-      { id: "e3b", text: "Data-driven A/B test results.",            type: "T" },
-      { id: "e3c", text: "Positive impact on users’ lives.",         type: "F" },
-      { id: "e3d", text: "Alignment with the company’s mission and values.", type: "F" }
+      { id: "e3a", text: "想定ROIと利用者が増えても対応できるか",           type: "T" },
+      { id: "e3b", text: "データに基づくA/Bテスト結果",            type: "T" },
+      { id: "e3c", text: "ユーザーの生活を良くする効果",         type: "F" },
+      { id: "e3d", text: "会社のミッション・価値観との一致", type: "F" }
     ]
   },
   /* Q4 : J / P */
   {
     id: 4,
-    text: "Your go-to style for steering a growing startup is…",
+    text: "急成長中のスタートアップ、あなたならどう舵を取る？",
     choices: [
-      { id: "e4a", text: "Set quarterly OKRs and follow a strict roadmap.",     type: "J" },
-      { id: "e4b", text: "Create clear roles, processes, and review cycles.",   type: "J" },
-      { id: "e4c", text: "Keep plans light and pivot whenever new data arrives.",type: "P" },
-      { id: "e4d", text: "Experiment rapidly and iterate based on learnings.",  type: "P" }
+      { id: "e4a", text: "4半期ごとのOKRを立て、ロードマップに忠実に進む",     type: "J" },
+      { id: "e4b", text: "担当や手順、チェック方法をくっきり決める",   type: "J" },
+      { id: "e4c", text: "ざっくり方針だけ立て、データが出たらすぐ方向転換",type: "P" },
+      { id: "e4d", text: "まずやってみて、気づきをもとに素早く改良する",  type: "P" }
     ]
   }
 ],
@@ -97,45 +97,45 @@ export const questions: { [key: string]: Question[] } = {
   /* Q1 : E / I */
   {
     id: 1,
-    text: "When starting a new design project, what’s your first move?",
+    text: "新しいデザインプロジェクトの第一歩は？",
     choices: [
-      { id: "d1a", text: "Fire up a live Figma session to brainstorm with the team.",           type: "E" },
-      { id: "d1b", text: "Run a quick workshop with stakeholders to spark ideas.",              type: "E" },
-      { id: "d1c", text: "Sketch rough concepts alone to clarify your own vision first.",       type: "I" },
-      { id: "d1d", text: "Research quietly and prepare mood boards before sharing anything.",   type: "I" }
+      { id: "d1a", text: "共有ツールを開き、その場でみんなとアイデア出し",           type: "E" },
+      { id: "d1b", text: "関係者をさっと集め、短いワークショップを開く",              type: "E" },
+      { id: "d1c", text: "まず一人でラフスケッチしてイメージを固める",       type: "I" },
+      { id: "d1d", text: "ムードボードを作成したのち、みんなと共有する",   type: "I" }
     ]
   },
   /* Q2 : S / N */
   {
     id: 2,
-    text: "Which source fuels your creative inspiration the most?",
+    text: "いちばんクリエイティブな発想をかき立ててくれるのはどれ？",
     choices: [
-      { id: "d2a", text: "Usability test findings and real user feedback.",        type: "S" },
-      { id: "d2b", text: "Current UI pattern libraries and design benchmarks.",    type: "S" },
-      { id: "d2c", text: "Abstract art movements and cross-disciplinary concepts.",type: "N" },
-      { id: "d2d", text: "Speculative future tech and ‘what-if’ scenarios.",       type: "N" }
+      { id: "d2a", text: "ユーザーテストで聞いた“生の声”",        type: "S" },
+      { id: "d2b", text: "今どきのアプリやサイトのデザイン例ク",    type: "S" },
+      { id: "d2c", text: "抽象アートや他分野のアイデア", type: "N" },
+      { id: "d2d", text: "未来技術や『もしもこうだったら』という想像",       type: "N" }
     ]
   },
   /* Q3 : T / F */
   {
     id: 3,
-    text: "Choosing between two color palettes, what tips the scale for you?",
+    text: "２つのカラーパレットで迷ったときの決め手は？",
     choices: [
-      { id: "d3a", text: "Contrast ratios, accessibility scores, brand guidelines.", type: "T" },
-      { id: "d3b", text: "A/B test data showing higher conversion.",                 type: "T" },
-      { id: "d3c", text: "The emotional tone and story the colors evoke.",           type: "F" },
-      { id: "d3d", text: "How the palette makes users feel at first glance.",        type: "F" }
+      { id: "d3a", text: "コントラストやアクセシビリティなど、数値で測れる基準", type: "T" },
+      { id: "d3b", text: "ユーザーテストで一番高評価だった案",                 type: "T" },
+      { id: "d3c", text: "色が生む感情とストーリー",           type: "F" },
+      { id: "d3d", text: "ひと目でユーザーが受ける印象",        type: "F" }
     ]
   },
   /* Q4 : J / P */
   {
     id: 4,
-    text: "Your workflow style when deadlines get closer?",
+    text: "締め切りが迫ってきたとき、どんな進め方をする？",
     choices: [
-      { id: "d4a", text: "Lock layouts early and follow a strict checklist.",      type: "J" },
-      { id: "d4b", text: "Adhere to the design system to avoid last-minute chaos.",type: "J" },
-      { id: "d4c", text: "Keep experimenting and refine until the final hand-off.",type: "P" },
-      { id: "d4d", text: "Embrace last-minute tweaks and spontaneous ideas.",      type: "P" }
+      { id: "d4a", text: "レイアウトを早めに確定し、チェックリスト通り進める",      type: "J" },
+      { id: "d4b", text: "デザインルールを厳守して、後から崩れないよう先に形を固める",type: "J" },
+      { id: "d4c", text: "ギリギリまで試行錯誤を続けて、最良の案を探し続ける",type: "P" },
+      { id: "d4d", text: "締め切り間際のひらめきや微調整も楽しむ",      type: "P" }
     ]
   }
 ],
@@ -143,45 +143,45 @@ export const questions: { [key: string]: Question[] } = {
   /* Q1 : E / I */
   {
     id: 1,
-    text: "On the first day of a new term, what’s your default style?",
+    text: "新学期の朝、クラスを持った時まずどんな空気をつくる？",
     choices: [
-      { id: "t1a", text: "Kick off with energetic ice-breakers for the whole class.", type: "E" },
-      { id: "t1b", text: "Invite open discussion to get everyone talking right away.", type: "E" },
-      { id: "t1c", text: "Observe quietly and learn each student’s name and vibe first.", type: "I" },
-      { id: "t1d", text: "Prepare a calm introduction and one-to-one check-ins later.",  type: "I" }
+      { id: "t1a", text: "元気一杯なアイスブレイクで一気に場を温める！", type: "E" },
+      { id: "t1b", text: "ワイワイ全員参加のフリートークを回していく", type: "E" },
+      { id: "t1c", text: "生徒に自己紹介をさせ、その様子を見守る", type: "I" },
+      { id: "t1d", text: "自分の落ち着いた自己紹介からスタート",  type: "I" }
     ]
   },
   /* Q2 : S / N */
   {
     id: 2,
-    text: "When designing curriculum materials, you rely most on…",
+    text: "テストを作るとき、何をいちばん大事にする？",
     choices: [
-      { id: "t2a", text: "Concrete examples and step-by-step demonstrations.", type: "S" },
-      { id: "t2b", text: "Hands-on activities grounded in real-world tasks.",  type: "S" },
-      { id: "t2c", text: "Big-picture themes that spark imagination.",        type: "N" },
-      { id: "t2d", text: "Abstract questions that challenge conventional ideas.", type: "N" }
+      { id: "t2a", text: "過去問や授業内容をベースに、レベルを段階的に上げる", type: "S" },
+      { id: "t2b", text: "日常シーンを再現した実践型の応用問題にする",  type: "S" },
+      { id: "t2c", text: "授業内容を軸にしつつ、関連トピックへ発想力を鍛えられるようにする",        type: "N" },
+      { id: "t2d", text: "「それ、ホントに正解？」と常識を覆す思考トラップで揺さぶる", type: "N" }
     ]
   },
   /* Q3 : T / F */
   {
     id: 3,
-    text: "A student submits late work citing personal issues. Your instinct is to…",
+    text: "学生が理由を述べて課題を遅れて提出したとき、あなたはどうする？",
     choices: [
-      { id: "t3a", text: "Apply the penalty stated in the syllabus for fairness.", type: "T" },
-      { id: "t3b", text: "Offer a structured make-up assignment with clear criteria.", type: "T" },
-      { id: "t3c", text: "Listen to their situation and adjust the deadline compassionately.", type: "F" },
-      { id: "t3d", text: "Provide encouragement and alternative ways to demonstrate learning.", type: "F" }
+      { id: "t3a", text: "公平を保つためシラバス通りに減点", type: "T" },
+      { id: "t3b", text: "基準を明確にした追課題を用意", type: "T" },
+      { id: "t3c", text: "事情を聞き、期限を思いやりを持って調整", type: "F" },
+      { id: "t3d", text: "いま取り組める別の課題にしっかり取り組むよう伝える", type: "F" }
     ]
   },
   /* Q4 : J / P */
   {
     id: 4,
-    text: "Mid-semester, the school introduces a new policy that shifts your schedule. You…",
+    text: "もし学期途中で期末考査が１週前倒しになり、授業数が不足しそうだと分かったらどうする？",
     choices: [
-      { id: "t4a", text: "Rewrite your lesson plans immediately to align with the new timeline.", type: "J" },
-      { id: "t4b", text: "Create a detailed calendar with checkpoints to stay on track.",        type: "J" },
-      { id: "t4c", text: "Adjust organically, updating content as you gauge student progress.",  type: "P" },
-      { id: "t4d", text: "Embrace the change and experiment with fresh activities week by week.", type: "P" }
+      { id: "t4a", text: "すぐにシラバスを改訂し、短縮版の日程表を学生と教師に配布する", type: "J" },
+      { id: "t4b", text: "残り授業を単元ごとに再配置したガントチャートを作り、各回の到達目標を明示する",        type: "J" },
+      { id: "t4c", text: "学生の理解度を見ながら要点を優先し、授業ごとに内容を微調整していく",  type: "P" },
+      { id: "t4d", text: "週ごとに新しいアクティビティと自己評価を試して柔軟に補う", type: "P" }
     ]
   }
 ],
@@ -189,45 +189,45 @@ export const questions: { [key: string]: Question[] } = {
   /* Q1 : E / I */
   {
     id: 1,
-    text: "During a patient consultation, your natural style is to…",
+    text: "あなたが医者になったら、どんな診察スタイルをとる？",
     choices: [
-      { id: "m1a", text: "Lead an open conversation to put the patient at ease.", type: "E" },
-      { id: "m1b", text: "Invite nurses / family into the dialogue for more insight.", type: "E" },
-      { id: "m1c", text: "Listen quietly, taking detailed notes before responding.",  type: "I" },
-      { id: "m1d", text: "Focus on a calm one-to-one discussion in a private setting.", type: "I" }
+      { id: "m1a", text: "まずは世間話や健康習慣の話題で緊張をほぐし、診療の本題へ誘導する", type: "E" },
+      { id: "m1b", text: "電子カルテを共有モニターに映し、患者さんと一緒に情報を確認しながら進める", type: "E" },
+      { id: "m1c", text: "事前にカルテと画像を読み込み、要点を整理してから静かに質問を始める",  type: "I" },
+      { id: "m1d", text: "チェックリストを手元に置き、短い質問を重ねて症状を体系的に絞り込む", type: "I" }
     ]
   },
   /* Q2 : S / N */
   {
     id: 2,
-    text: "When collecting diagnostic clues, you rely most on…",
+    text: "診察室に患者さんが入ってきた瞬間、まず注目するのは？",
     choices: [
-      { id: "m2a", text: "Physical exam findings and lab results.",      type: "S" },
-      { id: "m2b", text: "Observable symptoms and patient history.",     type: "S" },
-      { id: "m2c", text: "Connecting subtle patterns to rare conditions.",type: "N" },
-      { id: "m2d", text: "Theoretical models of underlying diseases.",   type: "N" }
+      { id: "m2a", text: "呼吸数・皮膚色・歩き方など客観的バイタルサイン",      type: "S" },
+      { id: "m2b", text: "問診票に書かれたキーワードの有無",     type: "S" },
+      { id: "m2c", text: "症状の組み合わせから“隠れた共通メカニズム”を連想",type: "N" },
+      { id: "m2d", text: "患者さんの話し方・表情から潜在的ストーリーを推測",   type: "N" }
     ]
   },
   /* Q3 : T / F */
   {
     id: 3,
-    text: "When presenting treatment options, you emphasize…",
+    text: "治療法を提案するとき、あなたが強調するのは？",
     choices: [
-      { id: "m3a", text: "Evidence-based statistics and risk–benefit data.", type: "T" },
-      { id: "m3b", text: "Clinical guidelines and logical rationale.",       type: "T" },
-      { id: "m3c", text: "How each option aligns with the patient’s values.", type: "F" },
-      { id: "m3d", text: "Emotional support and quality-of-life factors.",    type: "F" }
+      { id: "m3a", text: "エビデンスに基づく統計とリスク・ベネフィット", type: "T" },
+      { id: "m3b", text: "診療ガイドラインと論理的根拠",       type: "T" },
+      { id: "m3c", text: "各選択肢が患者さんの価値観にどう合うか", type: "F" },
+      { id: "m3d", text: "心のケアや生活の質への影響",    type: "F" }
     ]
   },
   /* Q4 : J / P */
   {
     id: 4,
-    text: "If a treatment plan must change suddenly, you tend to…",
+    text: "患者さんの状態が急変し、治療計画を見直す必要が出たとき、あなたはどうしますか？",
     choices: [
-      { id: "m4a", text: "Re-schedule immediately and issue clear new orders.", type: "J" },
-      { id: "m4b", text: "Document a step-by-step protocol to stay on track.",   type: "J" },
-      { id: "m4c", text: "Keep several options open and adjust on the fly.",     type: "P" },
-      { id: "m4d", text: "Iterate with the patient’s feedback as the situation evolves.", type: "P" }
+      { id: "m4a", text: "まず緊急対応チームを招集し、変更した治療プランとタイムラインを即時に会議する", type: "J" },
+      { id: "m4b", text: "当者・手技・投薬スケジュールをチェックリスト化して共有する",   type: "J" },
+      { id: "m4c", text: "検査結果が出るたびに複数案を比べながらプランを更新する",     type: "P" },
+      { id: "m4d", text: "患者さんのフィードバックを受け取りつつ状況に合わせて更新する", type: "P" }
     ]
   }
 ],
@@ -235,45 +235,45 @@ export const questions: { [key: string]: Question[] } = {
   /* Q1 : E / I */
   {
     id: 1,
-    text: "At project kickoff, your instinctive working style is to…",
+    text: "プロジェクトキックオフ時、あなたがまず取る行動はどれ？",
     choices: [
-      { id: "en1a", text: "Host a white-board session to spark team ideas.", type: "E" },
-      { id: "en1b", text: "Pair-program or mob-code to share knowledge fast.", type: "E" },
-      { id: "en1c", text: "Sketch a prototype solo before sharing anything.",  type: "I" },
-      { id: "en1d", text: "Dive into documentation quietly to map the problem.", type: "I" }
+      { id: "en1a", text: "ホワイトボード等のツールを使用して、ブレインストーミングをチームでする", type: "E" },
+      { id: "en1b", text: "みんなで画面を囲んでワイワイ実装をする", type: "E" },
+      { id: "en1c", text: "まず一人でプロトタイプを作り、形にしてから共有する",  type: "I" },
+      { id: "en1d", text: "静かに資料を読み漁り、課題をマインドマップ化", type: "I" }
     ]
   },
   /* Q2 : S / N */
   {
     id: 2,
-    text: "When comparing design options, you lean on…",
+    text: "アーキテクチャを比較するとき、重要視するには？",
     choices: [
-      { id: "en2a", text: "Concrete benchmarks and proven patterns.", type: "S" },
-      { id: "en2b", text: "Detailed specs and edge-case checklists.",  type: "S" },
-      { id: "en2c", text: "Visionary architecture that scales to unseen needs.", type: "N" },
-      { id: "en2d", text: "Creative leaps that could disrupt current limits.",    type: "N" }
+      { id: "en2a", text: "数字で証明済み！鉄板ベンチマーク＋王道パターン", type: "S" },
+      { id: "en2b", text: "仕様書とエッジケースを根こそぎ潰す“抜け漏れゼロ”リスト",  type: "S" },
+      { id: "en2c", text: "変化ウェルカム！未知を呑み込むフューチャープルーフ設計", type: "N" },
+      { id: "en2d", text: "常識をぶち破るクリエイティブジャンプで現状打破案",    type: "N" }
     ]
   },
   /* Q3 : T / F */
   {
     id: 3,
-    text: "A teammate proposes a risky refactor; your main criterion is…",
+    text: "チームメイトがリスクの高いリファクタリングを提案してきた。判断基準として最優先するのはどれ？",
     choices: [
-      { id: "en3a", text: "Performance metrics and algorithmic efficiency.", type: "T" },
-      { id: "en3b", text: "Logical soundness and technical debt reduction.",  type: "T" },
-      { id: "en3c", text: "Impact on developer morale and user delight.",     type: "F" },
-      { id: "en3d", text: "Whether it fosters collaboration and team growth.", type: "F" }
+      { id: "en3a", text: "パフォーマンス指標やアルゴリズム効率", type: "T" },
+      { id: "en3b", text: "論理的一貫性と技術的負債の削減",  type: "T" },
+      { id: "en3c", text: "開発者の士気とユーザー体験へのインパクト",     type: "F" },
+      { id: "en3d", text: "コラボレーションやチーム成長を促すかどうか", type: "F" }
     ]
   },
   /* Q4 : J / P */
   {
     id: 4,
-    text: "Mid-sprint, requirements change drastically. You usually…",
+    text: "スプリント途中で要件が大幅変更。あなたはどう動く？",
     choices: [
-      { id: "en4a", text: "Re-draft a timeline and lock in new deliverables.", type: "J" },
-      { id: "en4b", text: "Document clear acceptance criteria right away.",     type: "J" },
-      { id: "en4c", text: "Keep options open and iterate with quick spikes.",   type: "P" },
-      { id: "en4d", text: "Prototype multiple paths and decide as data arrives.",type: "P" }
+      { id: "en4a", text: "新しいタスクを決めてスケジュールを組み直す", type: "J" },
+      { id: "en4b", text: "すぐに受け入れ条件を書き出して明確化する",     type: "J" },
+      { id: "en4c", text: "選択肢を残しつつ短期で試作をたくさん作る",   type: "P" },
+      { id: "en4d", text: "複数のプロトタイプを走らせ、データを見て決める",type: "P" }
     ]
   }
 ],
@@ -281,45 +281,45 @@ export const questions: { [key: string]: Question[] } = {
   /* Q1 : E / I */
   {
     id: 1,
-    text: "When a new idea sparks, your next move is to…",
+    text: "アイデアが閃いた直後、あなたはどんな行動を取る？",
     choices: [
-      { id: "a1a", text: "Call a friend or fellow artist to jam on it together.", type: "E" },
-      { id: "a1b", text: "Post a rough sketch online to gather quick feedback.",  type: "E" },
-      { id: "a1c", text: "Retreat to your studio and sketch privately first.",   type: "I" },
-      { id: "a1d", text: "Keep it in a personal journal until the concept is clear.", type: "I" }
+      { id: "a1a", text: "友人や仲間のアーティストに連絡し、一緒に演奏する", type: "E" },
+      { id: "a1b", text: "ラフスケッチをSNSに投稿し、すぐフィードバックを集める",  type: "E" },
+      { id: "a1c", text: "ひたすら書き殴り、形より量でアイデアを出す",   type: "I" },
+      { id: "a1d", text: "情報を集めて構造化し、完成イメージが見えるまで整理する", type: "I" }
     ]
   },
   /* Q2 : S / N */
   {
     id: 2,
-    text: "Your strongest source of inspiration typically comes from…",
+    text: "インスピレーションの源としてもっとも強いのはどれ？？",
     choices: [
-      { id: "a2a", text: "Real-world textures, colors, and everyday scenes.", type: "S" },
-      { id: "a2b", text: "Historical techniques and classical references.",   type: "S" },
-      { id: "a2c", text: "Symbolic imagery and abstract concepts.",           type: "N" },
-      { id: "a2d", text: "Dream-like ideas that push beyond reality.",        type: "N" }
+      { id: "a2a", text: "現実世界の質感・色彩・日常の風景", type: "S" },
+      { id: "a2b", text: "古典的技法や美術史のリファレンス",   type: "S" },
+      { id: "a2c", text: "象徴的イメージや抽象的コンセプト",           type: "N" },
+      { id: "a2d", text: "現実を超えた夢幻的アイデア",        type: "N" }
     ]
   },
   /* Q3 : T / F */
   {
     id: 3,
-    text: "When judging whether a piece is finished, you rely on…",
+    text: "何を基準に作品が完成したと判断しますか？",
     choices: [
-      { id: "a3a", text: "Balanced composition and technical precision.",   type: "T" },
-      { id: "a3b", text: "Adherence to design principles and proportions.", type: "T" },
-      { id: "a3c", text: "Whether it conveys the intended emotion.",        type: "F" },
-      { id: "a3d", text: "The personal or social story it tells.",          type: "F" }
+      { id: "a3a", text: "構図のバランスと技術的な精度",   type: "T" },
+      { id: "a3b", text: "黄金比など理論ルールへの合致", type: "T" },
+      { id: "a3c", text: "狙った感情がしっかり伝わっているか",        type: "F" },
+      { id: "a3d", text: "個人的または社会的な物語が語ることができてるか",          type: "F" }
     ]
   },
   /* Q4 : J / P */
   {
     id: 4,
-    text: "Faced with a looming exhibition deadline, you tend to…",
+    text: "展示会の締め切りが迫ってきたとき、あなたはどのように進める？",
     choices: [
-      { id: "a4a", text: "Create a strict schedule and stick to milestones.",  type: "J" },
-      { id: "a4b", text: "Finalize each element before moving to the next.",   type: "J" },
-      { id: "a4c", text: "Experiment up to the last minute, adjusting as you go.", type: "P" },
-      { id: "a4d", text: "Leave space for spontaneous changes on installation day.", type: "P" }
+      { id: "a4a", text: "厳格なスケジュールを組み、マイルストーンを死守する",  type: "J" },
+      { id: "a4b", text: "各要素を完全に仕上げてから次の工程へ進む",   type: "J" },
+      { id: "a4c", text: "締切ギリギリまで施策を続け、その都度調整する", type: "P" },
+      { id: "a4d", text: "設営当日に起こる即興の変化を楽しむ", type: "P" }
     ]
   }
 ],
@@ -327,45 +327,45 @@ export const questions: { [key: string]: Question[] } = {
   /* Q1 : E / I */
   {
     id: 1,
-    text: "A potential scoop drops—first thing you do?",
+    text: "あなたの元へ特ダネの情報が迷い込んだ！あなたが真っ先にすることは？",
     choices: [
-      { id: "j1a", text: "Ring key sources right away for live quotes.",        type: "E" },
-      { id: "j1b", text: "Rush to the scene to interview eyewitnesses.",        type: "E" },
-      { id: "j1c", text: "Dive into archives and databases on your own first.", type: "I" },
-      { id: "j1d", text: "Sketch questions privately before contacting anyone.",type: "I" }
+      { id: "j1a", text: "関係者に即電話してコメントをもらう",        type: "E" },
+      { id: "j1b", text: "現場へ飛び、目撃者に直接インタビューする",        type: "E" },
+      { id: "j1c", text: "まず一人で資料やデータを掘り下げ、情報を集め尽くす", type: "I" },
+      { id: "j1d", text: "まずは原稿の骨組みと質問表を作り込む",type: "I" }
     ]
   },
   /* Q2 : S / N */
   {
     id: 2,
-    text: "Your go-to evidence-gathering style is…",
+    text: "あなたの情報収集スタイルはどれになりそう？",
     choices: [
-      { id: "j2a", text: "Verify official documents and statistics.",       type: "S" },
-      { id: "j2b", text: "Cite on-record statements and concrete facts.",    type: "S" },
-      { id: "j2c", text: "Trace hidden patterns across disparate clues.",    type: "N" },
-      { id: "j2d", text: "Imagine scenarios to uncover bigger narratives.",  type: "N" }
+      { id: "j2a", text: "公的文書や統計を照合して裏付けを取る",       type: "S" },
+      { id: "j2b", text: "公式発言や具体的事実を引用する",    type: "S" },
+      { id: "j2c", text: "バラバラの手がかりをつなげてパターンを見抜く",    type: "N" },
+      { id: "j2d", text: "自分の仮説を軸に壮大なストーリーを組み立てる",  type: "N" }
     ]
   },
   /* Q3 : T / F */
   {
     id: 3,
-    text: "When shaping your article’s angle, you rely most on…",
+    text: "記事の“どの視点で攻めるか”を決めるとき、あなたが一番重視するのは？",
     choices: [
-      { id: "j3a", text: "Logical flow supported by hard evidence.",     type: "T" },
-      { id: "j3b", text: "Data visuals that prove the claim.",           type: "T" },
-      { id: "j3c", text: "Emotional power of personal stories.",         type: "F" },
-      { id: "j3d", text: "Potential social impact of the piece.",        type: "F" }
+      { id: "j3a", text: "確かな証拠で支える論理的な構成",     type: "T" },
+      { id: "j3b", text: "主張を裏付けるデータ図やグラフ",           type: "T" },
+      { id: "j3c", text: "心に響く当事者のストーリー",         type: "F" },
+      { id: "j3d", text: "社会に与えるインパクトの大きさ",        type: "F" }
     ]
   },
   /* Q4 : J / P */
   {
     id: 4,
-    text: "A breaking-news deadline looms. You tend to…",
+    text: "締め切り直前に新しい情報が飛び込んできた！あなたはどうする？",
     choices: [
-      { id: "j4a", text: "Lock sections as you finish and file early.",       type: "J" },
-      { id: "j4b", text: "Follow a strict outline and timetable.",            type: "J" },
-      { id: "j4c", text: "Keep tweaking copy as fresh info rolls in.",        type: "P" },
-      { id: "j4d", text: "Stay flexible, ready to rewrite at the last minute.",type: "P" }
+      { id: "j4a", text: "書けた段落から保存して先に送稿する",       type: "J" },
+      { id: "j4b", text: "厳密なアウトラインと時間表に沿って進める",            type: "J" },
+      { id: "j4c", text: "新情報が入るたび原稿を微調整し続ける",        type: "P" },
+      { id: "j4d", text: "締切ギリギリまで待ち、必要なら”全面”を一気に書き直す",type: "P" }
     ]
   }
 ],
@@ -373,45 +373,45 @@ export const questions: { [key: string]: Question[] } = {
   /* Q1 : E / I */
   {
     id: 1,
-    text: "At the start of a new case, your first move is…",
+    text: "あなたへ新しい案件の依頼が来た！まず何をする？",
     choices: [
-      { id: "l1a", text: "Call a team huddle to brainstorm angles.", type: "E" },
-      { id: "l1b", text: "Interview key witnesses right away.",     type: "E" },
-      { id: "l1c", text: "Study the case files quietly on your own.",type: "I" },
-      { id: "l1d", text: "Draft preliminary arguments in solitude.", type: "I" }
+      { id: "l1a", text: "チームメンバーを集めて作戦会議", type: "E" },
+      { id: "l1b", text: "重要証人に即インタビューしに行く",     type: "E" },
+      { id: "l1c", text: "まず一人で資料をじっくり読み込む",type: "I" },
+      { id: "l1d", text: "一人で初期弁論を下書きする", type: "I" }
     ]
   },
   /* Q2 : S / N */
   {
     id: 2,
-    text: "When building your argument, you lean most on…",
+    text: "主法律的主張を組み立てるとき、まず拠り所にするのはどれ？",
     choices: [
-      { id: "l2a", text: "Documented precedents and statutes.",                  type: "S" },
-      { id: "l2b", text: "Concrete timelines and physical evidence.",            type: "S" },
-      { id: "l2c", text: "Novel interpretations that reframe the law.",          type: "N" },
-      { id: "l2d", text: "Big-picture principles that could set new precedent.", type: "N" }
+      { id: "l2a", text: "判例や条文など「決まったルール」",                  type: "S" },
+      { id: "l2b", text: "時系列と物的証拠など「動かぬ事実」",            type: "S" },
+      { id: "l2c", text: "従来を覆す「まったく新しい法解釈」",          type: "N" },
+      { id: "l2d", text: "未来の判例になるかもしれない「大きな理念・ビジョン」", type: "N" }
     ]
   },
   /* Q3 : T / F */
   {
     id: 3,
-    text: "What guides your courtroom persuasion style?",
+    text: "法廷で陪審員に説明する際、まず最初に採るべき説得スタイルはどれ？",
     choices: [
-      { id: "l3a", text: "Logical, point-by-point refutation.",      type: "T" },
-      { id: "l3b", text: "Data-driven exhibits and analytics.",      type: "T" },
-      { id: "l3c", text: "Compelling stories that humanise clients.",type: "F" },
-      { id: "l3d", text: "Appeals to shared values and fairness.",   type: "F" }
+      { id: "l3a", text: "論点を順に検証して反証するロジカルアプローチ",      type: "T" },
+      { id: "l3b", text: "データ解析や図表を駆使した証拠提示",      type: "T" },
+      { id: "l3c", text: "依頼人の人間味を引き立てるストーリーテリング",type: "F" },
+      { id: "l3d", text: "共通の価値観や公平さへの訴え",   type: "F" }
     ]
   },
   /* Q4 : J / P */
   {
     id: 4,
-    text: "Mid-trial, new evidence surfaces. You tend to…",
+    text: "もし公判中に新たな証拠が出てきたら、あなたはどう対応する？",
     choices: [
-      { id: "l4a", text: "Revise your brief and lock the plan quickly.", type: "J" },
-      { id: "l4b", text: "Create a strict updated timeline to follow.", type: "J" },
-      { id: "l4c", text: "Stay agile—adjust arguments on the fly.",     type: "P" },
-      { id: "l4d", text: "Keep options open and improvise in questioning.", type: "P" }
+      { id: "l4a", text: "直ちに書面を修正し、戦略を確定して固める", type: "J" },
+      { id: "l4b", text: "裁判所の手続き規則を再確認し、必要な申立てを即座に行う", type: "J" },
+      { id: "l4c", text: "状況に応じて議論を柔軟に組み替える",     type: "P" },
+      { id: "l4d", text: "質問を即興で調整し、流れに乗る", type: "P" }
     ]
   }
 ],
@@ -419,45 +419,45 @@ export const questions: { [key: string]: Question[] } = {
   /* Q1 : E / I */
   {
     id: 1,
-    text: "You spot a promising company — what’s your first move?",
+    text: "投資価値のある企業を見つけた！あなたはまずどんな行動を取る？",
     choices: [
-      { id: "i1a", text: "Pitch the idea to your investing circle for feedback.", type: "E" },
-      { id: "i1b", text: "Jump on a call to hash it out with colleagues.",        type: "E" },
-      { id: "i1c", text: "Run a solo deep-dive before telling anyone.",           type: "I" },
-      { id: "i1d", text: "Quietly back-test the thesis on your own model.",       type: "I" }
+      { id: "i1a", text: "投資コミュニティで共有し、公開ディスカッションを主導する", type: "E" },
+      { id: "i1b", text: "マーケットが動いているうちに同僚へ即電話し、二人で戦略を練る",        type: "E" },
+      { id: "i1c", text: "誰にも言わずに、一人で徹底リサーチ",           type: "I" },
+      { id: "i1d", text: "自作モデルでバックテストを行う",       type: "I" }
     ]
   },
   /* Q2 : S / N */
   {
     id: 2,
-    text: "Which evidence weighs heaviest when vetting an investment?",
+    text: "投資をするかどうか、最も重要視する決め手はどれ？",
     choices: [
-      { id: "i2a", text: "Audited financials and recent KPIs.",            type: "S" },
-      { id: "i2b", text: "Historical price patterns and hard data.",       type: "S" },
-      { id: "i2c", text: "Disruptive potential five years down the road.", type: "N" },
-      { id: "i2d", text: "Macro trends that could reshape the sector.",    type: "N" }
+      { id: "i2a", text: "監査済み財務諸表と最新KPI",            type: "S" },
+      { id: "i2b", text: "過去の価格推移などハードデータ",       type: "S" },
+      { id: "i2c", text: "5年以内に業界構造を一変させる爆発力のある製品・サービス", type: "N" },
+      { id: "i2d", text: "業界の常識を塗り変えそうな巨大トレンド",    type: "N" }
     ]
   },
   /* Q3 : T / F */
   {
     id: 3,
-    text: "Pressed to choose between two assets, you rely on…",
+    text: "2択の資産で行き詰まったとき、判断材料にするのは？",
     choices: [
-      { id: "i3a", text: "Risk-adjusted return metrics (Sharpe, etc.).", type: "T" },
-      { id: "i3b", text: "Detailed sensitivity analyses in Excel.",      type: "T" },
-      { id: "i3c", text: "The company’s mission and societal impact.",   type: "F" },
-      { id: "i3d", text: "Leadership’s values and stakeholder stories.", type: "F" }
+      { id: "i3a", text: "リスクを考慮した儲けの度合い（例：シャープレシオ）", type: "T" },
+      { id: "i3b", text: "Excelで条件を変えながら行う綿密なシミュレーション",      type: "T" },
+      { id: "i3c", text: "企業ミッションや社会的インパクト",   type: "F" },
+      { id: "i3d", text: "経営陣の価値観や信念", type: "F" }
     ]
   },
   /* Q4 : J / P */
   {
     id: 4,
-    text: "Markets tumble unexpectedly — your instinct is to…",
+    text: "おっと、市場が急落してしまった！あなたはどう動く？",
     choices: [
-      { id: "i4a", text: "Rebalance to predefined allocation rules.",     type: "J" },
-      { id: "i4b", text: "Tighten stop-losses and stick to the playbook.",type: "J" },
-      { id: "i4c", text: "Stay nimble and scoop bargains as they appear.",type: "P" },
-      { id: "i4d", text: "Pause rules; improvise trades with evolving info.", type: "P" }
+      { id: "i4a", text: "決めていた資産バランスにきっちり戻す",     type: "J" },
+      { id: "i4b", text: "損切りラインを守って静かに撤退する",type: "J" },
+      { id: "i4c", text: "チャンスと見て、安くなった株をすばやく拾う",type: "P" },
+      { id: "i4d", text: "その場のニュースを見ながら臨機応変に売買する", type: "P" }
     ]
   }
 ],
@@ -465,45 +465,45 @@ export const questions: { [key: string]: Question[] } = {
   /* Q1 : E / I */
   {
     id: 1,
-    text: "A colleague proposes a joint paper — what sounds most appealing?",
+    text: "あなたに共同研究の誘いがきた！魅力的に感じる研究方法は？",
     choices: [
-      { id: "p1a", text: "Brain-storming together and co-authoring the draft.", type: "E" },
-      { id: "p1b", text: "Hosting lively seminars to refine the ideas publicly.", type: "E" },
-      { id: "p1c", text: "Developing the argument privately before sharing it.",  type: "I" },
-      { id: "p1d", text: "Working out proofs alone, then circulating a preprint.", type: "I" }
+      { id: "p1a", text: "一緒にブレインストーミングをし、そのまま共著で執筆", type: "E" },
+      { id: "p1b", text: "公開セミナーを開き議論を盛り上げる", type: "E" },
+      { id: "p1c", text: "まずは一人で理論を練り上げてから共有",  type: "I" },
+      { id: "p1d", text: "証明を独力で完成させ、プレプリントを回す", type: "I" }
     ]
   },
   /* Q2 : S / N */
   {
     id: 2,
-    text: "When designing a study, you’re most drawn to…",
+    text: "研究計画で特にワクワクするのは？",
     choices: [
-      { id: "p2a", text: "Meticulous data collection and replication.",        type: "S" },
-      { id: "p2b", text: "Archival digging for concrete historical facts.",     type: "S" },
-      { id: "p2c", text: "Building abstract models that push the theory.",      type: "N" },
-      { id: "p2d", text: "Speculating on emerging paradigms and possibilities.", type: "N" }
+      { id: "p2a", text: "緻密なデータ収集と再現実験",        type: "S" },
+      { id: "p2b", text: "資料庫を漁り、実際の歴史データを集める",     type: "S" },
+      { id: "p2c", text: "理論を発展させるための抽象モデルを組み立てる",      type: "N" },
+      { id: "p2d", text: "まったく新しい枠組みを考え、未知の可能性を探る.", type: "N" }
     ]
   },
   /* Q3 : T / F */
   {
     id: 3,
-    text: "Evaluating students, which factor tips the scale for you?",
+    text: "学生評価において、あなたが大切だと思う基準は？",
     choices: [
-      { id: "p3a", text: "Precise grading rubrics and statistical averages.", type: "T" },
-      { id: "p3b", text: "Rigorous argumentation and logical soundness.",     type: "T" },
-      { id: "p3c", text: "Growth in confidence and intellectual curiosity.",   type: "F" },
-      { id: "p3d", text: "Classroom engagement and peer collaboration.",       type: "F" }
+      { id: "p3a", text: "細かな採点基準と統計平均", type: "T" },
+      { id: "p3b", text: "論証の厳密さと論理的整合性",     type: "T" },
+      { id: "p3c", text: "自信と知的好奇心の成長度",   type: "F" },
+      { id: "p3d", text: "授業への参加度と仲間との協働",       type: "F" }
     ]
   },
   /* Q4 : J / P */
   {
     id: 4,
-    text: "A syllabus change is required mid-semester — you…",
+    text: "学期途中でシラバス改訂が必要になってしまった。あなたは最初にどの行動を取る？",
     choices: [
-      { id: "p4a", text: "Publish an updated schedule with firm deadlines.", type: "J" },
-      { id: "p4b", text: "Specify clear milestones and stick to them.",      type: "J" },
-      { id: "p4c", text: "Leave room for student-led detours and topics.",   type: "P" },
-      { id: "p4d", text: "Iterate weekly based on class momentum.",          type: "P" }
+      { id: "p4a", text: "新しいスケジュールと締切を即公開する", type: "J" },
+      { id: "p4b", text: "明確なマイルストーンを示し遵守させる",      type: "J" },
+      { id: "p4c", text: "学生の好奇心に合わせてスケジュールをゆるく設定する",   type: "P" },
+      { id: "p4d", text: "クラスの流れを見て毎週内容を微調整する",          type: "P" }
     ]
   }
 ],
