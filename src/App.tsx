@@ -285,8 +285,22 @@ function App() {
                 <span className="text-sm text-gray-500">{result.mbti}</span>
               </div>
 
-              <img src={result.imageUrl} alt={result.name}
-                    className="w-full h-48 object-cover rounded-lg"/>
+              {/* 画像 */}
+              <img
+                src={result.imageUrl}
+                alt={result.name}
+                className="w-full h-48 object-cover rounded-lg"
+              />
+
+              {/* 画像ソース URL を小さく表示 */}
+              <a
+                href={result.imageUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-1 block text-xs text-gray-500 underline break-all"
+              >
+                {result.imageUrl}
+              </a>
 
               <p className="text-gray-700 leading-relaxed">{result.description}</p>
 
