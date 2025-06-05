@@ -246,18 +246,6 @@ function App() {
               {result.weaknesses && result.weaknesses.length > 0 && (
                 <Section title="Weaknesses" items={result.weaknesses} />
               )}
-              {result.bestEnvironments && result.bestEnvironments.length > 0 && (
-                <Section
-                  title="Best Work Environments"
-                  items={result.bestEnvironments}
-                />
-              )}
-              {result.idealRoles && result.idealRoles.length > 0 && (
-                <Section
-                  title="Ideal Roles / Careers"
-                  items={result.idealRoles}
-                />
-              )}
               {result.actionSteps && result.actionSteps.length > 0 && (
                 <Section title="Action Steps" items={result.actionSteps} />
               )}
