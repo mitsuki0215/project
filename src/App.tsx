@@ -109,7 +109,7 @@ function App() {
       <div className="mt-8 space-y-4">
         <h3 className="text-lg font-semibold text-gray-700 flex items-center gap-2">
           <BarChart className="w-5 h-5" />
-          Personality Type Breakdown
+          BioFit 4Q
         </h3>
         {pairs.map(({ left, right }) => {
           const total =
