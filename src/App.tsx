@@ -25,7 +25,7 @@ const occupations: Occupation[] = [
   { id: 'director',     name: '映画監督' }
 ];
 
-/* Q 番号 ↔ MBTI ペア対応表  */
+/* Q 番号 ↔ MBTI ペア対応表 */
 const pairOrder = [
   { pair: ['E', 'I'] }, // Q1
   { pair: ['S', 'N'] }, // Q2
@@ -33,20 +33,36 @@ const pairOrder = [
   { pair: ['J', 'P'] }  // Q4
 ];
 
+/*───────────────────────────────────────────
+  補助関数
+───────────────────────────────────────────*/
+/**
+ * MBTI 文字列がどのくらい似ているか（異なる文字数）を返す
+ */
+function mbtiDistance(a: string, b: string) {
+  return [...a].reduce((acc, ch, idx) => acc + (ch === b[idx] ? 0 : 1), 0);
+}
+
+/**
+ * 性格統計から MBTI 文字列を生成
+ */
+function makeMbti(stats: PersonalityStats): string {
+  return [
+    stats.E >= stats.I ? 'E' : 'I',
+    stats.S >= stats.N ? 'S' : 'N',
+    stats.T >= stats.F ? 'T' : 'F',
+    stats.J >= stats.P ? 'J' : 'P'
+  ].join('');
+}
+
 function App() {
   /*───────── state ─────────*/
-  const [step, setStep] =
-    useState<'occupation' | 'questions' | 'result'>('occupation');
-
-  const [selectedOccupation, setSelectedOccupation] =
-    useState<string | null>(null);
-
+  const [step, setStep] = useState<'occupation' | 'questions' | 'result'>('occupation');
+  const [selectedOccupation, setSelectedOccupation] = useState<string | null>(null);
   const [currentQuestion, setCurrentQuestion] = useState(0);
-
   const [stats, setStats] = useState<PersonalityStats>({
     E: 0, I: 0, N: 0, S: 0, T: 0, F: 0, J: 0, P: 0
   });
-
   const [result, setResult] = useState<Result | null>(null);
 
   /*───────── handlers ─────────*/
@@ -57,35 +73,51 @@ function App() {
   const currentQuestions =
     selectedOccupation ? questions[selectedOccupation] ?? [] : [];
 
-  const handleAnswer = (letter: string) => {
-    const opposing =
-      pairOrder[currentQuestion].pair.find((l) => l !== letter) as keyof PersonalityStats;
+  const handleAnswer = (letter: keyof PersonalityStats) => {
+    if (!selectedOccupation) return; // safety guard
 
-    setStats((prev) => ({
-      ...prev,
+    // 更新後の統計を先に計算（setState が async なので）
+    const opposing = pairOrder[currentQuestion].pair.find((l) => l !== letter) as keyof PersonalityStats;
+    const updatedStats: PersonalityStats = {
+      ...stats,
       [letter]: 1,
       [opposing]: 0
-    }));
+    } as PersonalityStats;
 
+    // まだ質問が残っている場合は次へ。
     if (currentQuestion < currentQuestions.length - 1) {
-      setCurrentQuestion(currentQuestion + 1);
-    } else {
-      /* ── MBTI 文字列生成 ── */
-      const mbtiString = [
-        stats.E >= stats.I ? 'E' : 'I',
-        stats.S >= stats.N ? 'S' : 'N',
-        stats.T >= stats.F ? 'T' : 'F',
-        stats.J >= stats.P ? 'J' : 'P'
-      ].join('');
-
-      /* ── マッチング ── */
-      const sameOcc = results.filter((r) => r.occupation === selectedOccupation);
-      const perfect = sameOcc.find((r) => r.mbti === mbtiString);
-      const pick = perfect ?? sameOcc[Math.floor(Math.random() * sameOcc.length)];
-
-      setResult(pick);
-      setStep('result');
+      setStats(updatedStats);
+      setCurrentQuestion((q) => q + 1);
+      return;
     }
+
+    /* ───── 回答完了: MBTI & 偉人決定 ───── */
+    const mbtiString = makeMbti(updatedStats);
+
+    // 1) 同職業で MBTI が完全一致
+    const sameOcc = results.filter((r) => r.occupation === selectedOccupation);
+    let finalResult = sameOcc.find((r) => r.mbti === mbtiString);
+
+    // 2) 見つからなければ MBTI が最も近い偉人を選択（距離 1 → 2 → 3...）
+    if (!finalResult) {
+      finalResult = sameOcc.reduce<Result | null>((best, curr) => {
+        if (!best) return curr;
+        return mbtiDistance(curr.mbti, mbtiString) < mbtiDistance(best.mbti, mbtiString) ? curr : best;
+      }, null as unknown as Result);
+    }
+
+    // 3) 万一同職業に偉人データがない場合は全職業から一番近いもの
+    if (!finalResult) {
+      finalResult = results.reduce<Result | null>((best, curr) => {
+        if (!best) return curr;
+        return mbtiDistance(curr.mbti, mbtiString) < mbtiDistance(best.mbti, mbtiString) ? curr : best;
+      }, null as unknown as Result);
+    }
+
+    // state 更新
+    setStats(updatedStats);
+    setResult(finalResult);
+    setStep('result');
   };
 
   const resetQuiz = () => {
@@ -109,16 +141,12 @@ function App() {
       <div className="mt-8 space-y-4">
         <h3 className="text-lg font-semibold text-gray-700 flex items-center gap-2">
           <BarChart className="w-5 h-5" />
-          BioFit 4Q
+          BioFit 4Q（あなたの回答）
         </h3>
         {pairs.map(({ left, right }) => {
-          const total =
-            stats[left as keyof PersonalityStats] +
-            stats[right as keyof PersonalityStats] || 1;
-          const leftPct =
-            (stats[left as keyof PersonalityStats] / total) * 100;
-          const rightPct =
-            (stats[right as keyof PersonalityStats] / total) * 100;
+          const total = stats[left as keyof PersonalityStats] + stats[right as keyof PersonalityStats] || 1;
+          const leftPct = (stats[left as keyof PersonalityStats] / total) * 100;
+          const rightPct = (stats[right as keyof PersonalityStats] / total) * 100;
 
           return (
             <div key={left} className="flex items-center gap-2">
@@ -149,9 +177,7 @@ function App() {
       <div className="max-w-md mx-auto">
         <div className="text-center mb-8">
           <Brain className="mx-auto h-12 w-12 text-indigo-600" />
-          <h2 className="mt-6 text-3xl font-bold text-gray-900">
-            BioFit 4Q
-          </h2>
+          <h2 className="mt-6 text-3xl font-bold text-gray-900">BioFit 4Q</h2>
         </div>
 
         {/* Step 1 ─ Occupation */}
@@ -207,7 +233,7 @@ function App() {
                 {currentQuestions[currentQuestion].choices.map((c) => (
                   <button
                     key={c.id}
-                    onClick={() => handleAnswer(c.type)}
+                    onClick={() => handleAnswer(c.type as keyof PersonalityStats)}
                     className="w-full text-left p-3 rounded-lg border border-gray-300 hover:border-indigo-500 hover:bg-indigo-50"
                   >
                     {c.text}
