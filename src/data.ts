@@ -770,7 +770,7 @@ export const results: Result[] = [
   mbti: "ISTJ",
   description:
     "放射能研究を切り拓いた“実験の職人”。慎重な手技と膨大なデータ収集で未知の元素を同定し、科学と医療に計り知れない貢献を残しました。",
-  imageUrl: "https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/c/c8/Marie_Curie_c._1920s.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Marie_Curie",
   strengths: [
     "再現性を極める几帳面さと計量精度",
