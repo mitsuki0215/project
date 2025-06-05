@@ -290,9 +290,9 @@ function App() {
 
               <p className="text-gray-700 leading-relaxed">{result.description}</p>
 
-              {result.strengths && <Section title="Strengths" items={result.strengths}/>}
-              {result.weaknesses && <Section title="Weaknesses" items={result.weaknesses}/>}
-              {result.actionSteps && <Section title="Action Steps" items={result.actionSteps}/>}
+              {result.strengths    && (<Section title="このタイプの強み" items={result.strengths} />)}
+              {result.weaknesses   && (<Section title="気をつけたいポイント" items={result.weaknesses} />)}
+              {result.actionSteps  && (<Section title="次の一歩へのアドバイス" items={result.actionSteps} />)}
 
               <PersonalityBars/>
 
