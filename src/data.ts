@@ -419,45 +419,45 @@ export const questions: { [key: string]: Question[] } = {
   /* Q1 : E / I */
   {
     id: 1,
-    text: "You spot a promising company — what’s your first move?",
+    text: "投資価値のある企業を見つけた！あなたはまずどんな行動を取る？",
     choices: [
-      { id: "i1a", text: "Pitch the idea to your investing circle for feedback.", type: "E" },
-      { id: "i1b", text: "Jump on a call to hash it out with colleagues.",        type: "E" },
-      { id: "i1c", text: "Run a solo deep-dive before telling anyone.",           type: "I" },
-      { id: "i1d", text: "Quietly back-test the thesis on your own model.",       type: "I" }
+      { id: "i1a", text: "投資コミュニティで共有し、公開ディスカッションを主導する", type: "E" },
+      { id: "i1b", text: "マーケットが動いているうちに同僚へ即電話し、二人で戦略を練る",        type: "E" },
+      { id: "i1c", text: "誰にも言わずに、一人で徹底リサーチ",           type: "I" },
+      { id: "i1d", text: "自作モデルでバックテストを行う",       type: "I" }
     ]
   },
   /* Q2 : S / N */
   {
     id: 2,
-    text: "Which evidence weighs heaviest when vetting an investment?",
+    text: "投資をするかどうか、最も重要視する決め手はどれ？",
     choices: [
-      { id: "i2a", text: "Audited financials and recent KPIs.",            type: "S" },
-      { id: "i2b", text: "Historical price patterns and hard data.",       type: "S" },
-      { id: "i2c", text: "Disruptive potential five years down the road.", type: "N" },
-      { id: "i2d", text: "Macro trends that could reshape the sector.",    type: "N" }
+      { id: "i2a", text: "監査済み財務諸表と最新KPI",            type: "S" },
+      { id: "i2b", text: "過去の価格推移などハードデータ",       type: "S" },
+      { id: "i2c", text: "5年以内に業界構造を一変させる爆発力のある製品・サービス", type: "N" },
+      { id: "i2d", text: "業界の常識を塗り変えそうな巨大トレンド",    type: "N" }
     ]
   },
   /* Q3 : T / F */
   {
     id: 3,
-    text: "Pressed to choose between two assets, you rely on…",
+    text: "2択の資産で行き詰まったとき、判断材料にするのは？",
     choices: [
-      { id: "i3a", text: "Risk-adjusted return metrics (Sharpe, etc.).", type: "T" },
-      { id: "i3b", text: "Detailed sensitivity analyses in Excel.",      type: "T" },
-      { id: "i3c", text: "The company’s mission and societal impact.",   type: "F" },
-      { id: "i3d", text: "Leadership’s values and stakeholder stories.", type: "F" }
+      { id: "i3a", text: "リスクを考慮した儲けの度合い（例：シャープレシオ）", type: "T" },
+      { id: "i3b", text: "Excelで条件を変えながら行う綿密なシミュレーション",      type: "T" },
+      { id: "i3c", text: "企業ミッションや社会的インパクト",   type: "F" },
+      { id: "i3d", text: "経営陣の価値観や信念", type: "F" }
     ]
   },
   /* Q4 : J / P */
   {
     id: 4,
-    text: "Markets tumble unexpectedly — your instinct is to…",
+    text: "おっと、市場が急落してしまった！あなたはどう動く？",
     choices: [
-      { id: "i4a", text: "Rebalance to predefined allocation rules.",     type: "J" },
-      { id: "i4b", text: "Tighten stop-losses and stick to the playbook.",type: "J" },
-      { id: "i4c", text: "Stay nimble and scoop bargains as they appear.",type: "P" },
-      { id: "i4d", text: "Pause rules; improvise trades with evolving info.", type: "P" }
+      { id: "i4a", text: "決めていた資産バランスにきっちり戻す",     type: "J" },
+      { id: "i4b", text: "損切りラインを守って静かに撤退する",type: "J" },
+      { id: "i4c", text: "チャンスと見て、安くなった株をすばやく拾う",type: "P" },
+      { id: "i4d", text: "その場のニュースを見ながら臨機応変に売買する", type: "P" }
     ]
   }
 ],
@@ -465,45 +465,45 @@ export const questions: { [key: string]: Question[] } = {
   /* Q1 : E / I */
   {
     id: 1,
-    text: "A colleague proposes a joint paper — what sounds most appealing?",
+    text: "あなたに共同研究の誘いがきた！魅力的に感じる研究方法は？",
     choices: [
-      { id: "p1a", text: "Brain-storming together and co-authoring the draft.", type: "E" },
-      { id: "p1b", text: "Hosting lively seminars to refine the ideas publicly.", type: "E" },
-      { id: "p1c", text: "Developing the argument privately before sharing it.",  type: "I" },
-      { id: "p1d", text: "Working out proofs alone, then circulating a preprint.", type: "I" }
+      { id: "p1a", text: "一緒にブレインストーミングをし、そのまま共著で執筆", type: "E" },
+      { id: "p1b", text: "公開セミナーを開き議論を盛り上げる", type: "E" },
+      { id: "p1c", text: "まずは一人で理論を練り上げてから共有",  type: "I" },
+      { id: "p1d", text: "証明を独力で完成させ、プレプリントを回す", type: "I" }
     ]
   },
   /* Q2 : S / N */
   {
     id: 2,
-    text: "When designing a study, you’re most drawn to…",
+    text: "研究計画で特にワクワクするのは？",
     choices: [
-      { id: "p2a", text: "Meticulous data collection and replication.",        type: "S" },
-      { id: "p2b", text: "Archival digging for concrete historical facts.",     type: "S" },
-      { id: "p2c", text: "Building abstract models that push the theory.",      type: "N" },
-      { id: "p2d", text: "Speculating on emerging paradigms and possibilities.", type: "N" }
+      { id: "p2a", text: "緻密なデータ収集と再現実験",        type: "S" },
+      { id: "p2b", text: "資料庫を漁り、実際の歴史データを集める",     type: "S" },
+      { id: "p2c", text: "理論を発展させるための抽象モデルを組み立てる",      type: "N" },
+      { id: "p2d", text: "まったく新しい枠組みを考え、未知の可能性を探る.", type: "N" }
     ]
   },
   /* Q3 : T / F */
   {
     id: 3,
-    text: "Evaluating students, which factor tips the scale for you?",
+    text: "学生評価において、あなたが大切だと思う基準は？",
     choices: [
-      { id: "p3a", text: "Precise grading rubrics and statistical averages.", type: "T" },
-      { id: "p3b", text: "Rigorous argumentation and logical soundness.",     type: "T" },
-      { id: "p3c", text: "Growth in confidence and intellectual curiosity.",   type: "F" },
-      { id: "p3d", text: "Classroom engagement and peer collaboration.",       type: "F" }
+      { id: "p3a", text: "細かな採点基準と統計平均", type: "T" },
+      { id: "p3b", text: "論証の厳密さと論理的整合性",     type: "T" },
+      { id: "p3c", text: "自信と知的好奇心の成長度",   type: "F" },
+      { id: "p3d", text: "授業への参加度と仲間との協働",       type: "F" }
     ]
   },
   /* Q4 : J / P */
   {
     id: 4,
-    text: "A syllabus change is required mid-semester — you…",
+    text: "学期途中でシラバス改訂が必要になってしまった。あなたは最初にどの行動を取る？",
     choices: [
-      { id: "p4a", text: "Publish an updated schedule with firm deadlines.", type: "J" },
-      { id: "p4b", text: "Specify clear milestones and stick to them.",      type: "J" },
-      { id: "p4c", text: "Leave room for student-led detours and topics.",   type: "P" },
-      { id: "p4d", text: "Iterate weekly based on class momentum.",          type: "P" }
+      { id: "p4a", text: "新しいスケジュールと締切を即公開する", type: "J" },
+      { id: "p4b", text: "明確なマイルストーンを示し遵守させる",      type: "J" },
+      { id: "p4c", text: "学生の好奇心に合わせてスケジュールをゆるく設定する",   type: "P" },
+      { id: "p4d", text: "クラスの流れを見て毎週内容を微調整する",          type: "P" }
     ]
   }
 ],
