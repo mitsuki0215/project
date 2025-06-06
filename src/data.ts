@@ -929,7 +929,6 @@ export const results: Result[] = [
 },
 
   // Designers
-  // Designers ── 詳細版 ─────────────────────────────────────────────
 {
   name: "ジョナサン・アイブ",
   occupation: "designer",
