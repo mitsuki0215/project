@@ -116,10 +116,14 @@ function App() {
   /*───────── components ─────────*/
   const PersonalityBars = () => {
     const pairs = [['E','I'],['S','N'],['T','F'],['J','P']] as const;
+    const mbti = makeMbti(stats);
     return (
       <div className="mt-8 space-y-4">
-        <h3 className="flex items-center gap-2 text-indigo-600 font-semibold">
-          <BarChart className="w-5 h-5"/> あなたの 4Q プロファイル
+        <h3 className="flex flex-wrap items-center gap-2 text-indigo-600 font-semibold">
+          <BarChart className="w-5 h-5" />
+          4Qから得られたあなたのMBTIは
+          <span className="text-indigo-600 font-extrabold text-lg tracking-wider px-1">{mbti}</span>
+          でした
         </h3>
         {pairs.map(([l,r])=>{
           const total = stats[l]+stats[r]||1;
@@ -295,7 +299,7 @@ function App() {
                   &nbsp;でした
                 </p>
 
-                <span className="text-sm text-gray-500">{result.mbti}</span>
+                <span className="text-sm text-gray-500">この偉人のMBTIは "{result.mbti}" です</span>
               </div>
 
               {/* 画像 */}
