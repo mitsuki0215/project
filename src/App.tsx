@@ -149,7 +149,7 @@ function App() {
         {step==='intro' && (
           <div className="space-y-10">
             <header className="text-center space-y-4">
-              <img src={AppIcon} alt="BioFit 4Q アイコン" className="mx-auto h-24 w-24" />
+              <img src={AppIcon} alt="BioFit 4Q アイコン" className="mx-auto h-[60px] w-[140px]" />
               <h1 className="text-4xl font-extrabold text-gray-900">BioFit&nbsp;4Q</h1>
               <p className="text-1xl sm:text-2xl font-extrabold text-indigo-600">
                 MBTIで読み解く<br />
