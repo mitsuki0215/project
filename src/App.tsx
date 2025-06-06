@@ -151,8 +151,8 @@ function App() {
               <Brain className="mx-auto h-16 w-16 text-indigo-600" />
               <h1 className="text-4xl font-extrabold text-gray-900">BioFit&nbsp;4Q</h1>
               <p className="text-1xl sm:text-2xl font-extrabold text-indigo-600">
-                 MBTIで読み解く<br />
-                 『職業×レジェンド＝未来のキミ』
+                MBTIで読み解く<br />
+                『職業×レジェンド＝未来のキミ』
               </p>
             </header>
 
