@@ -124,13 +124,13 @@ function App() {
             <div className="pt-1">
               <BarChart className="w-5 h-5" />
             </div>
-            <div>
-              <div>4Qから得られた</div>
-              <div>
+            <div className="break-words sm:whitespace-nowrap">
+              <span className="block sm:inline">4Qから得られた</span>
+              <span className="block sm:inline">
                 あなたのMBTIは
                 <span className="text-indigo-600 font-extrabold text-lg tracking-wider px-1">{mbti}</span>
                 でした
-              </div>
+              </span>
             </div>
           </div>
         </h3>
