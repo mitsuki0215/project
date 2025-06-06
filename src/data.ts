@@ -1786,7 +1786,7 @@ export const results: Result[] = [
   mbti: "INTJ",
   description:
     "経営を“社会生態系”として捉えた近代マネジメントの開拓者。全体構造を俯瞰し、理論を実践に変える知的アーキテクトです。",
-  imageUrl: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Drucker5789.jpg/500px-Drucker5789.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Peter_Drucker",
   strengths: [
     "因果関係をモデル化し複雑課題を整理する体系思考",
@@ -1809,7 +1809,7 @@ export const results: Result[] = [
   mbti: "ENFJ",
   description:
     "“破壊的イノベーション”理論で業界の常識を覆したビジョナリー。共感力と説得力で組織を変革へ導くストーリーテラー型コンサルタント。",
-  imageUrl: "https://images.pexels.com/photos/3183151/pexels-photo-3183151.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Clayton_Christensen_World_Economic_Forum_2013.jpg/500px-Clayton_Christensen_World_Economic_Forum_2013.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Clayton_Christensen",
   strengths: [
     "顧客ジョブに着目しイノベーション機会を発見する洞察力",
@@ -1832,7 +1832,7 @@ export const results: Result[] = [
   mbti: "ISTJ",
   description:
     "5フォース分析で競争戦略を体系化した構造派。膨大な業界データを整理し、再現性あるフレームワークへ昇華させるファクトドリブン型です。",
-  imageUrl: "https://images.pexels.com/photos/3183152/pexels-photo-3183152.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Michael_Porter.jpg/500px-Michael_Porter.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Michael_Porter",
   strengths: [
     "業界構造を分解し優位性を数値で示すロジカルシンキング",
@@ -1855,7 +1855,7 @@ export const results: Result[] = [
   mbti: "ENTJ",
   description:
     "グローバル経営を牽引した“戦略実行の達人”。ビジョンを数値目標へ落とし込み、多文化組織を動かすダイナミックリーダーです。",
-  imageUrl: "https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/IndraNooyiDavos2010ver2.jpg/500px-IndraNooyiDavos2010ver2.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Indra_Nooyi",
   strengths: [
     "遠大なビジョンを実行計画へ翻訳する推進力",
@@ -1879,7 +1879,7 @@ export const results: Result[] = [
   mbti: "INTJ",
   description:
     "ブラックホール蒸発理論で宇宙観を刷新した“車椅子の天才理論物理学者”。思考実験を駆使し、抽象理論を一枚の式に凝縮する設計者型です。",
-  imageUrl: "https://images.pexels.com/photos/2156/sky-space-dark-galaxy.jpg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/eb/Stephen_Hawking.StarChild.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Stephen_Hawking",
   strengths: [
     "複雑な数式モデルを直観的に操る抽象化能力",
@@ -1902,7 +1902,7 @@ export const results: Result[] = [
   mbti: "INFJ",
   description:
     "チンパンジー研究で“動物に心を見出した”フィールドサイエンティスト。洞察と共感で被写体との垣根を取り払い、物語性ある科学を創ります。",
-  imageUrl: "https://images.pexels.com/photos/4666751/pexels-photo-4666751.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Jane-goodall_%28cropped%29.jpg/500px-Jane-goodall_%28cropped%29.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Jane_Goodall",
   strengths: [
     "長期観察で行動変化を丁寧に追う粘着質な観察眼",
@@ -1925,7 +1925,7 @@ export const results: Result[] = [
   mbti: "ENTJ",
   description:
     "宇宙の魅力を軽妙な語り口で届ける“サイエンス・コミュニケーター”。大局観とプレゼンスで研究と社会を橋渡しします。",
-  imageUrl: "https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Neil_DeGrasse_Tyson_%282023%29.jpg/500px-Neil_DeGrasse_Tyson_%282023%29.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Neil_deGrasse_Tyson",
   strengths: [
     "難解な概念を比喩で噛み砕くストーリーテリング",
@@ -1948,7 +1948,7 @@ export const results: Result[] = [
   mbti: "INTP",
   description:
     "“トランスポゾン”の発見で遺伝学を塗り替えた独創的実験家。孤高の集中力でデータに語らせ、思わぬパターンを掘り当てる探検者です。",
-  imageUrl: "https://images.pexels.com/photos/4666754/pexels-photo-4666754.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Barbara_McClintock_%281902-1992%29_shown_in_her_laboratory_in_1947.jpg/500px-Barbara_McClintock_%281902-1992%29_shown_in_her_laboratory_in_1947.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Barbara_McClintock",
   strengths: [
     "大量の実験データから相関を見抜くパターン認識力",
@@ -1972,7 +1972,7 @@ export const results: Result[] = [
   mbti: "INTJ",
   description:
     "敷地・構造・家具までを統合し“有機的建築”を生んだ構想家。自然との調和を図りつつ綿密な計算で空間体験をデザインします。",
-  imageUrl: "https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Frank_Lloyd_Wright_portrait.jpg/500px-Frank_Lloyd_Wright_portrait.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Frank_Lloyd_Wright",
   strengths: [
     "全体を俯瞰しコンセプトからディテールまで一貫させる体系的思考",
@@ -1995,7 +1995,7 @@ export const results: Result[] = [
   mbti: "ENTJ",
   description:
     "力強い曲線とダイナミックな空間で“脱構築”を体現したビジョナリー。大胆なコンセプトで都市景観に新しいリズムを刻みます。",
-  imageUrl: "https://images.pexels.com/photos/1732415/pexels-photo-1732415.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Zaha_Hadid_in_Heydar_Aliyev_Cultural_center_in_Baku_nov_2013.jpg/500px-Zaha_Hadid_in_Heydar_Aliyev_Cultural_center_in_Baku_nov_2013.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Zaha_Hadid",
   strengths: [
     "常識を打ち破るフォルムを実現する先見性とリーダーシップ",
@@ -2018,7 +2018,7 @@ export const results: Result[] = [
   mbti: "ISTJ",
   description:
     "“住宅は住むための機械”と唱えた機能主義の旗手。モジュール化と合理性を武器に都市計画まで体系化しました。",
-  imageUrl: "https://images.pexels.com/photos/1732416/pexels-photo-1732416.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Le_Corbusier_%281964%29.jpg/500px-Le_Corbusier_%281964%29.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Le_Corbusier",
   strengths: [
     "機能・寸法を標準化し生産効率を高めるロジカルシンキング",
@@ -2041,7 +2041,7 @@ export const results: Result[] = [
   mbti: "INFP",
   description:
     "自然物の曲線やカラフルな装飾を取り入れた“詩的建築”の創造者。直感と信仰心を頼りに唯一無二の空間を紡ぎ出しました。",
-  imageUrl: "https://images.pexels.com/photos/1732417/pexels-photo-1732417.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Antoni_Gaudi_1878.jpg/500px-Antoni_Gaudi_1878.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Antoni_Gaud%C3%AD",
   strengths: [
     "自然形態を観察し構造美へ昇華する創造性",
@@ -2066,7 +2066,7 @@ export const results: Result[] = [
   mbti: "ENTJ",
   description:
     "リサーチと物語性を融合し“広告は売るための芸術”を体現した戦略家。数字で裏付けた大胆なコピーでブランド価値を跳ね上げました。",
-  imageUrl: "https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/f/fa/David_ogilvy.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/David_Ogilvy_(businessman)",
   strengths: [
     "消費者インサイトを論理的に抽出する分析力",
@@ -2089,7 +2089,7 @@ export const results: Result[] = [
   mbti: "ENFP",
   description:
     "大胆なビジュアルとウィットに富むコピーで空の色まで変えた革新者。情熱と直感でブランドに新しい物語を吹き込みます。",
-  imageUrl: "https://images.pexels.com/photos/3182774/pexels-photo-3182774.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/18/1969_Wells_Rich_Greene_File_Photo_of_Mary_Wells_Lawrence_at_her_desk.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Mary_Wells_Lawrence",
   strengths: [
     "枠にとらわれない発想で“記憶に残る”キャンペーンを創出",
@@ -2112,7 +2112,7 @@ export const results: Result[] = [
   mbti: "ISTJ",
   description:
     "“Scientific Advertising”を提唱し、テストと統計で広告効果を可視化した実証主義者。確かな数字でクライアントを納得させます。",
-  imageUrl: "https://images.pexels.com/photos/3182775/pexels-photo-3182775.jpeg",
+  imageUrl: "https://www.nextdayflyers.com/blog/wp-content/uploads/2011/05/1claude.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Claude_C._Hopkins",
   strengths: [
     "A/Bテストとデータ解析による説得力の高い提案",
@@ -2135,7 +2135,7 @@ export const results: Result[] = [
   mbti: "INFJ",
   description:
     "“心に火を灯す広告”を信条に、温かな物語と象徴的キャラクターでブランドに魂を吹き込んだ共感の名匠。",
-  imageUrl: "https://images.pexels.com/photos/3182776/pexels-photo-3182776.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/en/b/b2/Leo_Burnett.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Leo_Burnett",
   strengths: [
     "社会的・文化的文脈まで読み解く洞察力",
@@ -2159,7 +2159,7 @@ export const results: Result[] = [
   mbti: "INTJ",
   description:
     "緻密なプロットと心理的サスペンスで観客を翻弄する“サスペンスの巨匠”。情報を小出しにして緊張を高める設計力と、全工程を見通した統率力が光ります。",
-  imageUrl: "https://images.pexels.com/photos/274937/pexels-photo-274937.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Hitchcock%2C_Alfred_02.jpg/500px-Hitchcock%2C_Alfred_02.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Alfred_Hitchcock",
   strengths: [
     "長期的ビジョンで伏線を張り巡らせる構成力",
@@ -2182,7 +2182,7 @@ export const results: Result[] = [
   mbti: "ENFJ",
   description:
     "壮大なスケールと豊かな感情表現で観客を魅了する“物語の魔術師”。人の心を動かすテーマ設定とチームを鼓舞するリーダーシップが特徴です。",
-  imageUrl: "https://images.pexels.com/photos/274938/pexels-photo-274938.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/MKr25402_Steven_Spielberg_%28Berlinale_2023%29.jpg/500px-MKr25402_Steven_Spielberg_%28Berlinale_2023%29.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Steven_Spielberg",
   strengths: [
     "感情移入を促すストーリーテリング",
@@ -2205,7 +2205,7 @@ export const results: Result[] = [
   mbti: "INTP",
   description:
     "映像技法と哲学的テーマを極限まで追求した“完璧主義の研究者”。斬新なカメラワークと徹底的なリサーチで映画表現を革新しました。",
-  imageUrl: "https://images.pexels.com/photos/274939/pexels-photo-274939.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Kubrick_on_the_set_of_Barry_Lyndon_%281975_publicity_photo%29_crop.jpg/500px-Kubrick_on_the_set_of_Barry_Lyndon_%281975_publicity_photo%29_crop.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Stanley_Kubrick",
   strengths: [
     "技術・美術・脚本を横断する深い探究心",
@@ -2228,7 +2228,7 @@ export const results: Result[] = [
   mbti: "ENFP",
   description:
     "ドキュメンタリーとフィクションを自由に往来する“映画界のグランマザー”。直感的かつ詩的な視点で人々の日常に潜む物語を掘り起こします。",
-  imageUrl: "https://images.pexels.com/photos/274940/pexels-photo-274940.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Identite-AgnesVarda-1962-Sacem.jpg/500px-Identite-AgnesVarda-1962-Sacem.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Agn%C3%A8s_Varda",
   strengths: [
     "柔軟な発想でジャンルや形式を横断する創造性",
