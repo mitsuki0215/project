@@ -929,7 +929,6 @@ export const results: Result[] = [
 },
 
   // Designers
-  // Designers ── 詳細版 ─────────────────────────────────────────────
 {
   name: "ジョナサン・アイブ",
   occupation: "designer",
@@ -1782,95 +1781,95 @@ export const results: Result[] = [
 },
   // Consultants
   {
-  name: "ノーム・チョムスキー",
-  occupation: "professor",
+  name: "ピーター・ドラッカー",
+  occupation: "consultant",
   mbti: "INTJ",
   description:
-    "生成文法を提唱し言語学のみならず政治哲学にも影響を与えた“構造の開拓者”。体系的に真理を追究し、学際的視点で既存理論を再構築します。",
-  imageUrl: "https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg",
-  wikiUrl: "https://en.wikipedia.org/wiki/Noam_Chomsky",
+    "経営を“社会生態系”として捉えた近代マネジメントの開拓者。全体構造を俯瞰し、理論を実践に変える知的アーキテクトです。",
+  imageUrl: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Peter_Drucker",
   strengths: [
-    "複雑現象を抽象モデルで整理する構造化思考",
-    "学際領域へ理論を応用する概念転用力",
-    "一貫した批判精神で新たな議論を喚起"
+    "因果関係をモデル化し複雑課題を整理する体系思考",
+    "定量･定性データを融合し実行指針へ落とし込む分析力",
+    "組織に学習文化を根付かせる思想的リーダーシップ"
   ],
   weaknesses: [
-    "抽象度が高く具体的応用が伝わりにくい",
-    "議論が演繹的になり現場の情緒を見落としがち"
+    "現場の政治力学や感情面を軽視しがち",
+    "理念を深掘りしすぎ行動計画が遅れることがある"
   ],
   actionSteps: [
-    "実証研究者と協働し理論の検証事例を増やす",
-    "ワークショップ形式で学生の経験知を理論に接続",
-    "一般向け解説記事を執筆し抽象概念を具体化する"
+    "フィールドワークを増やし現場視点を理論に反映",
+    "小規模パイロットで仮説検証サイクルを高速化",
+    "多職種ワークショップで実装責任を共有し推進力を高める"
   ]
 },
 {
-  name: "ベル・フックス",
-  occupation: "professor",
+  name: "クレイトン・クリステンセン",
+  occupation: "consultant",
   mbti: "ENFJ",
   description:
-    "ジェンダー・人種・階級を横断するファミニズム理論で教育を変革した“インクルーシブ・エデュケーター”。共感と情熱で学びを共同創造します。",
-  imageUrl: "https://images.pexels.com/photos/3184329/pexels-photo-3184329.jpeg",
-  wikiUrl: "https://en.wikipedia.org/wiki/Bell_hooks",
+    "“破壊的イノベーション”理論で業界の常識を覆したビジョナリー。共感力と説得力で組織を変革へ導くストーリーテラー型コンサルタント。",
+  imageUrl: "https://images.pexels.com/photos/3183151/pexels-photo-3183151.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Clayton_Christensen",
   strengths: [
-    "物語と対話で多様な声を引き出すファシリテーション力",
-    "社会正義と学びを結び付けるビジョン提案力",
-    "学生の成長を後押しするコーチングマインド"
+    "顧客ジョブに着目しイノベーション機会を発見する洞察力",
+    "ストーリーテリングで利害関係者を巻き込む影響力",
+    "若手を育成し知を共有するコーチングスキル"
   ],
   weaknesses: [
-    "情熱が強く批判を個人的に受け止めやすい",
-    "テーマが広がりすぎ研究フォーカスが散漫になりがち"
+    "理想像を語りすぎ具体ロードマップが曖昧になりがち",
+    "ネットワーキング過多で深い分析時間が不足することも"
   ],
   actionSteps: [
-    "研究テーマを年度ごとに絞りアウトカムを明確化",
-    "セルフケアと境界設定を意識し情緒的負荷を調整",
-    "データ駆動の評価指標を取り入れ説得力を補強"
+    "施策ごとにKPIを設定し進捗を定量管理",
+    "週次ブロックタイムで分析・執筆に集中する環境を確保",
+    "“デビルズアドボケイト”を置き仮説を批判的に磨く"
   ]
 },
 {
-  name: "リチャード・ファインマン",
-  occupation: "professor",
-  mbti: "ENTP",
+  name: "マイケル・ポーター",
+  occupation: "consultant",
+  mbti: "ISTJ",
   description:
-    "量子電磁力学を平易な言葉で語り“ファインマン流講義”を確立した好奇心の化身。ユーモアと実験精神で学問の魅力を拡散します。",
-  imageUrl: "https://images.pexels.com/photos/3184330/pexels-photo-3184330.jpeg",
-  wikiUrl: "https://en.wikipedia.org/wiki/Richard_Feynman",
+    "5フォース分析で競争戦略を体系化した構造派。膨大な業界データを整理し、再現性あるフレームワークへ昇華させるファクトドリブン型です。",
+  imageUrl: "https://images.pexels.com/photos/3183152/pexels-photo-3183152.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Michael_Porter",
   strengths: [
-    "複雑概念を比喩で噛み砕くストーリーテリング力",
-    "“やってみよう”で学生を巻き込む実験志向",
-    "異分野の疑問を拾い上げる好奇心と柔軟性"
+    "業界構造を分解し優位性を数値で示すロジカルシンキング",
+    "フレームワーク化により提案を標準化・横展開する力",
+    "粘り強いファクトチェックで信頼性を担保"
   ],
   weaknesses: [
-    "興味が拡散し研究計画が長期化する恐れ",
-    "即興的アプローチで理論精度が粗くなることがある"
+    "革新的アイデアへの感度がやや低い",
+    "堅実ゆえ変化速度の速い案件で対応が後手に回ることがある"
   ],
   actionSteps: [
-    "年間リサーチテーマを3件以内に絞り優先度を管理",
-    "共著者を立て理論・データ検証の深掘りを委ねる",
-    "講義記録を教材化し継続的に知識資産を蓄積"
+    "デザイン思考ワークショップで発想の幅を拡張",
+    "リアルタイムデータを取り入れ分析周期を短縮",
+    "異業種プロジェクトに参画し視座をアップデートする"
   ]
 },
 {
-  name: "ハンナ・アーレント",
-  occupation: "professor",
-  mbti: "INTP",
+  name: "インドラ・ヌーイ",
+  occupation: "consultant",
+  mbti: "ENTJ",
   description:
-    "全体主義と公共性を再考した政治哲学者。“考えることの責任”を問い続け、独立独歩で概念を磨き上げる探究者です。",
-  imageUrl: "https://images.pexels.com/photos/3184331/pexels-photo-3184331.jpeg",
-  wikiUrl: "https://en.wikipedia.org/wiki/Hannah_Arendt",
+    "グローバル経営を牽引した“戦略実行の達人”。ビジョンを数値目標へ落とし込み、多文化組織を動かすダイナミックリーダーです。",
+  imageUrl: "https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg",
+  wikiUrl: "https://en.wikipedia.org/wiki/Indra_Nooyi",
   strengths: [
-    "歴史事象を俯瞰し概念を再編成する分析力",
-    "少数資料から新たな理論枠組みを構築する洞察",
-    "複雑な倫理問題を言語化する論述スキル"
+    "遠大なビジョンを実行計画へ翻訳する推進力",
+    "多文化環境で合意形成を図る交渉・コミュニケーション力",
+    "サステナビリティを戦略に組み込む先見性"
   ],
   weaknesses: [
-    "議論が高度になり学生が置き去りになることがある",
-    "協調より独立を好みチーム研究が停滞しがち"
+    "高い目標設定でメンバーへの負荷が大きくなりがち",
+    "細部より全体像を優先しディテール抜けのリスク"
   ],
   actionSteps: [
-    "基礎用語集を作成し授業で理解の土台を共有",
-    "少人数ゼミで逐次フィードバックを取り入れ双方向性を強化",
-    "共同研究プロジェクトに参加し多面的視点を導入"
+    "チームにマイクロゴールを設定し負荷を分散",
+    "専門家レビューで施策の細部を定期点検",
+    "ステークホルダーインタビューを継続し温度感を把握"
   ]
 },
   // Resercher

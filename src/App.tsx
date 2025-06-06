@@ -267,21 +267,32 @@ function App() {
         )}
 
         {/*──────── Result Page ─────────*/}
-        {step==='result' && result && (
+        {step === 'result' && result && (
           <div className="space-y-6">
             {/* app header */}
             <div className="text-center mb-2 space-y-2">
-              <Brain className="mx-auto h-12 w-12 text-indigo-600"/>
+              <Brain className="mx-auto h-12 w-12 text-indigo-600" />
               <h2 className="text-3xl font-bold text-gray-900">BioFit 4Q</h2>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow space-y-6">
               <div className="text-center space-y-2">
-                <CheckCircle2 className="mx-auto h-12 w-12 text-green-500"/>
-                <a href={result.wikiUrl} target="_blank" rel="noopener noreferrer"
-                  className="block text-xl font-bold text-gray-900 hover:text-indigo-600">
-                  {result.name}
-                </a>
+                <CheckCircle2 className="mx-auto h-12 w-12 text-green-500" />
+
+                <p className="text-lg font-semibold text-gray-800">
+                  あなたに似た偉人タイプは&nbsp;
+                  <br />
+                  <a
+                    href={result.wikiUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-indigo-600"
+                  >
+                    {result.name}
+                  </a>
+                  &nbsp;でした
+                </p>
+
                 <span className="text-sm text-gray-500">{result.mbti}</span>
               </div>
 
@@ -304,16 +315,22 @@ function App() {
 
               <p className="text-gray-700 leading-relaxed">{result.description}</p>
 
-              {result.strengths    && (<Section title="このタイプの強み" items={result.strengths} />)}
-              {result.weaknesses   && (<Section title="気をつけたいポイント" items={result.weaknesses} />)}
-              {result.actionSteps  && (<Section title="次の一歩へのアドバイス" items={result.actionSteps} />)}
+              {result.strengths   && (
+                <Section title="このタイプの強み" items={result.strengths} />
+              )}
+              {result.weaknesses  && (
+                <Section title="気をつけたいポイント" items={result.weaknesses} />
+              )}
+              {result.actionSteps && (
+                <Section title="次の一歩へのアドバイス" items={result.actionSteps} />
+              )}
 
-              <PersonalityBars/>
+              <PersonalityBars />
 
               <button
                 onClick={resetApp}
-                className="w-full py-4 bg-indigo-600 hover:bg-indigo-700
-                           text-white font-semibold rounded-lg">
+                className="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-lg"
+              >
                 もう一度診断する
               </button>
             </div>
