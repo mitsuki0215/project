@@ -1314,7 +1314,7 @@ export const results: Result[] = [
   mbti: "INFP",
   description:
     "渦巻く筆致と鮮烈な色彩で内面世界をキャンバスに刻んだ〈魂の画家〉。孤高の感受性と自然への畏敬が、ありふれた風景に壮大なドラマを宿します。",
-  imageUrl: "https://images.pexels.com/photos/1568607/pexels-photo-1568607.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/500px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Vincent_van_Gogh",
   strengths: [
     "感情を色とタッチに昇華する卓越した表現力",
@@ -1338,7 +1338,7 @@ export const results: Result[] = [
   mbti: "ISFP",
   description:
     "痛みとアイデンティティを鮮烈な色彩で告白する〈自己を描く象徴派〉。メキシコ文化と個人の物語を重ね、観る者に深い共感を呼び起こします。",
-  imageUrl: "https://images.pexels.com/photos/2123337/pexels-photo-2123337.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg/500px-Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Frida_Kahlo",
   strengths: [
     "個人的体験を普遍的象徴へ昇華する洞察力",
@@ -1362,7 +1362,7 @@ export const results: Result[] = [
   mbti: "ENTP",
   description:
     "キュビスムをはじめ次々と様式を刷新した〈終わりなき革新者〉。既成概念を分解し再構築する発想で20世紀美術を塗り替えました。",
-  imageUrl: "https://images.pexels.com/photos/1918290/pexels-photo-1918290.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Pablo_picasso_1.jpg/500px-Pablo_picasso_1.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Pablo_Picasso",
   strengths: [
     "概念を解体し新構造へ転換する創造的思考",
@@ -1386,7 +1386,7 @@ export const results: Result[] = [
   mbti: "INTJ",
   description:
     "花弁や砂漠を抽象化し本質を射抜く〈静謐なるモダニスト〉。緻密な観察と構成力でミニマルながら強烈なイメージを創出しました。",
-  imageUrl: "https://images.pexels.com/photos/2693212/pexels-photo-2693212.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Georgia_O%27Keeffe_MET_DP230868.jpg/500px-Georgia_O%27Keeffe_MET_DP230868.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Georgia_O%27Keeffe",
   strengths: [
     "対象を抽象化し核心を捉える分析力",
@@ -1412,7 +1412,7 @@ export const results: Result[] = [
   mbti: "INTJ",
   description:
     "第二次大戦下のロンドン空襲を生中継し、放送ジャーナリズムの新境地を開いた〈公共の良心〉。冷徹な分析眼と揺るがぬ倫理観で “This … is London” の一言に真実を宿しました。",
-  imageUrl: "https://images.pexels.com/photos/2325729/pexels-photo-2325729.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/25/Edward_R._Murrow.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Edward_R._Murrow",
   strengths: [
     "資料と現場証言を統合する構成力",
@@ -1435,7 +1435,7 @@ export const results: Result[] = [
   mbti: "ENFJ",
   description:
     "紛争地に飛び込み、当事者の声を世界に届ける〈地球規模のストーリーテラー〉。強烈な共感力と説得力で“国際報道の顔”として人権課題を可視化してきました。",
-  imageUrl: "https://images.pexels.com/photos/3944454/pexels-photo-3944454.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Christiane_Amanpour_June_2008_%28cropped%29.jpg/500px-Christiane_Amanpour_June_2008_%28cropped%29.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Christiane_Amanpour",
   strengths: [
     "危機下でも相手の信頼を得る対人スキル",
@@ -1458,7 +1458,7 @@ export const results: Result[] = [
   mbti: "ENTP",
   description:
     "自らを物語の主人公に据えた“ゴンゾ・ジャーナリズム”で既存報道を揺さぶった〈反骨の観察者〉。過激な比喩と鋭いユーモアで権力構造を暴きます。",
-  imageUrl: "https://images.pexels.com/photos/3944377/pexels-photo-3944377.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Hunter_S._Thompson%2C_Las_Vegas_1971.jpg/500px-Hunter_S._Thompson%2C_Las_Vegas_1971.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Hunter_S._Thompson",
   strengths: [
     "型破りな視点で読者を引き込む創造性",
@@ -1481,7 +1481,7 @@ export const results: Result[] = [
   mbti: "ISTJ",
   description:
     "ウォーターゲート事件を粘り強く追い、米国史を動かした〈調査報道の代名詞〉。膨大な証言と公文書を突き合わせ、静かな確信で真実を積み上げます。",
-  imageUrl: "https://images.pexels.com/photos/3944434/pexels-photo-3944434.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Bob_Woodward_Oct23_%2853297480588%29.jpg/500px-Bob_Woodward_Oct23_%2853297480588%29.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Bob_Woodward",
   strengths: [
     "一次資料を重層的に照合する検証力",
@@ -1505,7 +1505,7 @@ export const results: Result[] = [
   mbti: "ENFJ",
   description:
     "人種差別撤廃へ道を開いた〈公民権の旗手〉。弱者の声に寄り添いながら、大胆な戦略と情熱的スピーチで合衆国憲法の解釈を塗り替えた行動派リーダーです。",
-  imageUrl: "https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Thurgood-marshall-2.jpg/500px-Thurgood-marshall-2.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Thurgood_Marshall",
   strengths: [
     "高い共感力と道義的カリスマで支持を集める",
@@ -1528,7 +1528,7 @@ export const results: Result[] = [
   mbti: "INTJ",
   description:
     "緻密な論理と鉄の意志でジェンダー平等を切り拓いた〈リーガル・アーキテクト〉。最少の語数で最大の説得力を生む意見書はまさに芸術品。",
-  imageUrl: "https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Ruth_Bader_Ginsburg_2016_portrait.jpg/500px-Ruth_Bader_Ginsburg_2016_portrait.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Ruth_Bader_Ginsburg",
   strengths: [
     "判例・統計を組み合わせた戦略的ロジック構築",
@@ -1551,7 +1551,7 @@ export const results: Result[] = [
   mbti: "ENTP",
   description:
     "機転の利くクロスエグザミネーションとウィットに富んだ弁論で陪審員を魅了した〈法廷の自由人〉。既存の枠を打ち破る創造的ディフェンスが持ち味です。",
-  imageUrl: "https://images.pexels.com/photos/5668482/pexels-photo-5668482.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Clarence_Darrow.jpg/500px-Clarence_Darrow.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Clarence_Darrow",
   strengths: [
     "即興的な質問で証言の矛盾を突く洞察力",
@@ -1574,7 +1574,7 @@ export const results: Result[] = [
   mbti: "ISTJ",
   description:
     "SEC長官として市場の公正性を守り抜いた〈金融規制の番人〉。証拠を積み重ねる堅実さと不偏不党の姿勢で信頼を勝ち取る“鉄の検察官”タイプ。",
-  imageUrl: "https://images.pexels.com/photos/5668788/pexels-photo-5668788.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Official_portrait_of_Mary_Jo_White.jpg/500px-Official_portrait_of_Mary_Jo_White.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Mary_Jo_White",
   strengths: [
     "事実関係を網羅する緻密なドキュメンテーション",
@@ -1599,7 +1599,7 @@ export const results: Result[] = [
   mbti: "ISTJ",
   description:
     "徹底したファンダメンタル分析で“適正価格以下の優良企業”を丹念に拾い上げる「オマハの賢人」。複利と長期保有の威力を誰よりも体現する堅実派です。",
-  imageUrl: "https://images.pexels.com/photos/534216/pexels-photo-534216.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit_%28cropped%29.jpg/500px-Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit_%28cropped%29.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Warren_Buffett",
   strengths: [
     "財務諸表を深掘りして企業の本質価値を算定する分析力",
@@ -1622,7 +1622,7 @@ export const results: Result[] = [
   mbti: "INTJ",
   description:
     "“再帰性理論”で市場心理を読み切り、世界経済を股にかけたマクロトレードを敢行する戦略家。大胆なポジショニングと即断即決で巨利を狙います。",
-  imageUrl: "https://images.pexels.com/photos/534217/pexels-photo-534217.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/George_Soros_-_May_31%2C_2017.jpg/500px-George_Soros_-_May_31%2C_2017.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/George_Soros",
   strengths: [
     "地政学・金融政策まで俯瞰するグローバル視点",
@@ -1645,7 +1645,7 @@ export const results: Result[] = [
   mbti: "ENFJ",
   description:
     "破壊的イノベーション企業に集中投資し“次の10年を創るテーマ”を世界に語るビジョナリー。物語とデータを両輪に未来像を描きます。",
-  imageUrl: "https://images.pexels.com/photos/534218/pexels-photo-534218.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Cathie_Wood_ARK_Invest_Photo.jpg/500px-Cathie_Wood_ARK_Invest_Photo.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Cathie_Wood",
   strengths: [
     "テクノロジーのSカーブを先読みする洞察力",
@@ -1668,7 +1668,7 @@ export const results: Result[] = [
   mbti: "ENTP",
   description:
     "“プリンシプル”を掲げ、データ駆動でオールウェザー運用を実践する橋水アソシエイツ創業者。経済メカニズムを体系化し、多角的分散で安定収益を追求します。",
-  imageUrl: "https://images.pexels.com/photos/534219/pexels-photo-534219.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Web_Summit_2018_-_Forum_-_Day_2%2C_November_7_HM1_7481_%2844858045925%29.jpg/500px-Web_Summit_2018_-_Forum_-_Day_2%2C_November_7_HM1_7481_%2844858045925%29.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Ray_Dalio",
   strengths: [
     "経済サイクルをモデル化するシステム思考",
@@ -1693,7 +1693,7 @@ export const results: Result[] = [
   mbti: "INTJ",
   description:
     "生成文法で言語研究に革命を起こし、政治哲学でも鋭い批評を続ける“構造の開拓者”。抽象モデルで本質を掴み、学際的に理論を拡張する姿勢が際立ちます。",
-  imageUrl: "https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Noam_Chomsky_portrait_2017_retouched.jpg/500px-Noam_Chomsky_portrait_2017_retouched.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Noam_Chomsky",
   strengths: [
     "複雑現象を抽象化する構造的思考",
@@ -1716,7 +1716,7 @@ export const results: Result[] = [
   mbti: "ENFJ",
   description:
     "ジェンダー・人種・階級を横断する批評で教育を変革した“インクルーシブ・エデュケーター”。共感と情熱で学習コミュニティを築き、社会正義を学びに結び付けます。",
-  imageUrl: "https://images.pexels.com/photos/3184329/pexels-photo-3184329.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/3/37/Bell_hooks%2C_October_2014.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Bell_hooks",
   strengths: [
     "物語と対話で多様な声を引き出すファシリテーション",
@@ -1739,7 +1739,7 @@ export const results: Result[] = [
   mbti: "ENTP",
   description:
     "量子電磁力学を平易に語り“ファインマン流講義”を確立した好奇心の化身。ユーモアと実験精神で学問の魅力を広めます。",
-  imageUrl: "https://images.pexels.com/photos/3184330/pexels-photo-3184330.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Richard_Feynman_Nobel.jpg/500px-Richard_Feynman_Nobel.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Richard_Feynman",
   strengths: [
     "比喩で難解概念を噛み砕くストーリーテリング",
@@ -1762,7 +1762,7 @@ export const results: Result[] = [
   mbti: "INTP",
   description:
     "全体主義と公共性を再考した政治哲学者。“考えることの責任”を問い続け、独立独歩で概念を磨き上げる探究者です。",
-  imageUrl: "https://images.pexels.com/photos/3184331/pexels-photo-3184331.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Hannah_Arendt_auf_dem_1._Kulturkritikerkongress%2C_Barbara_Niggl_Radloff%2C_FM-2019-1-5-9-16_%28cropped%29.jpg/500px-Hannah_Arendt_auf_dem_1._Kulturkritikerkongress%2C_Barbara_Niggl_Radloff%2C_FM-2019-1-5-9-16_%28cropped%29.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Hannah_Arendt",
   strengths: [
     "歴史事象を俯瞰し概念を再編成する分析力",
