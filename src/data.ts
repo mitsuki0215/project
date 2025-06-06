@@ -747,7 +747,7 @@ export const results: Result[] = [
   mbti: "INTP",
   description:
     "思考実験で時空の本質を解き明かした理論物理学の革命児。固定概念に縛られず“もしこうだったら？”を問い続け、直観と数式で宇宙像を書き換えました。",
-  imageUrl: "https://images.pexels.com/photos/2873486/pexels-photo-2873486.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Albert_Einstein_1947.jpg/500px-Albert_Einstein_1947.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Albert_Einstein",
   strengths: [
     "抽象概念を操る卓越した論理思考",
@@ -770,7 +770,7 @@ export const results: Result[] = [
   mbti: "ISTJ",
   description:
     "放射能研究を切り拓いた“実験の職人”。慎重な手技と膨大なデータ収集で未知の元素を同定し、科学と医療に計り知れない貢献を残しました。",
-  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/c/c8/Marie_Curie_c._1920s.jpg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Marie_Curie_c._1920s.jpg/500px-Marie_Curie_c._1920s.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Marie_Curie",
   strengths: [
     "再現性を極める几帳面さと計量精度",
@@ -793,7 +793,7 @@ export const results: Result[] = [
   mbti: "ENTP",
   description:
     "量子力学を“語り・遊ぶ”天才講義師。難解な現象をユーモアと比喩で紐解き、新しい視点を提示することで科学の魅力を広く伝えました。",
-  imageUrl: "https://images.pexels.com/photos/3825527/pexels-photo-3825527.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Richard_Feynman_Nobel.jpg/500px-Richard_Feynman_Nobel.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Richard_Feynman",
   strengths: [
     "複雑な概念を直観的にモデル化する発想力",
@@ -816,7 +816,7 @@ export const results: Result[] = [
   mbti: "INFJ",
   description:
     "チンパンジーの生態観察から“共感する科学”を切り開いたフィールド研究者。動物と人間社会を結び、保全活動へとつなげる使命感が光ります。",
-  imageUrl: "https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Jane-goodall_%28cropped%29.jpg/500px-Jane-goodall_%28cropped%29.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Jane_Goodall",
   strengths: [
     "長期観察で微細な行動変化を捉える洞察力",
@@ -841,7 +841,7 @@ export const results: Result[] = [
   mbti: "ENTJ",
   description:
     "デザインとテクノロジーを融合し “人々の生活を一変させる製品” を次々と世に送り出した〈完璧主義のカリスマ〉。卓越した審美眼とプレゼン力で、まだ見ぬ未来像を大衆に提示しました。",
-  imageUrl: "https://images.pexels.com/photos/5473955/pexels-photo-5473955.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Steve_Jobs_Headshot_2010-CROP_%28cropped_2%29.jpg/500px-Steve_Jobs_Headshot_2010-CROP_%28cropped_2%29.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Steve_Jobs",
   strengths: [
     "ビジョンを言語化しチームを鼓舞するリーダーシップ",
@@ -864,7 +864,7 @@ export const results: Result[] = [
   mbti: "INTJ",
   description:
     "電気自動車・宇宙開発・AI など複数領域で常識を覆す〈破壊的イノベーター〉。長期的ビジョンと大胆なリスクテイクで、人類規模の課題解決に挑み続けます。",
-  imageUrl: "https://images.pexels.com/photos/5232929/pexels-photo-5232929.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/The_White_House_-_54409525537_%28cropped%29.jpg/500px-The_White_House_-_54409525537_%28cropped%29.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Elon_Musk",
   strengths: [
     "数十年先を見据えたシステム思考と戦略立案力",
@@ -887,7 +887,7 @@ export const results: Result[] = [
   mbti: "ENFJ",
   description:
     "温かな共感力と鋭い洞察で視聴者を魅了し、メディア帝国を築いた〈ストーリーテリングの女王〉。人の潜在能力を引き出し、社会課題にも光を当てる影響力を持ちます。",
-  imageUrl: "https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Oprah_Winfrey_2016.jpg/500px-Oprah_Winfrey_2016.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Oprah_Winfrey",
   strengths: [
     "高い感情知能で信頼と共感を醸成",
@@ -910,7 +910,7 @@ export const results: Result[] = [
   mbti: "ENFP",
   description:
     "物語・アニメーション・テーマパークを融合し“体験価値”を創造した〈想像力の巨匠〉。夢と魔法をビジネスへ昇華し、人々の心に残るブランドを築きました。",
-  imageUrl: "https://images.pexels.com/photos/3678428/pexels-photo-3678428.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/5/50/Walt_Disney_1946_%28cropped2%29.JPG",
   wikiUrl: "https://en.wikipedia.org/wiki/Walt_Disney",
   strengths: [
     "豊かな想像力で独自の世界観を構築",
@@ -935,7 +935,7 @@ export const results: Result[] = [
   mbti: "INTJ",
   description:
     "“形は体験に奉仕する”を体現し、徹底したミニマリズムで Apple 製品を象徴へと昇華させた〈寡黙なビジョナリー〉。機能と感情のバランスを緻密に設計し、全工程を俯瞰する統率力が光ります。",
-  imageUrl: "https://images.pexels.com/photos/326502/pexels-photo-326502.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Jonathan_Ive_%28OTRS%29.jpg/500px-Jonathan_Ive_%28OTRS%29.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Jonathan_Ive",
   strengths: [
     "ユーザー体験を核に据えたシステム思考",
@@ -958,7 +958,7 @@ export const results: Result[] = [
   mbti: "ENFP",
   description:
     "家具・映像・グラフィックを横断し、人間の好奇心をかき立てた〈ミッドセンチュリーの発明家〉。遊び心と実験精神で“デザインは日常を楽しくする”ことを実証しました。",
-  imageUrl: "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/en/8/82/Photo_of_Ray_Eames.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Ray_Eames",
   strengths: [
     "分野を越境して着想を拡げる発想力",
@@ -981,7 +981,7 @@ export const results: Result[] = [
   mbti: "ISTJ",
   description:
     "“Less, but better” を信条に余計な装飾をそぎ落とし、機能美を極めた〈静かな職人〉。10 原則に基づくタイムレスなプロダクトは、今なお UX の礎となっています。",
-  imageUrl: "https://images.pexels.com/photos/2251247/pexels-photo-2251247.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Designer-Dieter_Rams.jpg/500px-Designer-Dieter_Rams.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Dieter_Rams",
   strengths: [
     "機能要件を優先し一貫性を保つ判断力",
@@ -1004,7 +1004,7 @@ export const results: Result[] = [
   mbti: "ENTP",
   description:
     "日用品から宇宙船まで、ユーモアと挑発で“あり得ない”を実現する〈ボーダーレス・クリエイター〉。社会批評とテクノロジーを掛け合わせ、驚きと機能を両立させます。",
-  imageUrl: "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Phillippe_Starck_2011_%283x4_cropped%29.jpg/500px-Phillippe_Starck_2011_%283x4_cropped%29.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Philippe_Starck",
   strengths: [
     "既成概念を打破するコンセプトメイキング",
@@ -1029,7 +1029,7 @@ export const results: Result[] = [
   mbti: "INFJ",
   description:
     "子どもの〈自己教育力〉を信じ、感覚教具と“整えられた環境”で主体的学びを引き出した〈人間性重視の教育改革者〉。一人ひとりの成長段階を洞察し、静かに伴走する指導スタイルが特徴です。",
-  imageUrl: "https://images.pexels.com/photos/8466776/pexels-photo-8466776.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Maria_Montessori_%28portrait%29.jpg/500px-Maria_Montessori_%28portrait%29.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Maria_Montessori",
   strengths: [
     "観察眼が鋭く個々の発達ニーズを的確に把握できる",
@@ -1052,7 +1052,7 @@ export const results: Result[] = [
   mbti: "INTP",
   description:
     "“経験からの学び”を軸に学校を社会の縮図と捉えた〈プラグマティスト教育哲学者〉。問題解決型プロジェクトで思考を鍛え、民主的な教室文化を提唱しました。",
-  imageUrl: "https://images.pexels.com/photos/5427654/pexels-photo-5427654.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/John_Dewey_cph.3a51565.jpg/500px-John_Dewey_cph.3a51565.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/John_Dewey",
   strengths: [
     "理論と実践を往還しカリキュラムを抽象化できる分析力",
@@ -1075,7 +1075,7 @@ export const results: Result[] = [
   mbti: "ENFJ",
   description:
     "ヘレン・ケラーの潜在能力を解放した〈奇跡の教師〉。深い共感と揺るがぬ信念で学習者の心を開き、個別最適なアプローチで自立を支援しました。",
-  imageUrl: "https://images.pexels.com/photos/8467079/pexels-photo-8467079.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/3/31/AnneSullivanMacy.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Anne_Sullivan",
   strengths: [
     "粘り強い指導とモチベート力で学習者を鼓舞",
@@ -1098,7 +1098,7 @@ export const results: Result[] = [
   mbti: "ENFP",
   description:
     "“学校は創造性を殺していないか？”と問い、教育界に波紋を起こした〈クリエイティブ・カタリスト〉。ユーモアと物語で学びを解放し、多様な才能が輝く場づくりを提唱しました。",
-  imageUrl: "https://images.pexels.com/photos/5427867/pexels-photo-5427867.jpeg",
+  imageUrl: "https://media.licdn.com/dms/image/v2/D4E22AQFmGRd7zynBGQ/feedshare-shrink_800/B4EZVhXz72H0Ag-/0/1741095397523?e=2147483647&v=beta&t=u_kDelZm34oeyyf9iegJaNtj-PCAv5ocmVkcrKQfcBM",
   wikiUrl: "https://en.wikipedia.org/wiki/Ken_Robinson_(educator)",
   strengths: [
     "インスピレーショナルなスピーチで学習者の情熱を喚起",
@@ -1123,7 +1123,7 @@ export const results: Result[] = [
   mbti: "ISTJ",
   description:
     "米国初の女性医師として医学の門戸を開いた〈先駆的リーダー〉。公衆衛生の制度化と医学教育の質向上に生涯を捧げ、確固たる倫理観で患者と社会に貢献しました。",
-  imageUrl: "https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e7/Elizabeth_Blackwell.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Elizabeth_Blackwell",
   strengths: [
     "膨大な症例を几帳面に記録・分析するデータ管理力",
@@ -1146,7 +1146,7 @@ export const results: Result[] = [
   mbti: "ENFJ",
   description:
     "「誰一人置き去りにしない医療」を掲げ、世界の僻地で包括的ケアを実践した〈グローバル・ヒューマニスト〉。共感力と行動力でコミュニティを巻き込み健康格差に挑んできました。",
-  imageUrl: "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Paul_Farmer_2011.jpg/500px-Paul_Farmer_2011.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Paul_Farmer",
   strengths: [
     "異文化と協調し信頼関係を築くコミュニケーション力",
@@ -1169,7 +1169,7 @@ export const results: Result[] = [
   mbti: "INFP",
   description:
     "患者の物語を丁寧に掬い上げた〈神経学のストーリーテラー〉。臨床と文学を融合し、人間の不思議と尊厳を世に伝えることで医療の奥深さを示しました。",
-  imageUrl: "https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Dr._Oliver_Sacks%2C_Physician%2C_Author.jpg/500px-Dr._Oliver_Sacks%2C_Physician%2C_Author.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Oliver_Sacks",
   strengths: [
     "症例一つひとつに寄り添う深い共感力",
@@ -1192,7 +1192,7 @@ export const results: Result[] = [
   mbti: "INTJ",
   description:
     "不可能と言われたポリオワクチンを開発し世界の公衆衛生を変えた〈戦略的イノベーター〉。緻密な実験計画と社会的使命感で科学を実装しました。",
-  imageUrl: "https://images.pexels.com/photos/4386464/pexels-photo-4386464.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Jonas_Salk_candid.jpg/500px-Jonas_Salk_candid.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Jonas_Salk",
   strengths: [
     "大規模臨床試験を設計・統括する計画力",
@@ -1216,7 +1216,7 @@ export const results: Result[] = [
   mbti: "INTJ",
   description:
     "交流電力や無線送電など、時代を超えるテクノロジーを生み出した〈孤高の発明家〉。数学的な思考で壮大なビジョンを設計し、完璧を追求する職人気質が光ります。",
-  imageUrl: "https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Tesla_circa_1890.jpeg/500px-Tesla_circa_1890.jpeg",
   wikiUrl: "https://en.wikipedia.org/wiki/Nikola_Tesla",
   strengths: [
     "未来を先読みするシステム設計力と洞察力",
@@ -1240,7 +1240,7 @@ export const results: Result[] = [
   mbti: "ENTP",
   description:
     "世界初のコンパイラを生み、誰もがコードを書ける未来を切り開いた〈計算機科学の開拓者〉。既存の枠を疑い、問題をユーモアと行動力で解決します。",
-  imageUrl: "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Commodore_Grace_M._Hopper%2C_USN_%28covered%29_head_and_shoulders_crop.jpg/960px-Commodore_Grace_M._Hopper%2C_USN_%28covered%29_head_and_shoulders_crop.jpg",
   wikiUrl: "https://en.wikipedia.org/wiki/Grace_Hopper",
   strengths: [
     "抽象概念をわかりやすい言語・ツールへ翻訳する力",
@@ -1264,7 +1264,7 @@ export const results: Result[] = [
   mbti: "ENFP",
   description:
     "芸術・解剖・機械工学を横断し未来をスケッチした〈万能の天才〉。好奇心に導かれ、自然の法則を探りながら革新的な機構を次々と着想します。",
-  imageUrl: "https://images.pexels.com/photos/8197534/pexels-photo-8197534.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Francesco_Melzi_-_Portrait_of_Leonardo.png/500px-Francesco_Melzi_-_Portrait_of_Leonardo.png",
   wikiUrl: "https://en.wikipedia.org/wiki/Leonardo_da_Vinci",
   strengths: [
     "分野を越境してアイデアを結び付ける創造的連想力",
@@ -1288,7 +1288,7 @@ export const results: Result[] = [
   mbti: "ISTJ",
   description:
     "ベルトコンベア方式で大量生産を確立し、社会をモータリゼーションへ導いた〈効率化の達人〉。厳格なプロセス管理と堅実な品質基準が強みです。",
-  imageUrl: "https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg",
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Henry_Ford_portrait_1915_original_%28cropped_3x4%29.png/500px-Henry_Ford_portrait_1915_original_%28cropped_3x4%29.png",
   wikiUrl: "https://en.wikipedia.org/wiki/Henry_Ford",
   strengths: [
     "工程を標準化しコストと品質を最適化するシステム思考",
