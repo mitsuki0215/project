@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Brain, CheckCircle2, BarChart } from 'lucide-react';
+import { CheckCircle2, BarChart } from 'lucide-react';
+import AppIcon from './assets/BioFit4Q_icon.png';
 import { questions, results } from './data';
 import { Occupation, Result, PersonalityStats } from './types';
 
@@ -148,7 +149,7 @@ function App() {
         {step==='intro' && (
           <div className="space-y-10">
             <header className="text-center space-y-4">
-              <Brain className="mx-auto h-16 w-16 text-indigo-600" />
+              <img src={AppIcon} alt="BioFit 4Q アイコン" className="mx-auto h-24 w-24" />
               <h1 className="text-4xl font-extrabold text-gray-900">BioFit&nbsp;4Q</h1>
               <p className="text-1xl sm:text-2xl font-extrabold text-indigo-600">
                 MBTIで読み解く<br />
@@ -191,7 +192,7 @@ function App() {
         {step==='occupation' && (
           <div>
             <div className="text-center mb-6 space-y-2">
-              <Brain className="mx-auto h-12 w-12 text-indigo-600"/>
+              <img src={AppIcon} alt="BioFit 4Q アイコン" className="mx-auto h-16 w-16" />
               <h2 className="text-3xl font-bold text-gray-900">BioFit 4Q</h2>
             </div>
 
@@ -217,7 +218,7 @@ function App() {
           <div>
             {/* app header */}
             <div className="text-center mb-6 space-y-2">
-              <Brain className="mx-auto h-12 w-12 text-indigo-600"/>
+              <img src={AppIcon} alt="BioFit 4Q アイコン" className="mx-auto h-16 w-16" />
               <h2 className="text-3xl font-bold text-gray-900">BioFit 4Q</h2>
             </div>
 
@@ -252,7 +253,7 @@ function App() {
         {step==='loading' && (
           <div>
             <div className="text-center mb-6 space-y-2">
-              <Brain className="mx-auto h-12 w-12 text-indigo-600"/>
+              <img src={AppIcon} alt="BioFit 4Q アイコン" className="mx-auto h-16 w-16" />
               <h2 className="text-3xl font-bold text-gray-900">BioFit 4Q</h2>
             </div>
 
@@ -272,7 +273,7 @@ function App() {
           <div className="space-y-6">
             {/* app header */}
             <div className="text-center mb-2 space-y-2">
-              <Brain className="mx-auto h-12 w-12 text-indigo-600" />
+              <img src={AppIcon} alt="BioFit 4Q アイコン" className="mx-auto h-16 w-16" />
               <h2 className="text-3xl font-bold text-gray-900">BioFit 4Q</h2>
             </div>
 
