@@ -172,10 +172,10 @@ function App() {
 
             <section className="bg-white/80 backdrop-blur-sm shadow-lg rounded-2xl p-6 space-y-6">
               <p className="text-gray-700 leading-relaxed">
-                BioFit&nbsp;4Q は、<b className="text-indigo-600">4 つの質問</b>で
-                あなたの思考スタイルを MBTI ライクな 4 文字へマッピング。
-                さらに歴史上の <b className="text-indigo-600">“似ている偉人”</b>
-                を提示する、スマホ特化のセルフコーチングツールです。
+                BioFit&nbsp;4Q は、<b className="text-indigo-600">4 つの質問</b>に答えるだけで、
+                あなたの思考の傾向をもとに <b className="text-indigo-600">MBTI タイプ</b> を特定。
+                さらに、そのタイプに似た <b className="text-indigo-600">歴史上の偉人</b> に診断し、
+                強み・注意点・行動アドバイスまで届けるセルフコーチングツールです。
               </p>
               {['診断を始めるボタンをタップ',
                 '興味のある職業を 1 つ選択',
